@@ -1,0 +1,116 @@
+id	name	url	curl_status	final_url	verdict	detail	checked
+1	Pwnisher 3D 渲染挑战赛	https://www.youtube.com/@pwnisher	200	https://www.youtube.com/@pwnisher	已核验	curl HTTP 200，页面标题「pwnisher - YouTube」	2026-11-15
+2	Awwwards	https://www.awwwards.com/	200	https://www.awwwards.com/	已核验	curl HTTP 200，页面标题「Awwwards - Website Awards - Best Web Design Trends」	2026-11-15
+3	CSS Design Awards	https://www.cssdesignawards.com/	202	https://www.cssdesignawards.com/	已核验	curl 返回 202 空页（安全校验）；WebFetch 取得首页正文（当日 WOTD 列表）	2026-11-15
+4	The FWA	https://thefwa.com/	200	https://thefwa.com/	已核验	curl HTTP 200，页面标题「The FWA — Digital design awards since 2000」	2026-11-15
+5	The Motion Awards	https://motionawards.com/	200	https://motionawards.com/	已核验	curl HTTP 200（页面无 title 标签，正文可见）；无头浏览器截图正常	2026-11-15
+6	Apple Design Awards	https://developer.apple.com/design/awards/	200	https://developer.apple.com/design/awards/	已核验	curl HTTP 200，页面标题「Apple Design Awards - 2026 winners and finalists -」	2026-11-15
+7	D&AD	https://www.dandad.org/	200	https://www.dandad.org/	已核验	curl HTTP 200，页面标题「D&AD」	2026-11-15
+8	The One Show & ADC	https://www.oneclub.org/	200	https://www.oneclub.org/	已核验	curl HTTP 200，页面标题「The One Show & ADC Awards ／ Advertising & Design A」	2026-11-15
+9	Runway AI Film Festival	https://aif.runwayml.com/	200	https://aif.runwayml.com/	已核验	curl HTTP 200，页面标题「AIF 2026 ／ AI Festival」	2026-11-15
+10	Tokyo TDC	https://tokyotypedirectorsclub.org/	200	https://tokyotypedirectorsclub.org/	已核验	curl HTTP 200，页面标题「Tokyo TDC」	2026-11-15
+11	Annecy 安纳西国际动画节	https://www.annecyfestival.com/	200	https://www.annecyfestival.com/	已核验	curl HTTP 200，页面标题「Site officiel du Festival et du Marché internation」	2026-11-15
+12	Ciclope Festival	https://www.ciclopefestival.com/	200	https://www.ciclopefestival.com/	已核验	curl HTTP 200，页面标题「CICLOPE Festival」	2026-11-15
+13	Motionographer	https://motionographer.com/	200	https://motionographer.com/	已核验	curl HTTP 200，页面标题「Motionographer®  Unexpected Inspiration™」	2026-11-15
+14	STASH	https://www.stashmedia.tv/	200	https://www.stashmedia.tv/	已核验	curl HTTP 200，页面标题「Motion design - STASH - Welcome to the planet’s la」	2026-11-15
+15	Art of the Title	https://www.artofthetitle.com/	200	https://www.artofthetitle.com/	已核验	curl HTTP 200，页面标题「Art of the Title」	2026-11-15
+16	Vimeo Staff Picks	https://vimeo.com/channels/staffpicks	200	https://vimeo.com/channels/staffpicks	已核验	curl HTTP 200，页面标题「Vimeo Staff Picks on Vimeo」	2026-11-15
+17	Behance 动态设计专区	https://www.behance.net/galleries/motion	403	https://www.behance.net/galleries/motion	已核验	curl/WebFetch 403（反爬）；无头 Chrome 渲染出 Motion 分类页	2026-11-15
+18	Short of the Week	https://www.shortoftheweek.com/	200	https://www.shortoftheweek.com/	已核验	curl HTTP 200，页面标题「Short of the Week ／ The Best Short Films」	2026-11-15
+19	Directors Notes	https://directorsnotes.com/	200	https://directorsnotes.com/	已核验	curl HTTP 200，页面标题「Directors Notes // The Home of Independent Filmmak」	2026-11-15
+20	Sakugabooru	https://www.sakugabooru.com/	200	https://www.sakugabooru.com/	已核验	curl HTTP 200，页面标题「sakugabooru」	2026-11-15
+21	Promonews	https://www.promonews.tv/	200	https://www.promonews.tv/	已核验	curl HTTP 200，页面标题「Music video creativity everyday ／ Promonews」	2026-11-15
+22	BUCK	https://buck.co/	200	https://buck.co/	已核验	curl HTTP 200，页面标题「BUCK」	2026-11-15
+23	ManvsMachine	https://mvsm.com/	200	https://mvsm.com/	已核验	curl HTTP 200，页面标题「ManvsMachine」	2026-11-15
+24	Oddfellows	https://oddfellows.tv/	000	https://oddfellows.tv/	已核验	curl 首次 TLS 断开、重试 202；WebFetch 取得作品列表正文	2026-11-15
+25	Golden Wolf	https://www.goldenwolf.tv/	200	https://www.goldenwolf.tv/	已核验	curl HTTP 200，页面标题「Golden Wolf」	2026-11-15
+26	Ordinary Folk	https://www.ordinaryfolk.co/	200	https://www.ordinaryfolk.co/	已核验	curl HTTP 200，页面标题「Ordinary Folk – Motion Design & Animation Studio, 」	2026-11-15
+27	ArtStation	https://www.artstation.com/	403	https://www.artstation.com/	已核验	curl 403（Cloudflare challenge）、WebFetch 500；无头 Chrome 渲染出首页	2026-11-15
+28	The Rookies	https://www.therookies.co/	200	https://www.therookies.co/	已核验	curl HTTP 200，页面标题「The Rookies - Creative Community for Next-Gen Arti」	2026-11-15
+29	80 Level	https://80.lv/	200	https://80.lv/	已核验	curl HTTP 200，页面标题「80 Level」	2026-11-15
+30	Sketchfab	https://sketchfab.com/	200	https://sketchfab.com/	已核验	curl HTTP 200，页面标题「Sketchfab - The best 3D viewer on the web」	2026-11-15
+31	befores & afters	https://beforesandafters.com/	200	https://beforesandafters.com/	已核验	curl HTTP 200，页面标题「befores & afters - VFX magazine」	2026-11-15
+32	fxguide	https://www.fxguide.com/	200	https://www.fxguide.com/	已核验	curl HTTP 200，页面标题「fxguide」	2026-11-15
+33	Blender Studio	https://studio.blender.org/	200	https://studio.blender.org/welcome/	已核验	curl HTTP 200，页面标题「Blender Studio」	2026-11-15
+34	Poly Haven	https://polyhaven.com/	200	https://polyhaven.com/	已核验	curl HTTP 200，页面标题「Poly Haven」	2026-11-15
+35	Beeple Everydays	https://beeple-crap.com/everydays	200	https://beeple-crap.com/everydays	已核验	curl HTTP 200，页面标题「Everydays ／ BEEPLE」	2026-11-15
+36	ShotDeck	https://shotdeck.com/	403	https://shotdeck.com/	已核验	curl 403（Cloudflare）；WebFetch 取得首页正文	2026-11-15
+37	FILMGRAB	https://film-grab.com/	200	https://film-grab.com/	已核验	curl HTTP 200，页面标题「[FILMGRAB]」	2026-11-15
+38	StillsLab	https://stillslab.com/	200	https://stillslab.com/	已核验	curl HTTP 200，页面标题「StillsLab — Movie Stills & TV Show Frames for Film」	2026-11-15
+39	Flim	https://flim.ai/	200	https://flim.ai/	已核验	curl HTTP 200，页面标题「Flim ／ AI search engine for film stills and visual」	2026-11-15
+40	EyeCannndy	https://eyecannndy.com/	200	https://eyecannndy.com/	已核验	curl HTTP 200，页面标题「Eyecandy - Visual Technique Library」	2026-11-15
+41	StudioBinder 镜头语言指南	https://www.studiobinder.com/blog/ultimate-guide-to-camera-shots/	200	https://www.studiobinder.com/blog/ultimate-guide-to-camera-shots/	已核验	curl HTTP 200，页面标题「50+ Types of Camera Shots, Angles, and Techniques」	2026-11-15
+42	American Cinematographer（ASC）	https://theasc.com/	520	https://theasc.com/	部分核验	curl 与无头浏览器均返回 Cloudflare 520；WebFetch 取得新闻标题（站点间歇性故障）	2026-11-15
+43	Mobbin	https://mobbin.com/	200	https://mobbin.com/	已核验	curl HTTP 200，页面标题「Mobbin — UI & UX design inspiration for mobile & w」	2026-11-15
+44	Page Flows	https://pageflows.com/	200	https://pageflows.com/	已核验	curl HTTP 200，页面标题「UI/UX Design Inspiration & User Flows from Top App」	2026-11-15
+45	Refero	https://refero.design/	200	https://refero.design/	已核验	curl HTTP 200，页面标题「Refero — UI/UX Design Inspiration for Your Next Pr」	2026-11-15
+46	Nicelydone	https://nicelydone.club/	200	https://nicelydone.club/	已核验	curl HTTP 200，页面标题「Nicelydone — Web apps design inspiration (UX & UI)」	2026-11-15
+47	SaaSFrame	https://www.saasframe.io/	200	https://www.saasframe.io/	已核验	curl HTTP 200，页面标题「SaaSFrame - SaaS UI & UX Design Inspiration Librar」	2026-11-15
+48	Figma Community	https://www.figma.com/community	200	https://www.figma.com/community	已核验	curl HTTP 200，页面标题「Discover community-made templates, plugins, and wi」	2026-11-15
+49	Apple 人机界面指南（HIG）	https://developer.apple.com/design/human-interface-guidelines/	200	https://developer.apple.com/design/human-interface-guidelines/	已核验	curl HTTP 200，页面标题「Human Interface Guidelines ／ Apple Developer Docum」	2026-11-15
+50	Material Design 3	https://m3.material.io/	200	https://m3.material.io/	已核验	curl HTTP 200，页面标题「Material Design」	2026-11-15
+51	Vercel Web Interface Guidelines	https://vercel.com/design/guidelines	200	https://vercel.com/design/guidelines	已核验	curl HTTP 200，页面标题「Web Interface Guidelines」	2026-11-15
+52	Impeccable	https://impeccable.style/	200	https://impeccable.style/	已核验	curl HTTP 200，页面标题「Impeccable: The missing design vocabulary for agen」	2026-11-15
+53	The Component Gallery	https://component.gallery/	200	https://component.gallery/	已核验	curl HTTP 200，页面标题「The Component Gallery」	2026-11-15
+54	60fps	https://60fps.design/	200	https://60fps.design/	已核验	curl HTTP 200，页面标题「60fps - UI/UX animation inspiration for mobile & w」	2026-11-15
+55	Spotted in Prod	https://www.spottedinprod.com/	200	https://www.spottedinprod.com/	已核验	curl HTTP 200，页面标题「Spotted in Prod — The very best of iOS」	2026-11-15
+56	Growth.Design	https://growth.design/	200	https://growth.design/	已核验	curl HTTP 200，页面标题「Growth.Design — Better Products, Better Growth.」	2026-11-15
+57	Laws of UX	https://lawsofux.com/	200	https://lawsofux.com/	已核验	curl HTTP 200，页面标题「Home ／ Laws of UX」	2026-11-15
+58	Game UI Database	https://www.gameuidatabase.com/	200	https://www.gameuidatabase.com/	已核验	curl HTTP 200，页面标题「Game UI Database 2.0 ／ Welcome」	2026-11-15
+59	Recent（原 Godly）	https://recent.design/	200	https://recent.design/	已核验	curl HTTP 200，页面标题「Recent — Design Inspiration」	2026-11-15
+60	Siteinspire	https://www.siteinspire.com/	429	https://www.siteinspire.com/	已核验	curl 429（Vercel Security Checkpoint）；WebFetch 取得作品列表	2026-11-15
+61	Land-book	https://land-book.com/	200	https://land-book.com/	已核验	curl HTTP 200，页面标题「Landbook - website design inspiration gallery」	2026-11-15
+62	Landingfolio	https://www.landingfolio.com/	200	https://www.landingfolio.com/	已核验	curl HTTP 200，页面标题「The Best Landing Page Design Inspiration, Template」	2026-11-15
+63	awesome-design-md	https://github.com/VoltAgent/awesome-design-md	200	https://github.com/VoltAgent/awesome-design-md	已核验	curl HTTP 200，页面标题「GitHub - VoltAgent/awesome-design-md: A collection」	2026-11-15
+64	One Page Love	https://onepagelove.com/	200	https://onepagelove.com/	已核验	curl HTTP 200，页面标题「One Page Love — One Page Website Inspiration and T」	2026-11-15
+65	Minimal Gallery	https://minimal.gallery/	200	https://minimal.gallery/	已核验	curl HTTP 200，页面标题「Minimal Gallery – Hand-picked web design inspirati」	2026-11-15
+66	Dark Mode Design	https://www.darkmodedesign.com/	200	https://www.darkmodedesign.com/	已核验	curl HTTP 200，页面标题「Dark Mode Design 🌘 Handpicked website inspiration」	2026-11-15
+67	Hoverstat.es	https://www.hoverstat.es/	200	https://www.hoverstat.es/	已核验	curl HTTP 200，页面标题「HOVERSTAT.ES ／ The home of alternative web-design.」	2026-11-15
+68	Web Design Museum	https://www.webdesignmuseum.org/	200	https://www.webdesignmuseum.org/	已核验	curl HTTP 200，页面标题「Web Design Museum – Discover old websites, apps, s」	2026-11-15
+69	Codrops	https://tympanus.net/codrops/	200	https://tympanus.net/codrops/	已核验	curl HTTP 200，页面标题「Codrops ／ Fueling web creativity since 2009」	2026-11-15
+70	CodePen Spark	https://codepen.io/spark	403	https://codepen.io/spark	已核验	curl 403（Cloudflare）；WebFetch 取得本周 Spark 列表	2026-11-15
+71	GSAP 官方 Demo 库	https://demos.gsap.com/	200	https://demos.gsap.com/	已核验	curl HTTP 200，页面标题「GSAP Demo Hub」	2026-11-15
+72	Three.js 官方示例	https://threejs.org/examples/	200	https://threejs.org/examples/	已核验	curl HTTP 200，页面标题「three.js examples」	2026-11-15
+73	Shadertoy	https://www.shadertoy.com/	403	https://www.shadertoy.com/	部分核验	curl 403、无头浏览器遇安全校验；WebFetch 仅得标题'Shader of the Week'	2026-11-15
+74	The Book of Shaders	https://thebookofshaders.com/	200	https://thebookofshaders.com/	已核验	curl HTTP 200，页面标题「The Book of Shaders」	2026-11-15
+75	Bruno Simon	https://bruno-simon.com/	200	https://bruno-simon.com/	已核验	curl HTTP 200，页面标题「Bruno's」	2026-11-15
+76	Lusion	https://lusion.co/	200	https://lusion.co/	已核验	curl HTTP 200，页面标题「Lusion - Award Winning 3D and Interactive Web Stud」	2026-11-15
+77	Active Theory	https://activetheory.net/	200	https://activetheory.net/	已核验	curl HTTP 200，页面标题「Active Theory · Creative Digital Experiences」	2026-11-15
+78	Framer Gallery	https://www.framer.com/gallery/	200	https://www.framer.com/community/gallery/	已核验	curl HTTP 200，页面标题「Framer Gallery: Explore the best websites built wi」	2026-11-15
+79	Motion 官方示例	https://motion.dev/examples	200	https://motion.dev/examples	已核验	curl HTTP 200，页面标题「Examples: React, JavaScript, and Vue animation sni」	2026-11-15
+80	React Bits	https://reactbits.dev/	200	https://reactbits.dev/	已核验	curl HTTP 200，页面标题「React Bits — Free Animated React Components」	2026-11-15
+81	coss ui	https://coss.com/ui	200	https://coss.com/ui	已核验	curl HTTP 200，页面标题「A modern React UI component library – coss ui」	2026-11-15
+82	Josh W. Comeau	https://www.joshwcomeau.com/	200	https://www.joshwcomeau.com/	已核验	curl HTTP 200，页面标题「Josh W. Comeau」	2026-11-15
+83	Rauno Freiberg	https://rauno.me/	200	https://rauno.me/	已核验	curl HTTP 200，页面标题「Rauno Freiberg」	2026-11-15
+84	Emil Kowalski	https://emilkowal.ski/	200	https://emilkowal.ski/	已核验	curl HTTP 200，页面标题「Emil Kowalski」	2026-11-15
+85	Typewolf	https://www.typewolf.com/	200	https://www.typewolf.com/	已核验	curl HTTP 200，页面标题「What’s Trending in Type  · Typewolf」	2026-11-15
+86	Fonts In Use	https://fontsinuse.com/	200	https://fontsinuse.com/	已核验	curl HTTP 200，页面标题「Fonts In Use - Fonts In Use」	2026-11-15
+87	Google Fonts	https://fonts.google.com/	200	https://fonts.google.com/	已核验	curl HTTP 200，页面标题「Browse Fonts - Google Fonts」	2026-11-15
+88	Fontshare	https://www.fontshare.com/	200	https://www.fontshare.com/	已核验	curl HTTP 200（gzip 正文）；无头截图正常	2026-11-15
+89	Butterick's Practical Typography	https://practicaltypography.com/	200	https://practicaltypography.com/	已核验	curl HTTP 200，页面标题「Butterick’s Practical Typography」	2026-11-15
+90	Utopia	https://utopia.fyi/	200	https://utopia.fyi/	已核验	curl HTTP 200，页面标题「Fluid Responsive Design ／ Utopia」	2026-11-15
+91	Coolors	https://coolors.co/	200	https://coolors.co/	已核验	curl HTTP 200，页面标题「Coolors - The super fast color palettes generator!」	2026-11-15
+92	Realtime Colors	https://www.realtimecolors.com/	402	https://www.realtimecolors.com/	访问失败	HTTP 402 DEPLOYMENT_DISABLED，页面显示'This deployment is temporarily paused'（站点部署被暂停，非网络问题）	2026-11-15
+93	Radix Colors	https://www.radix-ui.com/colors	200	https://www.radix-ui.com/colors	已核验	curl HTTP 200，页面标题「Radix Colors」	2026-11-15
+94	tweakcn	https://tweakcn.com/	200	https://tweakcn.com/	已核验	curl HTTP 200，页面标题「Beautiful themes for shadcn/ui — tweakcn ／ Theme E」	2026-11-15
+95	Pinterest	https://www.pinterest.com/	200	https://www.pinterest.com/	已核验	curl HTTP 200，页面标题「Pinterest」	2026-11-15
+96	Are.na	https://www.are.na/	200	https://www.are.na/	已核验	curl HTTP 200，页面标题「Are.na」	2026-11-15
+97	Cosmos	https://www.cosmos.so/	200	https://www.cosmos.so/	已核验	curl HTTP 200，页面标题「Cosmos」	2026-11-15
+98	Savee	https://savee.com/	200	https://savee.com/	已核验	curl HTTP 200，页面标题「Savee」	2026-11-15
+99	It's Nice That	https://www.itsnicethat.com/	200	https://www.itsnicethat.com/	已核验	curl HTTP 200，页面标题「It's Nice That」	2026-11-15
+100	Brand New	https://www.underconsideration.com/brandnew/	200	https://www.underconsideration.com/brandnew/	已核验	curl HTTP 200，页面标题「Brand New」	2026-11-15
+S1	Behance（主站）	https://www.behance.net/	403	https://www.behance.net/	已核验	curl/WebFetch 403；无头 Chrome 渲染出首页	2026-11-15
+S2	Dribbble	https://dribbble.com/	202	https://dribbble.com/	已核验	curl 202 空页、WebFetch 403；无头 Chrome 渲染出首页	2026-11-15
+S3	站酷 ZCOOL	https://www.zcool.com.cn/	200	https://www.zcool.com.cn/	已核验	curl HTTP 200，页面标题「站酷ZCOOL-设计师互动平台，设计师们都在站酷」	2026-11-15
+S4	花瓣网	https://huaban.com/	200	https://huaban.com/	已核验	curl 返回 JS 反爬脚本；WebFetch 取得首页正文	2026-11-15
+S5	UI中国	https://www.ui.cn/	000	https://www.ui.cn/	访问失败	curl TLS 断开/HTTP2 PROTOCOL_ERROR，WebFetch 500；域名在本机解析到 198.18.0.1（代理保留段），疑为测试环境网络问题，非站点确定下线	2026-11-15
+S6	优设网	https://www.uisdc.com/	200	https://www.uisdc.com/	已核验	curl HTTP 200，页面标题「优设网官网 - UISDC - 国内专业设计师平台 - 看设计文章，学AIGC教程，找灵感素材，尽在」	2026-11-15
+S7	Unsplash	https://unsplash.com/	401	https://unsplash.com/.within.website?redir=%2F	部分核验	返回浏览器校验页（.within.website 反爬），WebFetch 超时，无头浏览器停在校验页	2026-11-15
+S8	Pexels	https://www.pexels.com/	403	https://www.pexels.com/zh-cn/	已核验	curl 403；WebFetch 取得首页正文	2026-11-15
+S9	Lapa Ninja	https://www.lapa.ninja/	200	https://www.lapa.ninja/	已核验	curl HTTP 200，页面标题「Landing Page Design Examples: 7,300+ Best Landing 」	2026-11-15
+S10	Designspiration	https://www.designspiration.com/	200	https://www.designspiration.com/	已核验	curl HTTP 200，页面标题「Designspiration - Design Inspiration ／ Inspiration」	2026-11-15
+S11	Color Hunt	https://colorhunt.co/	200	https://colorhunt.co/	已核验	curl HTTP 200，页面标题「Color Hunt - Color Palettes for Designers and Arti」	2026-11-15
+S12	Brutalist Websites	https://brutalistwebsites.com/	200	https://brutalistwebsites.com/	已核验	curl HTTP 200，页面标题「Brutalist Websites」	2026-11-15
+S13	Httpster	https://httpster.net/	200	https://httpster.net/	已核验	curl HTTP 200，页面标题「Website Design Inspiration ／ Httpster」	2026-11-15
+S14	Logo Design Love	https://www.logodesignlove.com/	200	https://www.logodesignlove.com/	已核验	curl HTTP 200，页面标题「Logo Design Love ／ on logos, symbols, icons, and m」	2026-11-15
+S15	styles.refero.design	https://styles.refero.design/	200	https://styles.refero.design/	已核验	curl HTTP 200，页面标题「Website Styles & DESIGN.md Library ／ Refero Styles」	2026-11-15

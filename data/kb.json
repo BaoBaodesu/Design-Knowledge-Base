@@ -1,0 +1,5027 @@
+{
+ "meta": {
+  "title": "设计师知识库 v1",
+  "version": "1.0",
+  "updated": "2026-11-15",
+  "timezone": "Asia/Shanghai",
+  "language": "zh-Hans",
+  "source": {
+   "title": "100 个提升审美的设计网站大赏",
+   "author": "Eian (@EianLu)",
+   "url": "https://x.com/EianLu/status/2121219503988113557"
+  },
+  "counts": {
+   "article_sites": 100,
+   "supplement_sites": 15,
+   "styles": 29,
+   "top10": 10,
+   "mixes": 14,
+   "prompts": 15
+  },
+  "evidence_levels": {
+   "有据": "有研究/权威来源直接支持",
+   "部分有据": "来源支持部分判断，其余为推断",
+   "推测": "无数据，编者推断"
+  },
+  "verify_status": {
+   "verified": "已核验",
+   "partial": "部分核验",
+   "failed": "访问失败"
+  },
+  "policy": "不搜索、不打开、不引用 CSDN（csdn.net）"
+ },
+ "sites": [
+  {
+   "id": "1",
+   "source": "article",
+   "name": "Pwnisher 3D 渲染挑战赛",
+   "url": "https://www.youtube.com/@pwnisher",
+   "category": "大赛与奖项",
+   "main": "同一白模/相机轨迹、全球数千人同题创作的3D渲染挑战赛合集",
+   "resource_type": "赛事/视频",
+   "works_style": "写实与风格化3D并存，电影级打光、氛围叙事",
+   "ui_style": "YouTube 标准频道页：白底、红色品牌色",
+   "scene": "3D打光、场景氛围对比学习",
+   "recommended_use": "同题横向对比打光与创意",
+   "domains": [
+    "3D",
+    "视频"
+   ],
+   "style_keys": [
+    "cinematic",
+    "clay"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「pwnisher - YouTube」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "2",
+   "source": "article",
+   "name": "Awwwards",
+   "url": "https://www.awwwards.com/",
+   "category": "大赛与奖项",
+   "main": "每日最佳网站评选（设计/易用/创意/内容四项）+年度奖",
+   "resource_type": "奖项/网页灵感",
+   "works_style": "超大字排版、沉浸式WebGL、滚动动效、深色高级感",
+   "ui_style": "浅灰底+超大黑色无衬线标题，编辑式克制排版",
+   "scene": "网页趋势追踪、提案参考",
+   "recommended_use": "每天5分钟刷趋势",
+   "domains": [
+    "网页",
+    "前端"
+   ],
+   "style_keys": [
+    "webgl",
+    "kinetic",
+    "swiss",
+    "darkmode",
+    "editorial"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Awwwards - Website Awards - Best Web Design Trends」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "3",
+   "source": "article",
+   "name": "CSS Design Awards",
+   "url": "https://www.cssdesignawards.com/",
+   "category": "大赛与奖项",
+   "main": "每日最佳网站（UI/UX/创新三项评分）",
+   "resource_type": "奖项/网页灵感",
+   "works_style": "作品集站、实验交互、3D与动效",
+   "ui_style": "无头截图被安全校验拦截；文本抓取可见评分卡片+评委分数结构",
+   "scene": "与 Awwwards 互补的网页选品",
+   "recommended_use": "对比两家评委口味",
+   "domains": [
+    "网页",
+    "前端"
+   ],
+   "style_keys": [
+    "webgl",
+    "kinetic",
+    "darkmode"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl 返回 202 空页（安全校验）；WebFetch 取得首页正文（当日 WOTD 列表）",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "4",
+   "source": "article",
+   "name": "The FWA",
+   "url": "https://thefwa.com/",
+   "category": "大赛与奖项",
+   "main": "2000年起的数字设计奖，每日一个获奖项目",
+   "resource_type": "奖项/网页灵感",
+   "works_style": "偏技术流：WebGL、声音互动、实验交互",
+   "ui_style": "黑白高对比、等宽小字、模块化网格，带终端/新野兽派气质",
+   "scene": "找创意技术、互动营销案例",
+   "recommended_use": "研究交互与技术表现",
+   "domains": [
+    "网页",
+    "互动"
+   ],
+   "style_keys": [
+    "webgl",
+    "cyber",
+    "neobrutal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「The FWA — Digital design awards since 2000」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "5",
+   "source": "article",
+   "name": "The Motion Awards",
+   "url": "https://motionawards.com/",
+   "category": "大赛与奖项",
+   "main": "Motionographer 主办的动态设计专项奖（片头/广告/品牌包装/AI单元）",
+   "resource_type": "奖项/视频",
+   "works_style": "片头、品牌动态、动态排版、AI影像",
+   "ui_style": "黑底+金色衬线大字，奢华颁奖典礼感",
+   "scene": "年度动态作品集中观摩",
+   "recommended_use": "按单元刷年度最佳动态",
+   "domains": [
+    "动态",
+    "视频"
+   ],
+   "style_keys": [
+    "kinetic",
+    "cinematic",
+    "luxury"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200（页面无 title 标签，正文可见）；无头浏览器截图正常",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "6",
+   "source": "article",
+   "name": "Apple Design Awards",
+   "url": "https://developer.apple.com/design/awards/",
+   "category": "大赛与奖项",
+   "main": "苹果WWDC年度App与游戏设计奖，附官方评语",
+   "resource_type": "奖项/UI",
+   "works_style": "果味UI、精致微交互、玻璃质感与拟物细节",
+   "ui_style": "Apple 开发者站：深色底、SF 字体、App 图标网格",
+   "scene": "移动端设计标杆",
+   "recommended_use": "读评语理解'为什么好'",
+   "domains": [
+    "UI",
+    "移动端"
+   ],
+   "style_keys": [
+    "minimal",
+    "glass",
+    "skeuo"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Apple Design Awards - 2026 winners and finalists -」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "7",
+   "source": "article",
+   "name": "D&AD",
+   "url": "https://www.dandad.org/",
+   "category": "大赛与奖项",
+   "main": "英国设计与广告大奖（黄铅笔/黑铅笔）及历年档案",
+   "resource_type": "奖项/品牌广告",
+   "works_style": "品牌识别、广告创意、平面与工艺",
+   "ui_style": "明黄底+黑色粗体大字，高对比品牌色",
+   "scene": "品牌/广告/平面提案参考",
+   "recommended_use": "翻历年获奖案例",
+   "domains": [
+    "品牌",
+    "广告",
+    "平面"
+   ],
+   "style_keys": [
+    "editorial",
+    "swiss",
+    "neobrutal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「D&AD」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "8",
+   "source": "article",
+   "name": "The One Show & ADC",
+   "url": "https://www.oneclub.org/",
+   "category": "大赛与奖项",
+   "main": "The One Club 两大奖：One Show 重创意，ADC 重视觉/字体/工艺",
+   "resource_type": "奖项/品牌广告",
+   "works_style": "广告创意、字体排印、视觉工艺",
+   "ui_style": "白底+黑色粗体+彩色标签按钮",
+   "scene": "广告创意与字体排印参考",
+   "recommended_use": "区分创意奖与视觉奖",
+   "domains": [
+    "品牌",
+    "广告",
+    "字体"
+   ],
+   "style_keys": [
+    "editorial",
+    "swiss",
+    "kinetic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「The One Show & ADC Awards ／ Advertising & Design A」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "9",
+   "source": "article",
+   "name": "Runway AI Film Festival",
+   "url": "https://aif.runwayml.com/",
+   "category": "大赛与奖项",
+   "main": "Runway 主办的AI影像节，Screening Room 可看历届获奖片",
+   "resource_type": "奖项/AI影像",
+   "works_style": "AI生成短片、超现实、实验影像",
+   "ui_style": "黑底全幅剧照+白色大字",
+   "scene": "了解AI视频上限",
+   "recommended_use": "看获奖片定AI视频目标",
+   "domains": [
+    "AI",
+    "视频"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「AIF 2026 ／ AI Festival」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "10",
+   "source": "article",
+   "name": "Tokyo TDC",
+   "url": "https://tokyotypedirectorsclub.org/",
+   "category": "大赛与奖项",
+   "main": "东京字体指导俱乐部年度奖，亚洲视觉设计风向标",
+   "resource_type": "奖项/字体平面",
+   "works_style": "实验字体、海报、书籍、动态视觉",
+   "ui_style": "无头截图被人机校验拦截，未能核验界面",
+   "scene": "实验字体/海报灵感",
+   "recommended_use": "看实验性平面洗眼睛",
+   "domains": [
+    "字体",
+    "平面"
+   ],
+   "style_keys": [
+    "kinetic",
+    "acid",
+    "japanese",
+    "swiss",
+    "riso"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Tokyo TDC」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "11",
+   "source": "article",
+   "name": "Annecy 安纳西国际动画节",
+   "url": "https://www.annecyfestival.com/",
+   "category": "大赛与奖项",
+   "main": "1960年创办的法国动画节，含商业委托单元",
+   "resource_type": "奖项/动画",
+   "works_style": "多元动画美术风格、角色动画、MV/广告动画",
+   "ui_style": "法语官网：湖景大图+亮色大字",
+   "scene": "动画美术与叙事参考",
+   "recommended_use": "看商业委托单元",
+   "domains": [
+    "动画",
+    "视频"
+   ],
+   "style_keys": [
+    "handdrawn",
+    "clay",
+    "flat"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Site officiel du Festival et du Marché internation」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "12",
+   "source": "article",
+   "name": "Ciclope Festival",
+   "url": "https://www.ciclopefestival.com/",
+   "category": "大赛与奖项",
+   "main": "按工种（导演/摄影/调色/剪辑/三维/配乐等）评奖的影视广告节",
+   "resource_type": "奖项/视频工艺",
+   "works_style": "广告片的调色、剪辑、摄影工艺",
+   "ui_style": "深色全幅画面+顶部细导航，电影感",
+   "scene": "单项工艺研究（调色/剪辑）",
+   "recommended_use": "按工种拆片",
+   "domains": [
+    "视频",
+    "广告"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「CICLOPE Festival」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "13",
+   "source": "article",
+   "name": "Motionographer",
+   "url": "https://motionographer.com/",
+   "category": "动态设计与视频",
+   "main": "动态设计精选媒体+工作室幕后手记",
+   "resource_type": "媒体/动态",
+   "works_style": "2D/3D动态、品牌动画、片头",
+   "ui_style": "红色顶栏+黑白新闻门户式三栏",
+   "scene": "动态作品拉片",
+   "recommended_use": "每周固定刷新作",
+   "domains": [
+    "动态"
+   ],
+   "style_keys": [
+    "kinetic",
+    "clay",
+    "flat"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Motionographer®  Unexpected Inspiration™」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "14",
+   "source": "article",
+   "name": "STASH",
+   "url": "https://www.stashmedia.tv/",
+   "category": "动态设计与视频",
+   "main": "按风格技法归档的动画/VFX/MV片库，附 Making-of（付费）",
+   "resource_type": "片库/动态",
+   "works_style": "商业广告、MV、频道包装、制作拆解",
+   "ui_style": "白底杂志式，大写无衬线标题",
+   "scene": "学习制作流程",
+   "recommended_use": "看 Making-of",
+   "domains": [
+    "动态",
+    "VFX"
+   ],
+   "style_keys": [
+    "kinetic",
+    "clay",
+    "cinematic"
+   ],
+   "paid": true,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Motion design - STASH - Welcome to the planet’s la」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "15",
+   "source": "article",
+   "name": "Art of the Title",
+   "url": "https://www.artofthetitle.com/",
+   "category": "动态设计与视频",
+   "main": "电影/剧集/游戏片头设计研究+主创长访谈",
+   "resource_type": "媒体/片头",
+   "works_style": "片头设计、动态排版、电影感",
+   "ui_style": "深色底+缩略图网格+蓝色强调",
+   "scene": "片头/开场设计",
+   "recommended_use": "读主创访谈看草图分镜",
+   "domains": [
+    "动态",
+    "影视"
+   ],
+   "style_keys": [
+    "kinetic",
+    "cinematic",
+    "editorial"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Art of the Title」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "16",
+   "source": "article",
+   "name": "Vimeo Staff Picks",
+   "url": "https://vimeo.com/channels/staffpicks",
+   "category": "动态设计与视频",
+   "main": "Vimeo 编辑每日人工精选短片",
+   "resource_type": "片库/短片",
+   "works_style": "实拍短片、实验动画、纪录片",
+   "ui_style": "Vimeo 白底标准界面（截图仅加载出框架）",
+   "scene": "短片灵感",
+   "recommended_use": "找稳定高水准短片",
+   "domains": [
+    "视频"
+   ],
+   "style_keys": [
+    "cinematic",
+    "handdrawn"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Vimeo Staff Picks on Vimeo」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "17",
+   "source": "article",
+   "name": "Behance 动态设计专区",
+   "url": "https://www.behance.net/galleries/motion",
+   "category": "动态设计与视频",
+   "main": "Behance Motion 分类：常附情绪板、风格帧、动态分镜与成片",
+   "resource_type": "作品集/动态",
+   "works_style": "3D、插画动画、品牌动态等多元风格",
+   "ui_style": "Behance 白底卡片瀑布流（curl 403，无头浏览器可渲染）",
+   "scene": "学习完整交稿流程",
+   "recommended_use": "看 Styleframe→成片",
+   "domains": [
+    "动态",
+    "品牌"
+   ],
+   "style_keys": [
+    "clay",
+    "flat",
+    "handdrawn",
+    "gradient"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl/WebFetch 403（反爬）；无头 Chrome 渲染出 Motion 分类页",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "18",
+   "source": "article",
+   "name": "Short of the Week",
+   "url": "https://www.shortoftheweek.com/",
+   "category": "动态设计与视频",
+   "main": "全球独立短片推荐+编辑影评",
+   "resource_type": "片库/短片",
+   "works_style": "实拍与动画短片、叙事",
+   "ui_style": "青绿顶栏+全幅剧照+大号压缩字标题",
+   "scene": "叙事与短片学习",
+   "recommended_use": "读影评学叙事",
+   "domains": [
+    "视频"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Short of the Week ／ The Best Short Films」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "19",
+   "source": "article",
+   "name": "Directors Notes",
+   "url": "https://directorsnotes.com/",
+   "category": "动态设计与视频",
+   "main": "独立导演访谈博客（预算、器材、后期）",
+   "resource_type": "媒体/访谈",
+   "works_style": "独立短片、实拍",
+   "ui_style": "深色底+荧光绿按钮（截图被订阅弹窗遮挡）",
+   "scene": "接片/拍摄实务参考",
+   "recommended_use": "看器材与流程",
+   "domains": [
+    "视频"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Directors Notes // The Home of Independent Filmmak」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "20",
+   "source": "article",
+   "name": "Sakugabooru",
+   "url": "https://www.sakugabooru.com/",
+   "category": "动态设计与视频",
+   "main": "动画作画片段库（原文称32万+条，带原画师/作品/类型标签）",
+   "resource_type": "片段库/动画",
+   "works_style": "日本动画作画、特效作画、角色表演",
+   "ui_style": "booru 式极简：白底、红色 logo、搜索框为主",
+   "scene": "研究动作节奏与弹性",
+   "recommended_use": "按标签逐帧看动作",
+   "domains": [
+    "动画"
+   ],
+   "style_keys": [
+    "handdrawn"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「sakugabooru」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "21",
+   "source": "article",
+   "name": "Promonews",
+   "url": "https://www.promonews.tv/",
+   "category": "动态设计与视频",
+   "main": "每日精选MV与广告片+导演创作说明",
+   "resource_type": "媒体/MV",
+   "works_style": "风格化镜头、大胆调色、剪辑节奏",
+   "ui_style": "白底新闻列表+青色横条",
+   "scene": "找视觉风格与调色参考",
+   "recommended_use": "刷MV找风格",
+   "domains": [
+    "视频",
+    "MV"
+   ],
+   "style_keys": [
+    "cinematic",
+    "acid",
+    "y2k"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Music video creativity everyday ／ Promonews」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "22",
+   "source": "article",
+   "name": "BUCK",
+   "url": "https://buck.co/",
+   "category": "动态设计与视频",
+   "main": "全球知名动态设计工作室作品集",
+   "resource_type": "工作室官网",
+   "works_style": "2D/3D/实拍结合，插画动画，品牌片",
+   "ui_style": "无头截图超时未获取（curl 200 正常）",
+   "scene": "大厂品牌动态参考",
+   "recommended_use": "下载拉片逐帧拆",
+   "domains": [
+    "动态",
+    "品牌"
+   ],
+   "style_keys": [
+    "clay",
+    "flat",
+    "handdrawn"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「BUCK」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "23",
+   "source": "article",
+   "name": "ManvsMachine",
+   "url": "https://mvsm.com/",
+   "category": "动态设计与视频",
+   "main": "伦敦创意工作室，三维材质与产品广告",
+   "resource_type": "工作室官网",
+   "works_style": "3D材质碰撞、产品光影、硬核质感",
+   "ui_style": "白底+彩色作品卡片网格",
+   "scene": "产品广告/3D质感",
+   "recommended_use": "研究材质与光影",
+   "domains": [
+    "3D",
+    "广告"
+   ],
+   "style_keys": [
+    "clay",
+    "cinematic",
+    "minimal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「ManvsMachine」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "24",
+   "source": "article",
+   "name": "Oddfellows",
+   "url": "https://oddfellows.tv/",
+   "category": "动态设计与视频",
+   "main": "插画风与2D角色动画工作室（官网地址显示 Portland）",
+   "resource_type": "工作室官网",
+   "works_style": "插画、2D角色动画、品牌系统",
+   "ui_style": "无头截图被安全校验拦截；文本可见 Systems/Motion/Illustration/Storytelling 分类",
+   "scene": "插画动画与品牌动态",
+   "recommended_use": "学配色与动作惯性",
+   "domains": [
+    "动态",
+    "插画"
+   ],
+   "style_keys": [
+    "flat",
+    "handdrawn"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl 首次 TLS 断开、重试 202；WebFetch 取得作品列表正文",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "25",
+   "source": "article",
+   "name": "Golden Wolf",
+   "url": "https://www.goldenwolf.tv/",
+   "category": "动态设计与视频",
+   "main": "伦敦动画工作室",
+   "resource_type": "工作室官网",
+   "works_style": "高饱和撞色、夸张透视、快节奏街头卡通",
+   "ui_style": "深色太空插画全屏+黄绿亮色点缀",
+   "scene": "年轻化/潮流动画",
+   "recommended_use": "学高能量配色与节奏",
+   "domains": [
+    "动画"
+   ],
+   "style_keys": [
+    "memphis",
+    "acid",
+    "handdrawn",
+    "y2k"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Golden Wolf」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "26",
+   "source": "article",
+   "name": "Ordinary Folk",
+   "url": "https://www.ordinaryfolk.co/",
+   "category": "动态设计与视频",
+   "main": "温哥华动态团队，2D几何图形动画",
+   "resource_type": "工作室官网",
+   "works_style": "几何图形、弹性运动曲线",
+   "ui_style": "白底+超大黑色无衬线问候语，极简",
+   "scene": "几何动态/信息动效",
+   "recommended_use": "学运动曲线",
+   "domains": [
+    "动态"
+   ],
+   "style_keys": [
+    "flat",
+    "bauhaus",
+    "minimal",
+    "swiss"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Ordinary Folk – Motion Design & Animation Studio, 」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "27",
+   "source": "article",
+   "name": "ArtStation",
+   "url": "https://www.artstation.com/",
+   "category": "3D 与渲染",
+   "main": "CG/游戏美术作品社区",
+   "resource_type": "作品集/社区",
+   "works_style": "概念设计、写实3D、奇幻/科幻",
+   "ui_style": "深色底+缩略图网格（curl 403，无头浏览器可渲染）",
+   "scene": "CG/游戏美术参考",
+   "recommended_use": "搜风格化概念设计",
+   "domains": [
+    "3D",
+    "游戏"
+   ],
+   "style_keys": [
+    "cinematic",
+    "cyber",
+    "clay"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl 403（Cloudflare challenge）、WebFetch 500；无头 Chrome 渲染出首页",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "28",
+   "source": "article",
+   "name": "The Rookies",
+   "url": "https://www.therookies.co/",
+   "category": "3D 与渲染",
+   "main": "面向学生与新人的年度比赛社区",
+   "resource_type": "社区/赛事",
+   "works_style": "3D动画、游戏、VFX、概念设计",
+   "ui_style": "深色+金色按钮（截图被弹窗遮挡）",
+   "scene": "作品集对标",
+   "recommended_use": "看应届作品水平",
+   "domains": [
+    "3D",
+    "游戏"
+   ],
+   "style_keys": [
+    "cinematic",
+    "clay"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「The Rookies - Creative Community for Next-Gen Arti」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "29",
+   "source": "article",
+   "name": "80 Level",
+   "url": "https://80.lv/",
+   "category": "3D 与渲染",
+   "main": "游戏美术与三维技术媒体，Breakdown 制作拆解",
+   "resource_type": "媒体/3D",
+   "works_style": "游戏场景、写实3D、技术美术",
+   "ui_style": "截图时 CSS 未加载，未能核验界面",
+   "scene": "3D制作流程学习",
+   "recommended_use": "读 Breakdown",
+   "domains": [
+    "3D",
+    "游戏"
+   ],
+   "style_keys": [
+    "cinematic",
+    "cyber"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「80 Level」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "30",
+   "source": "article",
+   "name": "Sketchfab",
+   "url": "https://sketchfab.com/",
+   "category": "3D 与渲染",
+   "main": "网页3D模型查看与发布平台（可切线框/法线）",
+   "resource_type": "平台/3D资产",
+   "works_style": "各类3D模型、写实与低模",
+   "ui_style": "蓝色渐变首屏+3D模型展示",
+   "scene": "看布线与贴图通道",
+   "recommended_use": "拆模型结构",
+   "domains": [
+    "3D"
+   ],
+   "style_keys": [
+    "clay",
+    "webgl"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Sketchfab - The best 3D viewer on the web」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "31",
+   "source": "article",
+   "name": "befores & afters",
+   "url": "https://beforesandafters.com/",
+   "category": "3D 与渲染",
+   "main": "好莱坞视效幕后杂志",
+   "resource_type": "媒体/VFX",
+   "works_style": "视效前后对比、合成",
+   "ui_style": "无头截图被人机校验拦截",
+   "scene": "VFX流程学习",
+   "recommended_use": "看前后对比",
+   "domains": [
+    "VFX",
+    "影视"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「befores & afters - VFX magazine」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "32",
+   "source": "article",
+   "name": "fxguide",
+   "url": "https://www.fxguide.com/",
+   "category": "3D 与渲染",
+   "main": "资深影视视效技术媒体",
+   "resource_type": "媒体/VFX",
+   "works_style": "渲染、虚拟制片、流体解算",
+   "ui_style": "深色底+全幅大图轮播",
+   "scene": "技术美术进阶",
+   "recommended_use": "读技术深文",
+   "domains": [
+    "VFX",
+    "影视"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「fxguide」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "33",
+   "source": "article",
+   "name": "Blender Studio",
+   "url": "https://studio.blender.org/",
+   "category": "3D 与渲染",
+   "main": "Blender 官方开源动画工作室，教程与工程文件（付费）",
+   "resource_type": "教程/资产",
+   "works_style": "风格化3D动画短片",
+   "ui_style": "深色底+大字标题+卡通3D角色主视觉",
+   "scene": "Blender 学习",
+   "recommended_use": "下载工程文件拆解",
+   "domains": [
+    "3D"
+   ],
+   "style_keys": [
+    "clay",
+    "cinematic"
+   ],
+   "paid": true,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Blender Studio」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "34",
+   "source": "article",
+   "name": "Poly Haven",
+   "url": "https://polyhaven.com/",
+   "category": "3D 与渲染",
+   "main": "CC0 免费 HDRI、PBR 材质、扫描模型",
+   "resource_type": "素材/3D资产",
+   "works_style": "写实材质、环境光",
+   "ui_style": "全幅写实渲染场景+居中 logo",
+   "scene": "3D渲染素材",
+   "recommended_use": "下载 HDRI/材质",
+   "domains": [
+    "3D",
+    "素材"
+   ],
+   "style_keys": [
+    "cinematic",
+    "organic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Poly Haven」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "35",
+   "source": "article",
+   "name": "Beeple Everydays",
+   "url": "https://beeple-crap.com/everydays",
+   "category": "3D 与渲染",
+   "main": "Beeple 自2007年起的每日一图（页面显示 7,137 天）",
+   "resource_type": "作品集/数字艺术",
+   "works_style": "超现实3D、赛博、讽刺",
+   "ui_style": "黑底+大号数字+图片网格",
+   "scene": "数字艺术/坚持练习",
+   "recommended_use": "看长期练习轨迹",
+   "domains": [
+    "3D",
+    "数字艺术"
+   ],
+   "style_keys": [
+    "cyber",
+    "acid",
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Everydays ／ BEEPLE」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "36",
+   "source": "article",
+   "name": "ShotDeck",
+   "url": "https://shotdeck.com/",
+   "category": "电影画面与镜头参考",
+   "main": "电影截图库，官网称150万+可检索镜头（付费）",
+   "resource_type": "截图库/影视",
+   "works_style": "电影级布光、构图、调色",
+   "ui_style": "黑底+居中大字，极简",
+   "scene": "电影感布光/构图参考",
+   "recommended_use": "按光线/镜头/色调筛",
+   "domains": [
+    "影视",
+    "摄影"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": true,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl 403（Cloudflare）；WebFetch 取得首页正文",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "37",
+   "source": "article",
+   "name": "FILMGRAB",
+   "url": "https://film-grab.com/",
+   "category": "电影画面与镜头参考",
+   "main": "免费电影截图站，一片一页",
+   "resource_type": "截图库/影视",
+   "works_style": "经典电影关键帧",
+   "ui_style": "无头截图被人机校验拦截",
+   "scene": "研究导演用光构图",
+   "recommended_use": "整片关键帧对比",
+   "domains": [
+    "影视"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「[FILMGRAB]」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "38",
+   "source": "article",
+   "name": "StillsLab",
+   "url": "https://stillslab.com/",
+   "category": "电影画面与镜头参考",
+   "main": "免费影视截图库，细标签+统计（如夜景占比）",
+   "resource_type": "截图库/影视",
+   "works_style": "电影/剧集/MV/广告画面",
+   "ui_style": "黑底+黄色按钮+缩略图",
+   "scene": "视觉配方研究",
+   "recommended_use": "按景别/光线筛选",
+   "domains": [
+    "影视"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「StillsLab — Movie Stills & TV Show Frames for Film」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "39",
+   "source": "article",
+   "name": "Flim",
+   "url": "https://flim.ai/",
+   "category": "电影画面与镜头参考",
+   "main": "AI 语义搜索影视截图",
+   "resource_type": "截图库/AI搜索",
+   "works_style": "电影、MV、广告画面",
+   "ui_style": "白底+超大黑色字标+散落图片卡片",
+   "scene": "用自然语言找镜头",
+   "recommended_use": "描述画面搜索",
+   "domains": [
+    "影视",
+    "AI"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Flim ／ AI search engine for film stills and visual」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "40",
+   "source": "article",
+   "name": "EyeCannndy",
+   "url": "https://eyecannndy.com/",
+   "category": "电影画面与镜头参考",
+   "main": "镜头语言与剪辑技法动图词典",
+   "resource_type": "词典/影视",
+   "works_style": "转场、运镜、剪辑技法实例",
+   "ui_style": "黑底+品红标题+密集大写技法词表",
+   "scene": "给技法命名、写AI视频提示词",
+   "recommended_use": "查技法名称",
+   "domains": [
+    "影视",
+    "视频"
+   ],
+   "style_keys": [
+    "kinetic",
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Eyecandy - Visual Technique Library」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "41",
+   "source": "article",
+   "name": "StudioBinder 镜头语言指南",
+   "url": "https://www.studiobinder.com/blog/ultimate-guide-to-camera-shots/",
+   "category": "电影画面与镜头参考",
+   "main": "景别/机位/运镜系统教程",
+   "resource_type": "教程/影视",
+   "works_style": "电影实例配图",
+   "ui_style": "白底博客版式+红色标签",
+   "scene": "AI视频提示词术语",
+   "recommended_use": "查 low angle、dolly in 等",
+   "domains": [
+    "影视",
+    "AI"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「50+ Types of Camera Shots, Angles, and Techniques」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "42",
+   "source": "article",
+   "name": "American Cinematographer（ASC）",
+   "url": "https://theasc.com/",
+   "category": "电影画面与镜头参考",
+   "main": "美国电影摄影师协会杂志与站点",
+   "resource_type": "媒体/摄影",
+   "works_style": "摄影指导讲解镜头与布光",
+   "ui_style": "curl 与无头浏览器均返回 Cloudflare 520；文本抓取可见新闻标题",
+   "scene": "理解'为什么这么拍'",
+   "recommended_use": "读摄影指导文章",
+   "domains": [
+    "影视",
+    "摄影"
+   ],
+   "style_keys": [
+    "cinematic"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "部分核验",
+    "status_code": "partial",
+    "detail": "curl 与无头浏览器均返回 Cloudflare 520；WebFetch 取得新闻标题（站点间歇性故障）",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "43",
+   "source": "article",
+   "name": "Mobbin",
+   "url": "https://mobbin.com/",
+   "category": "UI 设计",
+   "main": "真实App截图库（原文称60万+界面，付费，免费号可看部分）",
+   "resource_type": "截图库/UI",
+   "works_style": "主流App的扁平/极简界面与流程",
+   "ui_style": "白底+大号黑字标题+App图标墙",
+   "scene": "功能页对标（订阅页、空状态等）",
+   "recommended_use": "按功能标签筛",
+   "domains": [
+    "UI",
+    "移动端"
+   ],
+   "style_keys": [
+    "flat",
+    "minimal",
+    "bento"
+   ],
+   "paid": true,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Mobbin — UI & UX design inspiration for mobile & w」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "44",
+   "source": "article",
+   "name": "Page Flows",
+   "url": "https://pageflows.com/",
+   "category": "UI 设计",
+   "main": "真实产品操作录屏（付费）",
+   "resource_type": "录屏库/UX",
+   "works_style": "完整用户流程",
+   "ui_style": "深色底+黄色按钮+彩色App图标方块墙",
+   "scene": "交互流程梳理",
+   "recommended_use": "看注册/付费/取消流程",
+   "domains": [
+    "UX"
+   ],
+   "style_keys": [
+    "flat"
+   ],
+   "paid": true,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「UI/UX Design Inspiration & User Flows from Top App」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "45",
+   "source": "article",
+   "name": "Refero",
+   "url": "https://refero.design/",
+   "category": "UI 设计",
+   "main": "Web/iOS界面截图库，标签细（付费）；子站 styles.refero.design",
+   "resource_type": "截图库/UI",
+   "works_style": "SaaS与消费级Web界面",
+   "ui_style": "浅色底+衬线大标题+卡片",
+   "scene": "组件/页面类型检索",
+   "recommended_use": "搜具体组件",
+   "domains": [
+    "UI",
+    "网页"
+   ],
+   "style_keys": [
+    "minimal",
+    "editorial"
+   ],
+   "paid": true,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Refero — UI/UX Design Inspiration for Your Next Pr」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "46",
+   "source": "article",
+   "name": "Nicelydone",
+   "url": "https://nicelydone.club/",
+   "category": "UI 设计",
+   "main": "SaaS/Web应用界面库（付费）",
+   "resource_type": "截图库/UI",
+   "works_style": "ToB后台、表单、数据看板",
+   "ui_style": "白底，左文右图",
+   "scene": "B端设计参考",
+   "recommended_use": "找复杂表单/看板",
+   "domains": [
+    "UI",
+    "SaaS"
+   ],
+   "style_keys": [
+    "minimal",
+    "bento"
+   ],
+   "paid": true,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Nicelydone — Web apps design inspiration (UX & UI)」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "47",
+   "source": "article",
+   "name": "SaaSFrame",
+   "url": "https://www.saasframe.io/",
+   "category": "UI 设计",
+   "main": "SaaS产品界面库（付费）",
+   "resource_type": "截图库/UI",
+   "works_style": "营销页、登录、设置页",
+   "ui_style": "白底居中搜索+渐变点缀",
+   "scene": "独立开发/B端",
+   "recommended_use": "按页面类型翻",
+   "domains": [
+    "UI",
+    "SaaS"
+   ],
+   "style_keys": [
+    "minimal",
+    "gradient"
+   ],
+   "paid": true,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「SaaSFrame - SaaS UI & UX Design Inspiration Librar」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "48",
+   "source": "article",
+   "name": "Figma Community",
+   "url": "https://www.figma.com/community",
+   "category": "UI 设计",
+   "main": "Figma 开源社区：模板、插件、设计系统源文件",
+   "resource_type": "社区/源文件",
+   "works_style": "设计系统、UI Kit、模板",
+   "ui_style": "Figma 白底+彩色插画标题",
+   "scene": "直接拆源文件",
+   "recommended_use": "学 Auto Layout 与变量",
+   "domains": [
+    "UI",
+    "工具"
+   ],
+   "style_keys": [
+    "flat",
+    "bento"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Discover community-made templates, plugins, and wi」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "49",
+   "source": "article",
+   "name": "Apple 人机界面指南（HIG）",
+   "url": "https://developer.apple.com/design/human-interface-guidelines/",
+   "category": "UI 设计",
+   "main": "苹果官方设计规范",
+   "resource_type": "规范文档",
+   "works_style": "苹果平台交互与视觉规范（含材质/玻璃效果）",
+   "ui_style": "白底文档+左侧目录",
+   "scene": "iOS/macOS 设计依据",
+   "recommended_use": "查规范",
+   "domains": [
+    "UI",
+    "规范"
+   ],
+   "style_keys": [
+    "minimal",
+    "glass",
+    "skeuo"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Human Interface Guidelines ／ Apple Developer Docum」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "50",
+   "source": "article",
+   "name": "Material Design 3",
+   "url": "https://m3.material.io/",
+   "category": "UI 设计",
+   "main": "Google 设计系统文档",
+   "resource_type": "规范文档",
+   "works_style": "色阶、字号层级、动态配色、组件状态",
+   "ui_style": "淡紫底+大圆角卡片，Material You 动态色",
+   "scene": "设计系统搭建",
+   "recommended_use": "学色阶与状态逻辑",
+   "domains": [
+    "UI",
+    "规范"
+   ],
+   "style_keys": [
+    "flat"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Material Design」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "51",
+   "source": "article",
+   "name": "Vercel Web Interface Guidelines",
+   "url": "https://vercel.com/design/guidelines",
+   "category": "UI 设计",
+   "main": "界面细节检查清单（交互/动画/布局/文案/表单/性能）",
+   "resource_type": "规范清单",
+   "works_style": "克制、细节导向的现代Web",
+   "ui_style": "纯黑底+灰白清单文字，开发者风",
+   "scene": "上线前自查",
+   "recommended_use": "逐条检查",
+   "domains": [
+    "网页",
+    "规范"
+   ],
+   "style_keys": [
+    "minimal",
+    "darkmode"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Web Interface Guidelines」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "52",
+   "source": "article",
+   "name": "Impeccable",
+   "url": "https://impeccable.style/",
+   "category": "UI 设计",
+   "main": "面向AI编码代理的'去AI味'设计 skill（原文称62项检查）",
+   "resource_type": "AI设计工具",
+   "works_style": "反模板化、去'AI味'",
+   "ui_style": "浅米白底+衬线大标题+便签/手写标注",
+   "scene": "约束AI生成UI",
+   "recommended_use": "让Agent自查",
+   "domains": [
+    "AI",
+    "UI"
+   ],
+   "style_keys": [
+    "editorial",
+    "minimal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Impeccable: The missing design vocabulary for agen」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "53",
+   "source": "article",
+   "name": "The Component Gallery",
+   "url": "https://component.gallery/",
+   "category": "UI 设计",
+   "main": "跨设计系统组件对比（首页称60组件/95设计系统/2,671示例）",
+   "resource_type": "组件库索引",
+   "works_style": "各大设计系统组件",
+   "ui_style": "米色底+衬线大字+线稿插画",
+   "scene": "组件设计对标",
+   "recommended_use": "同一组件多家对比",
+   "domains": [
+    "UI",
+    "设计系统"
+   ],
+   "style_keys": [
+    "editorial",
+    "handdrawn"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「The Component Gallery」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "54",
+   "source": "article",
+   "name": "60fps",
+   "url": "https://60fps.design/",
+   "category": "UI 设计",
+   "main": "高帧率UI动效片段库",
+   "resource_type": "动效库/UI",
+   "works_style": "卡片展开、下拉刷新、页面过渡",
+   "ui_style": "浅灰底+超大淡灰'60FPS'字标",
+   "scene": "微交互灵感",
+   "recommended_use": "找动效手感",
+   "domains": [
+    "UI",
+    "动效"
+   ],
+   "style_keys": [
+    "minimal",
+    "glass"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「60fps - UI/UX animation inspiration for mobile & w」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "55",
+   "source": "article",
+   "name": "Spotted in Prod",
+   "url": "https://www.spottedinprod.com/",
+   "category": "UI 设计",
+   "main": "已上线iOS应用的细节短视频",
+   "resource_type": "动效库/UI",
+   "works_style": "微交互、彩蛋、触感反馈可视化",
+   "ui_style": "白底极简、大量留白",
+   "scene": "细节打磨",
+   "recommended_use": "抠细节",
+   "domains": [
+    "UI",
+    "移动端"
+   ],
+   "style_keys": [
+    "minimal",
+    "skeuo"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Spotted in Prod — The very best of iOS」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "56",
+   "source": "article",
+   "name": "Growth.Design",
+   "url": "https://growth.design/",
+   "category": "UI 设计",
+   "main": "连环画形式拆解知名App体验",
+   "resource_type": "案例/UX",
+   "works_style": "用户心理与转化",
+   "ui_style": "黑底+白色粗标题+手绘卡通头像",
+   "scene": "增长与转化设计",
+   "recommended_use": "读案例学文案与心理",
+   "domains": [
+    "UX"
+   ],
+   "style_keys": [
+    "handdrawn",
+    "flat"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Growth.Design — Better Products, Better Growth.」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "57",
+   "source": "article",
+   "name": "Laws of UX",
+   "url": "https://lawsofux.com/",
+   "category": "UI 设计",
+   "main": "UX心理学定律卡片",
+   "resource_type": "知识卡片/UX",
+   "works_style": "菲茨/希克/米勒等定律",
+   "ui_style": "浅灰底+彩色几何插画卡片（包豪斯式几何）",
+   "scene": "写方案找依据",
+   "recommended_use": "查定律",
+   "domains": [
+    "UX"
+   ],
+   "style_keys": [
+    "bauhaus",
+    "flat",
+    "swiss"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Home ／ Laws of UX」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "58",
+   "source": "article",
+   "name": "Game UI Database",
+   "url": "https://www.gameuidatabase.com/",
+   "category": "UI 设计",
+   "main": "游戏UI截图库（首页显示 1,997 款游戏/79,623 张截图）",
+   "resource_type": "截图库/游戏UI",
+   "works_style": "HUD、背包、技能树等",
+   "ui_style": "深色+紫粉渐变横幅",
+   "scene": "游戏UI参考",
+   "recommended_use": "按功能搜界面",
+   "domains": [
+    "UI",
+    "游戏"
+   ],
+   "style_keys": [
+    "cyber",
+    "darkmode",
+    "skeuo"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Game UI Database 2.0 ／ Welcome」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "59",
+   "source": "article",
+   "name": "Recent（原 Godly）",
+   "url": "https://recent.design/",
+   "category": "网页灵感",
+   "main": "网页灵感库，缩略图即播滚动录屏（godly.website 301 跳转至此）",
+   "resource_type": "网页灵感",
+   "works_style": "深色、WebGL、实验动效、大字",
+   "ui_style": "白底密集网格+深色缩略图",
+   "scene": "前沿网页灵感",
+   "recommended_use": "看滚动录屏",
+   "domains": [
+    "网页"
+   ],
+   "style_keys": [
+    "webgl",
+    "darkmode",
+    "kinetic",
+    "acid"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Recent — Design Inspiration」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "60",
+   "source": "article",
+   "name": "Siteinspire",
+   "url": "https://www.siteinspire.com/",
+   "category": "网页灵感",
+   "main": "老牌网页灵感库，风格/类型/行业叠加筛选",
+   "resource_type": "网页灵感",
+   "works_style": "极简、网格、非常规版式、艺术摄影类网站",
+   "ui_style": "白底克制网格+小字分类",
+   "scene": "克制型网页参考",
+   "recommended_use": "按风格+行业筛",
+   "domains": [
+    "网页"
+   ],
+   "style_keys": [
+    "minimal",
+    "swiss",
+    "editorial"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl 429（Vercel Security Checkpoint）；WebFetch 取得作品列表",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "61",
+   "source": "article",
+   "name": "Land-book",
+   "url": "https://land-book.com/",
+   "category": "网页灵感",
+   "main": "落地页图库（含定价页/关于页/简历页）",
+   "resource_type": "网页灵感/落地页",
+   "works_style": "SaaS落地页、渐变、卡片",
+   "ui_style": "白底卡片网格",
+   "scene": "商业网站",
+   "recommended_use": "按页面类型找",
+   "domains": [
+    "网页"
+   ],
+   "style_keys": [
+    "minimal",
+    "bento",
+    "gradient"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Landbook - website design inspiration gallery」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "62",
+   "source": "article",
+   "name": "Landingfolio",
+   "url": "https://www.landingfolio.com/",
+   "category": "网页灵感",
+   "main": "落地页+区块拆解（原文称4600+区块，部分付费）",
+   "resource_type": "网页灵感/区块",
+   "works_style": "首屏、功能、评价、CTA 区块",
+   "ui_style": "白底+左侧分类+衬线斜体标题",
+   "scene": "区块级参考、喂AI",
+   "recommended_use": "复制区块结构",
+   "domains": [
+    "网页"
+   ],
+   "style_keys": [
+    "minimal",
+    "bento"
+   ],
+   "paid": true,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「The Best Landing Page Design Inspiration, Template」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "63",
+   "source": "article",
+   "name": "awesome-design-md",
+   "url": "https://github.com/VoltAgent/awesome-design-md",
+   "category": "网页灵感",
+   "main": "GitHub 开源合集：知名品牌网站的 DESIGN.md",
+   "resource_type": "AI设计规范",
+   "works_style": "Stripe/Linear/Vercel/Apple 等品牌风格",
+   "ui_style": "GitHub 标准界面",
+   "scene": "让AI按品牌风格生成UI",
+   "recommended_use": "放入项目约束AI",
+   "domains": [
+    "AI",
+    "网页"
+   ],
+   "style_keys": [
+    "minimal",
+    "bento",
+    "darkmode"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「GitHub - VoltAgent/awesome-design-md: A collection」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "64",
+   "source": "article",
+   "name": "One Page Love",
+   "url": "https://onepagelove.com/",
+   "category": "网页灵感",
+   "main": "单页网站合集与模板",
+   "resource_type": "网页灵感",
+   "works_style": "单页叙事、活动页、个人页",
+   "ui_style": "白底居中搜索+彩色标签",
+   "scene": "单页/活动页",
+   "recommended_use": "学单页节奏",
+   "domains": [
+    "网页"
+   ],
+   "style_keys": [
+    "minimal",
+    "editorial"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「One Page Love — One Page Website Inspiration and T」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "65",
+   "source": "article",
+   "name": "Minimal Gallery",
+   "url": "https://minimal.gallery/",
+   "category": "网页灵感",
+   "main": "极简风格网站图库",
+   "resource_type": "网页灵感",
+   "works_style": "黑白灰、大留白、字号对比",
+   "ui_style": "黑底+白字+作品卡片网格",
+   "scene": "极简网页",
+   "recommended_use": "学留白与层级",
+   "domains": [
+    "网页"
+   ],
+   "style_keys": [
+    "minimal",
+    "swiss",
+    "japanese"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Minimal Gallery – Hand-picked web design inspirati」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "66",
+   "source": "article",
+   "name": "Dark Mode Design",
+   "url": "https://www.darkmodedesign.com/",
+   "category": "网页灵感",
+   "main": "只收深色模式网页",
+   "resource_type": "网页灵感",
+   "works_style": "深色层级、细线边框、微光",
+   "ui_style": "截图为纯黑（加载未完成），界面未能完全核验",
+   "scene": "深色界面",
+   "recommended_use": "学深色层级",
+   "domains": [
+    "网页"
+   ],
+   "style_keys": [
+    "darkmode",
+    "glass"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Dark Mode Design 🌘 Handpicked website inspiration」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "67",
+   "source": "article",
+   "name": "Hoverstat.es",
+   "url": "https://www.hoverstat.es/",
+   "category": "网页灵感",
+   "main": "另类/实验网页合集",
+   "resource_type": "网页灵感",
+   "works_style": "非常规导航、实验交互、反商业",
+   "ui_style": "米色底+复古报纸条带导航+大号衬线作品预览",
+   "scene": "找反套路灵感",
+   "recommended_use": "看实验网页",
+   "domains": [
+    "网页"
+   ],
+   "style_keys": [
+    "brutal",
+    "neobrutal",
+    "acid",
+    "retroweb"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「HOVERSTAT.ES ／ The home of alternative web-design.」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "68",
+   "source": "article",
+   "name": "Web Design Museum",
+   "url": "https://www.webdesignmuseum.org/",
+   "category": "网页灵感",
+   "main": "1991–2006 网页设计历史档案",
+   "resource_type": "档案/网页史",
+   "works_style": "早期门户、拟物按钮、Flash",
+   "ui_style": "深蓝底+红色按钮+旧网站截图",
+   "scene": "复古网页/Y2K 参考",
+   "recommended_use": "查年代视觉",
+   "domains": [
+    "网页",
+    "历史"
+   ],
+   "style_keys": [
+    "retroweb",
+    "skeuo",
+    "y2k"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Web Design Museum – Discover old websites, apps, s」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "69",
+   "source": "article",
+   "name": "Codrops",
+   "url": "https://tympanus.net/codrops/",
+   "category": "前端与交互",
+   "main": "创意前端教程与 Demo",
+   "resource_type": "教程/前端",
+   "works_style": "WebGL扭曲、页面过渡、滚动文字",
+   "ui_style": "黑底卡片网格+霓虹点缀",
+   "scene": "创意前端实现",
+   "recommended_use": "照教程复现",
+   "domains": [
+    "前端"
+   ],
+   "style_keys": [
+    "webgl",
+    "kinetic",
+    "darkmode"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Codrops ／ Fueling web creativity since 2009」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "70",
+   "source": "article",
+   "name": "CodePen Spark",
+   "url": "https://codepen.io/spark",
+   "category": "前端与交互",
+   "main": "CodePen 每周创意代码精选",
+   "resource_type": "代码合集/前端",
+   "works_style": "CSS/SVG/Canvas/Three.js 小作品",
+   "ui_style": "深色 CodePen 界面+黄色 SPARK 大字",
+   "scene": "找前端小特效",
+   "recommended_use": "改参数学原理",
+   "domains": [
+    "前端"
+   ],
+   "style_keys": [
+    "webgl",
+    "vapor",
+    "cyber"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl 403（Cloudflare）；WebFetch 取得本周 Spark 列表",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "71",
+   "source": "article",
+   "name": "GSAP 官方 Demo 库",
+   "url": "https://demos.gsap.com/",
+   "category": "前端与交互",
+   "main": "GSAP 动画示例（滚动/文字/悬停等）",
+   "resource_type": "示例库/前端动画",
+   "works_style": "滚动叙事、文字动画",
+   "ui_style": "黑底+荧光绿 logo",
+   "scene": "网页动效实现",
+   "recommended_use": "复制 CodePen 源码",
+   "domains": [
+    "前端",
+    "动效"
+   ],
+   "style_keys": [
+    "kinetic",
+    "webgl"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「GSAP Demo Hub」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "72",
+   "source": "article",
+   "name": "Three.js 官方示例",
+   "url": "https://threejs.org/examples/",
+   "category": "前端与交互",
+   "main": "Three.js 数百个官方 Demo",
+   "resource_type": "示例库/WebGL",
+   "works_style": "3D渲染、物理、后期",
+   "ui_style": "白底左侧列表+灰色画布，工程师式",
+   "scene": "Web3D 入门与查效果",
+   "recommended_use": "查示例源码",
+   "domains": [
+    "前端",
+    "3D"
+   ],
+   "style_keys": [
+    "webgl"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「three.js examples」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "73",
+   "source": "article",
+   "name": "Shadertoy",
+   "url": "https://www.shadertoy.com/",
+   "category": "前端与交互",
+   "main": "GLSL 着色器作品社区",
+   "resource_type": "社区/图形学",
+   "works_style": "程序化生成画面、体积云、霓虹城市",
+   "ui_style": "无头截图被安全校验；文本抓取仅得'Shader of the Week'",
+   "scene": "着色器灵感",
+   "recommended_use": "看 shader 源码",
+   "domains": [
+    "前端",
+    "图形"
+   ],
+   "style_keys": [
+    "webgl",
+    "cyber",
+    "acid"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "部分核验",
+    "status_code": "partial",
+    "detail": "curl 403、无头浏览器遇安全校验；WebFetch 仅得标题'Shader of the Week'",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "74",
+   "source": "article",
+   "name": "The Book of Shaders",
+   "url": "https://thebookofshaders.com/",
+   "category": "前端与交互",
+   "main": "片元着色器互动教程（含中文版）",
+   "resource_type": "教程/图形学",
+   "works_style": "程序化图形、噪波",
+   "ui_style": "白底衬线书籍排版+月球插图",
+   "scene": "学 shader 基础",
+   "recommended_use": "跟教程练习",
+   "domains": [
+    "前端",
+    "图形"
+   ],
+   "style_keys": [
+    "editorial",
+    "minimal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「The Book of Shaders」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "75",
+   "source": "article",
+   "name": "Bruno Simon",
+   "url": "https://bruno-simon.com/",
+   "category": "前端与交互",
+   "main": "可驾驶玩具车的3D作品集",
+   "resource_type": "个人站/WebGL",
+   "works_style": "游戏化3D交互",
+   "ui_style": "WebGL 未在无头环境渲染（截图为暗色）",
+   "scene": "创意作品集",
+   "recommended_use": "体验游戏化交互",
+   "domains": [
+    "前端",
+    "3D"
+   ],
+   "style_keys": [
+    "webgl",
+    "clay"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Bruno's」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "76",
+   "source": "article",
+   "name": "Lusion",
+   "url": "https://lusion.co/",
+   "category": "前端与交互",
+   "main": "英国WebGL创意开发工作室",
+   "resource_type": "工作室官网",
+   "works_style": "3D粒子转场、滚轮阻尼、音效",
+   "ui_style": "黑底极简加载画面（WebGL 未完全渲染）",
+   "scene": "高端互动网页",
+   "recommended_use": "观摩交互细节",
+   "domains": [
+    "前端",
+    "3D"
+   ],
+   "style_keys": [
+    "webgl",
+    "darkmode"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Lusion - Award Winning 3D and Interactive Web Stud」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "77",
+   "source": "article",
+   "name": "Active Theory",
+   "url": "https://activetheory.net/",
+   "category": "前端与交互",
+   "main": "美国数字互动工作室",
+   "resource_type": "工作室官网",
+   "works_style": "大型互动营销、3D粒子",
+   "ui_style": "黑底3D粒子（截图提示浏览器不支持）",
+   "scene": "互动营销案例",
+   "recommended_use": "看项目案例",
+   "domains": [
+    "前端",
+    "互动"
+   ],
+   "style_keys": [
+    "webgl",
+    "cyber"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Active Theory · Creative Digital Experiences」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "78",
+   "source": "article",
+   "name": "Framer Gallery",
+   "url": "https://www.framer.com/gallery/",
+   "category": "前端与交互",
+   "main": "Framer 搭建的优秀网站合集",
+   "resource_type": "网页灵感/建站",
+   "works_style": "现代SaaS/作品集站、动效",
+   "ui_style": "深色底+网站卡片",
+   "scene": "无代码建站参考",
+   "recommended_use": "找可复刻模板",
+   "domains": [
+    "网页",
+    "无代码"
+   ],
+   "style_keys": [
+    "bento",
+    "kinetic",
+    "minimal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Framer Gallery: Explore the best websites built wi」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "79",
+   "source": "article",
+   "name": "Motion 官方示例",
+   "url": "https://motion.dev/examples",
+   "category": "前端与交互",
+   "main": "Motion（原 Framer Motion）动画示例（部分付费）",
+   "resource_type": "示例库/前端动画",
+   "works_style": "弹簧缓动、列表重排、滚动动画",
+   "ui_style": "亮蓝+黑色块+等宽小字（瑞士网格感）",
+   "scene": "React/Vue 动效实现",
+   "recommended_use": "复制示例",
+   "domains": [
+    "前端",
+    "动效"
+   ],
+   "style_keys": [
+    "kinetic",
+    "swiss"
+   ],
+   "paid": true,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Examples: React, JavaScript, and Vue animation sni」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "80",
+   "source": "article",
+   "name": "React Bits",
+   "url": "https://reactbits.dev/",
+   "category": "前端与交互",
+   "main": "免费开源 React 动画组件",
+   "resource_type": "组件库/前端",
+   "works_style": "文字乱码、磁吸按钮、流光边框、流体背景",
+   "ui_style": "黑底+紫色点缀+代码窗口",
+   "scene": "快速加动效",
+   "recommended_use": "复制组件",
+   "domains": [
+    "前端"
+   ],
+   "style_keys": [
+    "glass",
+    "gradient",
+    "darkmode"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「React Bits — Free Animated React Components」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "81",
+   "source": "article",
+   "name": "coss ui",
+   "url": "https://coss.com/ui",
+   "category": "前端与交互",
+   "main": "Cal.com 设计系统（前身 Origin UI），Tailwind，MIT",
+   "resource_type": "组件库/前端",
+   "works_style": "克制、产品级组件",
+   "ui_style": "白底细线几何、克制",
+   "scene": "产品级组件",
+   "recommended_use": "直接用组件",
+   "domains": [
+    "前端",
+    "UI"
+   ],
+   "style_keys": [
+    "minimal",
+    "swiss"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「A modern React UI component library – coss ui」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "82",
+   "source": "article",
+   "name": "Josh W. Comeau",
+   "url": "https://www.joshwcomeau.com/",
+   "category": "前端与交互",
+   "main": "交互式前端博客（CSS/动画/SVG）",
+   "resource_type": "博客/教程",
+   "works_style": "可交互图解",
+   "ui_style": "白底+彩色像素彩虹插画",
+   "scene": "CSS/动画原理",
+   "recommended_use": "拖滑块理解原理",
+   "domains": [
+    "前端"
+   ],
+   "style_keys": [
+    "handdrawn",
+    "flat"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Josh W. Comeau」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "83",
+   "source": "article",
+   "name": "Rauno Freiberg",
+   "url": "https://rauno.me/",
+   "category": "前端与交互",
+   "main": "Vercel 设计工程师个人站，《Invisible Details of Interaction Design》",
+   "resource_type": "个人站/交互",
+   "works_style": "交互细节",
+   "ui_style": "黄色大圆+黑色大字（包豪斯/瑞士感）",
+   "scene": "交互细节学习",
+   "recommended_use": "读交互细节文章",
+   "domains": [
+    "前端",
+    "交互"
+   ],
+   "style_keys": [
+    "swiss",
+    "bauhaus",
+    "minimal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Rauno Freiberg」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "84",
+   "source": "article",
+   "name": "Emil Kowalski",
+   "url": "https://emilkowal.ski/",
+   "category": "前端与交互",
+   "main": "Sonner/Vaul 作者博客，界面动画",
+   "resource_type": "博客/动效",
+   "works_style": "克制跟手的动画",
+   "ui_style": "极简白底小字列表",
+   "scene": "动画时长/缓动调校",
+   "recommended_use": "读动画文章",
+   "domains": [
+    "前端",
+    "动效"
+   ],
+   "style_keys": [
+    "minimal",
+    "japanese"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Emil Kowalski」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "85",
+   "source": "article",
+   "name": "Typewolf",
+   "url": "https://www.typewolf.com/",
+   "category": "字体与配色",
+   "main": "字体指南与真实网站字体搭配（原文称2025年底后停更，未核验）",
+   "resource_type": "字体指南",
+   "works_style": "优秀网站字体搭配",
+   "ui_style": "米粉底+衬线大标题+复古海报卡片",
+   "scene": "选字体搭配",
+   "recommended_use": "查字体组合",
+   "domains": [
+    "字体"
+   ],
+   "style_keys": [
+    "editorial",
+    "riso"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「What’s Trending in Type  · Typewolf」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "86",
+   "source": "article",
+   "name": "Fonts In Use",
+   "url": "https://fontsinuse.com/",
+   "category": "字体与配色",
+   "main": "真实世界字体使用档案",
+   "resource_type": "字体档案",
+   "works_style": "海报、书封、唱片、网页",
+   "ui_style": "白底+黑色粗体 logo+密集作品网格",
+   "scene": "看字体实际效果",
+   "recommended_use": "按字体检索案例",
+   "domains": [
+    "字体",
+    "平面"
+   ],
+   "style_keys": [
+    "editorial",
+    "swiss"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Fonts In Use - Fonts In Use」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "87",
+   "source": "article",
+   "name": "Google Fonts",
+   "url": "https://fonts.google.com/",
+   "category": "字体与配色",
+   "main": "免费开源字库（含思源黑/宋等）",
+   "resource_type": "字体库",
+   "works_style": "开源字体",
+   "ui_style": "Material 风格白底工具界面",
+   "scene": "免费可商用字体",
+   "recommended_use": "选字下载",
+   "domains": [
+    "字体"
+   ],
+   "style_keys": [
+    "flat"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Browse Fonts - Google Fonts」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "88",
+   "source": "article",
+   "name": "Fontshare",
+   "url": "https://www.fontshare.com/",
+   "category": "字体与配色",
+   "main": "ITF 免费字库（个人与商用免费）",
+   "resource_type": "字体库",
+   "works_style": "几何无衬线等精品字体",
+   "ui_style": "米黄底极简（截图）",
+   "scene": "免费精品字体",
+   "recommended_use": "选几何无衬线",
+   "domains": [
+    "字体"
+   ],
+   "style_keys": [
+    "swiss",
+    "minimal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200（gzip 正文）；无头截图正常",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "89",
+   "source": "article",
+   "name": "Butterick's Practical Typography",
+   "url": "https://practicaltypography.com/",
+   "category": "字体与配色",
+   "main": "免费在线排版书",
+   "resource_type": "教程/排版",
+   "works_style": "排版硬规则",
+   "ui_style": "白底衬线书页+大号字母 A",
+   "scene": "排版基础",
+   "recommended_use": "读'10分钟'章节",
+   "domains": [
+    "字体",
+    "排版"
+   ],
+   "style_keys": [
+    "editorial",
+    "swiss"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Butterick’s Practical Typography」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "90",
+   "source": "article",
+   "name": "Utopia",
+   "url": "https://utopia.fyi/",
+   "category": "字体与配色",
+   "main": "流体字号/间距比例计算器",
+   "resource_type": "工具/排版",
+   "works_style": "模块化字号比例",
+   "ui_style": "白底+深蓝卡片",
+   "scene": "建立字号系统",
+   "recommended_use": "生成 CSS 变量",
+   "domains": [
+    "字体",
+    "前端"
+   ],
+   "style_keys": [
+    "swiss",
+    "minimal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Fluid Responsive Design ／ Utopia」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "91",
+   "source": "article",
+   "name": "Coolors",
+   "url": "https://coolors.co/",
+   "category": "字体与配色",
+   "main": "配色生成器（空格随机、锁色、色盲模拟）",
+   "resource_type": "工具/配色",
+   "works_style": "五色卡",
+   "ui_style": "白底大号粗体+色块拼贴",
+   "scene": "快速配色",
+   "recommended_use": "生成并导出色卡",
+   "domains": [
+    "配色"
+   ],
+   "style_keys": [
+    "flat",
+    "gradient"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Coolors - The super fast color palettes generator!」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "92",
+   "source": "article",
+   "name": "Realtime Colors",
+   "url": "https://www.realtimecolors.com/",
+   "category": "字体与配色",
+   "main": "在真实页面上实时预览配色（原文描述）",
+   "resource_type": "工具/配色",
+   "works_style": "文字/背景/主色/强调色预览",
+   "ui_style": "无法访问：返回 HTTP 402 DEPLOYMENT_DISABLED（'This deployment is temporarily paused'）",
+   "scene": "配色落地预览（当前不可用）",
+   "recommended_use": "暂用 Coolors+Radix 替代",
+   "domains": [
+    "配色"
+   ],
+   "style_keys": [
+    "flat"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "访问失败",
+    "status_code": "failed",
+    "detail": "HTTP 402 DEPLOYMENT_DISABLED，页面显示'This deployment is temporarily paused'（站点部署被暂停，非网络问题）",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "93",
+   "source": "article",
+   "name": "Radix Colors",
+   "url": "https://www.radix-ui.com/colors",
+   "category": "字体与配色",
+   "main": "12级界面色阶系统",
+   "resource_type": "工具/配色",
+   "works_style": "功能化色阶（背景/边框/文字）",
+   "ui_style": "白底+粉色渐变光晕+色阶表",
+   "scene": "设计系统配色",
+   "recommended_use": "按级取色",
+   "domains": [
+    "配色",
+    "设计系统"
+   ],
+   "style_keys": [
+    "minimal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Radix Colors」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "94",
+   "source": "article",
+   "name": "tweakcn",
+   "url": "https://tweakcn.com/",
+   "category": "字体与配色",
+   "main": "shadcn/ui 可视化主题编辑器",
+   "resource_type": "工具/主题",
+   "works_style": "换皮 shadcn 组件",
+   "ui_style": "白底+粗体与衬线斜体混排标题",
+   "scene": "避免 shadcn 同质化",
+   "recommended_use": "调主题导出",
+   "domains": [
+    "前端",
+    "配色"
+   ],
+   "style_keys": [
+    "minimal",
+    "bento"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Beautiful themes for shadcn/ui — tweakcn ／ Theme E」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "95",
+   "source": "article",
+   "name": "Pinterest",
+   "url": "https://www.pinterest.com/",
+   "category": "日常收集灵感",
+   "main": "全网最大图片灵感平台",
+   "resource_type": "灵感收集",
+   "works_style": "全风格（混杂）",
+   "ui_style": "白底+红色品牌+图片拼贴",
+   "scene": "情绪板、顺藤摸瓜找同风格",
+   "recommended_use": "相似图扩展",
+   "domains": [
+    "综合"
+   ],
+   "style_keys": [
+    "minimal",
+    "handdrawn",
+    "y2k",
+    "organic",
+    "luxury"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Pinterest」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "96",
+   "source": "article",
+   "name": "Are.na",
+   "url": "https://www.are.na/",
+   "category": "日常收集灵感",
+   "main": "无算法、无点赞的研究型收集工具",
+   "resource_type": "灵感收集",
+   "works_style": "研究资料、艺术、建筑",
+   "ui_style": "极素白底纯文字，近乎无装饰（原始/野兽派气质）",
+   "scene": "课题研究攒资料",
+   "recommended_use": "建频道串联",
+   "domains": [
+    "综合"
+   ],
+   "style_keys": [
+    "brutal",
+    "minimal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Are.na」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "97",
+   "source": "article",
+   "name": "Cosmos",
+   "url": "https://www.cosmos.so/",
+   "category": "日常收集灵感",
+   "main": "新一代灵感收藏夹（浏览器插件）",
+   "resource_type": "灵感收集",
+   "works_style": "高审美创意人公开收藏",
+   "ui_style": "白底居中搜索，极简",
+   "scene": "收集好图视频",
+   "recommended_use": "逛 Discover",
+   "domains": [
+    "综合"
+   ],
+   "style_keys": [
+    "minimal",
+    "editorial"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Cosmos」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "98",
+   "source": "article",
+   "name": "Savee",
+   "url": "https://savee.com/",
+   "category": "日常收集灵感",
+   "main": "极简图片灵感社区",
+   "resource_type": "灵感收集",
+   "works_style": "平面排版、品牌包装、先锋摄影、字体",
+   "ui_style": "白底大号黑字+App图标，极简",
+   "scene": "高级感平面参考",
+   "recommended_use": "刷瀑布流",
+   "domains": [
+    "平面",
+    "品牌"
+   ],
+   "style_keys": [
+    "swiss",
+    "editorial",
+    "minimal"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Savee」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "99",
+   "source": "article",
+   "name": "It's Nice That",
+   "url": "https://www.itsnicethat.com/",
+   "category": "日常收集灵感",
+   "main": "伦敦创意文化媒体",
+   "resource_type": "媒体/创意",
+   "works_style": "插画、平面、动画、摄影",
+   "ui_style": "黑白报刊式顶栏（截图被 Cookie 弹窗遮挡）",
+   "scene": "创意文化阅读",
+   "recommended_use": "午间阅读",
+   "domains": [
+    "平面",
+    "插画"
+   ],
+   "style_keys": [
+    "editorial",
+    "handdrawn",
+    "riso"
+   ],
+   "paid": false,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「It's Nice That」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "100",
+   "source": "article",
+   "name": "Brand New",
+   "url": "https://www.underconsideration.com/brandnew/",
+   "category": "日常收集灵感",
+   "main": "品牌换标点评（付费，免费可见新旧 Logo 对比）",
+   "resource_type": "媒体/品牌",
+   "works_style": "品牌识别系统演变",
+   "ui_style": "白底红黑报刊式、强标题",
+   "scene": "品牌设计判断力",
+   "recommended_use": "看新旧对比",
+   "domains": [
+    "品牌"
+   ],
+   "style_keys": [
+    "editorial",
+    "swiss"
+   ],
+   "paid": true,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Brand New」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S1",
+   "source": "supplement",
+   "name": "Behance（主站）",
+   "url": "https://www.behance.net/",
+   "category": "文章之外补充",
+   "main": "Adobe 旗下作品集平台",
+   "resource_type": "作品集",
+   "works_style": "全领域多元风格",
+   "ui_style": "白底+蓝色强调+卡片（curl 403，无头浏览器可渲染）",
+   "scene": "",
+   "recommended_use": "作品集/找设计师",
+   "domains": [
+    "综合"
+   ],
+   "style_keys": [
+    "flat",
+    "clay",
+    "gradient",
+    "editorial"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl/WebFetch 403；无头 Chrome 渲染出首页",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S2",
+   "source": "supplement",
+   "name": "Dribbble",
+   "url": "https://dribbble.com/",
+   "category": "文章之外补充",
+   "main": "设计师作品 shot 社区",
+   "resource_type": "作品集",
+   "works_style": "扁平插画、UI概念稿、3D、渐变",
+   "ui_style": "白底+粉色点缀+卡片（curl 202 空页，无头浏览器可渲染）",
+   "scene": "",
+   "recommended_use": "UI/插画灵感",
+   "domains": [
+    "UI",
+    "插画"
+   ],
+   "style_keys": [
+    "flat",
+    "clay",
+    "gradient",
+    "glass"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl 202 空页、WebFetch 403；无头 Chrome 渲染出首页",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S3",
+   "source": "supplement",
+   "name": "站酷 ZCOOL",
+   "url": "https://www.zcool.com.cn/",
+   "category": "文章之外补充",
+   "main": "中文设计师作品社区",
+   "resource_type": "作品集",
+   "works_style": "商业插画、海报、电商、国潮",
+   "ui_style": "curl 标题核验通过；无头截图未生成",
+   "scene": "",
+   "recommended_use": "中文商业设计参考",
+   "domains": [
+    "综合",
+    "中文"
+   ],
+   "style_keys": [
+    "guochao",
+    "handdrawn",
+    "clay"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「站酷ZCOOL-设计师互动平台，设计师们都在站酷」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S4",
+   "source": "supplement",
+   "name": "花瓣网",
+   "url": "https://huaban.com/",
+   "category": "文章之外补充",
+   "main": "中文图片采集与画板",
+   "resource_type": "灵感收集",
+   "works_style": "电商营销、海报、古风/国潮插画（首页画板可见）",
+   "ui_style": "浅粉渐变首屏+瀑布流",
+   "scene": "",
+   "recommended_use": "中文情绪板",
+   "domains": [
+    "综合",
+    "中文"
+   ],
+   "style_keys": [
+    "guochao",
+    "handdrawn"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl 返回 JS 反爬脚本；WebFetch 取得首页正文",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S5",
+   "source": "supplement",
+   "name": "UI中国",
+   "url": "https://www.ui.cn/",
+   "category": "文章之外补充",
+   "main": "中文 UI/交互作品社区",
+   "resource_type": "作品集",
+   "works_style": "移动端UI、Banner、图标",
+   "ui_style": "访问失败：TLS 连接被重置（本机 DNS 解析至 198.18.0.1 代理保留段，疑为测试环境网络问题）",
+   "scene": "",
+   "recommended_use": "中文UI参考",
+   "domains": [
+    "UI",
+    "中文"
+   ],
+   "style_keys": [
+    "flat",
+    "glass"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "访问失败",
+    "status_code": "failed",
+    "detail": "curl TLS 断开/HTTP2 PROTOCOL_ERROR，WebFetch 500；域名在本机解析到 198.18.0.1（代理保留段），疑为测试环境网络问题，非站点确定下线",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S6",
+   "source": "supplement",
+   "name": "优设网",
+   "url": "https://www.uisdc.com/",
+   "category": "文章之外补充",
+   "main": "中文设计教程/AIGC 教程媒体",
+   "resource_type": "教程/媒体",
+   "works_style": "设计教程、AIGC 提示词",
+   "ui_style": "截图仅显示品牌大字（疑为加载页）",
+   "scene": "",
+   "recommended_use": "中文教程与AI绘图教程",
+   "domains": [
+    "教程",
+    "中文"
+   ],
+   "style_keys": [
+    "editorial"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「优设网官网 - UISDC - 国内专业设计师平台 - 看设计文章，学AIGC教程，找灵感素材，尽在」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S7",
+   "source": "supplement",
+   "name": "Unsplash",
+   "url": "https://unsplash.com/",
+   "category": "文章之外补充",
+   "main": "免费高质量摄影图库",
+   "resource_type": "素材/摄影",
+   "works_style": "自然、城市、生活方式摄影",
+   "ui_style": "返回浏览器校验页（Anubis 式反爬），WebFetch 超时",
+   "scene": "",
+   "recommended_use": "免费配图",
+   "domains": [
+    "摄影",
+    "素材"
+   ],
+   "style_keys": [
+    "organic",
+    "minimal"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "部分核验",
+    "status_code": "partial",
+    "detail": "返回浏览器校验页（.within.website 反爬），WebFetch 超时，无头浏览器停在校验页",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S8",
+   "source": "supplement",
+   "name": "Pexels",
+   "url": "https://www.pexels.com/",
+   "category": "文章之外补充",
+   "main": "免费图片与视频素材",
+   "resource_type": "素材/摄影",
+   "works_style": "生活方式摄影与视频",
+   "ui_style": "白底+全幅照片（curl 403，WebFetch/无头可访问）",
+   "scene": "",
+   "recommended_use": "免费配图与视频",
+   "domains": [
+    "摄影",
+    "素材"
+   ],
+   "style_keys": [
+    "organic"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl 403；WebFetch 取得首页正文",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S9",
+   "source": "supplement",
+   "name": "Lapa Ninja",
+   "url": "https://www.lapa.ninja/",
+   "category": "文章之外补充",
+   "main": "落地页灵感（标题称 7,300+）",
+   "resource_type": "网页灵感",
+   "works_style": "SaaS落地页",
+   "ui_style": "curl 标题核验；截图未生成",
+   "scene": "",
+   "recommended_use": "落地页参考",
+   "domains": [
+    "网页"
+   ],
+   "style_keys": [
+    "minimal",
+    "gradient",
+    "bento"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Landing Page Design Examples: 7,300+ Best Landing 」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S10",
+   "source": "supplement",
+   "name": "Designspiration",
+   "url": "https://www.designspiration.com/",
+   "category": "文章之外补充",
+   "main": "设计灵感图片收集，可按颜色搜索",
+   "resource_type": "灵感收集",
+   "works_style": "平面、摄影、字体",
+   "ui_style": "白底+粉色渐变光晕",
+   "scene": "",
+   "recommended_use": "按颜色找灵感",
+   "domains": [
+    "综合"
+   ],
+   "style_keys": [
+    "editorial",
+    "minimal"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Designspiration - Design Inspiration ／ Inspiration」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S11",
+   "source": "supplement",
+   "name": "Color Hunt",
+   "url": "https://colorhunt.co/",
+   "category": "文章之外补充",
+   "main": "社区配色色卡",
+   "resource_type": "工具/配色",
+   "works_style": "四色色卡",
+   "ui_style": "curl 标题核验；截图未生成",
+   "scene": "",
+   "recommended_use": "快速配色",
+   "domains": [
+    "配色"
+   ],
+   "style_keys": [
+    "flat"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Color Hunt - Color Palettes for Designers and Arti」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S12",
+   "source": "supplement",
+   "name": "Brutalist Websites",
+   "url": "https://brutalistwebsites.com/",
+   "category": "文章之外补充",
+   "main": "野兽派网站合集",
+   "resource_type": "网页灵感",
+   "works_style": "原始、粗粝、反精致",
+   "ui_style": "白底等宽文字+原始网格",
+   "scene": "",
+   "recommended_use": "野兽派参考",
+   "domains": [
+    "网页"
+   ],
+   "style_keys": [
+    "brutal",
+    "neobrutal"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Brutalist Websites」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S13",
+   "source": "supplement",
+   "name": "Httpster",
+   "url": "https://httpster.net/",
+   "category": "文章之外补充",
+   "main": "网页灵感合集",
+   "resource_type": "网页灵感",
+   "works_style": "现代网页、大字",
+   "ui_style": "白底大字标题",
+   "scene": "",
+   "recommended_use": "网页灵感",
+   "domains": [
+    "网页"
+   ],
+   "style_keys": [
+    "swiss",
+    "kinetic"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Website Design Inspiration ／ Httpster」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S14",
+   "source": "supplement",
+   "name": "Logo Design Love",
+   "url": "https://www.logodesignlove.com/",
+   "category": "文章之外补充",
+   "main": "Logo 与品牌识别博客",
+   "resource_type": "媒体/品牌",
+   "works_style": "经典标志设计",
+   "ui_style": "深色底+logo 网格",
+   "scene": "",
+   "recommended_use": "Logo 设计参考",
+   "domains": [
+    "品牌"
+   ],
+   "style_keys": [
+    "swiss",
+    "bauhaus"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Logo Design Love ／ on logos, symbols, icons, and m」",
+    "checked": "2026-11-15"
+   }
+  },
+  {
+   "id": "S15",
+   "source": "supplement",
+   "name": "styles.refero.design",
+   "url": "https://styles.refero.design/",
+   "category": "文章之外补充",
+   "main": "Refero 免费子站：真实网站的 DESIGN.md 风格库（原文提及）",
+   "resource_type": "AI设计规范",
+   "works_style": "真实网站配色/字体/间距",
+   "ui_style": "白底+衬线大标题+卡片",
+   "scene": "",
+   "recommended_use": "喂给AI的风格规范",
+   "domains": [
+    "AI",
+    "网页"
+   ],
+   "style_keys": [
+    "minimal",
+    "editorial"
+   ],
+   "paid": null,
+   "verify": {
+    "status": "已核验",
+    "status_code": "verified",
+    "detail": "curl HTTP 200，页面标题「Website Styles & DESIGN.md Library ／ Refero Styles」",
+    "checked": "2026-11-15"
+   }
+  }
+ ],
+ "styles": [
+  {
+   "key": "swiss",
+   "name": "瑞士国际主义",
+   "name_en": "International Typographic Style / Swiss Style",
+   "origin": "1930s–1950s 在瑞士形成，继承构成主义、风格派与包豪斯的现代主义排印（维基百科）",
+   "colors": "白/黑+单一强调色（常见红）",
+   "typography": "无衬线（Helvetica、Akzidenz-Grotesk 类）、左对齐不齐右",
+   "layout": "严格网格、非对称、大量留白、信息层级清晰",
+   "graphics": "几何色块、客观摄影、粗线条分隔",
+   "texture": "平面、无质感、印刷感",
+   "common_mistakes": "把'套网格'当风格，忽视层级；字号层级太少导致呆板",
+   "references": [
+    {
+     "label": "维基百科：International Typographic Style",
+     "url": "https://en.wikipedia.org/wiki/International_Typographic_Style"
+    },
+    {
+     "label": "Fonts In Use",
+     "url": "https://fontsinuse.com/"
+    },
+    {
+     "label": "Siteinspire（Grid 筛选）",
+     "url": "https://www.siteinspire.com/"
+    }
+   ],
+   "audience": {
+    "who": "设计/建筑/文化机构从业者；25–45岁专业人群（推测）",
+    "mood": "理性、专业、可信、国际化",
+    "industries": "文化机构、B2B、出版、交通导视、作品集",
+    "avoid": "需要强情绪/亲和力的儿童与快消",
+    "regional_notes": "欧美设计圈接受度高；中文排版需处理汉字网格（推测）",
+    "basis": "设计史常识+Siteinspire/Fonts In Use 收录倾向",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "2",
+    "7",
+    "8",
+    "10",
+    "26",
+    "57",
+    "60",
+    "65",
+    "79",
+    "81",
+    "83",
+    "86",
+    "88",
+    "89",
+    "90",
+    "98",
+    "100",
+    "S13",
+    "S14"
+   ],
+   "is_top10": true,
+   "has_prompt": true
+  },
+  {
+   "key": "bauhaus",
+   "name": "包豪斯",
+   "name_en": "Bauhaus",
+   "origin": "1919–1933 德国包豪斯学校，强调功能与工艺、艺术与大规模生产统一（维基百科）",
+   "colors": "红/黄/蓝三原色+黑白",
+   "typography": "几何无衬线（如 Futura 类）、常用小写",
+   "layout": "几何构成、对角线、模块化",
+   "graphics": "圆/方/三角、粗线、色块",
+   "texture": "平面、纸张印刷感",
+   "common_mistakes": "只堆三原色几何图形而缺功能逻辑",
+   "references": [
+    {
+     "label": "维基百科：Bauhaus",
+     "url": "https://en.wikipedia.org/wiki/Bauhaus"
+    },
+    {
+     "label": "Laws of UX（几何卡片插画）",
+     "url": "https://lawsofux.com/"
+    }
+   ],
+   "audience": {
+    "who": "设计学生、艺术教育、创意工作室（推测）",
+    "mood": "理性、实验、教育感",
+    "industries": "艺术教育、展览、创意品牌",
+    "avoid": "金融/医疗等需稳重的场景",
+    "regional_notes": "全球设计教育通用（推测）",
+    "basis": "设计史常识",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "26",
+    "57",
+    "83",
+    "S14"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "minimal",
+   "name": "极简主义",
+   "name_en": "Minimalism",
+   "origin": "源自20世纪中期的极简艺术与'少即是多'的现代主义设计思想（维基百科 Minimalism）",
+   "colors": "黑白灰+极少量强调色",
+   "typography": "干净无衬线或精致衬线，字号对比拉大",
+   "layout": "大留白、少元素、强对齐",
+   "graphics": "几乎无装饰，靠排版与图片",
+   "texture": "平面或极轻阴影",
+   "common_mistakes": "空而无层级、信息藏太深、'简陋'≠极简",
+   "references": [
+    {
+     "label": "维基百科：Minimalism",
+     "url": "https://en.wikipedia.org/wiki/Minimalism"
+    },
+    {
+     "label": "Minimal Gallery",
+     "url": "https://minimal.gallery/"
+    }
+   ],
+   "audience": {
+    "who": "高端消费、科技产品用户、专业人士（推测）",
+    "mood": "高级、克制、可信",
+    "industries": "科技产品、高端零售、作品集、SaaS",
+    "avoid": "信息密集的电商/门户、促销",
+    "regional_notes": "中文电商偏信息密集，极简在国内大众电商接受度较低（推测）",
+    "basis": "Minimal Gallery/Siteinspire 收录；中文电商对比属观察",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "6",
+    "23",
+    "26",
+    "43",
+    "45",
+    "46",
+    "47",
+    "49",
+    "51",
+    "52",
+    "54",
+    "55",
+    "60",
+    "61",
+    "62",
+    "63",
+    "64",
+    "65",
+    "74",
+    "78",
+    "81",
+    "83",
+    "84",
+    "88",
+    "90",
+    "93",
+    "94",
+    "95",
+    "96",
+    "97",
+    "98",
+    "S7",
+    "S9",
+    "S10",
+    "S15"
+   ],
+   "is_top10": true,
+   "has_prompt": true
+  },
+  {
+   "key": "brutal",
+   "name": "野兽派 / Brutalism",
+   "name_en": "Brutalism (web)",
+   "origin": "借用1950s英国粗野主义建筑'暴露原材料'的概念（维基百科 Brutalist architecture），在网页中表现为未修饰的 HTML 原貌",
+   "colors": "默认色、黑白、系统蓝链接",
+   "typography": "系统字体、等宽字体、Times",
+   "layout": "原始网格、不讲究对齐、信息直给",
+   "graphics": "下划线链接、边框、原始表格",
+   "texture": "粗粝、无修饰",
+   "common_mistakes": "可用性崩坏；把'丑'当个性",
+   "references": [
+    {
+     "label": "维基百科：Brutalist architecture",
+     "url": "https://en.wikipedia.org/wiki/Brutalist_architecture"
+    },
+    {
+     "label": "Brutalist Websites",
+     "url": "https://brutalistwebsites.com/"
+    },
+    {
+     "label": "Are.na",
+     "url": "https://www.are.na/"
+    }
+   ],
+   "audience": {
+    "who": "设计师、艺术家、独立出版、亚文化人群（推测）",
+    "mood": "反叛、真实、先锋",
+    "industries": "艺术项目、独立杂志、个人站",
+    "avoid": "主流电商、金融、政务",
+    "regional_notes": "小众圈层，地域差异小（推测）",
+    "basis": "Hoverstat.es/Brutalist Websites 收录多为独立艺术家与工作室（截图观察）",
+    "evidence": "部分有据"
+   },
+   "site_ids": [
+    "67",
+    "96",
+    "S12"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "neobrutal",
+   "name": "新野兽派",
+   "name_en": "Neo-brutalism",
+   "origin": "2020年代 UI 趋势，对精致极简的反叛：高对比、块状布局、大胆配色、粗边框（NN/g 2025）",
+   "colors": "高饱和纯色（黄/粉/蓝/绿）+纯黑描边",
+   "typography": "粗黑无衬线标题+中性正文（NN/g 建议正文用 Inter/Roboto 类）",
+   "layout": "块状卡片、硬阴影偏移、明显网格",
+   "graphics": "粗黑边框、硬投影、贴纸感",
+   "texture": "扁平+硬阴影",
+   "common_mistakes": "颜色过多致混乱；装饰性边框干扰可点击性判断",
+   "references": [
+    {
+     "label": "NN/g：Neobrutalism",
+     "url": "https://www.nngroup.com/articles/neobrutalism/"
+    },
+    {
+     "label": "Hoverstat.es",
+     "url": "https://www.hoverstat.es/"
+    }
+   ],
+   "audience": {
+    "who": "Z世代、创作者经济、独立开发者（推测）",
+    "mood": "大胆、俏皮、个性、反精致",
+    "industries": "创作者平台、独立SaaS、年轻品牌（NN/g 以 Gumroad 为例）",
+    "avoid": "需要严肃信任感的金融/医疗",
+    "regional_notes": "海外独立产品圈多见（推测）",
+    "basis": "NN/g 2025 Neobrutalism 一文",
+    "evidence": "部分有据"
+   },
+   "site_ids": [
+    "4",
+    "7",
+    "67",
+    "S12"
+   ],
+   "is_top10": true,
+   "has_prompt": true
+  },
+  {
+   "key": "memphis",
+   "name": "孟菲斯",
+   "name_en": "Memphis Design",
+   "origin": "1980–1987 意大利 Ettore Sottsass 创立的 Memphis Group，后现代家具与产品（维基百科）",
+   "colors": "高饱和撞色、粉彩+黑",
+   "typography": "几何粗体、俏皮字体",
+   "layout": "随机散布、打破网格",
+   "graphics": "波浪线、圆点、锯齿、几何碎片",
+   "texture": "平面、塑料感",
+   "common_mistakes": "满屏装饰盖过信息",
+   "references": [
+    {
+     "label": "维基百科：Memphis Group",
+     "url": "https://en.wikipedia.org/wiki/Memphis_Group"
+    },
+    {
+     "label": "Golden Wolf",
+     "url": "https://www.goldenwolf.tv/"
+    }
+   ],
+   "audience": {
+    "who": "年轻消费群、潮流/娱乐（推测）",
+    "mood": "活泼、玩味、复古",
+    "industries": "潮流品牌、活动、儿童教育、音乐",
+    "avoid": "奢侈品、B2B 严肃场景",
+    "regional_notes": "全球通用，国内潮玩与活动海报常见（推测）",
+    "basis": "设计史常识",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "25"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "y2k",
+   "name": "Y2K 千禧风",
+   "name_en": "Y2K aesthetic",
+   "origin": "基于1990s末–2000s初的产品与时尚的网络美学，含合成/金属材质、充气家具、互联网泡沫时代界面（维基百科）",
+   "colors": "银色金属、冰蓝、荧光粉紫",
+   "typography": "圆润未来感字体、像素字",
+   "layout": "居中、漂浮元素",
+   "graphics": "铬金属、气泡、星光、早期 UI 窗口",
+   "texture": "光泽、金属、透明塑料",
+   "common_mistakes": "只堆铬字与星星，缺少当代可读性",
+   "references": [
+    {
+     "label": "维基百科：Y2K aesthetic",
+     "url": "https://en.wikipedia.org/wiki/Y2K_aesthetic"
+    },
+    {
+     "label": "维基百科：Frutiger Aero",
+     "url": "https://en.wikipedia.org/wiki/Frutiger_Aero"
+    },
+    {
+     "label": "Web Design Museum",
+     "url": "https://www.webdesignmuseum.org/"
+    }
+   ],
+   "audience": {
+    "who": "Z世代（Y2K/Frutiger Aero 作为怀旧对象在Z世代流行，维基百科）",
+    "mood": "怀旧、未来感、俏皮",
+    "industries": "时尚、美妆、音乐、潮流电商",
+    "avoid": "严肃行业、老年群体",
+    "regional_notes": "全球网络美学，社媒平台传播（维基百科）",
+    "basis": "维基百科 Y2K aesthetic、Frutiger Aero",
+    "evidence": "部分有据"
+   },
+   "site_ids": [
+    "21",
+    "25",
+    "68",
+    "95"
+   ],
+   "is_top10": true,
+   "has_prompt": true
+  },
+  {
+   "key": "cyber",
+   "name": "赛博朋克",
+   "name_en": "Cyberpunk",
+   "origin": "科幻子类型，'low life and high tech'，源于1960–70s新浪潮科幻（维基百科）",
+   "colors": "黑底+霓虹青/品红/酸性绿",
+   "typography": "等宽、故障字、日文/汉字点缀",
+   "layout": "密集信息层、HUD 叠加",
+   "graphics": "霓虹、扫描线、故障、电路",
+   "texture": "暗光、湿润反光、颗粒",
+   "common_mistakes": "霓虹过量致刺眼；文化符号堆砌",
+   "references": [
+    {
+     "label": "维基百科：Cyberpunk",
+     "url": "https://en.wikipedia.org/wiki/Cyberpunk"
+    },
+    {
+     "label": "ArtStation",
+     "url": "https://www.artstation.com/"
+    },
+    {
+     "label": "Game UI Database",
+     "url": "https://www.gameuidatabase.com/"
+    }
+   ],
+   "audience": {
+    "who": "游戏玩家、科技爱好者、18–35岁男性占比较高（推测）",
+    "mood": "未来、叛逆、科技",
+    "industries": "游戏、电竞、科幻影视、科技发布",
+    "avoid": "医疗、母婴、传统金融",
+    "regional_notes": "东亚城市夜景语境强（推测）",
+    "basis": "科幻流派定义（维基百科）",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "4",
+    "27",
+    "29",
+    "35",
+    "58",
+    "70",
+    "73",
+    "77"
+   ],
+   "is_top10": false,
+   "has_prompt": true
+  },
+  {
+   "key": "vapor",
+   "name": "蒸汽波",
+   "name_en": "Vaporwave",
+   "origin": "2010年代初的网络音乐微流派与美学，视觉融合1990s网页、故障艺术（维基百科）",
+   "colors": "粉紫+青蓝渐变、日落色",
+   "typography": "衬线/全角日文、像素字",
+   "layout": "拼贴、居中、透视网格地面",
+   "graphics": "古典雕像、棕榈树、Windows 95 窗口、网格",
+   "texture": "低保真、VHS 噪点",
+   "common_mistakes": "只是复刻梗图，缺乏叙事",
+   "references": [
+    {
+     "label": "维基百科：Vaporwave",
+     "url": "https://en.wikipedia.org/wiki/Vaporwave"
+    },
+    {
+     "label": "CodePen Spark（如 Synthwave 作品）",
+     "url": "https://codepen.io/spark"
+    }
+   ],
+   "audience": {
+    "who": "网络亚文化、音乐爱好者（维基百科称其为网络音乐微流派与梗）",
+    "mood": "怀旧、反讽、梦幻",
+    "industries": "音乐封面、潮牌、实验活动",
+    "avoid": "商业转化页、严肃品牌",
+    "regional_notes": "网络亚文化，地域差异小（推测）",
+    "basis": "维基百科 Vaporwave",
+    "evidence": "部分有据"
+   },
+   "site_ids": [
+    "70"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "glass",
+   "name": "玻璃拟态",
+   "name_en": "Glassmorphism",
+   "origin": "2020年后流行，半透明面板+背景模糊营造层次，常见于苹果系统（NN/g 2024；维基百科）",
+   "colors": "鲜艳渐变背景+白色半透明",
+   "typography": "现代无衬线",
+   "layout": "层叠卡片、浮层",
+   "graphics": "磨砂玻璃、细高光描边",
+   "texture": "半透明、模糊、柔光",
+   "common_mistakes": "对比度不足、可读性与可访问性差（NN/g）",
+   "references": [
+    {
+     "label": "NN/g：Glassmorphism",
+     "url": "https://www.nngroup.com/articles/glassmorphism/"
+    },
+    {
+     "label": "维基百科：Glassmorphism",
+     "url": "https://en.wikipedia.org/wiki/Glassmorphism"
+    },
+    {
+     "label": "Apple HIG",
+     "url": "https://developer.apple.com/design/human-interface-guidelines/"
+    }
+   ],
+   "audience": {
+    "who": "苹果生态用户、科技产品用户（推测）",
+    "mood": "轻盈、现代、高科技",
+    "industries": "操作系统、科技产品、仪表盘、App",
+    "avoid": "文字密集、低视力用户为主的场景",
+    "regional_notes": "苹果平台多见（NN/g 以 SwiftUI 为例）",
+    "basis": "NN/g 2024 Glassmorphism（可访问性风险）",
+    "evidence": "部分有据"
+   },
+   "site_ids": [
+    "6",
+    "49",
+    "54",
+    "66",
+    "80",
+    "S2",
+    "S5"
+   ],
+   "is_top10": true,
+   "has_prompt": true
+  },
+  {
+   "key": "neumorph",
+   "name": "新拟态",
+   "name_en": "Neumorphism",
+   "origin": "介于拟物与扁平之间，元素像从背景凸起/凹陷（维基百科）",
+   "colors": "单色浅灰/浅蓝底，同色系",
+   "typography": "圆润无衬线",
+   "layout": "居中卡片、大圆角",
+   "graphics": "内外双阴影凸凹按钮",
+   "texture": "柔软塑料感",
+   "common_mistakes": "低对比、难辨可点击性，未成主流（NN/g Skeuomorphism 一文）",
+   "references": [
+    {
+     "label": "维基百科：Neumorphism",
+     "url": "https://en.wikipedia.org/wiki/Neumorphism"
+    },
+    {
+     "label": "NN/g：Skeuomorphism",
+     "url": "https://www.nngroup.com/articles/skeuomorphism/"
+    }
+   ],
+   "audience": {
+    "who": "设计爱好者（概念稿为主）（推测）",
+    "mood": "柔和、触感、新奇",
+    "industries": "概念展示、智能家居控制面板",
+    "avoid": "需要高对比与可访问性的产品",
+    "regional_notes": "未成主流（NN/g）",
+    "basis": "NN/g Skeuomorphism 一文：低对比不可访问、未成主流",
+    "evidence": "有据"
+   },
+   "site_ids": [],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "flat",
+   "name": "扁平设计",
+   "name_en": "Flat Design",
+   "origin": "约2012年流行的极简界面语言（NN/g 2015；维基百科）",
+   "colors": "明亮纯色、高饱和但统一",
+   "typography": "无衬线",
+   "layout": "网格卡片、图标化",
+   "graphics": "纯色图标、几何插画",
+   "texture": "无阴影无纹理",
+   "common_mistakes": "弱指示（weak signifiers）导致不知能否点击（NN/g）",
+   "references": [
+    {
+     "label": "NN/g：Flat Design",
+     "url": "https://www.nngroup.com/articles/flat-design/"
+    },
+    {
+     "label": "NN/g：Flat UI 弱指示研究",
+     "url": "https://www.nngroup.com/articles/flat-ui-less-attention-cause-uncertainty/"
+    },
+    {
+     "label": "Material Design 3",
+     "url": "https://m3.material.io/"
+    }
+   ],
+   "audience": {
+    "who": "大众用户、全年龄（推测）",
+    "mood": "清晰、友好、现代",
+    "industries": "大众App、政务、教育、图标系统",
+    "avoid": "需要强可点击提示的复杂流程（应用 Flat 2.0）",
+    "regional_notes": "全球通用",
+    "basis": "NN/g 2017：弱指示设计使用户更费力（研究中测得耗时增加约22%）",
+    "evidence": "有据"
+   },
+   "site_ids": [
+    "11",
+    "13",
+    "17",
+    "22",
+    "24",
+    "26",
+    "43",
+    "44",
+    "48",
+    "50",
+    "56",
+    "57",
+    "82",
+    "87",
+    "91",
+    "92",
+    "S1",
+    "S2",
+    "S5",
+    "S11"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "skeuo",
+   "name": "拟物",
+   "name_en": "Skeuomorphism",
+   "origin": "模仿实物外观降低学习成本（NN/g 2024；维基百科 Skeuomorph）",
+   "colors": "真实材质色：皮革、木纹、金属",
+   "typography": "系统字或仿实物字体",
+   "layout": "模拟实物布局",
+   "graphics": "纹理、高光、投影、缝线",
+   "texture": "真实材质、立体",
+   "common_mistakes": "细节过度、显旧、维护成本高",
+   "references": [
+    {
+     "label": "NN/g：Skeuomorphism",
+     "url": "https://www.nngroup.com/articles/skeuomorphism/"
+    },
+    {
+     "label": "维基百科：Skeuomorph",
+     "url": "https://en.wikipedia.org/wiki/Skeuomorph"
+    },
+    {
+     "label": "Web Design Museum",
+     "url": "https://www.webdesignmuseum.org/"
+    }
+   ],
+   "audience": {
+    "who": "新手用户、老年用户、高端硬件爱好者（推测，依据：熟悉心智模型降低学习成本）",
+    "mood": "亲切、真实、可触",
+    "industries": "音频/相机/仪器类App、游戏UI、儿童教育",
+    "avoid": "追求轻量与现代感的产品",
+    "regional_notes": "NN/g 指出拟物利用既有心智模型",
+    "basis": "NN/g 2024 Skeuomorphism",
+    "evidence": "部分有据"
+   },
+   "site_ids": [
+    "6",
+    "49",
+    "55",
+    "58",
+    "68"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "bento",
+   "name": "Bento 网格",
+   "name_en": "Bento Grid",
+   "origin": "以日式便当盒分格为喻的模块化卡片布局，近年科技产品发布页常见（起源时间：未核验）",
+   "colors": "中性底+各卡片独立配色/深色",
+   "typography": "现代无衬线、大数字",
+   "layout": "大小不一的圆角卡片拼成矩形网格",
+   "graphics": "图标、数据、产品图分格",
+   "texture": "平面或微渐变、细描边",
+   "common_mistakes": "卡片过多信息平均化、无主次",
+   "references": [
+    {
+     "label": "Bento Grids 合集",
+     "url": "https://bentogrids.com/"
+    },
+    {
+     "label": "Framer Gallery",
+     "url": "https://www.framer.com/gallery/"
+    }
+   ],
+   "audience": {
+    "who": "科技产品用户、开发者、SaaS 决策者（推测）",
+    "mood": "有序、现代、信息丰富",
+    "industries": "产品功能介绍、个人主页、仪表盘、发布会",
+    "avoid": "长文阅读、叙事型品牌",
+    "regional_notes": "海外科技发布页常见（推测）",
+    "basis": "Bento Grids/Framer Gallery 收录观察",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "43",
+    "46",
+    "48",
+    "61",
+    "62",
+    "63",
+    "78",
+    "94",
+    "S9"
+   ],
+   "is_top10": true,
+   "has_prompt": true
+  },
+  {
+   "key": "riso",
+   "name": "复古印刷 / Risograph",
+   "name_en": "Risograph print",
+   "origin": "Riso 公司1980年推出的数码速印机，因其印刷质感被独立出版与插画圈采用（维基百科）",
+   "colors": "荧光粉、蓝、黄等专色叠印",
+   "typography": "粗衬线/怪诞无衬线",
+   "layout": "海报式、拼贴",
+   "graphics": "网点、套印错位、颗粒",
+   "texture": "纸张颗粒、油墨叠色",
+   "common_mistakes": "滤镜假颗粒过重、专色不克制",
+   "references": [
+    {
+     "label": "维基百科：Risograph",
+     "url": "https://en.wikipedia.org/wiki/Risograph"
+    },
+    {
+     "label": "It's Nice That",
+     "url": "https://www.itsnicethat.com/"
+    }
+   ],
+   "audience": {
+    "who": "独立出版、文创、艺术学生（推测）",
+    "mood": "手作、温度、独立",
+    "industries": "独立杂志、文创、音乐节海报、咖啡/书店",
+    "avoid": "高端科技、金融",
+    "regional_notes": "东亚独立出版圈流行（推测）",
+    "basis": "维基百科 Risograph 提及独立/艺术用途",
+    "evidence": "部分有据"
+   },
+   "site_ids": [
+    "10",
+    "85",
+    "99"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "handdrawn",
+   "name": "手绘插画",
+   "name_en": "Hand-drawn Illustration",
+   "origin": "插画传统的数字化延续（维基百科 Illustration）",
+   "colors": "温暖柔和或品牌色",
+   "typography": "手写体/圆润无衬线",
+   "layout": "插画主导、留白",
+   "graphics": "不规则线条、角色、涂鸦",
+   "texture": "笔触、纸纹",
+   "common_mistakes": "风格不统一、与UI割裂",
+   "references": [
+    {
+     "label": "维基百科：Illustration",
+     "url": "https://en.wikipedia.org/wiki/Illustration"
+    },
+    {
+     "label": "Oddfellows",
+     "url": "https://oddfellows.tv/"
+    },
+    {
+     "label": "Growth.Design",
+     "url": "https://growth.design/"
+    }
+   ],
+   "audience": {
+    "who": "大众、儿童、教育、女性向消费（推测）",
+    "mood": "亲和、温暖、有趣",
+    "industries": "教育、儿童、健康、食品、引导页",
+    "avoid": "专业工具、高端奢侈",
+    "regional_notes": "全球通用",
+    "basis": "Growth.Design/Oddfellows 等案例观察",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "11",
+    "16",
+    "17",
+    "20",
+    "22",
+    "24",
+    "25",
+    "53",
+    "56",
+    "82",
+    "95",
+    "99",
+    "S3",
+    "S4"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "clay",
+   "name": "3D / 黏土风",
+   "name_en": "3D Clay / Soft 3D",
+   "origin": "受定格黏土动画（维基百科 Clay animation）与实时3D工具（如 Spline）普及影响",
+   "colors": "柔和马卡龙色",
+   "typography": "圆润无衬线",
+   "layout": "主体居中、漂浮物体",
+   "graphics": "圆润3D物体、角色",
+   "texture": "哑光黏土、柔和次表面散射",
+   "common_mistakes": "模型廉价、与品牌无关的'万能3D小人'",
+   "references": [
+    {
+     "label": "维基百科：Clay animation",
+     "url": "https://en.wikipedia.org/wiki/Clay_animation"
+    },
+    {
+     "label": "Spline",
+     "url": "https://www.spline.design/"
+    },
+    {
+     "label": "Blender Studio",
+     "url": "https://studio.blender.org/"
+    }
+   ],
+   "audience": {
+    "who": "Z世代、科技产品用户（推测）",
+    "mood": "可爱、友好、趣味",
+    "industries": "App 引导、科技营销、潮玩、教育",
+    "avoid": "严肃金融法务、写实需求",
+    "regional_notes": "国内互联网营销与电商图常见（推测）",
+    "basis": "Dribbble/Behance 观察",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "1",
+    "11",
+    "13",
+    "14",
+    "17",
+    "22",
+    "23",
+    "27",
+    "28",
+    "30",
+    "33",
+    "75",
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "is_top10": true,
+   "has_prompt": true
+  },
+  {
+   "key": "gradient",
+   "name": "渐变弥散",
+   "name_en": "Mesh / Blur Gradient",
+   "origin": "2010s 后期起在科技品牌与 App 中常见（起源细节：未核验）",
+   "colors": "多色柔和渐变、极光色",
+   "typography": "现代无衬线",
+   "layout": "大面积背景渐变+简洁前景",
+   "graphics": "光晕、噪点颗粒",
+   "texture": "柔焦、颗粒",
+   "common_mistakes": "泛滥同质化、低端感、文字对比不足",
+   "references": [
+    {
+     "label": "SaaSFrame",
+     "url": "https://www.saasframe.io/"
+    },
+    {
+     "label": "Land-book",
+     "url": "https://land-book.com/"
+    }
+   ],
+   "audience": {
+    "who": "科技/SaaS/Web3 用户（推测）",
+    "mood": "梦幻、未来、流动",
+    "industries": "SaaS、AI 产品、音乐、Web3",
+    "avoid": "需要信任与稳重的传统行业",
+    "regional_notes": "全球科技圈普遍（推测）",
+    "basis": "Land-book/SaaSFrame 收录观察",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "17",
+    "47",
+    "61",
+    "80",
+    "91",
+    "S1",
+    "S2",
+    "S9"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "editorial",
+   "name": "杂志编辑风",
+   "name_en": "Editorial Design",
+   "origin": "源于印刷杂志与报纸的版面设计传统（维基百科 Editorial design 页重定向至 Graphic design）",
+   "colors": "黑白+一两种强调色",
+   "typography": "衬线标题+无衬线正文，大标题",
+   "layout": "多栏网格、首字下沉、图文穿插",
+   "graphics": "大图、引言、编号",
+   "texture": "纸感、印刷感",
+   "common_mistakes": "网页上照搬多栏导致阅读困难",
+   "references": [
+    {
+     "label": "维基百科：Graphic design",
+     "url": "https://en.wikipedia.org/wiki/Editorial_design"
+    },
+    {
+     "label": "It's Nice That",
+     "url": "https://www.itsnicethat.com/"
+    },
+    {
+     "label": "Brand New",
+     "url": "https://www.underconsideration.com/brandnew/"
+    }
+   ],
+   "audience": {
+    "who": "知识型读者、文化/时尚受众、25–50岁（推测）",
+    "mood": "知性、权威、有品位",
+    "industries": "媒体、出版、时尚、品牌故事、长文",
+    "avoid": "快速转化的工具型页面",
+    "regional_notes": "中英文排版习惯差异大（推测）",
+    "basis": "It's Nice That/Brand New 等媒体实例",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "2",
+    "7",
+    "8",
+    "15",
+    "45",
+    "52",
+    "53",
+    "60",
+    "64",
+    "74",
+    "85",
+    "86",
+    "89",
+    "97",
+    "98",
+    "99",
+    "100",
+    "S1",
+    "S6",
+    "S10",
+    "S15"
+   ],
+   "is_top10": true,
+   "has_prompt": true
+  },
+  {
+   "key": "japanese",
+   "name": "日式极简",
+   "name_en": "Japanese Minimalism",
+   "origin": "根植于'間（Ma）'留白概念与侘寂审美（维基百科 Ma、Wabi-sabi）",
+   "colors": "米白、原木、墨黑、淡灰",
+   "typography": "细明朝/细黑体、竖排",
+   "layout": "大留白、不对称平衡",
+   "graphics": "自然纹理、极少图形",
+   "texture": "纸、木、麻的天然质感",
+   "common_mistakes": "只模仿'无印良品感'而缺少节奏",
+   "references": [
+    {
+     "label": "维基百科：Ma (negative space)",
+     "url": "https://en.wikipedia.org/wiki/Ma_(negative_space)"
+    },
+    {
+     "label": "维基百科：Wabi-sabi",
+     "url": "https://en.wikipedia.org/wiki/Wabi-sabi"
+    },
+    {
+     "label": "维基百科：Muji",
+     "url": "https://en.wikipedia.org/wiki/Muji"
+    }
+   ],
+   "audience": {
+    "who": "生活方式消费者、文艺青年（推测）",
+    "mood": "宁静、自然、克制",
+    "industries": "生活方式、家居、茶/咖啡、酒店",
+    "avoid": "促销、娱乐、游戏",
+    "regional_notes": "东亚审美认同度高（推测）",
+    "basis": "维基百科 Ma、Wabi-sabi、Muji",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "10",
+    "65",
+    "84"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "guochao",
+   "name": "新中式 / 国潮",
+   "name_en": "New Chinese / Guochao",
+   "origin": "国潮：现代中国以年轻一代（千禧/Z世代）为主体的民族文化自豪与消费现象（维基百科）",
+   "colors": "中国红、黛青、金、墨黑、朱砂",
+   "typography": "书法字、宋体/明体、现代黑体混排",
+   "layout": "对称或留白山水构图、竖排",
+   "graphics": "祥云、纹样、山水、印章、传统元素现代化",
+   "texture": "宣纸、金箔、刺绣、漆器",
+   "common_mistakes": "符号堆砌、'土味'红金、文化误用",
+   "references": [
+    {
+     "label": "维基百科：Guochao",
+     "url": "https://en.wikipedia.org/wiki/Guochao"
+    },
+    {
+     "label": "维基百科：Shan shui",
+     "url": "https://en.wikipedia.org/wiki/Shan_shui"
+    },
+    {
+     "label": "花瓣网",
+     "url": "https://huaban.com/"
+    },
+    {
+     "label": "站酷",
+     "url": "https://www.zcool.com.cn/"
+    }
+   ],
+   "audience": {
+    "who": "中国千禧一代与Z世代（维基百科 Guochao）",
+    "mood": "文化自信、潮流、仪式感",
+    "industries": "国货美妆、茶饮、文旅、节庆营销、游戏",
+    "avoid": "海外不了解中国文化的受众（需解释）",
+    "regional_notes": "中国大陆为主；海外需文化转译（推测）",
+    "basis": "维基百科 Guochao",
+    "evidence": "部分有据"
+   },
+   "site_ids": [
+    "S3",
+    "S4"
+   ],
+   "is_top10": true,
+   "has_prompt": true
+  },
+  {
+   "key": "luxury",
+   "name": "奢华黑金",
+   "name_en": "Luxury Black & Gold / Art Deco",
+   "origin": "常借 Art Deco（1910s 巴黎兴起、1920s–30s 流行）的几何装饰语言（维基百科）",
+   "colors": "黑+金/香槟色+少量白",
+   "typography": "高对比衬线（Didone 类）、宽字距大写",
+   "layout": "对称、居中、大留白",
+   "graphics": "细金线、几何装饰框",
+   "texture": "金属、丝绒、大理石",
+   "common_mistakes": "金色滥用显廉价；字距过窄失去高级感",
+   "references": [
+    {
+     "label": "维基百科：Art Deco",
+     "url": "https://en.wikipedia.org/wiki/Art_Deco"
+    },
+    {
+     "label": "The Motion Awards（黑金界面）",
+     "url": "https://motionawards.com/"
+    }
+   ],
+   "audience": {
+    "who": "高净值人群、商务人士（推测）",
+    "mood": "尊贵、稀缺、仪式感",
+    "industries": "奢侈品、高端酒店、地产、颁奖典礼",
+    "avoid": "年轻平价品牌、儿童",
+    "regional_notes": "中东与东亚对金色接受度较高（推测）",
+    "basis": "Art Deco 历史+The Motion Awards 实例",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "5",
+    "95"
+   ],
+   "is_top10": false,
+   "has_prompt": true
+  },
+  {
+   "key": "organic",
+   "name": "有机自然风",
+   "name_en": "Organic / Biophilic",
+   "origin": "受亲生物设计（Biophilic design）理念影响，强调与自然连接（维基百科）",
+   "colors": "大地色、鼠尾草绿、陶土、米色",
+   "typography": "柔和衬线或圆润无衬线",
+   "layout": "不规则形状、曲线、留白",
+   "graphics": "植物、手作纹理、有机形",
+   "texture": "纸、亚麻、陶土、颗粒",
+   "common_mistakes": "变成'模板化绿色'，可持续'漂绿'",
+   "references": [
+    {
+     "label": "维基百科：Biophilic design",
+     "url": "https://en.wikipedia.org/wiki/Biophilic_design"
+    },
+    {
+     "label": "Poly Haven",
+     "url": "https://polyhaven.com/"
+    }
+   ],
+   "audience": {
+    "who": "关注健康与可持续的城市中产、女性向（推测）",
+    "mood": "自然、健康、安心",
+    "industries": "食品、美妆护肤、母婴、健康、可持续品牌",
+    "avoid": "科技/电竞",
+    "regional_notes": "全球通用（推测）",
+    "basis": "维基百科 Biophilic design（健康与福祉）",
+    "evidence": "部分有据"
+   },
+   "site_ids": [
+    "34",
+    "95",
+    "S7",
+    "S8"
+   ],
+   "is_top10": false,
+   "has_prompt": true
+  },
+  {
+   "key": "acid",
+   "name": "酸性图形",
+   "name_en": "Acid Graphics",
+   "origin": "与 acid house/迷幻艺术等亚文化视觉渊源相关的当代平面潮流（谱系：未核验，属编者归纳）",
+   "colors": "黑/银+酸性绿、荧光色",
+   "typography": "扭曲变形字、Y2K 字体、极细或极粗",
+   "layout": "打破网格、实验排版",
+   "graphics": "液态铬、扭曲线、星芒、3D 文字",
+   "texture": "金属、液态、数字噪点",
+   "common_mistakes": "可读性极差；滥用导致廉价",
+   "references": [
+    {
+     "label": "维基百科：Acid house",
+     "url": "https://en.wikipedia.org/wiki/Acid_house"
+    },
+    {
+     "label": "维基百科：Psychedelic art",
+     "url": "https://en.wikipedia.org/wiki/Psychedelic_art"
+    },
+    {
+     "label": "Tokyo TDC",
+     "url": "https://tokyotypedirectorsclub.org/"
+    }
+   ],
+   "audience": {
+    "who": "Z世代、潮流/电子音乐圈、设计学生（推测）",
+    "mood": "前卫、躁动、亚文化",
+    "industries": "音乐节、潮牌、夜店、实验海报",
+    "avoid": "政务、金融、医疗",
+    "regional_notes": "国内外潮流圈均有（推测）",
+    "basis": "编者归纳",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "10",
+    "21",
+    "25",
+    "35",
+    "59",
+    "67",
+    "73"
+   ],
+   "is_top10": false,
+   "has_prompt": true
+  },
+  {
+   "key": "darkmode",
+   "name": "深色科技风",
+   "name_en": "Dark Mode / Dark Tech",
+   "origin": "随系统级深色模式与开发者工具审美普及（NN/g 2020 讨论了深色模式可读性）",
+   "colors": "近黑/深灰+低饱和强调色、微光渐变",
+   "typography": "现代无衬线、等宽点缀",
+   "layout": "卡片层级、细边框",
+   "graphics": "细线、微光、网格背景",
+   "texture": "微光、玻璃、颗粒",
+   "common_mistakes": "纯黑+高亮白刺眼；层级不清（Dark Mode Design 原文点评）",
+   "references": [
+    {
+     "label": "NN/g：Dark Mode vs Light Mode",
+     "url": "https://www.nngroup.com/articles/dark-mode/"
+    },
+    {
+     "label": "Dark Mode Design",
+     "url": "https://www.darkmodedesign.com/"
+    },
+    {
+     "label": "Vercel Guidelines",
+     "url": "https://vercel.com/design/guidelines"
+    }
+   ],
+   "audience": {
+    "who": "开发者、游戏玩家、创意专业人士（推测）",
+    "mood": "专业、沉浸、科技",
+    "industries": "开发者工具、SaaS、AI、影视、游戏",
+    "avoid": "长文阅读（NN/g：正常视力者在浅色模式下视觉表现通常更好）",
+    "regional_notes": "—",
+    "basis": "NN/g 2020 Dark Mode vs Light Mode",
+    "evidence": "部分有据"
+   },
+   "site_ids": [
+    "2",
+    "3",
+    "51",
+    "58",
+    "59",
+    "63",
+    "66",
+    "69",
+    "76",
+    "80"
+   ],
+   "is_top10": true,
+   "has_prompt": true
+  },
+  {
+   "key": "webgl",
+   "name": "沉浸式 WebGL / 3D 交互",
+   "name_en": "Immersive WebGL",
+   "origin": "依托 WebGL/Three.js 等技术的创意前端潮流",
+   "colors": "深色背景+发光材质为多",
+   "typography": "大字无衬线、动态文字",
+   "layout": "全屏场景、滚动叙事",
+   "graphics": "粒子、3D 模型、着色器",
+   "texture": "实时光影、景深",
+   "common_mistakes": "性能差、加载慢、为炫技牺牲信息",
+   "references": [
+    {
+     "label": "Three.js 示例",
+     "url": "https://threejs.org/examples/"
+    },
+    {
+     "label": "Lusion",
+     "url": "https://lusion.co/"
+    },
+    {
+     "label": "Codrops",
+     "url": "https://tympanus.net/codrops/"
+    }
+   ],
+   "audience": {
+    "who": "创意行业、科技爱好者、品牌营销受众（推测）",
+    "mood": "惊艳、前沿、沉浸",
+    "industries": "品牌活动页、作品集、发布会、创意工作室",
+    "avoid": "低端设备用户、信息检索型网站",
+    "regional_notes": "受网络与设备性能影响大（推测）",
+    "basis": "Awwwards/FWA 获奖倾向（截图观察）",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "2",
+    "3",
+    "4",
+    "30",
+    "59",
+    "69",
+    "70",
+    "71",
+    "72",
+    "73",
+    "75",
+    "76",
+    "77"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "kinetic",
+   "name": "动态排版",
+   "name_en": "Kinetic Typography",
+   "origin": "'会动的文字'动画技术，用随时间呈现的文字传达情绪（维基百科）",
+   "colors": "高对比黑白或品牌色",
+   "typography": "粗无衬线、可变字体",
+   "layout": "文字即画面、全屏大字",
+   "graphics": "逐字动画、遮罩、变形",
+   "texture": "平面为主",
+   "common_mistakes": "节奏乱、阅读时间不足",
+   "references": [
+    {
+     "label": "维基百科：Kinetic typography",
+     "url": "https://en.wikipedia.org/wiki/Kinetic_typography"
+    },
+    {
+     "label": "Art of the Title",
+     "url": "https://www.artofthetitle.com/"
+    },
+    {
+     "label": "GSAP Demo",
+     "url": "https://demos.gsap.com/"
+    }
+   ],
+   "audience": {
+    "who": "社媒短视频受众、年轻人（推测）",
+    "mood": "有力、节奏、现代",
+    "industries": "品牌片、片头、社媒广告、发布会",
+    "avoid": "需要静读的说明类内容",
+    "regional_notes": "短视频平台普遍（推测）",
+    "basis": "Art of the Title/Motion Awards 实例",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "2",
+    "3",
+    "5",
+    "8",
+    "10",
+    "13",
+    "14",
+    "15",
+    "40",
+    "59",
+    "69",
+    "71",
+    "78",
+    "79",
+    "S13"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  },
+  {
+   "key": "cinematic",
+   "name": "电影感写实",
+   "name_en": "Cinematic Realism",
+   "origin": "借鉴电影摄影（布光、焦段、调色）的画面语言",
+   "colors": "青橙、低饱和、暗部压深",
+   "typography": "细衬线/宽字距标题",
+   "layout": "宽画幅、三分法、景深",
+   "graphics": "光束、雾气、颗粒",
+   "texture": "胶片颗粒、柔光、暗角",
+   "common_mistakes": "只加黑边和青橙滤镜而无布光逻辑",
+   "references": [
+    {
+     "label": "ShotDeck",
+     "url": "https://shotdeck.com/"
+    },
+    {
+     "label": "StillsLab",
+     "url": "https://stillslab.com/"
+    },
+    {
+     "label": "StudioBinder 镜头指南",
+     "url": "https://www.studiobinder.com/blog/ultimate-guide-to-camera-shots/"
+    }
+   ],
+   "audience": {
+    "who": "影视/广告受众、高端品牌（推测）",
+    "mood": "沉浸、情绪、品质",
+    "industries": "品牌片、汽车、旅游、影视宣发",
+    "avoid": "工具型界面",
+    "regional_notes": "—",
+    "basis": "ShotDeck/ASC 等专业来源",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "1",
+    "5",
+    "9",
+    "12",
+    "14",
+    "15",
+    "16",
+    "18",
+    "19",
+    "21",
+    "23",
+    "27",
+    "28",
+    "29",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42"
+   ],
+   "is_top10": false,
+   "has_prompt": true
+  },
+  {
+   "key": "retroweb",
+   "name": "早期网页 / 复古像素",
+   "name_en": "Early Web / Retro Web",
+   "origin": "1990s–2000s 初期互联网视觉（Web Design Museum 收录 1991–2006）",
+   "colors": "网页安全色、灰色窗口、蓝色链接",
+   "typography": "像素字、Times、Verdana",
+   "layout": "表格布局、密集门户",
+   "graphics": "GIF、按钮、计数器、窗口",
+   "texture": "像素、斜面按钮",
+   "common_mistakes": "怀旧变成可用性灾难",
+   "references": [
+    {
+     "label": "Web Design Museum",
+     "url": "https://www.webdesignmuseum.org/"
+    },
+    {
+     "label": "Hoverstat.es",
+     "url": "https://www.hoverstat.es/"
+    }
+   ],
+   "audience": {
+    "who": "互联网怀旧人群、设计师、Z世代（推测）",
+    "mood": "怀旧、幽默、反主流",
+    "industries": "个人站、活动彩蛋、潮牌",
+    "avoid": "正式商业转化",
+    "regional_notes": "—",
+    "basis": "Web Design Museum 档案",
+    "evidence": "推测"
+   },
+   "site_ids": [
+    "67",
+    "68"
+   ],
+   "is_top10": false,
+   "has_prompt": false
+  }
+ ],
+ "top10": [
+  {
+   "rank": 1,
+   "key": "minimal",
+   "core": "用留白、字号对比与极少元素建立高级感与清晰层级",
+   "strengths": "信息聚焦、显高级、易维护、跨平台一致",
+   "limits": "易显空洞；信息密集场景不适用；对排版功底要求高"
+  },
+  {
+   "rank": 2,
+   "key": "swiss",
+   "core": "网格系统+无衬线+非对称版式，信息客观清晰",
+   "strengths": "层级清晰、专业可信、可系统化扩展",
+   "limits": "处理不当显冷漠呆板；中文需重做网格与字号"
+  },
+  {
+   "rank": 3,
+   "key": "editorial",
+   "core": "把杂志版式搬到屏幕：大标题、衬线混排、多栏图文",
+   "strengths": "有品位与叙事感，适合内容品牌",
+   "limits": "交互转化弱；多栏在移动端需重排"
+  },
+  {
+   "rank": 4,
+   "key": "neobrutal",
+   "core": "高饱和纯色+粗黑描边+硬阴影的块状界面",
+   "strengths": "辨识度极高、年轻、有个性",
+   "limits": "易混乱；不适合严肃信任场景（NN/g 提醒平衡可用性）"
+  },
+  {
+   "rank": 5,
+   "key": "bento",
+   "core": "大小不一的圆角卡片拼成规整网格，一格一卖点",
+   "strengths": "信息量大而有序，适配响应式，易于展示功能",
+   "limits": "容易同质化；卡片过多失去主次"
+  },
+  {
+   "rank": 6,
+   "key": "glass",
+   "core": "半透明磨砂面板叠在鲜艳背景上制造层次",
+   "strengths": "现代、轻盈、有空间感",
+   "limits": "对比度/可访问性风险（NN/g），性能开销"
+  },
+  {
+   "rank": 7,
+   "key": "darkmode",
+   "core": "近黑底+细边框+微光强调色的专业科技感",
+   "strengths": "沉浸、专业，突出内容与媒体",
+   "limits": "长文阅读表现不如浅色（NN/g）；层级易糊"
+  },
+  {
+   "rank": 8,
+   "key": "clay",
+   "core": "圆润哑光3D物体与角色，马卡龙配色",
+   "strengths": "友好可爱、吸睛、降低产品距离感",
+   "limits": "制作成本高；泛用3D小人易廉价"
+  },
+  {
+   "rank": 9,
+   "key": "y2k",
+   "core": "铬金属、气泡、星光与千禧年界面元素",
+   "strengths": "话题性强、Z世代共鸣（维基百科）",
+   "limits": "潮流周期短；可读性差；不适合严肃品牌"
+  },
+  {
+   "rank": 10,
+   "key": "guochao",
+   "core": "传统纹样/书法/中国色与现代版式结合",
+   "strengths": "文化认同强、节庆营销效果好、差异化",
+   "limits": "符号堆砌易'土'；海外受众需转译；文化元素需考据"
+  }
+ ],
+ "mixes": [
+  {
+   "id": 1,
+   "name": "瑞士网格 + 酸性图形",
+   "primary": "swiss",
+   "secondary": "acid",
+   "ratio": "7:3",
+   "logic": "用网格和无衬线保证信息秩序，局部用酸性图形制造冲击",
+   "visual": "黑白网格版面里嵌入一处液态铬/扭曲字体主视觉",
+   "scenarios": "音乐节、潮牌发布、设计展海报",
+   "risks": "酸性元素越界会破坏网格秩序；正文须保持可读",
+   "evidence": "推测"
+  },
+  {
+   "id": 2,
+   "name": "新中式 + 极简",
+   "primary": "guochao",
+   "secondary": "minimal",
+   "ratio": "4:6",
+   "logic": "极简留白承载少量传统符号，避免堆砌",
+   "visual": "大留白+一枚印章/一笔书法+中国色点缀",
+   "scenarios": "茶饮、文旅、高端国货、东方酒店",
+   "risks": "过度留白显冷；符号需考据",
+   "evidence": "推测"
+  },
+  {
+   "id": 3,
+   "name": "Bento 网格 + 玻璃拟态",
+   "primary": "bento",
+   "secondary": "glass",
+   "ratio": "7:3",
+   "logic": "Bento 定结构，玻璃质感只用于卡片表面增加层次",
+   "visual": "渐变背景上半透明圆角卡片网格",
+   "scenarios": "AI/SaaS 功能页、仪表盘、发布会",
+   "risks": "对比度不足；卡片太多显杂（需 WCAG 对比检查）",
+   "evidence": "推测"
+  },
+  {
+   "id": 4,
+   "name": "深色科技 + 沉浸式 WebGL",
+   "primary": "darkmode",
+   "secondary": "webgl",
+   "ratio": "6:4",
+   "logic": "深色底让3D/粒子发光，WebGL 只放首屏与关键节点",
+   "visual": "黑底首屏3D粒子+下方克制卡片内容",
+   "scenarios": "AI 产品发布、科技品牌、创意工作室",
+   "risks": "性能与加载；移动端降级方案",
+   "evidence": "推测"
+  },
+  {
+   "id": 5,
+   "name": "杂志编辑风 + 动态排版",
+   "primary": "editorial",
+   "secondary": "kinetic",
+   "ratio": "7:3",
+   "logic": "静态版式讲故事，标题/转场用动态文字强化节奏",
+   "visual": "衬线大标题滚动时逐字进入",
+   "scenarios": "品牌故事页、年度报告、长文专题",
+   "risks": "动画干扰阅读；需尊重减少动态偏好",
+   "evidence": "推测"
+  },
+  {
+   "id": 6,
+   "name": "极简 + 3D 黏土",
+   "primary": "minimal",
+   "secondary": "clay",
+   "ratio": "7:3",
+   "logic": "极简界面降低噪音，一个3D主角色负责情绪",
+   "visual": "白底大留白+一个哑光3D主体",
+   "scenarios": "App 引导页、消费科技、教育产品",
+   "risks": "3D 风格与品牌不符；多个3D物件破坏极简",
+   "evidence": "推测"
+  },
+  {
+   "id": 7,
+   "name": "新野兽派 + 孟菲斯",
+   "primary": "neobrutal",
+   "secondary": "memphis",
+   "ratio": "6:4",
+   "logic": "粗边框硬阴影提供结构，孟菲斯几何点缀增加玩味",
+   "visual": "高饱和色块卡片+波浪/圆点装饰",
+   "scenarios": "创作者平台、年轻品牌、活动页",
+   "risks": "过于喧闹；可点击性混乱",
+   "evidence": "推测"
+  },
+  {
+   "id": 8,
+   "name": "瑞士国际主义 + 日式极简",
+   "primary": "swiss",
+   "secondary": "japanese",
+   "ratio": "5:5",
+   "logic": "网格理性+'間'的留白节奏，东西方现代主义交汇",
+   "visual": "细字重、大留白、非对称网格、米白底",
+   "scenarios": "建筑事务所、家居、美术馆、作品集",
+   "risks": "过冷；需要一点材质或摄影温度",
+   "evidence": "推测"
+  },
+  {
+   "id": 9,
+   "name": "有机自然风 + 手绘插画",
+   "primary": "organic",
+   "secondary": "handdrawn",
+   "ratio": "6:4",
+   "logic": "大地色与有机形建立信任，手绘元素增加亲和",
+   "visual": "米色底+植物手绘+不规则色块",
+   "scenarios": "食品、护肤、母婴、可持续品牌",
+   "risks": "插画风格不统一；'漂绿'嫌疑",
+   "evidence": "推测"
+  },
+  {
+   "id": 10,
+   "name": "Y2K + 渐变弥散",
+   "primary": "y2k",
+   "secondary": "gradient",
+   "ratio": "5:5",
+   "logic": "千禧铬金属元素叠在柔和极光渐变上，复古与当代平衡",
+   "visual": "冰蓝/粉紫渐变背景+铬字体+星光",
+   "scenarios": "美妆、时尚、音乐、Z世代营销",
+   "risks": "过时快；文字对比不足",
+   "evidence": "推测"
+  },
+  {
+   "id": 11,
+   "name": "奢华黑金 + 电影感写实",
+   "primary": "luxury",
+   "secondary": "cinematic",
+   "ratio": "5:5",
+   "logic": "黑金字体框架+电影级布光摄影，营造仪式感",
+   "visual": "暗调大片摄影+金色细线衬线标题",
+   "scenarios": "高端酒店、腕表、地产、颁奖",
+   "risks": "金色滥用显廉价；摄影质量决定成败",
+   "evidence": "推测"
+  },
+  {
+   "id": 12,
+   "name": "扁平 + 拟物（Flat 2.0）",
+   "primary": "flat",
+   "secondary": "skeuo",
+   "ratio": "8:2",
+   "logic": "扁平为主，用轻阴影/高光补足可点击提示（呼应 NN/g 对弱指示的研究）",
+   "visual": "扁平卡片+微阴影按钮+轻微材质图标",
+   "scenarios": "大众App、政务、教育、老年友好产品",
+   "risks": "细节过多回到老式拟物",
+   "evidence": "推测"
+  },
+  {
+   "id": 13,
+   "name": "赛博朋克 + 故障/蒸汽波",
+   "primary": "cyber",
+   "secondary": "vapor",
+   "ratio": "6:4",
+   "logic": "赛博朋克的霓虹科技感为主，蒸汽波怀旧色作情绪层",
+   "visual": "霓虹夜景+粉紫日落渐变+扫描线",
+   "scenarios": "游戏、电竞、电子音乐、潮流活动",
+   "risks": "刺眼；文化符号堆砌",
+   "evidence": "推测"
+  },
+  {
+   "id": 14,
+   "name": "杂志编辑风 + 复古印刷 Riso",
+   "primary": "editorial",
+   "secondary": "riso",
+   "ratio": "6:4",
+   "logic": "编辑版式提供阅读结构，Riso 专色和颗粒提供手作温度",
+   "visual": "衬线标题+荧光粉/蓝叠印插图+纸纹",
+   "scenarios": "独立出版、文创、书店/咖啡、展览",
+   "risks": "颗粒过重影响清晰度",
+   "evidence": "推测"
+  }
+ ],
+ "prompts": [
+  {
+   "style_key": "minimal",
+   "subject_example": "[主体：如 一款白色无线耳机]",
+   "style_en": "minimalist design, clean composition, generous negative space, refined typography, Swiss-inspired restraint",
+   "style_zh": "极简主义，干净构图，大量留白，精致排版",
+   "composition": "centered subject, rule of thirds, lots of empty space / 主体居中或三分法，大面积留白",
+   "lighting": "soft diffused studio light / 柔和漫射棚拍光",
+   "palette": "monochrome palette, off-white and charcoal with one accent color / 黑白灰+单一强调色",
+   "negative": "clutter, busy background, multiple subjects, text artifacts, gradients overload / 杂乱、背景复杂、多主体、乱码文字",
+   "compatibility": "通用（MJ/SD/其他）",
+   "tips": "先确定唯一主体与一个强调色；海报类加 'poster layout, grid' 引导版式"
+  },
+  {
+   "style_key": "swiss",
+   "subject_example": "[主体：如 爵士音乐节海报]",
+   "style_en": "International Typographic Style poster, strict modular grid, bold sans-serif headline, asymmetric layout, objective photography, flat color blocks",
+   "style_zh": "瑞士国际主义海报，严格模块网格，粗体无衬线大标题，非对称版式",
+   "composition": "asymmetric grid layout, strong left alignment / 非对称网格，强左对齐",
+   "lighting": "flat even lighting / 平光",
+   "palette": "white, black and signal red / 白、黑、信号红",
+   "negative": "3D render, ornate decoration, script fonts, gradients, distorted text / 3D渲染、繁复装饰、手写体、渐变、扭曲文字",
+   "compatibility": "MJ 更擅长海报版式；SD 建议配合 ControlNet 布局",
+   "tips": "AI 生成文字常出错：标题文字建议后期在设计软件中替换"
+  },
+  {
+   "style_key": "editorial",
+   "subject_example": "[主体：如 一篇关于城市慢生活的专题]",
+   "style_en": "editorial magazine layout, serif headline, multi-column grid, large photography, pull quotes, print texture",
+   "style_zh": "杂志编辑风版式，衬线大标题，多栏网格，大幅摄影，引言",
+   "composition": "magazine spread composition, image and text interplay / 跨页构图，图文穿插",
+   "lighting": "natural window light photography / 自然窗光摄影",
+   "palette": "cream paper, black ink, one accent color / 米白纸色、黑墨、一种强调色",
+   "negative": "cluttered UI, neon, cartoon, low resolution / 杂乱界面、霓虹、卡通、低清",
+   "compatibility": "通用",
+   "tips": "适合生成版式草图与配图；正文务必用真实文字重排"
+  },
+  {
+   "style_key": "neobrutal",
+   "subject_example": "[主体：如 一款记账 App 落地页]",
+   "style_en": "neo-brutalism UI, thick black outlines, hard offset drop shadows, bold flat colors, chunky sans-serif, playful blocky layout",
+   "style_zh": "新野兽派界面，粗黑描边，硬投影偏移，大胆纯色，粗体无衬线，块状布局",
+   "composition": "blocky card grid, slightly tilted stickers / 块状卡片网格，略倾斜的贴纸元素",
+   "lighting": "flat lighting, no gradients / 平光无渐变",
+   "palette": "bright yellow, hot pink, cobalt blue with pure black / 亮黄、桃粉、钴蓝+纯黑",
+   "negative": "soft shadows, glassmorphism, photorealism, gradients / 柔和阴影、玻璃拟态、写实、渐变",
+   "compatibility": "通用；UI 概念图建议 --ar 16:9 / 9:16",
+   "tips": "生成后检查对比度与可点击元素是否可辨"
+  },
+  {
+   "style_key": "bento",
+   "subject_example": "[主体：如 AI 笔记应用功能介绍页]",
+   "style_en": "bento grid layout, rounded cards of varying sizes, clean product UI, large numbers, subtle borders, Apple keynote style",
+   "style_zh": "Bento 网格布局，大小不一的圆角卡片，简洁产品界面，大数字，细描边",
+   "composition": "modular bento box grid, one hero card / 模块化便当网格，一张主卡",
+   "lighting": "soft studio light, subtle inner glow / 柔光+轻微内发光",
+   "palette": "neutral light gray background with one dark card and one accent / 浅灰底+一张深色卡+一个强调色",
+   "negative": "cluttered, uneven gaps, overlapping cards, illegible text / 杂乱、间距不一、卡片重叠、文字难读",
+   "compatibility": "通用",
+   "tips": "明确卡片数量（如 6–8 张）与主卡位置；文字后期替换"
+  },
+  {
+   "style_key": "glass",
+   "subject_example": "[主体：如 智能家居控制面板]",
+   "style_en": "glassmorphism UI, frosted translucent panels, background blur, soft highlights, vibrant gradient background, depth layers",
+   "style_zh": "玻璃拟态界面，磨砂半透明面板，背景模糊，柔和高光，鲜艳渐变背景",
+   "composition": "layered floating panels / 层叠漂浮面板",
+   "lighting": "soft rim light / 柔和轮廓光",
+   "palette": "purple-blue-pink gradient backdrop, white translucent glass / 紫蓝粉渐变底+白色半透明玻璃",
+   "negative": "low contrast text, flat design, harsh shadows / 低对比文字、扁平、硬阴影",
+   "compatibility": "通用；SD 可加 'ui design, dribbble' 类风格词",
+   "tips": "落地时用 WCAG 对比度工具检查文字"
+  },
+  {
+   "style_key": "darkmode",
+   "subject_example": "[主体：如 开发者数据分析仪表盘]",
+   "style_en": "dark mode tech interface, near-black background, thin borders, subtle glow, grid backdrop, crisp data visualization",
+   "style_zh": "深色科技界面，近黑背景，细描边，微光，网格背景，清晰数据可视化",
+   "composition": "dashboard grid with clear hierarchy / 层级清晰的仪表盘网格",
+   "lighting": "subtle ambient glow / 微弱环境光",
+   "palette": "#0A0A0A background, gray text, one cyan or violet accent / 近黑底、灰字、一个青或紫强调色",
+   "negative": "pure white on pure black glare, neon overload, clutter / 纯白纯黑强烈眩光、霓虹过量、杂乱",
+   "compatibility": "通用",
+   "tips": "避免纯黑+纯白；强调色只用一种"
+  },
+  {
+   "style_key": "clay",
+   "subject_example": "[主体：如 一只抱着手机的小熊吉祥物]",
+   "style_en": "3D clay style, soft rounded shapes, matte plasticine texture, cute character, pastel colors, isometric or centered",
+   "style_zh": "3D 黏土风，柔和圆润造型，哑光橡皮泥质感，可爱角色，马卡龙色",
+   "composition": "centered hero object, floating elements / 主体居中，漂浮元素",
+   "lighting": "soft global illumination, subtle subsurface scattering / 柔和全局光照+轻次表面散射",
+   "palette": "pastel pink, mint, lavender, cream / 粉、薄荷绿、薰衣草紫、奶油色",
+   "negative": "photorealistic, sharp edges, glossy plastic, dark mood / 写实、尖锐边缘、亮面塑料、暗调",
+   "compatibility": "MJ/SD 均可；SD 可配合 3D/clay LoRA（需自行核验授权）",
+   "tips": "保持角色一致性：固定种子或使用参考图功能"
+  },
+  {
+   "style_key": "y2k",
+   "subject_example": "[主体：如 美妆品牌新品海报]",
+   "style_en": "Y2K aesthetic, chrome metallic typography, bubbly shapes, sparkles, early-2000s interface elements, iridescent",
+   "style_zh": "Y2K 千禧风，铬金属字体，气泡形状，星光闪烁，千禧年界面元素，镭射彩虹光",
+   "composition": "centered collage, floating objects / 居中拼贴，漂浮物体",
+   "lighting": "glossy reflections, lens flare / 光泽反射、镜头光晕",
+   "palette": "icy blue, silver, baby pink, lilac / 冰蓝、银、婴儿粉、淡紫",
+   "negative": "muted earthy tones, minimal, realistic photography / 低饱和大地色、极简、写实摄影",
+   "compatibility": "MJ 风格化更强；通用",
+   "tips": "注意与品牌调性匹配；文字后期处理"
+  },
+  {
+   "style_key": "guochao",
+   "subject_example": "[主体：如 中秋限定茶饮包装]",
+   "style_en": "modern Chinese guochao style, traditional patterns reimagined, calligraphy accents, auspicious clouds, cinnabar red and indigo, contemporary layout",
+   "style_zh": "新中式国潮风格，传统纹样现代化，书法点缀，祥云，朱砂红与黛青，现代版式",
+   "composition": "symmetrical or shan-shui inspired composition with negative space / 对称或山水式留白构图",
+   "lighting": "soft warm light / 柔和暖光",
+   "palette": "cinnabar red, indigo, gold foil accents, ink black, rice paper beige / 朱砂红、黛青、金箔点缀、墨黑、宣纸米色",
+   "negative": "cluttered symbols, garish red-gold, Japanese or Korean motifs, misspelled Chinese characters / 符号堆砌、俗艳红金、日韩元素混淆、错字",
+   "compatibility": "通用；汉字生成易错，建议后期替换",
+   "tips": "传统纹样需考据出处；避免与日式/韩式元素混淆"
+  },
+  {
+   "style_key": "cyber",
+   "subject_example": "[主体：如 未来城市街景]",
+   "style_en": "cyberpunk, neon-lit rainy street, holographic signage, high-tech low-life, reflective wet surfaces",
+   "style_zh": "赛博朋克，霓虹雨夜街道，全息招牌，高科技低生活，湿润反光地面",
+   "composition": "low angle wide shot / 低机位广角",
+   "lighting": "neon rim light, volumetric fog / 霓虹轮廓光、体积雾",
+   "palette": "magenta, cyan, acid green on black / 黑底+品红、青、酸性绿",
+   "negative": "daylight, pastel, clean minimal / 白天、粉彩、干净极简",
+   "compatibility": "MJ/SD 均擅长",
+   "tips": "控制霓虹数量，留出主体"
+  },
+  {
+   "style_key": "organic",
+   "subject_example": "[主体：如 有机护肤品产品图]",
+   "style_en": "organic natural style, earthy tones, soft curves, botanical elements, linen and clay textures",
+   "style_zh": "有机自然风，大地色调，柔和曲线，植物元素，亚麻与陶土质感",
+   "composition": "still life with natural props / 带自然道具的静物",
+   "lighting": "soft morning sunlight with leaf shadows / 柔和晨光+树叶投影",
+   "palette": "sage green, terracotta, sand beige / 鼠尾草绿、陶土色、沙米色",
+   "negative": "neon, plastic, metallic, harsh light / 霓虹、塑料、金属、硬光",
+   "compatibility": "通用",
+   "tips": "道具不宜过多，突出产品"
+  },
+  {
+   "style_key": "acid",
+   "subject_example": "[主体：如 电子音乐节海报]",
+   "style_en": "acid graphics, liquid chrome, distorted experimental typography, star bursts, rave aesthetic",
+   "style_zh": "酸性图形，液态铬金属，扭曲实验字体，星芒，锐舞美学",
+   "composition": "broken grid, centered chaos / 打破网格的居中构图",
+   "lighting": "high-contrast metallic reflections / 高对比金属反射",
+   "palette": "black, silver, acid green / 黑、银、酸性绿",
+   "negative": "pastel, soft, corporate, photorealistic people / 粉彩、柔和、商务、写实人物",
+   "compatibility": "MJ 风格化效果更佳",
+   "tips": "主信息（时间地点）后期用可读字体排"
+  },
+  {
+   "style_key": "luxury",
+   "subject_example": "[主体：如 高端腕表海报]",
+   "style_en": "luxury black and gold, art deco ornaments, elegant serif typography, high contrast, premium",
+   "style_zh": "奢华黑金，装饰艺术纹样，优雅衬线字体，高对比，高级感",
+   "composition": "symmetrical centered composition / 对称居中构图",
+   "lighting": "dramatic spotlight / 戏剧性聚光",
+   "palette": "deep black, champagne gold / 深黑、香槟金",
+   "negative": "cheap glitter, cluttered, bright colors / 廉价亮片、杂乱、高饱和",
+   "compatibility": "通用",
+   "tips": "金色控制在 10% 以内面积（经验值，推测）"
+  },
+  {
+   "style_key": "cinematic",
+   "subject_example": "[主体：如 一位站在雨中车站的女性]",
+   "style_en": "cinematic still, anamorphic lens, film grain, shallow depth of field, color graded",
+   "style_zh": "电影剧照，变形宽银幕镜头，胶片颗粒，浅景深，电影调色",
+   "composition": "wide 2.39:1 frame, rule of thirds / 2.39:1 宽画幅，三分法",
+   "lighting": "motivated practical lighting, backlight / 有动机的实景光源、逆光",
+   "palette": "teal and orange or muted desaturated / 青橙或低饱和",
+   "negative": "oversaturated, flat lighting, cartoon / 过饱和、平光、卡通",
+   "compatibility": "通用；MJ 可用 --ar 239:100 之类宽比",
+   "tips": "用 StudioBinder/EyeCannndy 术语描述镜头（low angle、dolly in）"
+  }
+ ]
+}

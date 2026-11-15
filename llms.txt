@@ -1,0 +1,38 @@
+# 设计师知识库 v1（design-kb）
+
+> 中文设计参考知识库（更新于 2026-11-15）：基于 @EianLu 的 X 长文《100 个提升审美的设计网站大赏》整理的 100 个设计网站（另有 15 个「文章之外补充」），29 种设计风格的视觉特征、风格与受众对应、精选 10 大风格、14 个混合风格方案和 15 种风格的中英文 AI 提示词。每条信息都标注来源与核验状态（已核验 / 部分核验 / 访问失败 / 未核验 / 推测）。不引用 CSDN。
+
+Agent 请先读 AGENTS.md 了解检索路径与推荐规则；程序化检索优先使用 data/kb.json。
+
+## 使用说明
+
+- [AGENTS.md](AGENTS.md): 给 Agent 的使用说明：阅读顺序、按任务类型的检索路径、风格→网站→提示词关联、核验字段含义、推荐规则与禁止事项
+- [README.md](README.md): 项目说明、来源、目录结构、核验图例、使用方式
+
+## 知识库正文
+
+- [01-sites.md](01-sites.md): 表一 网站资源总表，100 + 15 个站点的内容、类型、作品风格、场景、用途与逐站核验
+- [02-styles.md](02-styles.md): 表二 设计风格分类表，29 种风格详解，网站×风格映射（作品风格与界面风格分开）
+- [03-style-audience.md](03-style-audience.md): 风格与目标受众对应表，含情绪、行业、不适合场景、地域差异与依据类型
+- [04-taxonomy.md](04-taxonomy.md): 用途 / 领域 / 风格三维分类与索引
+- [05-top10-styles.md](05-top10-styles.md): 精选 10 大风格专题：特征、场景、受众、参考网站、优势、局限
+- [06-mixes.md](06-mixes.md): 14 个混合风格组合方案：主次比例、逻辑、视觉表现、场景、风险
+- [07-prompts.md](07-prompts.md): 15 种风格的中英文 AI 视觉提示词模板与应用建议（Midjourney / SD / 通用）
+
+## 数据
+
+- [data/kb.json](data/kb.json): 全量结构化数据（meta、sites、styles、top10、mixes、prompts）
+- [data/schema.md](data/schema.md): kb.json 与 CSV 的字段说明
+- [data/sites.csv](data/sites.csv): 网站表（115 行）
+- [data/styles.csv](data/styles.csv): 风格表（29 行）
+- [data/verification.tsv](data/verification.tsv): 逐站核验记录（方法、HTTP 状态、结论、日期）
+
+## Optional
+
+- [sources.md](sources.md): 引用来源与访问状态
+- [data/article-100-list.json](data/article-100-list.json): 原文 100 个网站清单与原文摘要
+- [notes/round1-sites.md](notes/round1-sites.md): 第一轮笔记：网站内容与定位、核验流程
+- [notes/round2-styles.md](notes/round2-styles.md): 第二轮笔记：风格与视觉特征的判断方法
+- [notes/round3-audience.md](notes/round3-audience.md): 第三轮笔记：受众依据来源
+- [notes/round4-taxonomy.md](notes/round4-taxonomy.md): 第四轮笔记：分类方法
+- [notes/round5-final-check.md](notes/round5-final-check.md): 第五轮笔记：事实核对、一致性与遗漏
