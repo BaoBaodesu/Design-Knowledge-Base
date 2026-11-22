@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0.0",
+  "updated": "2026-11-22",
+  "recipes": [
+    {
+      "id": "R01",
+      "name": "Swiss Grid × Bauhaus Geometry × Y2K Cyber Fashion",
+      "primary": "swiss",
+      "secondary": [
+        "bauhaus",
+        "y2k"
+      ],
+      "deliverables": [
+        "character-poster",
+        "editorial-poster"
+      ],
+      "layout": "Swiss grid for information zones; asymmetric character zone with controlled overlap.",
+      "geometry": [
+        "geometric decomposition of hair locks, garment hems and shoulder lines"
+      ],
+      "palette": [
+        "charcoal",
+        "cool white",
+        "cobalt blue",
+        "ice cyan",
+        "chrome accent"
+      ],
+      "materials": [
+        "localized chrome",
+        "translucent plastic"
+      ],
+      "risks": [
+        "grid and collage may conflict; separate zones",
+        "do not alter character identity"
+      ],
+      "prompt": "character editorial poster, Swiss grid typography, Bauhaus geometric decomposition, Y2K cyber fashion accents, asymmetric layout, restrained chrome and translucent materials, preserve original character identity"
+    },
+    {
+      "id": "R02",
+      "name": "Art Nouveau × Art Deco × Fantasy Portrait",
+      "primary": "art_nouveau",
+      "secondary": [
+        "art_deco"
+      ],
+      "deliverables": [
+        "fantasy-portrait",
+        "character-poster"
+      ],
+      "layout": "Central portrait with organic frame and stepped geometric border.",
+      "palette": [
+        "antique gold",
+        "deep green",
+        "burgundy",
+        "ivory"
+      ],
+      "materials": [
+        "paper",
+        "foil",
+        "enamel"
+      ],
+      "risks": [
+        "ornamental frame must not overpower face"
+      ],
+      "prompt": "ornate fantasy character portrait, Art Nouveau organic floral framing, Art Deco geometric symmetry, refined antique gold accents, elegant negative space, preserve character identity"
+    },
+    {
+      "id": "R03",
+      "name": "Pop Art × Risograph × Comic Collage",
+      "primary": "pop_art",
+      "secondary": [
+        "riso",
+        "cutout_collage"
+      ],
+      "deliverables": [
+        "character-poster",
+        "comic",
+        "merchandise"
+      ],
+      "layout": "Comic panels or repeated subject with separate speech-bubble zone.",
+      "palette": [
+        "three to five spot colors"
+      ],
+      "materials": [
+        "halftone",
+        "paper grain",
+        "ink overprint"
+      ],
+      "risks": [
+        "keep eyes and facial expression free of halftone"
+      ],
+      "prompt": "playful character poster, Pop Art comic halftone, Risograph spot-color overprint, bold outlines, layered comic collage, expressive pose"
+    },
+    {
+      "id": "R04",
+      "name": "Constructivism × Brutalist Graphic",
+      "primary": "constructivism",
+      "secondary": [
+        "brutalist_graphic"
+      ],
+      "deliverables": [
+        "campaign-poster",
+        "experimental-editorial"
+      ],
+      "layout": "One dominant diagonal or radial structure; monumental typography.",
+      "palette": [
+        "red",
+        "black",
+        "cream"
+      ],
+      "materials": [
+        "paper",
+        "ink wear",
+        "subtle registration shift"
+      ],
+      "risks": [
+        "avoid multiple competing diagonals"
+      ],
+      "prompt": "constructivist graphic poster, bold diagonal composition, red black cream palette, monumental typography, brutalist editorial structure, print grain"
+    },
+    {
+      "id": "R05",
+      "name": "Frutiger Aero × Glassmorphism",
+      "primary": "frutiger_aero",
+      "secondary": [
+        "glass"
+      ],
+      "deliverables": [
+        "technology-poster",
+        "ai-character",
+        "interface-concept"
+      ],
+      "layout": "Open translucent background with a few floating glass objects.",
+      "palette": [
+        "sky blue",
+        "aqua green",
+        "white"
+      ],
+      "materials": [
+        "clear glass",
+        "water droplets",
+        "soft highlights"
+      ],
+      "risks": [
+        "preserve text contrast; avoid excessive blur"
+      ],
+      "prompt": "optimistic futuristic visual, Frutiger Aero aesthetic, clear blue sky and aqua green, translucent glass bubbles, water droplets, soft sunlight, clean readable composition"
+    },
+    {
+      "id": "R06",
+      "name": "Surrealist Collage × Editorial Design",
+      "primary": "surrealist_collage",
+      "secondary": [
+        "editorial"
+      ],
+      "deliverables": [
+        "concept-poster",
+        "album-cover",
+        "editorial"
+      ],
+      "layout": "Editorial grid with one surreal focal metaphor.",
+      "palette": [
+        "theme-led limited palette"
+      ],
+      "materials": [
+        "photographic cutouts",
+        "paper texture"
+      ],
+      "risks": [
+        "every spatial disruption should support a concept"
+      ],
+      "prompt": "surrealist editorial collage, impossible scale relationships, conceptual visual metaphor, refined magazine grid, controlled negative space, tactile photographic cutouts"
+    },
+    {
+      "id": "R07",
+      "name": "Cut-out Collage × Swiss Typography",
+      "primary": "cutout_collage",
+      "secondary": [
+        "swiss"
+      ],
+      "deliverables": [
+        "character-poster",
+        "zine",
+        "editorial"
+      ],
+      "layout": "Layered character silhouette with grid-aligned title.",
+      "palette": [
+        "limited palette with one accent"
+      ],
+      "materials": [
+        "cut paper",
+        "scanned texture",
+        "tape",
+        "registration shift"
+      ],
+      "risks": [
+        "do not damage hair, fingers or garment silhouette"
+      ],
+      "prompt": "layered cut-paper character collage, Swiss editorial typography, torn paper edges, precise grid, overlapping cutout shapes, preserve silhouette and facial identity"
+    }
+  ]
+}
