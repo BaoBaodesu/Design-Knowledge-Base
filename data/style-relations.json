@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.0.0",
+  "updated": "2026-11-22",
+  "style_types": [
+    "historical_movement",
+    "graphic_design_system",
+    "visual_aesthetic",
+    "visual_art_style",
+    "interface_style",
+    "image_technique",
+    "material_language",
+    "composition_method",
+    "typography_method"
+  ],
+  "type_definitions": {
+    "historical_movement": "具有明确历史语境的艺术或设计运动",
+    "graphic_design_system": "组织信息、字体、网格和版式的平面设计体系",
+    "visual_aesthetic": "由时代、媒介或数字文化形成的视觉美学",
+    "visual_art_style": "以图像表达、造型或观念为核心的艺术风格",
+    "interface_style": "数字界面的视觉层次、材质与外观语言",
+    "image_technique": "图像制作、拼贴、印刷或复制技法",
+    "material_language": "表面材质与光学表现",
+    "composition_method": "空间组织与视觉动线方法",
+    "typography_method": "文字作为信息或视觉主体的处理方法"
+  },
+  "entries": [
+    {
+      "key": "constructivism",
+      "name": "俄罗斯构成主义",
+      "name_en": "Russian Constructivism",
+      "style_type": "historical_movement",
+      "secondary_types": [
+        "graphic_design_system"
+      ],
+      "visual_signature": [
+        "diagonal",
+        "radial",
+        "red-black-cream",
+        "monumental-type"
+      ],
+      "use_cases": [
+        "poster",
+        "campaign",
+        "editorial"
+      ],
+      "evidence_level": "editorial_synthesis",
+      "references": [],
+      "relations": []
+    },
+    {
+      "key": "de_stijl",
+      "name": "风格派",
+      "name_en": "De Stijl",
+      "style_type": "historical_movement",
+      "secondary_types": [
+        "composition_method"
+      ],
+      "visual_signature": [
+        "horizontal-vertical",
+        "rectangular-modules",
+        "primary-colors"
+      ],
+      "use_cases": [
+        "abstract-poster",
+        "identity",
+        "character-card"
+      ],
+      "evidence_level": "editorial_synthesis",
+      "references": [],
+      "relations": []
+    },
+    {
+      "key": "art_nouveau",
+      "name": "新艺术运动",
+      "name_en": "Art Nouveau",
+      "style_type": "historical_movement",
+      "secondary_types": [
+        "visual_art_style"
+      ],
+      "visual_signature": [
+        "organic-curves",
+        "botanical-ornament",
+        "integrated-frame"
+      ],
+      "use_cases": [
+        "fantasy-portrait",
+        "character-illustration",
+        "poster"
+      ],
+      "evidence_level": "editorial_synthesis",
+      "references": [],
+      "relations": []
+    },
+    {
+      "key": "art_deco",
+      "name": "装饰艺术",
+      "name_en": "Art Deco",
+      "style_type": "historical_movement",
+      "secondary_types": [
+        "graphic_design_system"
+      ],
+      "visual_signature": [
+        "stepped-geometry",
+        "fan-motifs",
+        "radial-symmetry",
+        "ornamental-lines"
+      ],
+      "use_cases": [
+        "luxury-poster",
+        "cover",
+        "editorial"
+      ],
+      "evidence_level": "editorial_synthesis",
+      "references": [],
+      "relations": []
+    },
+    {
+      "key": "pop_art",
+      "name": "波普艺术",
+      "name_en": "Pop Art",
+      "style_type": "historical_movement",
+      "secondary_types": [
+        "visual_art_style"
+      ],
+      "visual_signature": [
+        "halftone",
+        "bold-outline",
+        "repetition",
+        "high-contrast-color"
+      ],
+      "use_cases": [
+        "character-poster",
+        "comic",
+        "merchandise"
+      ],
+      "evidence_level": "editorial_synthesis",
+      "references": [],
+      "relations": []
+    },
+    {
+      "key": "frutiger_aero",
+      "name": "Frutiger Aero",
+      "name_en": "Frutiger Aero",
+      "style_type": "visual_aesthetic",
+      "secondary_types": [
+        "material_language"
+      ],
+      "visual_signature": [
+        "aqua-blue-green",
+        "glass-bubbles",
+        "water-droplets",
+        "optimistic-tech"
+      ],
+      "use_cases": [
+        "ai-character",
+        "technology-poster",
+        "interface-concept"
+      ],
+      "evidence_level": "editorial_synthesis",
+      "references": [],
+      "relations": []
+    },
+    {
+      "key": "glitch_art",
+      "name": "故障艺术",
+      "name_en": "Glitch Art",
+      "style_type": "visual_art_style",
+      "secondary_types": [
+        "image_technique"
+      ],
+      "visual_signature": [
+        "rgb-split",
+        "scanlines",
+        "pixel-shift",
+        "data-corruption"
+      ],
+      "use_cases": [
+        "digital-poster",
+        "music-visual",
+        "sci-fi"
+      ],
+      "evidence_level": "editorial_synthesis",
+      "references": [],
+      "relations": []
+    },
+    {
+      "key": "surrealist_collage",
+      "name": "超现实主义拼贴",
+      "name_en": "Surrealist Collage",
+      "style_type": "visual_art_style",
+      "secondary_types": [
+        "image_technique"
+      ],
+      "visual_signature": [
+        "impossible-scale",
+        "spatial-dislocation",
+        "visual-metaphor"
+      ],
+      "use_cases": [
+        "concept-poster",
+        "album-cover",
+        "editorial"
+      ],
+      "evidence_level": "editorial_synthesis",
+      "references": [],
+      "relations": []
+    },
+    {
+      "key": "cutout_collage",
+      "name": "剪纸拼贴",
+      "name_en": "Cut-out Collage",
+      "style_type": "image_technique",
+      "secondary_types": [
+        "composition_method"
+      ],
+      "visual_signature": [
+        "cut-paper",
+        "torn-edge",
+        "layering",
+        "silhouette"
+      ],
+      "use_cases": [
+        "character-poster",
+        "zine",
+        "editorial"
+      ],
+      "evidence_level": "editorial_synthesis",
+      "references": [],
+      "relations": []
+    },
+    {
+      "key": "brutalist_graphic",
+      "name": "野兽派平面设计",
+      "name_en": "Brutalist Graphic Design",
+      "style_type": "graphic_design_system",
+      "secondary_types": [
+        "visual_art_style"
+      ],
+      "visual_signature": [
+        "raw-type",
+        "hard-crop",
+        "coarse-grid",
+        "high-contrast"
+      ],
+      "use_cases": [
+        "experimental-poster",
+        "independent-editorial"
+      ],
+      "evidence_level": "editorial_synthesis",
+      "references": [],
+      "relations": []
+    }
+  ],
+  "relation_types": [
+    "influenced_by",
+    "shares_visual_language_with",
+    "often_combined_with",
+    "contrasts_with",
+    "uses_technique",
+    "has_material",
+    "has_prompt_recipe"
+  ],
+  "boundary_notes": [
+    "Art Deco is a broad historical design movement; Luxury Black & Gold is one commercial visual treatment, not a synonym.",
+    "Brutalist architecture, brutalist graphic design and neo-brutalism UI are distinct concepts.",
+    "Y2K and Frutiger Aero overlap historically but have different visual signatures.",
+    "Glitch Art is an image treatment/art practice, not a synonym for Cyberpunk.",
+    "Surrealist Collage is a conceptual image-combination approach; Cut-out Collage is a material/image-making technique.",
+    "Risograph refers to a specific duplicating print process and its visual characteristics, not merely a grain filter."
+  ],
+  "agent_rules": [
+    "Choose one primary style and at most two supporting styles.",
+    "Do not treat type categories as mutually exclusive.",
+    "Distinguish historical influence from visual similarity and practical compatibility.",
+    "All unsupported audience and blend-ratio claims must remain editorial hypotheses."
+  ]
+}
