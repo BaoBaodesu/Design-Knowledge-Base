@@ -51,6 +51,16 @@ design-kb-repo/
 - 扩展 15 个：已核验 13，部分核验 1（Unsplash：反爬校验），访问失败 1（UI中国：TLS 连接被重置，疑为检测环境网络问题）。
 - 检查方法：curl → WebFetch → 无头 Chrome 截图。网站会变，引用前建议复查。
 
+## Agent 可调用视觉设计系统（v2 扩展）
+
+在原有 29 种风格与 15 种提示词基础上，新增 Agent 工作流、风格本体/边界、10 个扩展风格候选、7 个机器可读视觉配方和质量验收规范。扩展条目与原始 29 种风格分开保存，避免未经完整核验就改变原始统计。
+
+- `08-agent-visual-design-system.md`：任务路由、组合策略、提示词组装。
+- `09-style-taxonomy-and-relations.md`：风格分类与概念边界。
+- `10-visual-recipes.md` / `data/visual-recipes.json`：人工与机器可读配方。
+- `11-design-evaluation.md`：验收标准。
+- `data/style-relations.json`：风格类型和关系元数据。
+
 ## 使用方式
 
 1. **找参考网站**：在 04-taxonomy.md 按领域或用途找站点，再到 01-sites.md 表一看推荐用途和核验状态。
