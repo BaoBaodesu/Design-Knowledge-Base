@@ -78,3 +78,10 @@
 - `verification.tsv`：`id, name, url, curl_status, final_url, verdict, detail, checked`。
 - `article-100-list.json`：原文清单，字段 `n`（编号）、`name`、`url`、`desc`（原文摘要）、`sec`（原文分类）、`paid`。
 - `screenshots/sheet_00–09.webp`：首页截图拼图，左上角红标为网站 id。
+
+
+## Agent 视觉设计扩展数据（2026-11-22）
+
+- `data/style-relations.json`：`schema_version`、`style_types`、`type_definitions`、`entries[]`、`relation_types`、`boundary_notes`、`agent_rules`。扩展条目目前作为补充层，不计入原始 `styles[]` 29 条统计。
+- `data/visual-recipes.json`：`recipes[]` 包含 `id`、`name`、`primary`、`secondary[]`、`deliverables[]`、`layout`、`geometry[]`、`palette[]`、`materials[]`、`risks[]`、`prompt`。
+- 类型本体定义与使用规则见 `09-style-taxonomy-and-relations.md`；Agent 路由见 `08-agent-visual-design-system.md`；验收规则见 `11-design-evaluation.md`。
