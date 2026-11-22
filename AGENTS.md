@@ -4,6 +4,12 @@
 
 ## 1. 先读什么
 
+0. `08-agent-visual-design-system.md`：任务路由、风格选择、组合、提示词组装与验收流程（执行视觉设计任务时优先读）。
+0. `09-style-taxonomy-and-relations.md`：风格类型、概念边界与关系类型。
+0. `10-visual-recipes.md` 与 `data/visual-recipes.json`：可复用视觉配方（JSON 为机器读取入口）。
+0. `data/style-relations.json`：机器可读的风格类型、关系与边界说明。
+0. `11-design-evaluation.md`：视觉质量验收标准。
+
 1. `llms.txt`：全库索引，先读它了解有哪些文件。
 2. `data/kb.json`：结构化全量数据，程序化检索的首选；字段见 `data/schema.md`。只需表格时可用 `data/sites.csv`、`data/styles.csv`。
 3. 需要解释细节或引用原话时，再读对应 Markdown：
@@ -16,7 +22,16 @@
    - 提示词：`07-prompts.md`
    - 来源：`sources.md`；研究过程：`notes/`
 
-## 2. 按任务类型的检索路径
+## 2. Agent 视觉设计工作流
+
+- 先读 `08-agent-visual-design-system.md`，识别交付物、主体约束、受众、平台与画幅。
+- 查 `data/kb.json` 获取现有风格，再查 `data/style-relations.json` 获取类型和边界；新增扩展风格优先查 `data/visual-recipes.json` 与 `10-visual-recipes.md`。
+- 每次只选一个主风格，最多两个辅助风格。说明辅助风格具体作用于版式、几何、色彩、材质或图像技法中的哪一项。
+- 历史运动、设计体系、数字美学、界面风格、图像技法不得当作同义概念。
+- 角色任务先锁定身份特征，再做风格转译；重要文字建议后期排版。
+- 按 `11-design-evaluation.md` 输出通过/部分通过/未通过，并指出证据和剩余风险。
+
+## 3. 按任务类型的检索路径
 
 先确定任务类型、受众和平台，再按下表检索。表里的网站 id 对应 `kb.json` 的 `sites[].id`，风格 key 对应 `styles[].key`。
 
@@ -29,7 +44,7 @@
 | 电商 | clay、guochao、organic、minimal、flat（Flat 2.0） | 花瓣(S4)、站酷(S3)、Landingfolio(62)、Mobbin(43)、Page Flows(44，结账/订阅流程)、Pinterest(95) | 原文 100 个里没有专门的电商站，需要说明这一点 |
 | AI 出图 / AI 视频 | 任意风格，先在 07 找模板 | ShotDeck(36)、StillsLab(38)、Flim(39)、EyeCannndy(40)、StudioBinder(41)、Runway AIF(9)、styles.refero.design(S15) | 07 的「通用应用建议」 |
 
-## 3. 风格 → 网站 → 提示词的关联查询
+## 4. 风格 → 网站 → 提示词的关联查询
 
 - **风格 → 网站**：`styles[key].site_ids`，或每个站点的 `sites[].style_keys` 反查。Markdown 里对应 `02-styles.md` 末尾的映射表和 `04-taxonomy.md` 的「按风格索引」。
 - **风格 → 受众**：`styles[key].audience`（`who`、`mood`、`industries`、`avoid`、`regional_notes`、`basis`、`evidence`）。
@@ -38,7 +53,7 @@
 - **精选**：`styles[key].is_top10`，详情在 `top10[]`。
 - 注意区分 `sites[].works_style`（收录作品的风格）和 `sites[].ui_style`（网站自身界面风格），两者经常不一样。
 
-## 4. 核验状态字段
+## 5. 核验状态字段
 
 `sites[].verify`：
 - `status_code`: `verified`（已核验：实际访问成功）、`partial`（部分核验：只拿到部分内容）、`failed`（访问失败）。
@@ -48,7 +63,7 @@
 
 `styles[].audience.evidence` 与 `mixes[].evidence`：`有据` / `部分有据` / `推测`。`sites[].source`: `article`（原文 100 个）或 `supplement`（文章之外补充）。
 
-## 5. 推荐规则
+## 6. 推荐规则
 
 - **必须解释理由**：每个推荐（风格、网站、组合）都要说明为什么适合这个任务和受众，引用具体字段（如视觉特征、适用场景、受众依据）。不要只列名字。
 - **灵活组合，不照搬**：本库是参考，不是规定。根据用户的品牌、受众、平台和预算，从多个风格中取元素组合（参考 `06-mixes.md` 的主次比例思路），也可以提出库里没有的组合，但要说明这是你的判断。
@@ -57,13 +72,13 @@
 - **引用来源**：引用研究结论时附上 `references` / `sources.md` 中的链接（NN/g、维基百科、W3C 等）。
 - **提示词**：用 07 的模板时替换 `[subject]` / `[主体]`，提醒用户 AI 生成的文字（尤其中文）需要后期替换，并检查对比度（WCAG 2.2 正文 ≥ 4.5:1）。
 
-## 6. 禁止事项
+## 7. 禁止事项
 
 - 禁止搜索、打开或引用 CSDN（csdn.net、blog.csdn.net）的任何内容。
 - 不编造网站、数据、引用或核验结果；库里没有的信息，要么说明不知道，要么另行核验并注明来源与日期。
 - 不要把「文章之外补充」的站点说成原文推荐。
 
-## 7. 更新本库时
+## 8. 更新本库时
 
-- 修改网站或风格数据时，同步更新 `data/kb.json`、对应 CSV 和 Markdown 表格，并更新 front matter 的 `updated`。
+- 修改网站或风格数据时，同步更新 `data/kb.json`、对应 CSV 和 Markdown 表格，并更新 front matter 的 `updated`。新增扩展风格时同时更新 `data/style-relations.json`、`data/visual-recipes.json`、`09-style-taxonomy-and-relations.md`、`10-visual-recipes.md` 与 `llms.txt`。
 - 新的核验结果写入 `data/verification.tsv`，注明方法和日期。
