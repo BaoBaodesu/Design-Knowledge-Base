@@ -2,6 +2,18 @@
 
 Agent 请先读 AGENTS.md 了解检索路径与推荐规则；程序化检索优先使用 data/kb.json。
 
+## Agent 视觉设计系统
+
+- [08-agent-visual-design-system.md](08-agent-visual-design-system.md): Agent 任务路由、风格选择、组合规则、提示词组装和角色海报专用规则
+- [09-style-taxonomy-and-relations.md](09-style-taxonomy-and-relations.md): 风格类型本体、关系类型、概念边界与字段规范
+- [10-visual-recipes.md](10-visual-recipes.md): 人工可读的视觉配方、组合逻辑、提示词骨架
+- [11-design-evaluation.md](11-design-evaluation.md): 视觉设计验收与评分
+
+## 机器可读扩展数据
+
+- [data/style-relations.json](data/style-relations.json): 风格类型、边界说明和关系图谱入口
+- [data/visual-recipes.json](data/visual-recipes.json): 可复用视觉配方 JSON
+
 ## 使用说明
 
 - [AGENTS.md](AGENTS.md): 给 Agent 的使用说明：阅读顺序、按任务类型的检索路径、风格→网站→提示词关联、核验字段含义、推荐规则与禁止事项
