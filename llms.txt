@@ -6,13 +6,16 @@ Agent 请先读 AGENTS.md 了解检索路径与推荐规则；程序化检索优
 
 - [08-agent-visual-design-system.md](08-agent-visual-design-system.md): Agent 任务路由、风格选择、组合规则、提示词组装和角色海报专用规则
 - [09-style-taxonomy-and-relations.md](09-style-taxonomy-and-relations.md): 风格类型本体、关系类型、概念边界与字段规范
-- [10-visual-recipes.md](10-visual-recipes.md): 人工可读的视觉配方、组合逻辑、提示词骨架
+- [10-visual-recipes.md](10-visual-recipes.md): 扩展风格完整档案、可靠参考图、16 个视觉配方、组合逻辑与提示词骨架
 - [11-design-evaluation.md](11-design-evaluation.md): 视觉设计验收与评分
+- [12-style-compatibility-and-composition.md](12-style-compatibility-and-composition.md): 9×9 类型兼容矩阵、维度所有权、风格对兼容表与 Agent 自主组合 6 步算法
 
 ## 机器可读扩展数据
 
-- [data/style-relations.json](data/style-relations.json): 风格类型、边界说明和关系图谱入口
-- [data/visual-recipes.json](data/visual-recipes.json): 可复用视觉配方 JSON
+- [data/style-relations.json](data/style-relations.json): 扩展风格完整档案、T1–T3 分级来源、作品级参考图、概念边界、关系图谱与主库 29 种风格类型映射
+- [data/visual-recipes.json](data/visual-recipes.json): 16 个可复用视觉配方 JSON（R01–R16）
+- [data/compatibility-matrix.json](data/compatibility-matrix.json): 类型兼容矩阵、维度所有权、交付物约束与 34 组风格对兼容表
+- [data/extended-prompts.json](data/extended-prompts.json): 16 种扩展与高频主库风格的模块化提示词 JSON（含 modular_tokens）
 
 ## 使用说明
 
@@ -23,7 +26,7 @@ Agent 请先读 AGENTS.md 了解检索路径与推荐规则；程序化检索优
 
 - [01-sites.md](01-sites.md): 表一 网站资源总表，100 + 15 个站点的内容、类型、作品风格、场景、用途与逐站核验
 - [02-styles.md](02-styles.md): 表二 设计风格分类表，29 种风格详解，网站×风格映射（作品风格与界面风格分开）
-- [03-style-audience.md](03-style-audience.md): 风格与目标受众对应表，含情绪、行业、不适合场景、地域差异与依据类型
+- [03-style-audience.md](03-style-audience.md): 风格受众假设表，含情绪、行业、使用边界、地域观察与证据等级
 - [04-taxonomy.md](04-taxonomy.md): 用途 / 领域 / 风格三维分类与索引
 - [05-top10-styles.md](05-top10-styles.md): 精选 10 大风格专题：特征、场景、受众、参考网站、优势、局限
 - [06-mixes.md](06-mixes.md): 14 个混合风格组合方案：主次比例、逻辑、视觉表现、场景、风险

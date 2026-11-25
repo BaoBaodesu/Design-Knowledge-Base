@@ -1,13 +1,15 @@
 # AGENTS.md — 设计师知识库使用说明（给 AI Agent）
 
-本仓库是中文设计参考知识库（v1，2026-11-15）。用它来推荐参考网站、选择设计风格、判断受众匹配、组合风格、生成 AI 视觉提示词。回答用户时用中文。
+本仓库是中文设计参考知识库（v1，2026-11-22）。用它来推荐参考网站、选择设计风格、判断受众匹配、组合风格、生成 AI 视觉提示词。回答用户时用中文。
 
 ## 1. 先读什么
 
 0. `08-agent-visual-design-system.md`：任务路由、风格选择、组合、提示词组装与验收流程（执行视觉设计任务时优先读）。
 0. `09-style-taxonomy-and-relations.md`：风格类型、概念边界与关系类型。
-0. `10-visual-recipes.md` 与 `data/visual-recipes.json`：可复用视觉配方（JSON 为机器读取入口）。
-0. `data/style-relations.json`：机器可读的风格类型、关系与边界说明。
+0. `10-visual-recipes.md` 与 `data/visual-recipes.json`：扩展风格档案、可靠参考图与 16 个可复用视觉配方（JSON 为机器读取入口）。
+0. `data/style-relations.json`：机器可读的扩展风格完整档案、分级来源、参考图、关系、边界说明及主库 29 种风格的 `core_style_classifications`。
+0. `12-style-compatibility-and-composition.md` 与 `data/compatibility-matrix.json`：9×9 类型兼容矩阵、34 组风格对兼容表、维度所有权与 Agent 自主组合算法。
+0. `data/extended-prompts.json`：16 种扩展与高频主库风格的模块化提示词（`modular_tokens`），支持按视觉维度拼装。
 0. `11-design-evaluation.md`：视觉质量验收标准。
 
 1. `llms.txt`：全库索引，先读它了解有哪些文件。
@@ -25,7 +27,7 @@
 ## 2. Agent 视觉设计工作流
 
 - 先读 `08-agent-visual-design-system.md`，识别交付物、主体约束、受众、平台与画幅。
-- 查 `data/kb.json` 获取现有风格，再查 `data/style-relations.json` 获取类型和边界；新增扩展风格优先查 `data/visual-recipes.json` 与 `10-visual-recipes.md`。
+- 查 `data/kb.json` 获取现有风格，再查 `data/style-relations.json` 获取扩展档案、来源、参考图和边界；组合时查 `data/visual-recipes.json` 与 `10-visual-recipes.md`。
 - 每次只选一个主风格，最多两个辅助风格。说明辅助风格具体作用于版式、几何、色彩、材质或图像技法中的哪一项。
 - 历史运动、设计体系、数字美学、界面风格、图像技法不得当作同义概念。
 - 角色任务先锁定身份特征，再做风格转译；重要文字建议后期排版。
@@ -51,6 +53,7 @@
 - **风格 → 提示词**：`prompts[]` 中 `style_key` 相同的条目；`styles[key].has_prompt` 为 true 才有模板（共 15 种）。
 - **风格 → 组合**：`mixes[]` 中 `primary` 或 `secondary` 等于该 key 的条目。
 - **精选**：`styles[key].is_top10`，详情在 `top10[]`。
+- **扩展风格 → 来源与参考图**：`data/style-relations.json` 的 `entries[].references` 与 `reference_images`；按 `source_tiers` 选择证据，并检查 `supports`、`rights` 和 `checked`。
 - 注意区分 `sites[].works_style`（收录作品的风格）和 `sites[].ui_style`（网站自身界面风格），两者经常不一样。
 
 ## 5. 核验状态字段
@@ -58,17 +61,17 @@
 `sites[].verify`：
 - `status_code`: `verified`（已核验：实际访问成功）、`partial`（部分核验：只拿到部分内容）、`failed`（访问失败）。
 - `detail`：检查方法与结果原文；`checked`：检查日期（2026-11-15）。
-- 推荐 `failed` 的站点时必须告诉用户它当前打不开，并给替代（如 Realtime Colors(92) → Coolors(91) + Radix Colors(93)）。`partial` 的站点要提示可能需要人工打开确认。
-- 核验是某一天的快照；时间久了先提醒用户网站可能已变化。
+- 推荐 `failed` 的站点时标注访问失败记录与核验日期，并给替代（如 Realtime Colors(92) → Coolors(91) + Radix Colors(93)）。`partial` 的站点注明已核验范围；任务依赖缺失内容时重新核验。
+- 根据 `verify.checked` 判断网站信息的时效性；关键推荐或长期未复核的站点，先重新核验再引用。
 
 `styles[].audience.evidence` 与 `mixes[].evidence`：`有据` / `部分有据` / `推测`。`sites[].source`: `article`（原文 100 个）或 `supplement`（文章之外补充）。
 
 ## 6. 推荐规则
 
 - **必须解释理由**：每个推荐（风格、网站、组合）都要说明为什么适合这个任务和受众，引用具体字段（如视觉特征、适用场景、受众依据）。不要只列名字。
-- **灵活组合，不照搬**：本库是参考，不是规定。根据用户的品牌、受众、平台和预算，从多个风格中取元素组合（参考 `06-mixes.md` 的主次比例思路），也可以提出库里没有的组合，但要说明这是你的判断。
+- **灵活组合**：根据用户的品牌、受众、平台和预算组合视觉元素，主次比例作为可调参数。库外组合标注为「Agent 提案」，并说明所借用的视觉维度。
 - **给 2–3 个方向**：一般给出主推方案和备选方案，并说明各自的取舍和风险（`common_mistakes`、`avoid`、`risks`）。
-- **如实转述推测**：标为「推测」或「部分有据」的受众判断、比例、地域差异，转述时要保留这个限定，例如「这是推测，没有数据支持」。不要把推测说成事实，也不要编造数字或来源。标为「据原文」「未核验」的数字同样要保留限定。
+- **证据表达**：根据 `evidence`、`verify` 和来源字段标注结论。`推测` 内容作为待验证假设；`部分有据` 内容区分来源支持与编者推断；「据原文」「未核验」保留来源属性。证据等级集中标注，不在每个句子重复限定。
 - **引用来源**：引用研究结论时附上 `references` / `sources.md` 中的链接（NN/g、维基百科、W3C 等）。
 - **提示词**：用 07 的模板时替换 `[subject]` / `[主体]`，提醒用户 AI 生成的文字（尤其中文）需要后期替换，并检查对比度（WCAG 2.2 正文 ≥ 4.5:1）。
 

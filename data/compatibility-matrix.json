@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0.0",
+  "updated": "2026-11-25",
+  "evidence_level": "编者归纳",
+  "evidence_notes": "本兼容矩阵与维度所有权规则为面向 Agent 自主组合的工作假设与设计工程规范，需结合具体主体、受众与生成测试结果调整。",
+  "status_legend": {
+    "synergy": "天然协同：属于互补维度（如版式体系 × 印刷技法或材质语言），可直接按主次拼装。",
+    "zone_split": "空间分区：两者构图或表现逻辑不同，需通过区域划分（如信息区 vs 主体区）共存。",
+    "caution": "谨慎主次：同层级强视觉语言容易竞争焦点，必须指定唯一主风格，辅助风格仅保留 1 个局部维度。",
+    "avoid": "默认避免：构图、材质或交互逻辑存在直接冲突，除非有明确概念理由否则不建议混用。"
+  },
+  "type_compatibility_matrix": {
+    "historical_movement": {
+      "historical_movement": "caution",
+      "graphic_design_system": "synergy",
+      "visual_aesthetic": "zone_split",
+      "visual_art_style": "caution",
+      "interface_style": "zone_split",
+      "image_technique": "synergy",
+      "material_language": "synergy",
+      "composition_method": "synergy",
+      "typography_method": "synergy"
+    },
+    "graphic_design_system": {
+      "historical_movement": "synergy",
+      "graphic_design_system": "caution",
+      "visual_aesthetic": "synergy",
+      "visual_art_style": "zone_split",
+      "interface_style": "synergy",
+      "image_technique": "synergy",
+      "material_language": "synergy",
+      "composition_method": "synergy",
+      "typography_method": "synergy"
+    },
+    "visual_aesthetic": {
+      "historical_movement": "zone_split",
+      "graphic_design_system": "synergy",
+      "visual_aesthetic": "caution",
+      "visual_art_style": "zone_split",
+      "interface_style": "synergy",
+      "image_technique": "synergy",
+      "material_language": "synergy",
+      "composition_method": "synergy",
+      "typography_method": "synergy"
+    },
+    "visual_art_style": {
+      "historical_movement": "caution",
+      "graphic_design_system": "zone_split",
+      "visual_aesthetic": "zone_split",
+      "visual_art_style": "avoid",
+      "interface_style": "zone_split",
+      "image_technique": "synergy",
+      "material_language": "synergy",
+      "composition_method": "synergy",
+      "typography_method": "zone_split"
+    },
+    "interface_style": {
+      "historical_movement": "zone_split",
+      "graphic_design_system": "synergy",
+      "visual_aesthetic": "synergy",
+      "visual_art_style": "zone_split",
+      "interface_style": "avoid",
+      "image_technique": "zone_split",
+      "material_language": "synergy",
+      "composition_method": "synergy",
+      "typography_method": "synergy"
+    },
+    "image_technique": {
+      "historical_movement": "synergy",
+      "graphic_design_system": "synergy",
+      "visual_aesthetic": "synergy",
+      "visual_art_style": "synergy",
+      "interface_style": "zone_split",
+      "image_technique": "caution",
+      "material_language": "synergy",
+      "composition_method": "synergy",
+      "typography_method": "synergy"
+    },
+    "material_language": {
+      "historical_movement": "synergy",
+      "graphic_design_system": "synergy",
+      "visual_aesthetic": "synergy",
+      "visual_art_style": "synergy",
+      "interface_style": "synergy",
+      "image_technique": "synergy",
+      "material_language": "avoid",
+      "composition_method": "synergy",
+      "typography_method": "synergy"
+    },
+    "composition_method": {
+      "historical_movement": "synergy",
+      "graphic_design_system": "synergy",
+      "visual_aesthetic": "synergy",
+      "visual_art_style": "synergy",
+      "interface_style": "synergy",
+      "image_technique": "synergy",
+      "material_language": "synergy",
+      "composition_method": "avoid",
+      "typography_method": "synergy"
+    },
+    "typography_method": {
+      "historical_movement": "synergy",
+      "graphic_design_system": "synergy",
+      "visual_aesthetic": "synergy",
+      "visual_art_style": "zone_split",
+      "interface_style": "synergy",
+      "image_technique": "synergy",
+      "material_language": "synergy",
+      "composition_method": "synergy",
+      "typography_method": "avoid"
+    }
+  },
+  "dimension_ownership_rules": {
+    "dimensions": [
+      "layout",
+      "geometry",
+      "palette",
+      "typography",
+      "materials",
+      "image_treatment",
+      "lighting"
+    ],
+    "primary_role": {
+      "weight_range": "60%-75%",
+      "default_owns": ["layout", "geometry", "typography"],
+      "rule": "主风格决定整体识别度与骨架结构，不可被辅助风格稀释。"
+    },
+    "secondary_role": {
+      "weight_range": "20%-30%",
+      "max_dimensions": 2,
+      "allowed_slots": ["materials", "image_treatment", "palette", "geometry", "lighting"],
+      "rule": "辅助风格必须声明具体接管的 1–2 个维度，不得同时接管主风格的 layout。"
+    },
+    "accent_role": {
+      "weight_range": "5%-15%",
+      "max_dimensions": 1,
+      "allowed_slots": ["materials", "image_treatment", "typography", "lighting"],
+      "rule": "可选的第三风格仅作为局部技法、材质或动态点缀，禁止平均三等分混合。"
+    },
+    "conflict_resolution_patterns": [
+      "空间分区（Zone Split）：信息区采用理性网格（如 swiss / editorial），主体区采用表现性艺术或拼贴（如 cutout_collage / surrealist_collage / acid）。",
+      "层级隔离（Layer Isolation）：关键文字与角色面部放在清晰层，故障（glitch_art）、网点（pop_art）或颗粒（riso）仅作用于边缘与背景层。",
+      "色板收敛（Palette Lock）：任意组合总色相不超过 3–4 个主色，强调色不超过 1 个，避免多个风格各自带入整套配色。"
+    ]
+  },
+  "deliverable_constraints": {
+    "character-poster": {
+      "max_styles": 3,
+      "subject_priority": "character_identity > headline > metadata > ornament",
+      "mandatory_guards": [
+        "锁定脸型、发型、瞳色、服装标志物与年龄设定",
+        "建立头顶、手部与文字安全区",
+        "重要中英文标题建议后期排版"
+      ],
+      "preferred_primary_types": ["graphic_design_system", "historical_movement", "visual_aesthetic", "visual_art_style"]
+    },
+    "brand-poster": {
+      "max_styles": 2,
+      "subject_priority": "brand_message > focal_visual > detail",
+      "mandatory_guards": [
+        "确保品牌色与核心图形识别清晰",
+        "正文与标题对比度满足 WCAG 2.2（正文 >= 4.5:1）"
+      ],
+      "preferred_primary_types": ["graphic_design_system", "historical_movement", "visual_aesthetic"]
+    },
+    "editorial-cover": {
+      "max_styles": 2,
+      "subject_priority": "masthead_and_title > focal_image > issue_metadata",
+      "mandatory_guards": [
+        "保留顶部刊头与条码安全区",
+        "摄影/插画焦点与标题区亮度分离"
+      ],
+      "preferred_primary_types": ["graphic_design_system", "visual_art_style", "image_technique"]
+    },
+    "ui-landing": {
+      "max_styles": 2,
+      "subject_priority": "readability_and_cta > layout_hierarchy > surface_material",
+      "mandatory_guards": [
+        "避免牺牲可点击性指示与文本对比度（参考 NN/g 与 WCAG 2.2）",
+        "玻璃/暗黑/动态效果需考虑可读性与降级方案"
+      ],
+      "preferred_primary_types": ["interface_style", "composition_method", "graphic_design_system"]
+    },
+    "album-cover": {
+      "max_styles": 3,
+      "subject_priority": "emotional_hook > conceptual_metaphor > title",
+      "mandatory_guards": [
+        "1:1 缩略图尺寸下仍保持强轮廓识别度",
+        "避免过多细碎装饰在小尺寸下糊成噪点"
+      ],
+      "preferred_primary_types": ["visual_aesthetic", "visual_art_style", "image_technique", "historical_movement"]
+    },
+    "game-key-art": {
+      "max_styles": 3,
+      "subject_priority": "character_and_worldview > action_flow > logo_zone",
+      "mandatory_guards": [
+        "为游戏 Logo 与副标题预留干净低频区域",
+        "动作轴线明确，避免多条竞争斜线"
+      ],
+      "preferred_primary_types": ["visual_aesthetic", "historical_movement", "image_technique"]
+    }
+  },
+  "style_pairs": [
+    {"style_a": "swiss", "style_b": "bauhaus", "status": "recommended", "recommended_role": "swiss 负责网格与字体，bauhaus 负责几何拆解模块", "resolution": "共享现代主义理性骨架，注意不要堆砌过多三原色块", "recipe_id": "R01"},
+    {"style_a": "swiss", "style_b": "y2k", "status": "conditional", "recommended_role": "swiss 负责信息网格，y2k 仅负责局部铬金属与透明塑料材质", "resolution": "空间分区，严格限制金属与镭射面积", "recipe_id": "R01"},
+    {"style_a": "swiss", "style_b": "cutout_collage", "status": "recommended", "recommended_role": "cutout_collage 负责主体剪纸分层，swiss 负责标题与编号网格", "resolution": "文字区保持整洁网格，剪纸边缘避开主体脸部与手指", "recipe_id": "R07"},
+    {"style_a": "swiss", "style_b": "glitch_art", "status": "recommended", "recommended_role": "glitch_art 负责图像局部信号切片，swiss 负责独立清晰文字层", "resolution": "层级隔离：关键文字绝不施加故障变形", "recipe_id": "R08"},
+    {"style_a": "swiss", "style_b": "de_stijl", "status": "recommended", "recommended_role": "de_stijl 负责正交矩形色块骨架，swiss 负责现代无衬线信息排版", "resolution": "统一正交轴线，避免同时引入多余斜线", "recipe_id": "R09"},
+    {"style_a": "swiss", "style_b": "acid", "status": "conditional", "recommended_role": "swiss 负责 70% 网格秩序，acid 仅负责 30% 主视觉视觉冲击", "resolution": "酸性扭曲字体与液态金属不得侵入正文信息栏", "recipe_id": null},
+    {"style_a": "swiss", "style_b": "japanese", "status": "recommended", "recommended_role": "swiss 提供结构比例，japanese 提供“間”的留白与和纸质感", "resolution": "通过纸纹与自然光柔化纯网格的冰冷感", "recipe_id": null},
+    {"style_a": "swiss", "style_b": "brutalist_graphic", "status": "conditional", "recommended_role": "择一为主；brutalist_graphic 可打破 swiss 局部边界做硬裁切", "resolution": "保留主阅读轴，避免破坏正文可读性", "recipe_id": null},
+    {"style_a": "art_nouveau", "style_b": "art_deco", "status": "recommended", "recommended_role": "art_nouveau 负责内层有机花卉人物框架，art_deco 负责外层阶梯几何边界", "resolution": "内外分层隔离，避免两套纹样在同一区域打架", "recipe_id": "R02"},
+    {"style_a": "art_nouveau", "style_b": "de_stijl", "status": "conflict", "recommended_role": "默认不建议直接融合；若必须使用，仅作极端对比实验", "resolution": "严格物理分区：外框/信息区用正交网格，内画用有机曲线", "recipe_id": null},
+    {"style_a": "art_deco", "style_b": "cinematic", "status": "recommended", "recommended_role": "cinematic 负责大片布光与人物写实，art_deco 负责对称边框与标题几何", "resolution": "控制金属边框细度与面积，避免廉价全金滤镜", "recipe_id": "R14"},
+    {"style_a": "art_deco", "style_b": "luxury", "status": "conditional", "recommended_role": "art_deco 提供几何结构与纹样，luxury 提供克制黑金/深色材质调性", "resolution": "避免把 Art Deco 退化为纯黑金滤镜，可加入祖母绿或钴蓝", "recipe_id": "R14"},
+    {"style_a": "pop_art", "style_b": "riso", "status": "recommended", "recommended_role": "pop_art 负责漫画分格与粗轮廓，riso 负责 3–5 专色叠印与纸纹", "resolution": "网点与套印偏移避开人物眼睛与表情核心区", "recipe_id": "R03"},
+    {"style_a": "pop_art", "style_b": "cutout_collage", "status": "recommended", "recommended_role": "pop_art 负责色彩与漫画语义，cutout_collage 负责多图层剪切叠层", "resolution": "保持主体轮廓清晰，避免剪贴碎片喧宾夺主", "recipe_id": "R03"},
+    {"style_a": "constructivism", "style_b": "brutalist_graphic", "status": "recommended", "recommended_role": "constructivism 负责单一对角线动势，brutalist_graphic 负责粗重字体与硬裁切", "resolution": "严禁出现多条竞争斜线，保持明确阅读方向", "recipe_id": "R04"},
+    {"style_a": "constructivism", "style_b": "art_nouveau", "status": "conflict", "recommended_role": "默认避免：工业锋利对角线与柔和有机藤蔓在哲学与几何上完全冲突", "resolution": "如无强叙事反差需求，改选其他组合", "recipe_id": null},
+    {"style_a": "frutiger_aero", "style_b": "glass", "status": "recommended", "recommended_role": "frutiger_aero 负责蓝绿清澈氛围与水滴，glass 负责局部半透明信息面板", "resolution": "确保玻璃面板上的文字满足高对比度，防止背景过曝", "recipe_id": "R05"},
+    {"style_a": "frutiger_aero", "style_b": "cyber", "status": "conflict", "recommended_role": "默认避免：清澈乐观日光美学与暗黑反乌托邦霓虹直接对立", "resolution": "不要将两者硬拼；需明快科技选 frutiger_aero，需暗调未来选 cyber", "recipe_id": null},
+    {"style_a": "frutiger_aero", "style_b": "y2k", "status": "conditional", "recommended_role": "明确主次：frutiger_aero 为主时仅借 y2k 少量透明塑料细节", "resolution": "避免引入重度暗调铬金属，防止丢失清澈自然感", "recipe_id": null},
+    {"style_a": "surrealist_collage", "style_b": "editorial", "status": "recommended", "recommended_role": "editorial 负责杂志网格与排版秩序，surrealist_collage 负责中心超现实隐喻", "resolution": "全画面只保留 1 个核心隐喻物体与最多 2 个次级异质物体", "recipe_id": "R06"},
+    {"style_a": "surrealist_collage", "style_b": "cutout_collage", "status": "recommended", "recommended_role": "surrealist_collage 负责观念与尺度错位，cutout_collage 负责手工剪纸与纸层触感", "resolution": "统一光源或调色以融合异质素材", "recipe_id": null},
+    {"style_a": "cyber", "style_b": "glitch_art", "status": "recommended", "recommended_role": "cyber 负责霓虹赛博世界观与布光，glitch_art 负责局部通道分离与切片", "resolution": "故障仅作用于边缘与次要背景，保护主体面部与信息可读性", "recipe_id": "R11"},
+    {"style_a": "cyber", "style_b": "vapor", "status": "conditional", "recommended_role": "cyber 负责构图与科技主体，vapor 负责粉青怀旧渐变与扫描线氛围", "resolution": "限制蒸汽波符号数量（最多 1–2 个），避免廉价梗图堆砌", "recipe_id": null},
+    {"style_a": "glitch_art", "style_b": "kinetic", "status": "recommended", "recommended_role": "kinetic 负责大字动势节奏，glitch_art 负责画面或边缘信号错位", "resolution": "动态版本严格控制闪烁频率，防止视觉不适", "recipe_id": "R11"},
+    {"style_a": "bauhaus", "style_b": "riso", "status": "recommended", "recommended_role": "bauhaus 负责基础几何构图，riso 负责 2–3 专色油墨叠印与温暖纸纹", "resolution": "用纸张肌理中和包豪斯几何的机械冰冷感", "recipe_id": "R12"},
+    {"style_a": "editorial", "style_b": "riso", "status": "recommended", "recommended_role": "editorial 负责多栏网格与衬线层级，riso 负责插画区的荧光专色印刷感", "resolution": "正文区保持干净高对比，颗粒仅用于插画与底纸", "recipe_id": "R12"},
+    {"style_a": "guochao", "style_b": "minimal", "status": "recommended", "recommended_role": "minimal 负责大面积留白与克制布局，guochao 负责少量考据东方符号与传统色", "resolution": "严禁传统纹样满屏堆砌，每次聚焦 1–2 个核心符号", "recipe_id": "R10"},
+    {"style_a": "bento", "style_b": "darkmode", "status": "recommended", "recommended_role": "bento 负责模块化卡片网格，darkmode 负责深色表面层级与低眩光对比", "resolution": "使用微弱边框与表面明度差区分卡片，避免纯黑高对比刺眼", "recipe_id": "R13"},
+    {"style_a": "bento", "style_b": "glass", "status": "recommended", "recommended_role": "bento 负责布局结构，glass 仅作用于 1–2 张核心高亮卡片表面", "resolution": "控制毛玻璃卡片数量，检查 WCAG 2.2 文本对比度", "recipe_id": "R13"},
+    {"style_a": "glass", "style_b": "neobrutal", "status": "conflict", "recommended_role": "默认避免：半透明柔和毛玻璃与粗黑硬描边硬阴影在界面语言上直接冲突", "resolution": "二选一，不要在同一 UI 系统中混用", "recipe_id": null},
+    {"style_a": "neumorph", "style_b": "brutal", "status": "conflict", "recommended_role": "默认避免：低对比柔和浮雕与极端粗糙高反差原始网页直接互斥", "resolution": "二选一，避免可点击性与视觉层级全面崩溃", "recipe_id": null},
+    {"style_a": "y2k", "style_b": "acid", "status": "recommended", "recommended_role": "y2k 负责千禧未来科技基调，acid 负责局部扭曲字体与液态金属视觉爆点", "resolution": "控制高饱和荧光色面积，保留明确主标题辨识度", "recipe_id": "R15"},
+    {"style_a": "japanese", "style_b": "organic", "status": "recommended", "recommended_role": "japanese 负责“間”留白与构图秩序，organic 负责自然大地色与植物材质", "resolution": "可搭配 handdrawn 做局部插画点缀，避免画面过冷或杂乱", "recipe_id": "R16"},
+    {"style_a": "organic", "style_b": "handdrawn", "status": "recommended", "recommended_role": "organic 负责温和大地色板与有机轮廓，handdrawn 负责单一画材手工插画", "resolution": "锁定单一画材（如水粉或钢笔淡彩），确保全套视觉统一", "recipe_id": "R16"}
+  ]
+}

@@ -1,6 +1,6 @@
 # data/ 字段说明
 
-更新日期：2026-11-15。所有文本为中文（zh-Hans），文件编码 UTF-8。
+更新日期：2026-11-25。所有文本为中文（zh-Hans），文件编码 UTF-8。
 
 ## kb.json 顶层
 
@@ -45,11 +45,11 @@
 | `colors`、`typography`、`layout`、`graphics`、`texture` | string | 配色、字体、版式构图、图形元素、质感 |
 | `common_mistakes` | string | 常见误区 |
 | `references` | {label,url}[] | 参考来源（2026-11-15 已验证可访问） |
-| `audience.who` | string | 潜在受众（年龄/职业/兴趣） |
+| `audience.who` | string | 受众假设（年龄/职业/兴趣）；证据等级统一由 `audience.evidence` 记录，不在文本中重复标注 |
 | `audience.mood` | string | 情绪与品牌印象 |
 | `audience.industries` | string | 适合行业/用途 |
-| `audience.avoid` | string | 不适合场景 |
-| `audience.regional_notes` | string | 地域/文化/平台差异 |
+| `audience.avoid` | string | 使用边界与需重点验证的场景 |
+| `audience.regional_notes` | string | 地域/文化/平台观察；证据等级由 `audience.evidence` 记录 |
 | `audience.basis` | string | 判断依据 |
 | `audience.evidence` | string | `有据` / `部分有据` / `推测` |
 | `site_ids` | string[] | 关联网站 id |
@@ -62,7 +62,7 @@
 
 ## mixes[]
 
-`id`、`name`、`primary` / `secondary`（风格 key）、`ratio`（主:次，推测）、`logic`、`visual`、`scenarios`、`risks`、`evidence`（均为「推测」）。
+`id`、`name`、`primary` / `secondary`（风格 key）、`ratio`（主:次，可调的初始参数）、`logic`、`visual`、`scenarios`、`risks`、`evidence`（当前均为「推测」）。
 
 ## prompts[]
 
@@ -80,8 +80,10 @@
 - `screenshots/sheet_00–09.webp`：首页截图拼图，左上角红标为网站 id。
 
 
-## Agent 视觉设计扩展数据（2026-11-22）
+## Agent 视觉设计扩展数据（2026-11-25）
 
-- `data/style-relations.json`：`schema_version`、`style_types`、`type_definitions`、`entries[]`、`relation_types`、`boundary_notes`、`agent_rules`。扩展条目目前作为补充层，不计入原始 `styles[]` 29 条统计。
-- `data/visual-recipes.json`：`recipes[]` 包含 `id`、`name`、`primary`、`secondary[]`、`deliverables[]`、`layout`、`geometry[]`、`palette[]`、`materials[]`、`risks[]`、`prompt`。
-- 类型本体定义与使用规则见 `09-style-taxonomy-and-relations.md`；Agent 路由见 `08-agent-visual-design-system.md`；验收规则见 `11-design-evaluation.md`。
+- `data/style-relations.json`：`source_tiers` 定义 T1–T3 来源等级；`entries[]` 包含 10 个扩展风格的名称、别名、类型、时期、起源、视觉维度、用途、风险、证据说明、分级来源、参考图与关系；`core_style_classifications` 为主库 29 种风格提供机器可读的 `style_type` 与 `secondary_types` 映射。`references[]` 用 `supports[]` 标记证据对应字段；`reference_images[]` 记录作品页、创作者、机构、权利与核验日期。扩展条目不计入原始 `styles[]` 29 条统计。
+- `data/visual-recipes.json`：`recipes[]`（共 16 条，R01–R16）统一包含 `id`、`name`、`primary`、`secondary[]`、`deliverables[]`、`layout`、`geometry[]`、`palette[]`、`materials[]`、`risks[]`、`prompt`、`reference_pages[]`；R01 另有 `aliases[]`。
+- `data/compatibility-matrix.json`：包含 `type_compatibility_matrix`（9×9 类型兼容矩阵）、`dimension_ownership_rules`（主/辅/点缀权重与维度槽位规则）、`deliverable_constraints`（6 类交付物约束）与 `style_pairs[]`（34 组具体风格对兼容规则及关联 `recipe_id`）。
+- `data/extended-prompts.json`：`prompts[]`（共 16 条，覆盖 10 个扩展风格 + 6 个高频主库风格）除兼容 `kb.json` 的基础字段外，新增 `source_layer` 与 `modular_tokens`（`layout_tokens`、`geometry_tokens`、`palette_tokens`、`material_tokens`、`treatment_tokens`、`lighting_tokens`、`identity_guard`），支持 Agent 按维度拼装提示词。
+- 类型本体定义与使用规则见 `09-style-taxonomy-and-relations.md`；Agent 路由见 `08-agent-visual-design-system.md`；自主组合与兼容矩阵见 `12-style-compatibility-and-composition.md`；验收规则见 `11-design-evaluation.md`。

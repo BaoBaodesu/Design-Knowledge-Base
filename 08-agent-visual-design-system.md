@@ -1,7 +1,7 @@
 ---
 title: "Agent 可调用的视觉设计知识系统"
 description: "将风格知识转化为可检索、可组合、可执行、可评估的视觉设计工作流"
-updated: 2026-11-22
+updated: 2026-11-25
 tags: [agent, visual-design, workflow, retrieval]
 ---
 
@@ -9,7 +9,7 @@ tags: [agent, visual-design, workflow, retrieval]
 
 ## 目标
 
-本知识库不应只作为风格名称词典。Agent 应能从用户目标出发，检索视觉语言、判断风格适配性、生成有约束的组合方案、转译为图像/视频提示词，并依据检查清单验收。
+Agent 从用户目标出发，检索视觉语言、判断风格适配性、生成有约束的组合方案、转译为图像/视频提示词，并依据检查清单验收。风格名称只作为检索入口，最终方案落实到版式、几何、色彩、字体、材质与图像技法。
 
 ## 任务路由
 
@@ -30,7 +30,7 @@ tags: [agent, visual-design, workflow, retrieval]
 - **主风格**：名称、style_type、选用理由、不可丢失的识别特征。
 - **辅助风格/技法**：只说明借用哪些局部元素，以及放在哪里。
 - **视觉配方**：Layout / Geometry / Palette / Typography / Material / Image treatment / Lighting。
-- **层级分配**：主体、标题、辅助信息、装饰元素的优先级；比例只作为初始设计假设，不是事实。
+- **层级分配**：主体、标题、辅助信息、装饰元素的优先级；比例作为可调初始参数，通过版面测试调整。
 - **风险与规避**：至少指出一个可能的冲突或生成风险。
 - **提示词**：主体、正向视觉描述、约束、负面词分开。
 - **验收清单**：逐项标记通过/未通过/不适用。
@@ -69,16 +69,18 @@ tags: [agent, visual-design, workflow, retrieval]
 
 ## 检索策略
 
-- 精确风格：查 `data/kb.json` 的 `styles`。
-- 风格类型、可组合关系：查 `data/style-relations.json`。
-- 可直接复用的组合配方：查 `data/visual-recipes.json`。
+- 精确风格：查 `data/kb.json` 的 `styles`（29 种主库风格）。
+- 风格类型、扩展档案与可组合关系：查 `data/style-relations.json`（含主库 29 种 `core_style_classifications` 与 10 个扩展 `entries[]`）。
+- 自主组合兼容判断与维度所有权：查 `data/compatibility-matrix.json` 与 `12-style-compatibility-and-composition.md`。
+- 可直接复用的组合配方：查 `data/visual-recipes.json`（R01–R16）。
 - 具体任务的流程与验收：查本文件与 `11-design-evaluation.md`。
-- 需要图像提示词时：查 `07-prompts.md`，并根据具体模型能力调整；不要假设不同模型对同一提示词响应一致。
+- 需要图像提示词或跨风格模块化拼装时：查 `07-prompts.md`、`data/kb.json`（15 种主库模板）与 `data/extended-prompts.json`（16 种扩展/高频风格的模块化 `modular_tokens`），先确认目标模型与版本，再通过试生成校准提示词和参数。
 
 ## 证据与置信度
 
 - **有据**：有可靠来源直接支持历史、定义或制作原理。
 - **部分有据**：核心概念有来源，但具体视觉归纳来自作品观察。
 - **编者归纳**：实用设计规则或组合建议，属于工作假设。
-- **未核验**：尚未完成来源检查。不得将其改写成确定事实。
-- 组合比例、受众画像和效果预测默认属于编者判断，除非有研究数据支持。
+- **未核验**：尚未完成来源检查，输出时保留该状态。
+- 组合比例、受众画像和效果预测默认作为编者假设；获得研究数据后更新证据等级并补充来源。
+- 输出优先描述设计动作、可调参数和验收方法；证据等级集中标注，不在每个句子重复限定。

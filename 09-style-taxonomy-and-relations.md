@@ -1,7 +1,7 @@
 ---
 title: "风格分类体系与关系图谱"
 description: "定义风格类型、层级、关系与兼容规则，避免将艺术运动、审美潮流和制作技法混为一谈"
-updated: 2026-11-22
+updated: 2026-11-25
 tags: [taxonomy, ontology, style-relations]
 ---
 
@@ -46,6 +46,18 @@ tags: [taxonomy, ontology, style-relations]
 - **Surrealist Collage 与 Cut-out Collage 不同**：前者是观念/图像组合逻辑，后者是素材剪切与叠层技法。
 - **Risograph** 是具体印刷工艺及其视觉美学，不应仅被理解成颗粒滤镜。
 
+## 来源与参考图等级
+
+| 等级 | 来源 | 主要用途 |
+|---|---|---|
+| T1 | 博物馆、档案馆、学术机构、艺术研究机构 | 历史、定义、作品 metadata、藏品图像 |
+| T2 | 专业设计机构、设计出版物、一手设计规范 | 专业语境、制作方法、原始设计资料 |
+| T3 | 艺术家或设计师作品页、专题研究项目、视觉参考社区 | 当代案例、术语使用、视觉参考 |
+
+来源等级描述出版方与证据渠道。每条来源用 `supports[]` 标明它实际支持的字段，不能用机构权威替代逐条对应。当代数字美学没有 T1 定义来源时，记录当前证据缺口。
+
+参考图至少记录 `title`、`creator`、`date`、`institution`、`page_url`、`rights`、`checked`。`image_url` 仅在机构提供可核验地址时填写；藏品页链接不等于图片复用授权。
+
 ## 风格条目最低字段
 
 ```json
@@ -53,10 +65,11 @@ tags: [taxonomy, ontology, style-relations]
   "key": "stable-kebab-or-snake-key",
   "name": "中文名称",
   "name_en": "English name",
+  "aliases": [],
   "style_type": "visual_aesthetic",
   "secondary_types": ["image_technique"],
-  "historical_period": "年代或未核验",
-  "origin": "起源与背景，附来源或标记未核验",
+  "historical_period": "年代、历史范围或当前证据缺口",
+  "origin": "起源与背景，能够由 references 支持",
   "visual_signature": ["最具识别度的特征"],
   "layout": [],
   "geometry": [],
@@ -67,22 +80,48 @@ tags: [taxonomy, ontology, style-relations]
   "lighting": [],
   "use_cases": [],
   "avoid_or_risks": [],
-  "relations": [],
   "evidence_level": "有据|部分有据|编者归纳|未核验",
-  "references": []
+  "evidence_notes": "区分来源支持的内容与编者转译",
+  "references": [
+    {
+      "title": "页面或作品名",
+      "publisher": "机构或出版方",
+      "tier": "T1|T2|T3",
+      "url": "https://…",
+      "supports": ["origin", "visual_signature"],
+      "checked": "YYYY-MM-DD"
+    }
+  ],
+  "reference_images": [
+    {
+      "title": "作品名",
+      "creator": "创作者",
+      "date": "作品年代",
+      "institution": "收藏或发布机构",
+      "page_url": "https://…",
+      "image_url": "https://… 或 null",
+      "rights": "版权、许可或权利核对入口",
+      "checked": "YYYY-MM-DD"
+    }
+  ],
+  "relations": []
 }
 ```
 
-## 当前知识库的推荐归类
+## 当前知识库的推荐归类（主库 29 + 扩展层 10）
 
-- 历史运动：Bauhaus、Memphis、Art Deco（建议拆分）、Art Nouveau（新增）、De Stijl（新增）、Constructivism（新增）、Pop Art（新增）。
-- 平面体系：Swiss、Editorial、Brutalist Graphic Design（新增，与现有 web brutal 分开）。
-- 数字美学：Y2K、Vaporwave、Cyberpunk、Frutiger Aero（新增）。
-- 数字表现：Glitch Art（新增）。
-- 图像技法：Risograph、Cut-out Collage（新增）、Surrealist Collage（新增，兼具视觉艺术分类）。
-- 界面风格：Glassmorphism、Neumorphism、Flat、Skeuomorphism、Bento（Bento 更适合作为布局模式）。
-- 构图/文字方法：Kinetic Typography、Grid、Bento Grid。
+完整机器可读映射见 `data/style-relations.json` 的 `core_style_classifications`（主库 29 种）与 `entries[]`（扩展层 10 种）：
+
+- 历史运动（`historical_movement`）：`bauhaus`、`memphis`（主库）；`constructivism`、`de_stijl`、`art_nouveau`、`art_deco`、`pop_art`（扩展层）。
+- 平面体系（`graphic_design_system`）：`swiss`、`editorial`（主库）；`brutalist_graphic`（扩展层，与网页 `brutal` 分开）。
+- 时代/数字美学（`visual_aesthetic`）：`y2k`、`cyber`、`vapor`、`japanese`、`guochao`、`luxury`、`organic`、`acid`、`retroweb`（主库）；`frutiger_aero`（扩展层）。
+- 视觉艺术风格（`visual_art_style`）：`minimal`（主库）；`glitch_art`、`surrealist_collage`（扩展层）。
+- 界面风格（`interface_style`）：`brutal`、`neobrutal`、`glass`、`neumorph`、`flat`、`skeuo`、`darkmode`、`webgl`（主库）。
+- 图像技法（`image_technique`）：`riso`、`handdrawn`、`cinematic`（主库）；`cutout_collage`（扩展层）。
+- 材质语言（`material_language`）：`clay`、`gradient`（主库）。
+- 构图方法（`composition_method`）：`bento`（主库）。
+- 字体/文字表现（`typography_method`）：`kinetic`（主库）。
 
 ## 注意
 
-本分类是为 Agent 检索和决策服务的实用本体，不是艺术史学界唯一或权威的分类法。对于跨类别概念，允许多标签并保留边界说明。
+本分类用于 Agent 检索与决策；跨类别概念使用多标签并保留边界说明。

@@ -1,6 +1,12 @@
 {
-  "schema_version": "1.0.0",
-  "updated": "2026-11-22",
+  "schema_version": "1.2.0",
+  "updated": "2026-11-25",
+  "source_tiers": {
+    "T1": "博物馆、档案馆、学术机构与艺术研究机构；用于历史、定义、作品 metadata 和藏品图像",
+    "T2": "专业设计机构、设计出版物与一手设计规范；用于专业语境、制作方法和原始设计资料",
+    "T3": "设计师或艺术家作品页、专题研究项目与视觉参考社区；用于当代案例和术语使用，需保留作者与出处"
+  },
+  "reference_image_policy": "参考图记录作品页、创作者、机构、权利信息与核验日期。image_url 仅在机构提供可核验图像地址时填写；页面内图库和受版权保护作品以 page_url 为入口，不代表获得复用授权。",
   "style_types": [
     "historical_movement",
     "graphic_design_system",
@@ -28,229 +34,801 @@
       "key": "constructivism",
       "name": "俄罗斯构成主义",
       "name_en": "Russian Constructivism",
+      "aliases": ["Constructivism", "构成主义"],
       "style_type": "historical_movement",
-      "secondary_types": [
-        "graphic_design_system"
+      "secondary_types": ["graphic_design_system"],
+      "historical_period": "约 1915 年兴起于俄罗斯；1920 年代扩展至平面设计、摄影、出版与实用设计",
+      "origin": "Tate 将其追溯至 Vladimir Tatlin 与 Alexander Rodchenko，强调工业材料、技术组织与社会用途。MoMA 的 Rodchenko 藏品资料说明其标准化抽象设计被应用于书籍、海报、纺织品和展览等实用对象。",
+      "visual_signature": ["diagonal", "radial", "red-black-cream", "monumental-type", "photomontage"],
+      "layout": ["单一主导对角线或放射轴线", "不对称构图与明确阅读方向", "文字、摄影和几何块面共同建立视觉动作"],
+      "geometry": ["斜线", "楔形", "圆环", "矩形模块", "强尺度对比"],
+      "palette": ["红、黑、米白为常见平面设计组合，但不是所有构成主义作品的必要条件", "限制强调色数量"],
+      "typography": ["粗重无衬线或构成化字母", "大字标题", "沿主要方向轴组织文字"],
+      "materials": ["纸张与油墨", "照片拼贴", "套色印刷", "工业材料的视觉隐喻"],
+      "image_treatment": ["摄影蒙太奇", "几何裁切", "平面化色块", "图像与字体一体化"],
+      "lighting": ["平面高反差为主；写实光照不是必要特征"],
+      "use_cases": ["poster", "campaign", "editorial", "character-battle-poster", "game-key-art"],
+      "avoid_or_risks": ["不要用多条竞争斜线破坏阅读方向", "不要把红黑配色当作唯一识别条件", "使用历史宣传符号时保留其政治与历史语境"],
+      "evidence_level": "部分有据",
+      "evidence_notes": "历史、媒介与作品特征由 Tate、MoMA 和芝加哥艺术博物馆支持；角色海报与游戏视觉用途为编者转译。",
+      "references": [
+        {
+          "title": "Constructivism",
+          "publisher": "Tate",
+          "tier": "T1",
+          "url": "https://www.tate.org.uk/art/art-terms/constructivism",
+          "supports": ["historical_period", "origin"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Aleksandr Rodchenko. Rechevik. Stikhi (Orator. Verse). 1929",
+          "publisher": "The Museum of Modern Art",
+          "tier": "T1",
+          "url": "https://www.moma.org/collection/works/16455",
+          "supports": ["origin", "image_treatment", "materials"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "For Voice (Dlia golosa)",
+          "publisher": "Art Institute of Chicago",
+          "tier": "T1",
+          "url": "https://www.artic.edu/artworks/199109/for-voice-dlia-golosa",
+          "supports": ["palette", "typography", "materials"],
+          "checked": "2026-11-22"
+        }
       ],
-      "visual_signature": [
-        "diagonal",
-        "radial",
-        "red-black-cream",
-        "monumental-type"
+      "reference_images": [
+        {
+          "title": "For Voice (Dlia golosa)",
+          "creator": "El Lissitzky；文字 Vladimir Mayakovsky",
+          "date": "1923",
+          "institution": "Art Institute of Chicago",
+          "page_url": "https://www.artic.edu/artworks/199109/for-voice-dlia-golosa",
+          "image_url": "https://www.artic.edu/iiif/2/a1f38447-0a57-bc5e-933a-f737c5418d9d/full/843,/0/default.jpg",
+          "rights": "© 2018 Artists Rights Society (ARS), New York / VG Bild-Kunst, Bonn；以藏品页当前信息为准",
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Rechevik. Stikhi (Orator. Verse)",
+          "creator": "Aleksandr Rodchenko",
+          "date": "1929",
+          "institution": "The Museum of Modern Art",
+          "page_url": "https://www.moma.org/collection/works/16455",
+          "image_url": null,
+          "rights": "作品与图像使用条件见 MoMA 藏品页",
+          "checked": "2026-11-22"
+        }
       ],
-      "use_cases": [
-        "poster",
-        "campaign",
-        "editorial"
-      ],
-      "evidence_level": "editorial_synthesis",
-      "references": [],
-      "relations": []
+      "relations": [
+        {"type": "shares_visual_language_with", "target": "bauhaus", "note": "共享几何化与现代工业语境，但不据此推断单线历史因果"},
+        {"type": "often_combined_with", "target": "brutalist_graphic", "note": "以构成主义方向轴为主，野兽派平面负责字体和粗粝结构"},
+        {"type": "has_prompt_recipe", "target": "R04", "note": "Constructivism × Brutalist Graphic"}
+      ]
     },
     {
       "key": "de_stijl",
       "name": "风格派",
       "name_en": "De Stijl",
+      "aliases": ["The Style", "Neoplasticism", "新造型主义"],
       "style_type": "historical_movement",
-      "secondary_types": [
-        "composition_method"
+      "secondary_types": ["composition_method"],
+      "historical_period": "1917 年由 Piet Mondrian 与 Theo van Doesburg 创办同名刊物并形成艺术圈；刊物持续至 1931 年",
+      "origin": "风格派从荷兰抽象艺术圈与《De Stijl》刊物发展而来，以新造型主义和严格的水平、垂直几何关系为核心，并影响建筑与设计。",
+      "visual_signature": ["horizontal-vertical", "rectangular-modules", "primary-colors", "asymmetric-balance"],
+      "layout": ["水平线与垂直线建立正交结构", "矩形比例与非对称平衡", "以空白和边界关系形成节奏"],
+      "geometry": ["水平线", "垂直线", "矩形", "有限方向的模块组合"],
+      "palette": ["红、黄、蓝与黑、白、灰", "颜色用于区分平面与结构，而非装饰性渐变"],
+      "typography": ["几何化、块状或简洁无衬线作为当代转译", "标题与网格边线对齐"],
+      "materials": ["平面色块", "纸张、木材或工业板材", "不依赖拟物纹理"],
+      "image_treatment": ["将人物或物体抽象为矩形与线性结构", "减少自然主义细节"],
+      "lighting": ["平面化表现；避免用写实光影破坏几何关系"],
+      "use_cases": ["abstract-poster", "identity", "character-card", "modular-ui"],
+      "avoid_or_risks": ["不要把任意三原色网格都称为风格派", "Mondrian 的正交体系与 Van Doesburg 后期对角线实验应区分", "角色转译优先保留轮廓和关键身份特征"],
+      "evidence_level": "部分有据",
+      "evidence_notes": "历史、正交几何与藏品信息由 Tate、芝加哥艺术博物馆和 V&A 支持；UI 与角色卡用途为编者转译。",
+      "references": [
+        {
+          "title": "De Stijl",
+          "publisher": "Tate",
+          "tier": "T1",
+          "url": "https://www.tate.org.uk/art/art-terms/de-stijl",
+          "supports": ["historical_period", "origin", "geometry"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Lozenge Composition with Yellow, Black, Blue, Red, and Gray",
+          "publisher": "Art Institute of Chicago",
+          "tier": "T1",
+          "url": "https://www.artic.edu/artworks/109819/lozenge-composition-with-yellow-black-blue-red-and-gray",
+          "supports": ["layout", "geometry", "palette"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "The Red Blue Chair",
+          "publisher": "Victoria and Albert Museum",
+          "tier": "T1",
+          "url": "https://collections.vam.ac.uk/item/O142927/",
+          "supports": ["geometry", "palette", "materials"],
+          "checked": "2026-11-22"
+        }
       ],
-      "visual_signature": [
-        "horizontal-vertical",
-        "rectangular-modules",
-        "primary-colors"
+      "reference_images": [
+        {
+          "title": "Lozenge Composition with Yellow, Black, Blue, Red, and Gray",
+          "creator": "Piet Mondrian",
+          "date": "1921",
+          "institution": "Art Institute of Chicago",
+          "page_url": "https://www.artic.edu/artworks/109819/lozenge-composition-with-yellow-black-blue-red-and-gray",
+          "image_url": "https://www.artic.edu/iiif/2/25f660ee-f1db-d13b-42a5-56df97c98ba7/full/843,/0/default.jpg",
+          "rights": "CC0 Public Domain Designation（芝加哥艺术博物馆藏品页）",
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "The Red Blue Chair",
+          "creator": "Gerrit Rietveld；该馆藏版本由 Gerard A. van der Groenekan 于 1970 年制作",
+          "date": "设计 1918；著名彩绘版本自 1923 年起",
+          "institution": "Victoria and Albert Museum",
+          "page_url": "https://collections.vam.ac.uk/item/O142927/",
+          "image_url": "https://framemark.vam.ac.uk/collections/2006AA6419/full/!1200,1200/0/default.jpg",
+          "rights": "作品与图像使用条件见 V&A 藏品页",
+          "checked": "2026-11-22"
+        }
       ],
-      "use_cases": [
-        "abstract-poster",
-        "identity",
-        "character-card"
-      ],
-      "evidence_level": "editorial_synthesis",
-      "references": [],
-      "relations": []
+      "relations": [
+        {"type": "shares_visual_language_with", "target": "bauhaus", "note": "共享几何抽象和现代设计语境"},
+        {"type": "contrasts_with", "target": "art_nouveau", "note": "正交几何与有机曲线形成对比，可按信息区与装饰区分区"},
+        {"type": "has_prompt_recipe", "target": "R09", "note": "De Stijl × Swiss Grid"},
+        {"type": "has_prompt_recipe", "target": "R01", "note": "可作为 Swiss Grid × Bauhaus Geometry 配方的几何参考，不替代原配方中的 Bauhaus"}
+      ]
     },
     {
       "key": "art_nouveau",
       "name": "新艺术运动",
       "name_en": "Art Nouveau",
+      "aliases": ["Modern Style", "新艺术"],
       "style_type": "historical_movement",
-      "secondary_types": [
-        "visual_art_style"
+      "secondary_types": ["visual_art_style"],
+      "historical_period": "1890 年代发展，1900 年巴黎世界博览会扩大影响；第一次世界大战前达到高峰",
+      "origin": "新艺术运动是建筑、设计与视觉艺术中的国际性风格，以植物形态、流动线条和整体化装饰为特征，并与象征主义并行发展。",
+      "visual_signature": ["organic-curves", "botanical-ornament", "integrated-frame", "sinuous-line"],
+      "layout": ["人物、文字与装饰边框形成整体", "有机曲线引导视线", "边框与主体相互嵌合而非简单外挂"],
+      "geometry": ["藤蔓与花卉曲线", "长弧线", "不对称轮廓", "局部对称的装饰框"],
+      "palette": ["柔和绿、古金、米色、棕、酒红", "以历史和印刷条件决定具体色板"],
+      "typography": ["定制装饰字母", "字形与边框和植物纹样一体化", "标题避免使用无关的现代默认字体"],
+      "materials": ["彩色石版印刷", "纸张", "金属、玻璃与珐琅作为跨媒介参考"],
+      "image_treatment": ["平面化人物轮廓", "自然形态图案化", "装饰与叙事融合"],
+      "lighting": ["柔和、平面化明暗", "避免与整体线条无关的强烈写实光效"],
+      "use_cases": ["fantasy-portrait", "character-illustration", "poster", "book-cover"],
+      "avoid_or_risks": ["不要只叠加通用藤蔓笔刷", "边框不得压迫人物面部与身份特征", "不要把新艺术运动与 Art Deco 的阶梯几何混为一谈"],
+      "evidence_level": "部分有据",
+      "evidence_notes": "历史、植物曲线与跨媒介特征由 Tate 和芝加哥艺术博物馆支持；幻想角色用途为编者转译。",
+      "references": [
+        {
+          "title": "Art Nouveau",
+          "publisher": "Tate",
+          "tier": "T1",
+          "url": "https://www.tate.org.uk/art/art-terms/art-nouveau",
+          "supports": ["historical_period", "origin", "visual_signature"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Zodiaque (La Plume)",
+          "publisher": "Art Institute of Chicago",
+          "tier": "T1",
+          "url": "https://www.artic.edu/artworks/111986/zodiaque-la-plume",
+          "supports": ["layout", "typography", "materials"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "The Seasons",
+          "publisher": "Art Institute of Chicago",
+          "tier": "T1",
+          "url": "https://www.artic.edu/artworks/97439/the-seasons",
+          "supports": ["palette", "geometry", "image_treatment"],
+          "checked": "2026-11-22"
+        }
       ],
-      "visual_signature": [
-        "organic-curves",
-        "botanical-ornament",
-        "integrated-frame"
+      "reference_images": [
+        {
+          "title": "Zodiaque (La Plume)",
+          "creator": "Alphonse Marie Mucha",
+          "date": "1896–1897",
+          "institution": "Art Institute of Chicago",
+          "page_url": "https://www.artic.edu/artworks/111986/zodiaque-la-plume",
+          "image_url": "https://www.artic.edu/iiif/2/119dba14-acf2-cdcd-e9e6-b9cd38bc3aad/full/843,/0/default.jpg",
+          "rights": "公有领域作品；图像指定信息以芝加哥艺术博物馆藏品页为准",
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "The Seasons",
+          "creator": "Alphonse Marie Mucha",
+          "date": "1897",
+          "institution": "Art Institute of Chicago",
+          "page_url": "https://www.artic.edu/artworks/97439/the-seasons",
+          "image_url": "https://www.artic.edu/iiif/2/cf64f14a-cc51-9a2d-2d9b-a882b504f222/full/843,/0/default.jpg",
+          "rights": "公有领域作品；图像指定信息以芝加哥艺术博物馆藏品页为准",
+          "checked": "2026-11-22"
+        }
       ],
-      "use_cases": [
-        "fantasy-portrait",
-        "character-illustration",
-        "poster"
-      ],
-      "evidence_level": "editorial_synthesis",
-      "references": [],
-      "relations": []
+      "relations": [
+        {"type": "often_combined_with", "target": "art_deco", "note": "有机边框与几何边界可分层组合"},
+        {"type": "contrasts_with", "target": "de_stijl", "note": "有机曲线与正交抽象具有不同结构逻辑"},
+        {"type": "has_prompt_recipe", "target": "R02", "note": "Art Nouveau × Art Deco × Fantasy Portrait"}
+      ]
     },
     {
       "key": "art_deco",
       "name": "装饰艺术",
       "name_en": "Art Deco",
+      "aliases": ["Style Moderne", "装饰艺术运动"],
       "style_type": "historical_movement",
-      "secondary_types": [
-        "graphic_design_system"
+      "secondary_types": ["graphic_design_system"],
+      "historical_period": "名称来自 1925 年巴黎国际现代装饰与工业艺术博览会；主要发展于 1920–1930 年代",
+      "origin": "Art Deco 涉及家具、陶瓷、纺织、珠宝、玻璃、建筑与平面设计。Tate 指出它既继承又反拨新艺术运动，并吸收立体主义、古代艺术和现代交通工具等多样影响。",
+      "visual_signature": ["stepped-geometry", "fan-motifs", "radial-symmetry", "ornamental-lines", "streamlined-form"],
+      "layout": ["对称或放射构图", "阶梯式边界", "中心主体与几何框架", "正面、纪念性与仪式感"],
+      "geometry": ["扇形", "阶梯纹", "折线与人字纹", "放射线", "流线型轮廓"],
+      "palette": ["黑、金、象牙白以及浓绿、酒红、钴蓝", "黑金只是常见商业配色之一"],
+      "typography": ["几何化大写字母", "高对比或装饰性字怀", "宽字距标题与对称排版"],
+      "materials": ["金属、漆器、玻璃、大理石、木饰面", "彩色平版印刷"],
+      "image_treatment": ["人物与物体流线型化", "几何简化", "正面或侧影式轮廓"],
+      "lighting": ["金属高光与戏剧性明暗可作为当代转译", "保持几何边缘清晰"],
+      "use_cases": ["luxury-poster", "cover", "editorial", "collector-character-card", "product-visual"],
+      "avoid_or_risks": ["不要把 Art Deco 缩减为黑金滤镜", "避免扇形、阶梯、放射线同时争夺主体", "角色海报中装饰框不能遮蔽脸部和服装标志"],
+      "evidence_level": "部分有据",
+      "evidence_notes": "历史与跨媒介特征由 Tate 和 V&A 支持；收藏级角色卡等用途为编者转译。",
+      "references": [
+        {
+          "title": "Art Deco",
+          "publisher": "Tate",
+          "tier": "T1",
+          "url": "https://www.tate.org.uk/art/art-terms/art-deco",
+          "supports": ["historical_period", "origin", "geometry"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Normandie",
+          "publisher": "Victoria and Albert Museum",
+          "tier": "T1",
+          "url": "https://collections.vam.ac.uk/item/O1405126/",
+          "supports": ["layout", "image_treatment", "materials"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Philips Superinductance model 634A",
+          "publisher": "Victoria and Albert Museum",
+          "tier": "T1",
+          "url": "https://collections.vam.ac.uk/item/O371995/",
+          "supports": ["geometry", "materials", "historical_period"],
+          "checked": "2026-11-22"
+        }
       ],
-      "visual_signature": [
-        "stepped-geometry",
-        "fan-motifs",
-        "radial-symmetry",
-        "ornamental-lines"
+      "reference_images": [
+        {
+          "title": "Normandie",
+          "creator": "Cassandre（Adolphe Mouron）",
+          "date": "1935",
+          "institution": "Victoria and Albert Museum",
+          "page_url": "https://collections.vam.ac.uk/item/O1405126/",
+          "image_url": "https://framemark.vam.ac.uk/collections/2017KC2259/full/!1200,1200/0/default.jpg",
+          "rights": "作品与图像使用条件见 V&A 藏品页",
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Philips Superinductance model 634A",
+          "creator": "Philips",
+          "date": "1933–1934",
+          "institution": "Victoria and Albert Museum",
+          "page_url": "https://collections.vam.ac.uk/item/O371995/",
+          "image_url": "https://framemark.vam.ac.uk/collections/2025PH9468/full/!1200,1200/0/default.jpg",
+          "rights": "作品与图像使用条件见 V&A 藏品页",
+          "checked": "2026-11-22"
+        }
       ],
-      "use_cases": [
-        "luxury-poster",
-        "cover",
-        "editorial"
-      ],
-      "evidence_level": "editorial_synthesis",
-      "references": [],
-      "relations": []
+      "relations": [
+        {"type": "influenced_by", "target": "art_nouveau", "note": "Tate 条目指出 Art Deco 既继承又反拨 Art Nouveau，同时吸收立体主义与现代工业影响"},
+        {"type": "often_combined_with", "target": "art_nouveau", "note": "Art Nouveau 负责有机边框，Art Deco 负责几何边界"},
+        {"type": "shares_visual_language_with", "target": "luxury", "note": "奢华黑金是 Art Deco 的商业视觉演绎之一，不是同义词"},
+        {"type": "has_prompt_recipe", "target": "R02", "note": "Art Nouveau × Art Deco × Fantasy Portrait"},
+        {"type": "has_prompt_recipe", "target": "R14", "note": "Art Deco × Cinematic Photorealism × Luxury"}
+      ]
     },
     {
       "key": "pop_art",
       "name": "波普艺术",
       "name_en": "Pop Art",
+      "aliases": ["Popular Art", "波普"],
       "style_type": "historical_movement",
-      "secondary_types": [
-        "visual_art_style"
+      "secondary_types": ["visual_art_style"],
+      "historical_period": "1950 年代在英国与美国出现，1960 年代达到高峰",
+      "origin": "波普艺术从电影、广告、包装、流行音乐和漫画等大众与商业文化中取材，以可复制、可识别和大众传播的图像挑战传统艺术题材。",
+      "visual_signature": ["halftone", "bold-outline", "repetition", "high-contrast-color", "mass-media-appropriation"],
+      "layout": ["漫画分格", "重复人物或商品图像", "主体与对话气泡分区", "广告式中心构图"],
+      "geometry": ["粗轮廓", "对话气泡", "规则重复模块", "平涂色块"],
+      "palette": ["高饱和红、黄、蓝", "荧光色与强对比组合", "有限专色可用于印刷转译"],
+      "typography": ["漫画与广告式标题", "粗体、拟声词和对话文字", "文字作为大众媒介图像的一部分"],
+      "materials": ["丝网印刷", "半色调网点", "油墨与纸张", "商业包装和媒介图像"],
+      "image_treatment": ["现成图像挪用", "重复", "网点化", "套色偏移与色彩替换"],
+      "lighting": ["平面高反差；保留商业印刷感而非写实立体光"],
+      "use_cases": ["character-poster", "comic", "merchandise", "social-campaign", "album-cover"],
+      "avoid_or_risks": ["不要只加网点而缺少大众媒介或消费文化参照", "使用名人、漫画和品牌图像时检查版权与肖像权", "网点不能损害眼睛和表情识别"],
+      "evidence_level": "部分有据",
+      "evidence_notes": "历史、商业文化来源、重复与丝网印刷特征由 Tate 和芝加哥艺术博物馆支持；角色周边用途为编者转译。",
+      "references": [
+        {
+          "title": "Pop Art",
+          "publisher": "Tate",
+          "tier": "T1",
+          "url": "https://www.tate.org.uk/art/art-terms/pop-art",
+          "supports": ["historical_period", "origin", "visual_signature"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Marilyn Monroe (Marilyn)",
+          "publisher": "Art Institute of Chicago",
+          "tier": "T1",
+          "url": "https://www.artic.edu/artworks/150044/marilyn-monroe-marilyn",
+          "supports": ["palette", "materials", "image_treatment"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Whaam!",
+          "publisher": "Tate",
+          "tier": "T1",
+          "url": "https://www.tate.org.uk/art/artworks/lichtenstein-whaam-t00897",
+          "supports": ["layout", "typography", "geometry"],
+          "checked": "2026-11-22"
+        }
       ],
-      "visual_signature": [
-        "halftone",
-        "bold-outline",
-        "repetition",
-        "high-contrast-color"
+      "reference_images": [
+        {
+          "title": "Marilyn Monroe (Marilyn)",
+          "creator": "Andy Warhol",
+          "date": "1967",
+          "institution": "Art Institute of Chicago",
+          "page_url": "https://www.artic.edu/artworks/150044/marilyn-monroe-marilyn",
+          "image_url": "https://www.artic.edu/iiif/2/89255d96-36c4-e941-8b13-a1b165a07a49/full/843,/0/default.jpg",
+          "rights": "© 2018 The Andy Warhol Foundation for the Visual Arts, Inc. / Artists Rights Society (ARS), New York；以藏品页当前信息为准",
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Whaam!",
+          "creator": "Roy Lichtenstein",
+          "date": "1963",
+          "institution": "Tate",
+          "page_url": "https://www.tate.org.uk/art/artworks/lichtenstein-whaam-t00897",
+          "image_url": null,
+          "rights": "作品与图像使用条件见 Tate 藏品页",
+          "checked": "2026-11-22"
+        }
       ],
-      "use_cases": [
-        "character-poster",
-        "comic",
-        "merchandise"
-      ],
-      "evidence_level": "editorial_synthesis",
-      "references": [],
-      "relations": []
+      "relations": [
+        {"type": "uses_technique", "target": "riso", "note": "有限专色与套印可用于当代印刷转译，但 Riso 不是波普艺术的起源媒介"},
+        {"type": "uses_technique", "target": "cutout_collage", "note": "漫画素材和大众图像可通过拼贴重组"},
+        {"type": "has_prompt_recipe", "target": "R03", "note": "Pop Art × Risograph × Comic Collage"}
+      ]
     },
     {
       "key": "frutiger_aero",
       "name": "Frutiger Aero",
       "name_en": "Frutiger Aero",
+      "aliases": ["Aero", "弗鲁提格航空美学"],
       "style_type": "visual_aesthetic",
-      "secondary_types": [
-        "material_language"
+      "secondary_types": ["material_language"],
+      "historical_period": "CARI 条目将主要关联期划分为 2000–2009；这是后来的回溯性数字美学分类，而不是当时统一的风格名称",
+      "origin": "CARI 将名称解释为 Windows Vista 的 Aero 设计指南与 Adrian Frutiger 字体的组合，并以消费科技、界面和视觉传播案例建立专题档案。Microsoft 的一手设计文档用于核对 Aero 与 Windows Vista 的关系。",
+      "visual_signature": ["aqua-blue-green", "glass-bubbles", "water-droplets", "optimistic-tech", "nature-technology"],
+      "layout": ["开放背景与充足留白", "少量漂浮玻璃物体或面板", "主体、自然元素与科技界面分层"],
+      "geometry": ["圆润图标", "气泡与水滴", "流线型轮廓", "柔和圆角面板"],
+      "palette": ["天空蓝、青绿、白色、青色", "限制彩虹渐变面积"],
+      "typography": ["人文主义无衬线", "Segoe UI 与 Frutiger 类字形作为历史参照", "保持正文清晰和足够对比"],
+      "materials": ["透明玻璃", "水滴与液体", "半透明塑料", "柔和高光"],
+      "image_treatment": ["自然与科技并置", "清澈摄影或数字渲染", "轻量光晕与透明叠层"],
+      "lighting": ["明亮日光", "柔和镜面高光", "避免过曝导致文字与界面边界消失"],
+      "use_cases": ["ai-character", "technology-poster", "interface-concept", "digital-campaign"],
+      "avoid_or_risks": ["不要把任意蓝绿渐变都归类为 Frutiger Aero", "透明材质不能牺牲可读性", "与 Y2K 的铬金属、赛博时装和早期互联网拼贴区分", "术语史主要来自专题研究社区，暂不写成学术定论"],
+      "evidence_level": "部分有据",
+      "evidence_notes": "术语与案例由 CARI 专题档案支持，Aero 的一手背景由 Microsoft 文档支持；视觉维度含编者对案例的归纳。",
+      "references": [
+        {
+          "title": "Frutiger Aero",
+          "publisher": "Consumer Aesthetics Research Institute (CARI)",
+          "tier": "T3",
+          "url": "https://cari.institute/aesthetics/frutiger-aero",
+          "supports": ["historical_period", "origin", "visual_signature", "reference_images"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Icons (Design basics)",
+          "publisher": "Microsoft Learn",
+          "tier": "T2",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/uxguide/vis-icons",
+          "supports": ["origin", "typography", "materials"],
+          "checked": "2026-11-22"
+        }
       ],
-      "visual_signature": [
-        "aqua-blue-green",
-        "glass-bubbles",
-        "water-droplets",
-        "optimistic-tech"
+      "reference_images": [
+        {
+          "title": "Frutiger Aero Case Studies and Gallery",
+          "creator": "CARI；各案例权利人见图库条目",
+          "date": "专题持续更新",
+          "institution": "Consumer Aesthetics Research Institute",
+          "page_url": "https://cari.institute/aesthetics/frutiger-aero",
+          "image_url": null,
+          "rights": "专题图库包含第三方作品；复用前核对原始权利人与许可",
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Windows Vista Aero Icons and Design Basics",
+          "creator": "Microsoft",
+          "date": "文档归档版本",
+          "institution": "Microsoft Learn",
+          "page_url": "https://learn.microsoft.com/en-us/windows/win32/uxguide/vis-icons",
+          "image_url": null,
+          "rights": "Microsoft 产品界面与图标；使用条件见 Microsoft 网站条款",
+          "checked": "2026-11-22"
+        }
       ],
-      "use_cases": [
-        "ai-character",
-        "technology-poster",
-        "interface-concept"
-      ],
-      "evidence_level": "editorial_synthesis",
-      "references": [],
-      "relations": []
+      "relations": [
+        {"type": "shares_visual_language_with", "target": "y2k", "note": "有时代交集，但 Frutiger Aero 更强调蓝绿、水、玻璃与清澈科技"},
+        {"type": "has_material", "target": "glass", "note": "玻璃材质只作为局部层次，不替代整体数字美学"},
+        {"type": "has_prompt_recipe", "target": "R05", "note": "Frutiger Aero × Glassmorphism"}
+      ]
     },
     {
       "key": "glitch_art",
       "name": "故障艺术",
       "name_en": "Glitch Art",
+      "aliases": ["Glitch", "故障美学"],
       "style_type": "visual_art_style",
-      "secondary_types": [
-        "image_technique"
+      "secondary_types": ["image_technique"],
+      "historical_period": "当代模拟与数字媒体艺术实践；本库不指定单一起源年份",
+      "origin": "V2_ 对 Rosa Menkman 的研究介绍将故障、编码与反馈等噪声 artifact 视为理解媒介标准化和分辨率机制的途径。该条目关注错误、信号与文件格式如何转化为视觉语言，而不把故障艺术等同于赛博朋克装饰。",
+      "visual_signature": ["rgb-split", "scanlines", "pixel-shift", "data-corruption", "encoding-artifact"],
+      "layout": ["切片与错位", "连续性中断", "局部重复或反馈", "保留一个可识别主体作为错误对照"],
+      "geometry": ["像素块", "水平切片", "断裂网格", "偏移轮廓"],
+      "palette": ["来源图像色或电光蓝、洋红、荧光绿", "RGB 分离应服务通道错位而非全画面染色"],
+      "typography": ["局部破碎、位移或编码化文字", "关键信息保留未故障的清晰层"],
+      "materials": ["压缩与编码", "文件格式", "模拟信号与数字反馈", "像素和扫描线"],
+      "image_treatment": ["数据弯折", "编码错误", "通道分离", "信号反馈", "格式转换造成的 artifact"],
+      "lighting": ["不依赖统一写实光照；避免闪烁效果造成不适"],
+      "use_cases": ["digital-poster", "music-visual", "sci-fi", "media-art", "motion-identity"],
+      "avoid_or_risks": ["不要把随机噪点当作完整故障逻辑", "动态故障需控制闪烁频率", "角色任务保留脸部与身份锚点", "故障艺术不等同于 Cyberpunk 或 Vaporwave"],
+      "evidence_level": "部分有据",
+      "evidence_notes": "媒介机制与艺术家研究由 V2_ 和 Stedelijk 支持；具体视觉分类与角色海报用途含编者归纳。",
+      "references": [
+        {
+          "title": "Alex Adriaansens Residency 2021: Rosa Menkman",
+          "publisher": "V2_ Lab for the Unstable Media",
+          "tier": "T1",
+          "url": "https://v2.nl/blog/alex-adriaansens-residency-2021-rosa-menkman/",
+          "supports": ["origin", "materials", "image_treatment"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "A Vernacular of File Formats",
+          "publisher": "Stedelijk Museum Amsterdam",
+          "tier": "T1",
+          "url": "https://www.stedelijk.nl/en/collection/100175-rosa-menkman-a-vernacular-of-file-formats",
+          "supports": ["materials", "image_treatment", "reference_images"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Stability Isn't Everything It's Glitched Up to Be: An Interview with Jamie Fenton",
+          "publisher": "Art Institute of Chicago",
+          "tier": "T1",
+          "url": "https://www.artic.edu/digital-publications/36/perspectives-on-instability/16/stability-isnt-everything-its-glitched-up-to-be-an-interview-with-jamie-fenton",
+          "supports": ["historical_period", "origin", "materials", "reference_images"],
+          "checked": "2026-11-25"
+        }
       ],
-      "visual_signature": [
-        "rgb-split",
-        "scanlines",
-        "pixel-shift",
-        "data-corruption"
+      "reference_images": [
+        {
+          "title": "A Vernacular of File Formats",
+          "creator": "Rosa Menkman",
+          "date": "2010",
+          "institution": "Stedelijk Museum Amsterdam",
+          "page_url": "https://www.stedelijk.nl/en/collection/100175-rosa-menkman-a-vernacular-of-file-formats",
+          "image_url": null,
+          "rights": "作品与图像使用条件见 Stedelijk 藏品页",
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Perspectives on Instability: An Interview with Jamie Fenton (glitch video & hardware reference)",
+          "creator": "Jamie Fenton；出版方 Art Institute of Chicago",
+          "date": "数字出版物（讨论 1978 年早期视频故障实践）",
+          "institution": "Art Institute of Chicago",
+          "page_url": "https://www.artic.edu/digital-publications/36/perspectives-on-instability/16/stability-isnt-everything-its-glitched-up-to-be-an-interview-with-jamie-fenton",
+          "image_url": null,
+          "rights": "图版与文字权利见芝加哥艺术博物馆数字出版物页面",
+          "checked": "2026-11-25"
+        }
       ],
-      "use_cases": [
-        "digital-poster",
-        "music-visual",
-        "sci-fi"
-      ],
-      "evidence_level": "editorial_synthesis",
-      "references": [],
-      "relations": []
+      "relations": [
+        {"type": "shares_visual_language_with", "target": "cyber", "note": "可服务赛博朋克主题，但不共享全部叙事或文化语义"},
+        {"type": "often_combined_with", "target": "vapor", "note": "可共同使用早期数字媒介与信号错误，需区分怀旧目标"},
+        {"type": "uses_technique", "target": "cutout_collage", "note": "数字切片可借用拼贴的分层与遮挡逻辑"},
+        {"type": "has_prompt_recipe", "target": "R08", "note": "Glitch Art × Swiss Typography"},
+        {"type": "has_prompt_recipe", "target": "R11", "note": "Cyberpunk × Glitch Art × Kinetic Typography"}
+      ]
     },
     {
       "key": "surrealist_collage",
       "name": "超现实主义拼贴",
       "name_en": "Surrealist Collage",
+      "aliases": ["Surrealist Photomontage", "超现实拼贴"],
       "style_type": "visual_art_style",
-      "secondary_types": [
-        "image_technique"
+      "secondary_types": ["image_technique"],
+      "historical_period": "超现实主义在 1924 年宣言中得到定义；1930 年代的 V&A 藏品提供了拼贴与摄影蒙太奇实践案例",
+      "origin": "超现实主义关注梦、无意识、意外与怪异经验。Tate 的摄影蒙太奇条目说明超现实主义者利用自由联想把差异极大的图像组合起来；V&A 的 Roland Penrose 与 John Banting 藏品提供作品级证据。",
+      "visual_signature": ["impossible-scale", "spatial-dislocation", "visual-metaphor", "unexpected-juxtaposition"],
+      "layout": ["现实碎片构成不可能整体", "人物、建筑和物品跨越空间组合", "一个核心视觉隐喻主导画面"],
+      "geometry": ["真实素材轮廓与不合逻辑空间", "尺度错置", "局部遮挡与嵌套"],
+      "palette": ["由主题与来源素材决定", "通过有限调色统一异质图像"],
+      "typography": ["文字不是必要特征", "编辑设计中以清晰网格承载标题，避免与主体争夺隐喻"],
+      "materials": ["明信片、地图、印刷纸张、照片、绘画", "可选配 decalcomania 等超现实主义技法"],
+      "image_treatment": ["摄影蒙太奇", "自由联想", "现成图像挪用", "尺度与空间错位"],
+      "lighting": ["统一光源和颗粒可帮助异质素材融合", "也可保留断裂以强调怪异感"],
+      "use_cases": ["concept-poster", "album-cover", "editorial", "worldbuilding-visual", "fantasy-character"],
+      "avoid_or_risks": ["不要随机堆砌素材而没有可解释概念", "使用历史照片与文化符号时核对原始语境", "素材版权和人物肖像权需单独检查"],
+      "evidence_level": "部分有据",
+      "evidence_notes": "超现实主义、摄影蒙太奇与作品技法由 Tate 和 V&A 支持；当代海报用途为编者转译。",
+      "references": [
+        {
+          "title": "Surrealism",
+          "publisher": "Tate",
+          "tier": "T1",
+          "url": "https://www.tate.org.uk/art/art-terms/surrealism",
+          "supports": ["historical_period", "origin"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Photomontage",
+          "publisher": "Tate",
+          "tier": "T1",
+          "url": "https://www.tate.org.uk/art/art-terms/photomontage",
+          "supports": ["origin", "image_treatment"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Elephant Bird",
+          "publisher": "Victoria and Albert Museum",
+          "tier": "T1",
+          "url": "https://collections.vam.ac.uk/item/O127197/",
+          "supports": ["layout", "materials", "visual_signature"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Discussing Dress",
+          "publisher": "Victoria and Albert Museum",
+          "tier": "T1",
+          "url": "https://collections.vam.ac.uk/item/O1069051/",
+          "supports": ["materials", "image_treatment", "use_cases"],
+          "checked": "2026-11-22"
+        }
       ],
-      "visual_signature": [
-        "impossible-scale",
-        "spatial-dislocation",
-        "visual-metaphor"
+      "reference_images": [
+        {
+          "title": "Elephant Bird",
+          "creator": "Roland Penrose",
+          "date": "1938",
+          "institution": "Victoria and Albert Museum",
+          "page_url": "https://collections.vam.ac.uk/item/O127197/",
+          "image_url": "https://framemark.vam.ac.uk/collections/2014HC9521/full/!1200,1200/0/default.jpg",
+          "rights": "作品与图像使用条件见 V&A 藏品页",
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Discussing Dress",
+          "creator": "John Banting",
+          "date": "1937",
+          "institution": "Victoria and Albert Museum",
+          "page_url": "https://collections.vam.ac.uk/item/O1069051/",
+          "image_url": "https://framemark.vam.ac.uk/collections/2025PD1125/full/!1200,1200/0/default.jpg",
+          "rights": "作品与图像使用条件见 V&A 藏品页",
+          "checked": "2026-11-22"
+        }
       ],
-      "use_cases": [
-        "concept-poster",
-        "album-cover",
-        "editorial"
-      ],
-      "evidence_level": "editorial_synthesis",
-      "references": [],
-      "relations": []
+      "relations": [
+        {"type": "uses_technique", "target": "cutout_collage", "note": "剪切与叠层服务超现实概念，不决定概念本身"},
+        {"type": "often_combined_with", "target": "editorial", "note": "杂志网格承载信息，超现实主体负责核心隐喻"},
+        {"type": "has_prompt_recipe", "target": "R06", "note": "Surrealist Collage × Editorial Design"}
+      ]
     },
     {
       "key": "cutout_collage",
       "name": "剪纸拼贴",
       "name_en": "Cut-out Collage",
+      "aliases": ["Cut Paper Collage", "Papier découpé", "剪纸与剪贴"],
       "style_type": "image_technique",
-      "secondary_types": [
-        "composition_method"
+      "secondary_types": ["composition_method"],
+      "historical_period": "拼贴作为艺术技法形成于 20 世纪早期；Matisse 的剪纸作品集中于 1936–1954 年，是其中一种历史实践",
+      "origin": "Tate 将 collage 定义为纸张、照片、织物与其他材料在支撑面上的排列和粘贴。Cut-out Collage 强调剪切、撕纸、叠层与轮廓；它不等同于超现实主义拼贴，后者还要求特定的观念与图像逻辑。",
+      "visual_signature": ["cut-paper", "torn-edge", "layering", "silhouette", "painted-paper"],
+      "layout": ["剪切轮廓分层", "素材遮挡与穿插", "主体轮廓优先", "可与网格或自由版式结合"],
+      "geometry": ["纸张剪影", "撕裂或剪切边缘", "有机形与几何碎片", "前后层级"],
+      "palette": ["平涂或手绘色纸", "有限色板加单一强调色", "保留素材原色也可形成纪实感"],
+      "typography": ["标题可独立按网格对齐", "文字可剪贴但关键信息保持清晰", "避免所有文字都使用随机拼字效果"],
+      "materials": ["纸张、照片、织物、胶带、胶水", "gouache 彩绘纸与扫描纹理"],
+      "image_treatment": ["切割", "撕裂", "叠层", "遮挡", "扫描与套印偏移"],
+      "lighting": ["轻微接触阴影可强化纸层", "避免过度立体化导致材质变成厚板"],
+      "use_cases": ["character-poster", "zine", "editorial", "character-card", "independent-game-visual"],
+      "avoid_or_risks": ["剪切边缘不能破坏头发、手指和服装轮廓", "不要把所有边缘都做成相同撕纸效果", "超现实含义不是该技法的必要条件"],
+      "evidence_level": "部分有据",
+      "evidence_notes": "拼贴定义与 Matisse 剪纸实践由 Tate 支持；角色卡、独立游戏等用途为编者转译。",
+      "references": [
+        {
+          "title": "Collage",
+          "publisher": "Tate",
+          "tier": "T1",
+          "url": "https://www.tate.org.uk/art/art-terms/collage",
+          "supports": ["historical_period", "origin", "materials"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Henri Matisse: The Cut-Outs",
+          "publisher": "Tate Modern",
+          "tier": "T1",
+          "url": "https://www.tate.org.uk/whats-on/tate-modern/exhibition/henri-matisse-cut-outs",
+          "supports": ["historical_period", "materials", "image_treatment"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "The Snail",
+          "publisher": "Tate",
+          "tier": "T1",
+          "url": "https://www.tate.org.uk/art/artworks/matisse-the-snail-t00540",
+          "supports": ["layout", "geometry", "palette"],
+          "checked": "2026-11-22"
+        }
       ],
-      "visual_signature": [
-        "cut-paper",
-        "torn-edge",
-        "layering",
-        "silhouette"
+      "reference_images": [
+        {
+          "title": "The Snail",
+          "creator": "Henri Matisse",
+          "date": "1953",
+          "institution": "Tate",
+          "page_url": "https://www.tate.org.uk/art/artworks/matisse-the-snail-t00540",
+          "image_url": null,
+          "rights": "作品与图像使用条件见 Tate 藏品页",
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Henri Matisse: The Cut-Outs — exhibition reference set",
+          "creator": "Henri Matisse；展览图版 credits 见 Tate 页面",
+          "date": "作品覆盖 1936–1954；展览页 2014",
+          "institution": "Tate Modern",
+          "page_url": "https://www.tate.org.uk/whats-on/tate-modern/exhibition/henri-matisse-cut-outs",
+          "image_url": null,
+          "rights": "展览图版含不同馆藏机构与权利信息；逐图核对，不统一视为开放授权",
+          "checked": "2026-11-22"
+        }
       ],
-      "use_cases": [
-        "character-poster",
-        "zine",
-        "editorial"
-      ],
-      "evidence_level": "editorial_synthesis",
-      "references": [],
-      "relations": []
+      "relations": [
+        {"type": "often_combined_with", "target": "swiss", "note": "瑞士网格负责信息，剪纸层负责主体"},
+        {"type": "often_combined_with", "target": "pop_art", "note": "用于漫画分格和大众图像重组"},
+        {"type": "has_prompt_recipe", "target": "R07", "note": "Cut-out Collage × Swiss Typography"},
+        {"type": "has_prompt_recipe", "target": "R03", "note": "Pop Art × Risograph × Comic Collage"}
+      ]
     },
     {
       "key": "brutalist_graphic",
       "name": "野兽派平面设计",
       "name_en": "Brutalist Graphic Design",
+      "aliases": ["Graphic Brutalism", "平面野兽派"],
       "style_type": "graphic_design_system",
-      "secondary_types": [
-        "visual_art_style"
+      "secondary_types": ["visual_art_style"],
+      "historical_period": "当代平面设计中的回溯性标签；本库不指定统一起源年份",
+      "origin": "该条目记录当代平面设计对原始字形、硬裁切、粗重结构与数字制作逻辑的强调。AIGA Eye on Design 对 Klim Type Foundry 的 Signifier 报道提供了将 Brutalist ethos、机器逻辑和字体史结合的专业案例；它不是网页野兽派或建筑野兽派的同义词。",
+      "visual_signature": ["raw-type", "hard-crop", "coarse-grid", "high-contrast", "visible-construction"],
+      "layout": ["粗重网格或直接信息区", "极端裁切与局部重叠", "明确主阅读方向", "保留制作结构的可见性"],
+      "geometry": ["矩形块面", "突然截断的边缘", "粗线与硬性分隔", "不追求精致修饰"],
+      "palette": ["黑、白、灰与有限强调色", "可使用纯 RGB 蓝或荧光色", "色彩服务结构而非制造霓虹氛围"],
+      "typography": ["大字标题与原始或不规则字形", "暴露数字构造和机器逻辑", "正文保持独立可读层级"],
+      "materials": ["纸张与油墨磨损", "数字向量与 Bézier 构造", "印刷颗粒和套色偏移"],
+      "image_treatment": ["硬裁切", "直接缩放", "低修饰拼贴", "图像与文字冲突需有明确层级"],
+      "lighting": ["平面高反差为主", "材质和光效应服从字体与结构"],
+      "use_cases": ["experimental-poster", "independent-editorial", "music-cover", "type-specimen", "cultural-campaign"],
+      "avoid_or_risks": ["不要把难以阅读或随意丑陋当作风格定义", "不要把建筑混凝土图像当作必要元素", "与 brutal 网页风格和 neobrutal UI 分开", "角色海报先保留身份，再做裁切"],
+      "evidence_level": "部分有据",
+      "evidence_notes": "专业案例由 AIGA Eye on Design 与 Klim Type Foundry 支持；整体分类、视觉维度和用途含编者归纳，当前没有博物馆级统一定义来源。",
+      "references": [
+        {
+          "title": "A Typographic Cocktail of Brutalism and Early Computer Graphics—Plus a Dash of Yves Klein",
+          "publisher": "AIGA Eye on Design",
+          "tier": "T2",
+          "url": "https://eyeondesign.aiga.org/a-typographic-cocktail-of-brutalism-and-early-computer-graphics-plus-a-dash-of-yves-klein/",
+          "supports": ["origin", "typography", "materials", "palette"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Signifier",
+          "publisher": "Klim Type Foundry",
+          "tier": "T3",
+          "url": "https://klim.co.nz/retail-fonts/signifier/",
+          "supports": ["origin", "typography", "reference_images"],
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Wohnfühl Immobilien: Architects Wanted poster",
+          "publisher": "Fonts In Use",
+          "tier": "T3",
+          "url": "https://fontsinuse.com/uses/33869/wohnfuehl-immobilien-architects-wanted-poster",
+          "supports": ["layout", "typography", "use_cases", "reference_images"],
+          "checked": "2026-11-25"
+        }
       ],
-      "visual_signature": [
-        "raw-type",
-        "hard-crop",
-        "coarse-grid",
-        "high-contrast"
+      "reference_images": [
+        {
+          "title": "Signifier — AIGA Eye on Design feature",
+          "creator": "Kris Sowersby / Klim Type Foundry",
+          "date": "2020",
+          "institution": "AIGA Eye on Design",
+          "page_url": "https://eyeondesign.aiga.org/a-typographic-cocktail-of-brutalism-and-early-computer-graphics-plus-a-dash-of-yves-klein/",
+          "image_url": null,
+          "rights": "文内图片标注 Courtesy Klim Type Foundry；复用前核对授权",
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Signifier",
+          "creator": "Kris Sowersby / Klim Type Foundry",
+          "date": "2020",
+          "institution": "Klim Type Foundry",
+          "page_url": "https://klim.co.nz/retail-fonts/signifier/",
+          "image_url": null,
+          "rights": "字体、图版与图像权利见 Klim Type Foundry 网站",
+          "checked": "2026-11-22"
+        },
+        {
+          "title": "Wohnfühl Immobilien: Architects Wanted poster",
+          "creator": "bueroschwarz.design（使用字体 FRAC、Europa）",
+          "date": "2020（Fonts In Use 收录）",
+          "institution": "Fonts In Use",
+          "page_url": "https://fontsinuse.com/uses/33869/wohnfuehl-immobilien-architects-wanted-poster",
+          "image_url": null,
+          "rights": "Source: bueroschwarz.design；Fonts In Use 标注 All Rights Reserved",
+          "checked": "2026-11-25"
+        }
       ],
-      "use_cases": [
-        "experimental-poster",
-        "independent-editorial"
-      ],
-      "evidence_level": "editorial_synthesis",
-      "references": [],
-      "relations": []
+      "relations": [
+        {"type": "often_combined_with", "target": "constructivism", "note": "构成主义负责方向轴，野兽派平面负责字体与粗粝结构"},
+        {"type": "contrasts_with", "target": "swiss", "note": "两者可共享网格，但野兽派平面允许更激进的裁切与字形处理"},
+        {"type": "shares_visual_language_with", "target": "brutal", "note": "仅表示视觉相似；网页野兽派是不同条目"},
+        {"type": "has_prompt_recipe", "target": "R04", "note": "Constructivism × Brutalist Graphic"}
+      ]
     }
   ],
+  "core_style_classifications": {
+    "swiss": {"style_type": "graphic_design_system", "secondary_types": ["composition_method", "typography_method"]},
+    "bauhaus": {"style_type": "historical_movement", "secondary_types": ["graphic_design_system"]},
+    "minimal": {"style_type": "visual_art_style", "secondary_types": ["graphic_design_system", "interface_style"]},
+    "brutal": {"style_type": "interface_style", "secondary_types": ["visual_aesthetic"]},
+    "neobrutal": {"style_type": "interface_style", "secondary_types": ["graphic_design_system"]},
+    "memphis": {"style_type": "historical_movement", "secondary_types": ["visual_art_style"]},
+    "y2k": {"style_type": "visual_aesthetic", "secondary_types": ["material_language"]},
+    "cyber": {"style_type": "visual_aesthetic", "secondary_types": ["visual_art_style"]},
+    "vapor": {"style_type": "visual_aesthetic", "secondary_types": ["visual_art_style"]},
+    "glass": {"style_type": "interface_style", "secondary_types": ["material_language"]},
+    "neumorph": {"style_type": "interface_style", "secondary_types": ["material_language"]},
+    "flat": {"style_type": "interface_style", "secondary_types": ["graphic_design_system"]},
+    "skeuo": {"style_type": "interface_style", "secondary_types": ["material_language"]},
+    "bento": {"style_type": "composition_method", "secondary_types": ["interface_style"]},
+    "riso": {"style_type": "image_technique", "secondary_types": ["material_language"]},
+    "handdrawn": {"style_type": "image_technique", "secondary_types": ["visual_art_style"]},
+    "clay": {"style_type": "material_language", "secondary_types": ["image_technique"]},
+    "gradient": {"style_type": "material_language", "secondary_types": ["interface_style"]},
+    "editorial": {"style_type": "graphic_design_system", "secondary_types": ["composition_method", "typography_method"]},
+    "japanese": {"style_type": "visual_aesthetic", "secondary_types": ["composition_method"]},
+    "guochao": {"style_type": "visual_aesthetic", "secondary_types": ["visual_art_style"]},
+    "luxury": {"style_type": "visual_aesthetic", "secondary_types": ["material_language"]},
+    "organic": {"style_type": "visual_aesthetic", "secondary_types": ["material_language"]},
+    "acid": {"style_type": "visual_aesthetic", "secondary_types": ["graphic_design_system", "typography_method"]},
+    "darkmode": {"style_type": "interface_style", "secondary_types": ["visual_aesthetic"]},
+    "webgl": {"style_type": "interface_style", "secondary_types": ["image_technique"]},
+    "kinetic": {"style_type": "typography_method", "secondary_types": ["image_technique"]},
+    "cinematic": {"style_type": "image_technique", "secondary_types": ["visual_aesthetic"]},
+    "retroweb": {"style_type": "visual_aesthetic", "secondary_types": ["interface_style"]}
+  },
   "relation_types": [
     "influenced_by",
     "shares_visual_language_with",
@@ -266,12 +844,17 @@
     "Y2K and Frutiger Aero overlap historically but have different visual signatures.",
     "Glitch Art is an image treatment/art practice, not a synonym for Cyberpunk.",
     "Surrealist Collage is a conceptual image-combination approach; Cut-out Collage is a material/image-making technique.",
-    "Risograph refers to a specific duplicating print process and its visual characteristics, not merely a grain filter."
+    "Risograph refers to a specific duplicating print process and its visual characteristics, not merely a grain filter.",
+    "Source tier describes the publisher or evidence channel, not automatic truth; claims must match the cited page.",
+    "A collection image link is a research reference, not a reuse licence."
   ],
   "agent_rules": [
     "Choose one primary style and at most two supporting styles.",
     "Do not treat type categories as mutually exclusive.",
     "Distinguish historical influence from visual similarity and practical compatibility.",
-    "All unsupported audience and blend-ratio claims must remain editorial hypotheses."
+    "All unsupported audience and blend-ratio claims must remain editorial hypotheses.",
+    "Prefer T1 for history and artwork metadata, T2 for professional practice, and T3 for contemporary cases or community terminology.",
+    "Check rights before downloading, redistributing or training on reference images.",
+    "Keep recipe relations separate from historical influence relations."
   ]
 }

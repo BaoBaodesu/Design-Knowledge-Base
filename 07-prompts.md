@@ -1,14 +1,14 @@
 ---
 title: "AI 视觉提示词模板"
-description: "15 种风格的中英文提示词模板（主体+风格+构图+光线+配色+负面词），适配 Midjourney / Stable Diffusion / 通用，附应用建议"
-updated: 2026-11-15
+description: "15 种主库风格的中英文提示词模板，以及 16 种扩展/高频风格的模块化提示词索引（共 31 种），适配 Midjourney / Stable Diffusion / Flux / 通用"
+updated: 2026-11-25
 tags: [prompts, ai-image, midjourney, stable-diffusion, design-kb]
 ---
 
 # 07 AI 视觉提示词模板与应用建议
 
 > 结构：主体占位符 + 风格词 + 构图 + 光线 + 配色 + 负面词。中括号内替换为你的主体。
-> 适配说明：Midjourney 负面词用 `--no`；Stable Diffusion 负面词放 Negative prompt；其他工具（如通用文生图）直接用自然语言。Midjourney 参数（如 `--ar` 画幅、`--style raw`）以当前版本官方文档为准（未逐一核验版本差异）。
+> 适配说明：Midjourney 负面词用 `--no`；Stable Diffusion 负面词放 Negative prompt；其他工具（如通用文生图）直接用自然语言。使用 `--ar`、`--style raw` 等 Midjourney 参数前，查询当前版本官方文档并做试生成。
 
 ## 通用应用建议
 - 先用本库网站找 3–5 张参考图，确定风格名称再写提示词（原文作者建议：叫得出风格名称、说得清手法，AI 输出质量明显更高）。
@@ -323,7 +323,7 @@ tags: [prompts, ai-image, midjourney, stable-diffusion, design-kb]
 ```
 **SD 写法**：Positive = 英文模板；Negative = `cheap glitter, cluttered, bright colors, lowres, blurry, watermark`
 
-- 应用建议：金色控制在 10% 以内面积（经验值，推测）
+- 应用建议：金色面积以 10% 为初始参数，根据主体、材质和版面测试结果调整
 
 ## 电影感写实（Cinematic Realism）
 - 主体占位符示例：[主体：如 一位站在雨中车站的女性]
@@ -346,3 +346,30 @@ tags: [prompts, ai-image, midjourney, stable-diffusion, design-kb]
 **SD 写法**：Positive = 英文模板；Negative = `oversaturated, flat lighting, cartoon, lowres, blurry, watermark`
 
 - 应用建议：用 StudioBinder/EyeCannndy 术语描述镜头（low angle、dolly in）
+
+---
+
+## 扩展与模块化提示词库（+16 种，共 31 种）
+
+为支持 Agent 自主组合多风格，新增 16 种风格（全部 10 个扩展风格 + 6 个高频主库风格）的完整中英文提示词与按视觉维度拆分的 `modular_tokens`（`layout_tokens` / `geometry_tokens` / `palette_tokens` / `material_tokens` / `treatment_tokens` / `lighting_tokens` / `identity_guard`），机器可读全量数据见 [`data/extended-prompts.json`](data/extended-prompts.json)。原始 15 种统计保持不变。
+
+| style_key | 层级 | 适用主体示例 | 核心英文风格词 | 自主组合推荐抽取维度 |
+|---|---|---|---|---|
+| `constructivism` | 扩展 | 战斗角色海报 / 工业展主视觉 | `Russian Constructivist graphic poster, single diagonal axis, wedges and circles` | layout, geometry |
+| `de_stijl` | 扩展 | 抽象几何角色卡 / 建筑展海报 | `De Stijl neoplasticist graphic design, strict horizontal and vertical black lines` | layout, geometry, palette |
+| `art_nouveau` | 扩展 | 幻想角色肖像 / 精装书封 | `Art Nouveau decorative poster, sinuous organic whiplash curves, botanical framing` | geometry, treatment |
+| `art_deco` | 扩展 | 典藏角色卡 / 奢华复古海报 | `Art Deco graphic poster, radial symmetry, stepped ziggurat borders, fan motifs` | layout, geometry, material |
+| `pop_art` | 扩展 | 角色周边海报 / 漫画封面 | `Pop Art graphic print, bold black comic outlines, Ben-Day halftone dots` | palette, treatment, material |
+| `frutiger_aero` | 扩展 | AI 角色海报 / 未来科技概念 | `Frutiger Aero aesthetic, clear blue sky, aqua green, translucent glass bubbles, water droplets` | palette, material, lighting |
+| `glitch_art` | 扩展 | 数字音乐海报 / 科幻媒介视觉 | `controlled Glitch Art, horizontal pixel slicing, subtle RGB channel displacement, scanlines` | treatment, material |
+| `surrealist_collage` | 扩展 | 概念专辑封面 / 世界观海报 | `Surrealist editorial collage, impossible scale juxtaposition, central visual metaphor` | layout, treatment |
+| `cutout_collage` | 扩展 | 分层剪纸角色海报 / Zine | `tactile cut-paper collage, layered hand-cut and torn paper silhouettes, contact shadows` | material, treatment |
+| `brutalist_graphic` | 扩展 | 实验文化展海报 / 独立专题 | `Brutalist graphic design poster, raw stark typographic blocks, hard edge cropping` | layout, treatment |
+| `bauhaus` | 主库 | 几何构成角色海报 / 设计展 | `Bauhaus modernist graphic design, circle triangle and square geometric decomposition` | geometry, palette |
+| `memphis` | 主库 | 潮牌活动海报 / 播客封面 | `Memphis Group postmodern graphic design, playful squiggles, polka dots, terrazzo` | geometry, palette |
+| `riso` | 主库 | 独立书店海报 / 复古插画 | `Risograph art print, limited 3-spot fluorescent soy-ink, subtle misregistration, paper grain` | material, treatment, palette |
+| `vapor` | 主库 | 复古电音封面 / 怀旧海报 | `Vaporwave retro-digital aesthetic, pastel pink and cyan sunset gradient, subtle VHS scanlines` | palette, lighting, treatment |
+| `japanese` | 主库 | 美术馆特展 / 器物主视觉 | `Japanese minimalist graphic design, serene Ma negative space, warm washi paper texture` | layout, material, lighting |
+| `handdrawn` | 主库 | 独立游戏宣传图 / 绘本海报 | `expressive hand-drawn editorial illustration, tactile ink linework, gouache washes` | material, treatment |
+
+> 自主组合拼装规则见 `12-style-compatibility-and-composition.md` 与 `data/compatibility-matrix.json`。

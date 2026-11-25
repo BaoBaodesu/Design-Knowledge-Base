@@ -1,48 +1,49 @@
 ---
 title: "设计风格与视觉特征"
 description: "29 种设计风格的起源、配色、字体、版式、图形、质感、误区与参考来源（表二），以及网站×风格映射（作品风格与界面风格分开）"
-updated: 2026-11-15
+updated: 2026-11-22
 tags: [styles, visual-language, mapping, design-kb]
 ---
 
 # 02 设计风格与视觉特征知识库（第二轮成果）
 
 > 风格定义部分引用维基百科 / NN/g（链接已于 2026-11-15 用 curl 验证可访问，HTTP 200）；未找到权威出处的部分标注「未核验」或「编者归纳」。
-> 网站自身界面风格 = 2026-11-15 无头 Chrome 首页截图观察（第一印象，不代表全站）；收录作品风格 = 依据原文描述 + 首页可见内容归纳（编者判断）。**两者分开记录。**
+> 网站自身界面风格 = 2026-11-15 无头 Chrome 首页截图观察；收录作品风格 = 依据原文描述 + 首页可见内容归纳（编者判断）。**两者分开记录。**
+> 表二“受众假设”用于初步筛选；证据等级与依据统一查 `03-style-audience.md` 或 `styles[].audience`。
 
 ## 表二 设计风格分类表
 
-| 风格名称 | 核心视觉特征 | 典型配色 | 排版与构图 | 潜在受众 | 适用场景 | 代表参考网站 |
+| 风格名称 | 核心视觉特征 | 典型配色 | 排版与构图 | 受众假设 | 适用场景 | 代表参考网站 |
 |---|---|---|---|---|---|---|
-| 瑞士国际主义（International Typographic Style / Swiss Style） | 几何色块、客观摄影、粗线条分隔；平面、无质感、印刷感 | 白/黑+单一强调色（常见红） | 严格网格、非对称、大量留白、信息层级清晰；字体：无衬线（Helvetica、Akzidenz-Grotesk 类）、左对齐不齐右 | 设计/建筑/文化机构从业者；25–45岁专业人群（推测） | 文化机构、B2B、出版、交通导视、作品集 | Awwwards(#2)、D&AD(#7)、The One Show & ADC(#8)、Tokyo TDC(#10)、Ordinary Folk(#26) |
-| 包豪斯（Bauhaus） | 圆/方/三角、粗线、色块；平面、纸张印刷感 | 红/黄/蓝三原色+黑白 | 几何构成、对角线、模块化；字体：几何无衬线（如 Futura 类）、常用小写 | 设计学生、艺术教育、创意工作室（推测） | 艺术教育、展览、创意品牌 | Ordinary Folk(#26)、Laws of UX(#57)、Rauno Freiberg(#83)、Logo Design Love(S14) |
-| 极简主义（Minimalism） | 几乎无装饰，靠排版与图片；平面或极轻阴影 | 黑白灰+极少量强调色 | 大留白、少元素、强对齐；字体：干净无衬线或精致衬线，字号对比拉大 | 高端消费、科技产品用户、专业人士（推测） | 科技产品、高端零售、作品集、SaaS | Apple Design Awards(#6)、ManvsMachine(#23)、Ordinary Folk(#26)、Mobbin(#43)、Refero(#45) |
-| 野兽派 / Brutalism（Brutalism (web)） | 下划线链接、边框、原始表格；粗粝、无修饰 | 默认色、黑白、系统蓝链接 | 原始网格、不讲究对齐、信息直给；字体：系统字体、等宽字体、Times | 设计师、艺术家、独立出版、亚文化人群（推测） | 艺术项目、独立杂志、个人站 | Hoverstat.es(#67)、Are.na(#96)、Brutalist Websites(S12) |
-| 新野兽派（Neo-brutalism） | 粗黑边框、硬投影、贴纸感；扁平+硬阴影 | 高饱和纯色（黄/粉/蓝/绿）+纯黑描边 | 块状卡片、硬阴影偏移、明显网格；字体：粗黑无衬线标题+中性正文（NN/g 建议正文用 Inter/Roboto 类） | Z世代、创作者经济、独立开发者（推测） | 创作者平台、独立SaaS、年轻品牌（NN/g 以 Gumroad 为例） | The FWA(#4)、D&AD(#7)、Hoverstat.es(#67)、Brutalist Websites(S12) |
-| 孟菲斯（Memphis Design） | 波浪线、圆点、锯齿、几何碎片；平面、塑料感 | 高饱和撞色、粉彩+黑 | 随机散布、打破网格；字体：几何粗体、俏皮字体 | 年轻消费群、潮流/娱乐（推测） | 潮流品牌、活动、儿童教育、音乐 | Golden Wolf(#25) |
+| 瑞士国际主义（International Typographic Style / Swiss Style） | 几何色块、客观摄影、粗线条分隔；平面、无质感、印刷感 | 白/黑+单一强调色（常见红） | 严格网格、非对称、大量留白、信息层级清晰；字体：无衬线（Helvetica、Akzidenz-Grotesk 类）、左对齐不齐右 | 设计/建筑/文化机构从业者；25–45岁专业人群 | 文化机构、B2B、出版、交通导视、作品集 | Awwwards(#2)、D&AD(#7)、The One Show & ADC(#8)、Tokyo TDC(#10)、Ordinary Folk(#26) |
+| 包豪斯（Bauhaus） | 圆/方/三角、粗线、色块；平面、纸张印刷感 | 红/黄/蓝三原色+黑白 | 几何构成、对角线、模块化；字体：几何无衬线（如 Futura 类）、常用小写 | 设计学生、艺术教育、创意工作室 | 艺术教育、展览、创意品牌 | Ordinary Folk(#26)、Laws of UX(#57)、Rauno Freiberg(#83)、Logo Design Love(S14) |
+| 极简主义（Minimalism） | 几乎无装饰，靠排版与图片；平面或极轻阴影 | 黑白灰+极少量强调色 | 大留白、少元素、强对齐；字体：干净无衬线或精致衬线，字号对比拉大 | 高端消费、科技产品用户、专业人士 | 科技产品、高端零售、作品集、SaaS | Apple Design Awards(#6)、ManvsMachine(#23)、Ordinary Folk(#26)、Mobbin(#43)、Refero(#45) |
+| 野兽派 / Brutalism（Brutalism (web)） | 下划线链接、边框、原始表格；粗粝、无修饰 | 默认色、黑白、系统蓝链接 | 原始网格、不讲究对齐、信息直给；字体：系统字体、等宽字体、Times | 设计师、艺术家、独立出版、亚文化人群 | 艺术项目、独立杂志、个人站 | Hoverstat.es(#67)、Are.na(#96)、Brutalist Websites(S12) |
+| 新野兽派（Neo-brutalism） | 粗黑边框、硬投影、贴纸感；扁平+硬阴影 | 高饱和纯色（黄/粉/蓝/绿）+纯黑描边 | 块状卡片、硬阴影偏移、明显网格；字体：粗黑无衬线标题+中性正文（NN/g 建议正文用 Inter/Roboto 类） | Z世代、创作者经济、独立开发者 | 创作者平台、独立SaaS、年轻品牌（NN/g 以 Gumroad 为例） | The FWA(#4)、D&AD(#7)、Hoverstat.es(#67)、Brutalist Websites(S12) |
+| 孟菲斯（Memphis Design） | 波浪线、圆点、锯齿、几何碎片；平面、塑料感 | 高饱和撞色、粉彩+黑 | 随机散布、打破网格；字体：几何粗体、俏皮字体 | 年轻消费群、潮流/娱乐 | 潮流品牌、活动、儿童教育、音乐 | Golden Wolf(#25) |
 | Y2K 千禧风（Y2K aesthetic） | 铬金属、气泡、星光、早期 UI 窗口；光泽、金属、透明塑料 | 银色金属、冰蓝、荧光粉紫 | 居中、漂浮元素；字体：圆润未来感字体、像素字 | Z世代（Y2K/Frutiger Aero 作为怀旧对象在Z世代流行，维基百科） | 时尚、美妆、音乐、潮流电商 | Promonews(#21)、Golden Wolf(#25)、Web Design Museum(#68)、Pinterest(#95) |
-| 赛博朋克（Cyberpunk） | 霓虹、扫描线、故障、电路；暗光、湿润反光、颗粒 | 黑底+霓虹青/品红/酸性绿 | 密集信息层、HUD 叠加；字体：等宽、故障字、日文/汉字点缀 | 游戏玩家、科技爱好者、18–35岁男性占比较高（推测） | 游戏、电竞、科幻影视、科技发布 | The FWA(#4)、ArtStation(#27)、80 Level(#29)、Beeple Everydays(#35)、Game UI Database(#58) |
+| 赛博朋克（Cyberpunk） | 霓虹、扫描线、故障、电路；暗光、湿润反光、颗粒 | 黑底+霓虹青/品红/酸性绿 | 密集信息层、HUD 叠加；字体：等宽、故障字、日文/汉字点缀 | 游戏玩家、科技爱好者、18–35岁男性占比较高 | 游戏、电竞、科幻影视、科技发布 | The FWA(#4)、ArtStation(#27)、80 Level(#29)、Beeple Everydays(#35)、Game UI Database(#58) |
 | 蒸汽波（Vaporwave） | 古典雕像、棕榈树、Windows 95 窗口、网格；低保真、VHS 噪点 | 粉紫+青蓝渐变、日落色 | 拼贴、居中、透视网格地面；字体：衬线/全角日文、像素字 | 网络亚文化、音乐爱好者（维基百科称其为网络音乐微流派与梗） | 音乐封面、潮牌、实验活动 | CodePen Spark(#70) |
-| 玻璃拟态（Glassmorphism） | 磨砂玻璃、细高光描边；半透明、模糊、柔光 | 鲜艳渐变背景+白色半透明 | 层叠卡片、浮层；字体：现代无衬线 | 苹果生态用户、科技产品用户（推测） | 操作系统、科技产品、仪表盘、App | Apple Design Awards(#6)、Apple 人机界面指南（HIG）(#49)、60fps(#54)、Dark Mode Design(#66)、React Bits(#80) |
-| 新拟态（Neumorphism） | 内外双阴影凸凹按钮；柔软塑料感 | 单色浅灰/浅蓝底，同色系 | 居中卡片、大圆角；字体：圆润无衬线 | 设计爱好者（概念稿为主）（推测） | 概念展示、智能家居控制面板 |  |
-| 扁平设计（Flat Design） | 纯色图标、几何插画；无阴影无纹理 | 明亮纯色、高饱和但统一 | 网格卡片、图标化；字体：无衬线 | 大众用户、全年龄（推测） | 大众App、政务、教育、图标系统 | Annecy 安纳西国际动画节(#11)、Motionographer(#13)、Behance 动态设计专区(#17)、BUCK(#22)、Oddfellows(#24) |
-| 拟物（Skeuomorphism） | 纹理、高光、投影、缝线；真实材质、立体 | 真实材质色：皮革、木纹、金属 | 模拟实物布局；字体：系统字或仿实物字体 | 新手用户、老年用户、高端硬件爱好者（推测，依据：熟悉心智模型降低学习成本） | 音频/相机/仪器类App、游戏UI、儿童教育 | Apple Design Awards(#6)、Apple 人机界面指南（HIG）(#49)、Spotted in Prod(#55)、Game UI Database(#58)、Web Design Museum(#68) |
-| Bento 网格（Bento Grid） | 图标、数据、产品图分格；平面或微渐变、细描边 | 中性底+各卡片独立配色/深色 | 大小不一的圆角卡片拼成矩形网格；字体：现代无衬线、大数字 | 科技产品用户、开发者、SaaS 决策者（推测） | 产品功能介绍、个人主页、仪表盘、发布会 | Mobbin(#43)、Nicelydone(#46)、Figma Community(#48)、Land-book(#61)、Landingfolio(#62) |
-| 复古印刷 / Risograph（Risograph print） | 网点、套印错位、颗粒；纸张颗粒、油墨叠色 | 荧光粉、蓝、黄等专色叠印 | 海报式、拼贴；字体：粗衬线/怪诞无衬线 | 独立出版、文创、艺术学生（推测） | 独立杂志、文创、音乐节海报、咖啡/书店 | Tokyo TDC(#10)、Typewolf(#85)、It's Nice That(#99) |
-| 手绘插画（Hand-drawn Illustration） | 不规则线条、角色、涂鸦；笔触、纸纹 | 温暖柔和或品牌色 | 插画主导、留白；字体：手写体/圆润无衬线 | 大众、儿童、教育、女性向消费（推测） | 教育、儿童、健康、食品、引导页 | Annecy 安纳西国际动画节(#11)、Vimeo Staff Picks(#16)、Behance 动态设计专区(#17)、Sakugabooru(#20)、BUCK(#22) |
-| 3D / 黏土风（3D Clay / Soft 3D） | 圆润3D物体、角色；哑光黏土、柔和次表面散射 | 柔和马卡龙色 | 主体居中、漂浮物体；字体：圆润无衬线 | Z世代、科技产品用户（推测） | App 引导、科技营销、潮玩、教育 | Pwnisher 3D 渲染挑战赛(#1)、Annecy 安纳西国际动画节(#11)、Motionographer(#13)、STASH(#14)、Behance 动态设计专区(#17) |
-| 渐变弥散（Mesh / Blur Gradient） | 光晕、噪点颗粒；柔焦、颗粒 | 多色柔和渐变、极光色 | 大面积背景渐变+简洁前景；字体：现代无衬线 | 科技/SaaS/Web3 用户（推测） | SaaS、AI 产品、音乐、Web3 | Behance 动态设计专区(#17)、SaaSFrame(#47)、Land-book(#61)、React Bits(#80)、Coolors(#91) |
-| 杂志编辑风（Editorial Design） | 大图、引言、编号；纸感、印刷感 | 黑白+一两种强调色 | 多栏网格、首字下沉、图文穿插；字体：衬线标题+无衬线正文，大标题 | 知识型读者、文化/时尚受众、25–50岁（推测） | 媒体、出版、时尚、品牌故事、长文 | Awwwards(#2)、D&AD(#7)、The One Show & ADC(#8)、Art of the Title(#15)、Refero(#45) |
-| 日式极简（Japanese Minimalism） | 自然纹理、极少图形；纸、木、麻的天然质感 | 米白、原木、墨黑、淡灰 | 大留白、不对称平衡；字体：细明朝/细黑体、竖排 | 生活方式消费者、文艺青年（推测） | 生活方式、家居、茶/咖啡、酒店 | Tokyo TDC(#10)、Minimal Gallery(#65)、Emil Kowalski(#84) |
+| 玻璃拟态（Glassmorphism） | 磨砂玻璃、细高光描边；半透明、模糊、柔光 | 鲜艳渐变背景+白色半透明 | 层叠卡片、浮层；字体：现代无衬线 | 苹果生态用户、科技产品用户 | 操作系统、科技产品、仪表盘、App | Apple Design Awards(#6)、Apple 人机界面指南（HIG）(#49)、60fps(#54)、Dark Mode Design(#66)、React Bits(#80) |
+| 新拟态（Neumorphism） | 内外双阴影凸凹按钮；柔软塑料感 | 单色浅灰/浅蓝底，同色系 | 居中卡片、大圆角；字体：圆润无衬线 | 设计爱好者（概念稿为主） | 概念展示、智能家居控制面板 |  |
+| 扁平设计（Flat Design） | 纯色图标、几何插画；无阴影无纹理 | 明亮纯色、高饱和但统一 | 网格卡片、图标化；字体：无衬线 | 大众用户、全年龄 | 大众App、政务、教育、图标系统 | Annecy 安纳西国际动画节(#11)、Motionographer(#13)、Behance 动态设计专区(#17)、BUCK(#22)、Oddfellows(#24) |
+| 拟物（Skeuomorphism） | 纹理、高光、投影、缝线；真实材质、立体 | 真实材质色：皮革、木纹、金属 | 模拟实物布局；字体：系统字或仿实物字体 | 新手用户、老年用户、高端硬件爱好者 | 音频/相机/仪器类App、游戏UI、儿童教育 | Apple Design Awards(#6)、Apple 人机界面指南（HIG）(#49)、Spotted in Prod(#55)、Game UI Database(#58)、Web Design Museum(#68) |
+| Bento 网格（Bento Grid） | 图标、数据、产品图分格；平面或微渐变、细描边 | 中性底+各卡片独立配色/深色 | 大小不一的圆角卡片拼成矩形网格；字体：现代无衬线、大数字 | 科技产品用户、开发者、SaaS 决策者 | 产品功能介绍、个人主页、仪表盘、发布会 | Mobbin(#43)、Nicelydone(#46)、Figma Community(#48)、Land-book(#61)、Landingfolio(#62) |
+| 复古印刷 / Risograph（Risograph print） | 网点、套印错位、颗粒；纸张颗粒、油墨叠色 | 荧光粉、蓝、黄等专色叠印 | 海报式、拼贴；字体：粗衬线/怪诞无衬线 | 独立出版、文创、艺术学生 | 独立杂志、文创、音乐节海报、咖啡/书店 | Tokyo TDC(#10)、Typewolf(#85)、It's Nice That(#99) |
+| 手绘插画（Hand-drawn Illustration） | 不规则线条、角色、涂鸦；笔触、纸纹 | 温暖柔和或品牌色 | 插画主导、留白；字体：手写体/圆润无衬线 | 大众、儿童、教育、女性向消费 | 教育、儿童、健康、食品、引导页 | Annecy 安纳西国际动画节(#11)、Vimeo Staff Picks(#16)、Behance 动态设计专区(#17)、Sakugabooru(#20)、BUCK(#22) |
+| 3D / 黏土风（3D Clay / Soft 3D） | 圆润3D物体、角色；哑光黏土、柔和次表面散射 | 柔和马卡龙色 | 主体居中、漂浮物体；字体：圆润无衬线 | Z世代、科技产品用户 | App 引导、科技营销、潮玩、教育 | Pwnisher 3D 渲染挑战赛(#1)、Annecy 安纳西国际动画节(#11)、Motionographer(#13)、STASH(#14)、Behance 动态设计专区(#17) |
+| 渐变弥散（Mesh / Blur Gradient） | 光晕、噪点颗粒；柔焦、颗粒 | 多色柔和渐变、极光色 | 大面积背景渐变+简洁前景；字体：现代无衬线 | 科技/SaaS/Web3 用户 | SaaS、AI 产品、音乐、Web3 | Behance 动态设计专区(#17)、SaaSFrame(#47)、Land-book(#61)、React Bits(#80)、Coolors(#91) |
+| 杂志编辑风（Editorial Design） | 大图、引言、编号；纸感、印刷感 | 黑白+一两种强调色 | 多栏网格、首字下沉、图文穿插；字体：衬线标题+无衬线正文，大标题 | 知识型读者、文化/时尚受众、25–50岁 | 媒体、出版、时尚、品牌故事、长文 | Awwwards(#2)、D&AD(#7)、The One Show & ADC(#8)、Art of the Title(#15)、Refero(#45) |
+| 日式极简（Japanese Minimalism） | 自然纹理、极少图形；纸、木、麻的天然质感 | 米白、原木、墨黑、淡灰 | 大留白、不对称平衡；字体：细明朝/细黑体、竖排 | 生活方式消费者、文艺青年 | 生活方式、家居、茶/咖啡、酒店 | Tokyo TDC(#10)、Minimal Gallery(#65)、Emil Kowalski(#84) |
 | 新中式 / 国潮（New Chinese / Guochao） | 祥云、纹样、山水、印章、传统元素现代化；宣纸、金箔、刺绣、漆器 | 中国红、黛青、金、墨黑、朱砂 | 对称或留白山水构图、竖排；字体：书法字、宋体/明体、现代黑体混排 | 中国千禧一代与Z世代（维基百科 Guochao） | 国货美妆、茶饮、文旅、节庆营销、游戏 | 站酷 ZCOOL(S3)、花瓣网(S4) |
-| 奢华黑金（Luxury Black & Gold / Art Deco） | 细金线、几何装饰框；金属、丝绒、大理石 | 黑+金/香槟色+少量白 | 对称、居中、大留白；字体：高对比衬线（Didone 类）、宽字距大写 | 高净值人群、商务人士（推测） | 奢侈品、高端酒店、地产、颁奖典礼 | The Motion Awards(#5)、Pinterest(#95) |
-| 有机自然风（Organic / Biophilic） | 植物、手作纹理、有机形；纸、亚麻、陶土、颗粒 | 大地色、鼠尾草绿、陶土、米色 | 不规则形状、曲线、留白；字体：柔和衬线或圆润无衬线 | 关注健康与可持续的城市中产、女性向（推测） | 食品、美妆护肤、母婴、健康、可持续品牌 | Poly Haven(#34)、Pinterest(#95)、Unsplash(S7)、Pexels(S8) |
-| 酸性图形（Acid Graphics） | 液态铬、扭曲线、星芒、3D 文字；金属、液态、数字噪点 | 黑/银+酸性绿、荧光色 | 打破网格、实验排版；字体：扭曲变形字、Y2K 字体、极细或极粗 | Z世代、潮流/电子音乐圈、设计学生（推测） | 音乐节、潮牌、夜店、实验海报 | Tokyo TDC(#10)、Promonews(#21)、Golden Wolf(#25)、Beeple Everydays(#35)、Recent（原 Godly）(#59) |
-| 深色科技风（Dark Mode / Dark Tech） | 细线、微光、网格背景；微光、玻璃、颗粒 | 近黑/深灰+低饱和强调色、微光渐变 | 卡片层级、细边框；字体：现代无衬线、等宽点缀 | 开发者、游戏玩家、创意专业人士（推测） | 开发者工具、SaaS、AI、影视、游戏 | Awwwards(#2)、CSS Design Awards(#3)、Vercel Web Interface Guidelines(#51)、Game UI Database(#58)、Recent（原 Godly）(#59) |
-| 沉浸式 WebGL / 3D 交互（Immersive WebGL） | 粒子、3D 模型、着色器；实时光影、景深 | 深色背景+发光材质为多 | 全屏场景、滚动叙事；字体：大字无衬线、动态文字 | 创意行业、科技爱好者、品牌营销受众（推测） | 品牌活动页、作品集、发布会、创意工作室 | Awwwards(#2)、CSS Design Awards(#3)、The FWA(#4)、Sketchfab(#30)、Recent（原 Godly）(#59) |
-| 动态排版（Kinetic Typography） | 逐字动画、遮罩、变形；平面为主 | 高对比黑白或品牌色 | 文字即画面、全屏大字；字体：粗无衬线、可变字体 | 社媒短视频受众、年轻人（推测） | 品牌片、片头、社媒广告、发布会 | Awwwards(#2)、CSS Design Awards(#3)、The Motion Awards(#5)、The One Show & ADC(#8)、Tokyo TDC(#10) |
-| 电影感写实（Cinematic Realism） | 光束、雾气、颗粒；胶片颗粒、柔光、暗角 | 青橙、低饱和、暗部压深 | 宽画幅、三分法、景深；字体：细衬线/宽字距标题 | 影视/广告受众、高端品牌（推测） | 品牌片、汽车、旅游、影视宣发 | Pwnisher 3D 渲染挑战赛(#1)、The Motion Awards(#5)、Runway AI Film Festival(#9)、Ciclope Festival(#12)、STASH(#14) |
-| 早期网页 / 复古像素（Early Web / Retro Web） | GIF、按钮、计数器、窗口；像素、斜面按钮 | 网页安全色、灰色窗口、蓝色链接 | 表格布局、密集门户；字体：像素字、Times、Verdana | 互联网怀旧人群、设计师、Z世代（推测） | 个人站、活动彩蛋、潮牌 | Hoverstat.es(#67)、Web Design Museum(#68) |
+| 奢华黑金（Luxury Black & Gold / Art Deco） | 细金线、几何装饰框；金属、丝绒、大理石 | 黑+金/香槟色+少量白 | 对称、居中、大留白；字体：高对比衬线（Didone 类）、宽字距大写 | 高净值人群、商务人士 | 奢侈品、高端酒店、地产、颁奖典礼 | The Motion Awards(#5)、Pinterest(#95) |
+| 有机自然风（Organic / Biophilic） | 植物、手作纹理、有机形；纸、亚麻、陶土、颗粒 | 大地色、鼠尾草绿、陶土、米色 | 不规则形状、曲线、留白；字体：柔和衬线或圆润无衬线 | 关注健康与可持续的城市中产、女性向 | 食品、美妆护肤、母婴、健康、可持续品牌 | Poly Haven(#34)、Pinterest(#95)、Unsplash(S7)、Pexels(S8) |
+| 酸性图形（Acid Graphics） | 液态铬、扭曲线、星芒、3D 文字；金属、液态、数字噪点 | 黑/银+酸性绿、荧光色 | 打破网格、实验排版；字体：扭曲变形字、Y2K 字体、极细或极粗 | Z世代、潮流/电子音乐圈、设计学生 | 音乐节、潮牌、夜店、实验海报 | Tokyo TDC(#10)、Promonews(#21)、Golden Wolf(#25)、Beeple Everydays(#35)、Recent（原 Godly）(#59) |
+| 深色科技风（Dark Mode / Dark Tech） | 细线、微光、网格背景；微光、玻璃、颗粒 | 近黑/深灰+低饱和强调色、微光渐变 | 卡片层级、细边框；字体：现代无衬线、等宽点缀 | 开发者、游戏玩家、创意专业人士 | 开发者工具、SaaS、AI、影视、游戏 | Awwwards(#2)、CSS Design Awards(#3)、Vercel Web Interface Guidelines(#51)、Game UI Database(#58)、Recent（原 Godly）(#59) |
+| 沉浸式 WebGL / 3D 交互（Immersive WebGL） | 粒子、3D 模型、着色器；实时光影、景深 | 深色背景+发光材质为多 | 全屏场景、滚动叙事；字体：大字无衬线、动态文字 | 创意行业、科技爱好者、品牌营销受众 | 品牌活动页、作品集、发布会、创意工作室 | Awwwards(#2)、CSS Design Awards(#3)、The FWA(#4)、Sketchfab(#30)、Recent（原 Godly）(#59) |
+| 动态排版（Kinetic Typography） | 逐字动画、遮罩、变形；平面为主 | 高对比黑白或品牌色 | 文字即画面、全屏大字；字体：粗无衬线、可变字体 | 社媒短视频受众、年轻人 | 品牌片、片头、社媒广告、发布会 | Awwwards(#2)、CSS Design Awards(#3)、The Motion Awards(#5)、The One Show & ADC(#8)、Tokyo TDC(#10) |
+| 电影感写实（Cinematic Realism） | 光束、雾气、颗粒；胶片颗粒、柔光、暗角 | 青橙、低饱和、暗部压深 | 宽画幅、三分法、景深；字体：细衬线/宽字距标题 | 影视/广告受众、高端品牌 | 品牌片、汽车、旅游、影视宣发 | Pwnisher 3D 渲染挑战赛(#1)、The Motion Awards(#5)、Runway AI Film Festival(#9)、Ciclope Festival(#12)、STASH(#14) |
+| 早期网页 / 复古像素（Early Web / Retro Web） | GIF、按钮、计数器、窗口；像素、斜面按钮 | 网页安全色、灰色窗口、蓝色链接 | 表格布局、密集门户；字体：像素字、Times、Verdana | 互联网怀旧人群、设计师、Z世代 | 个人站、活动彩蛋、潮牌 | Hoverstat.es(#67)、Web Design Museum(#68) |
 
 ## 风格详解
 

@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0.0",
-  "updated": "2026-11-22",
+  "schema_version": "1.2.0",
+  "updated": "2026-11-25",
   "recipes": [
     {
       "id": "R01",
@@ -33,7 +33,12 @@
         "grid and collage may conflict; separate zones",
         "do not alter character identity"
       ],
-      "prompt": "character editorial poster, Swiss grid typography, Bauhaus geometric decomposition, Y2K cyber fashion accents, asymmetric layout, restrained chrome and translucent materials, preserve original character identity"
+      "prompt": "character editorial poster, Swiss grid typography, Bauhaus geometric decomposition, Y2K cyber fashion accents, asymmetric layout, restrained chrome and translucent materials, preserve original character identity",
+      "aliases": ["国际主义平面设计 × 包豪斯几何 × Y2K 赛博时装拼贴"],
+      "reference_pages": [
+        "https://www.artic.edu/artworks/228746/silkscreen-portfolio",
+        "https://www.artic.edu/artworks/229987/50-years-bauhaus-exhibition-poster"
+      ]
     },
     {
       "id": "R02",
@@ -47,6 +52,10 @@
         "character-poster"
       ],
       "layout": "Central portrait with organic frame and stepped geometric border.",
+      "geometry": [
+        "organic botanical curves and whiplash framing",
+        "stepped Art Deco outer borders and fan symmetry"
+      ],
       "palette": [
         "antique gold",
         "deep green",
@@ -61,7 +70,11 @@
       "risks": [
         "ornamental frame must not overpower face"
       ],
-      "prompt": "ornate fantasy character portrait, Art Nouveau organic floral framing, Art Deco geometric symmetry, refined antique gold accents, elegant negative space, preserve character identity"
+      "prompt": "ornate fantasy character portrait, Art Nouveau organic floral framing, Art Deco geometric symmetry, refined antique gold accents, elegant negative space, preserve character identity",
+      "reference_pages": [
+        "https://www.artic.edu/artworks/111986/zodiaque-la-plume",
+        "https://collections.vam.ac.uk/item/O1405126/"
+      ]
     },
     {
       "id": "R03",
@@ -77,6 +90,11 @@
         "merchandise"
       ],
       "layout": "Comic panels or repeated subject with separate speech-bubble zone.",
+      "geometry": [
+        "bold contour outlines",
+        "panel grids and speech-bubble shapes",
+        "layered cutout silhouettes"
+      ],
       "palette": [
         "three to five spot colors"
       ],
@@ -88,7 +106,11 @@
       "risks": [
         "keep eyes and facial expression free of halftone"
       ],
-      "prompt": "playful character poster, Pop Art comic halftone, Risograph spot-color overprint, bold outlines, layered comic collage, expressive pose"
+      "prompt": "playful character poster, Pop Art comic halftone, Risograph spot-color overprint, bold outlines, layered comic collage, expressive pose",
+      "reference_pages": [
+        "https://www.artic.edu/artworks/150044/marilyn-monroe-marilyn",
+        "https://www.tate.org.uk/art/artworks/matisse-the-snail-t00540"
+      ]
     },
     {
       "id": "R04",
@@ -102,6 +124,10 @@
         "experimental-editorial"
       ],
       "layout": "One dominant diagonal or radial structure; monumental typography.",
+      "geometry": [
+        "single dominant diagonal axis",
+        "wedges, rings, and hard-cropped rectangular blocks"
+      ],
       "palette": [
         "red",
         "black",
@@ -115,7 +141,11 @@
       "risks": [
         "avoid multiple competing diagonals"
       ],
-      "prompt": "constructivist graphic poster, bold diagonal composition, red black cream palette, monumental typography, brutalist editorial structure, print grain"
+      "prompt": "constructivist graphic poster, bold diagonal composition, red black cream palette, monumental typography, brutalist editorial structure, print grain",
+      "reference_pages": [
+        "https://www.artic.edu/artworks/199109/for-voice-dlia-golosa",
+        "https://eyeondesign.aiga.org/a-typographic-cocktail-of-brutalism-and-early-computer-graphics-plus-a-dash-of-yves-klein/"
+      ]
     },
     {
       "id": "R05",
@@ -130,6 +160,10 @@
         "interface-concept"
       ],
       "layout": "Open translucent background with a few floating glass objects.",
+      "geometry": [
+        "rounded translucent panels",
+        "spherical bubbles, water droplets, and smooth arcs"
+      ],
       "palette": [
         "sky blue",
         "aqua green",
@@ -143,7 +177,11 @@
       "risks": [
         "preserve text contrast; avoid excessive blur"
       ],
-      "prompt": "optimistic futuristic visual, Frutiger Aero aesthetic, clear blue sky and aqua green, translucent glass bubbles, water droplets, soft sunlight, clean readable composition"
+      "prompt": "optimistic futuristic visual, Frutiger Aero aesthetic, clear blue sky and aqua green, translucent glass bubbles, water droplets, soft sunlight, clean readable composition",
+      "reference_pages": [
+        "https://cari.institute/aesthetics/frutiger-aero",
+        "https://learn.microsoft.com/en-us/windows/win32/uxguide/vis-icons"
+      ]
     },
     {
       "id": "R06",
@@ -158,6 +196,10 @@
         "editorial"
       ],
       "layout": "Editorial grid with one surreal focal metaphor.",
+      "geometry": [
+        "clean magazine column grid",
+        "dislocated scale and nested photographic silhouettes"
+      ],
       "palette": [
         "theme-led limited palette"
       ],
@@ -168,7 +210,11 @@
       "risks": [
         "every spatial disruption should support a concept"
       ],
-      "prompt": "surrealist editorial collage, impossible scale relationships, conceptual visual metaphor, refined magazine grid, controlled negative space, tactile photographic cutouts"
+      "prompt": "surrealist editorial collage, impossible scale relationships, conceptual visual metaphor, refined magazine grid, controlled negative space, tactile photographic cutouts",
+      "reference_pages": [
+        "https://collections.vam.ac.uk/item/O127197/",
+        "https://collections.vam.ac.uk/item/O1069051/"
+      ]
     },
     {
       "id": "R07",
@@ -183,6 +229,10 @@
         "editorial"
       ],
       "layout": "Layered character silhouette with grid-aligned title.",
+      "geometry": [
+        "cut-paper silhouettes and torn-edge strata",
+        "orthogonal Swiss typography alignment"
+      ],
       "palette": [
         "limited palette with one accent"
       ],
@@ -195,7 +245,354 @@
       "risks": [
         "do not damage hair, fingers or garment silhouette"
       ],
-      "prompt": "layered cut-paper character collage, Swiss editorial typography, torn paper edges, precise grid, overlapping cutout shapes, preserve silhouette and facial identity"
+      "prompt": "layered cut-paper character collage, Swiss editorial typography, torn paper edges, precise grid, overlapping cutout shapes, preserve silhouette and facial identity",
+      "reference_pages": [
+        "https://www.tate.org.uk/art/artworks/matisse-the-snail-t00540",
+        "https://www.tate.org.uk/whats-on/tate-modern/exhibition/henri-matisse-cut-outs"
+      ]
+    },
+    {
+      "id": "R08",
+      "name": "Glitch Art × Swiss Typography",
+      "primary": "glitch_art",
+      "secondary": [
+        "swiss"
+      ],
+      "deliverables": [
+        "digital-poster",
+        "music-visual",
+        "character-poster"
+      ],
+      "layout": "Clean Swiss typographic grid for readable metadata; controlled horizontal slicing and signal disruption on the focal image.",
+      "geometry": [
+        "horizontal pixel-slice bands and fractured grid blocks",
+        "orthogonal clean typography anchors"
+      ],
+      "palette": [
+        "source image tones",
+        "localized RGB channel split (electric blue, magenta, acid green)"
+      ],
+      "materials": [
+        "compression artifacts",
+        "scanlines",
+        "signal feedback"
+      ],
+      "risks": [
+        "keep face and key identity anchors undistorted",
+        "keep critical typography on a clean unglitched layer",
+        "avoid high-frequency flashing in motion variants"
+      ],
+      "prompt": "digital editorial poster, controlled Glitch Art horizontal slicing and subtle RGB channel shift, clean Swiss sans-serif typography grid on separate unglitched layer, preserve facial identity and readable hierarchy",
+      "reference_pages": [
+        "https://www.stedelijk.nl/en/collection/100175-rosa-menkman-a-vernacular-of-file-formats",
+        "https://www.artic.edu/digital-publications/36/perspectives-on-instability/16/stability-isnt-everything-its-glitched-up-to-be-an-interview-with-jamie-fenton"
+      ]
+    },
+    {
+      "id": "R09",
+      "name": "De Stijl × Swiss Grid",
+      "primary": "de_stijl",
+      "secondary": [
+        "swiss"
+      ],
+      "deliverables": [
+        "abstract-poster",
+        "character-card",
+        "identity"
+      ],
+      "layout": "Strict orthogonal black-line grid dividing asymmetric rectangular planes; Swiss sans-serif metadata aligned to grid borders.",
+      "geometry": [
+        "horizontal and vertical structural lines",
+        "asymmetric rectangular modules"
+      ],
+      "palette": [
+        "primary red",
+        "primary yellow",
+        "primary blue",
+        "pure white",
+        "black"
+      ],
+      "materials": [
+        "flat matte color planes",
+        "uncoated archival paper"
+      ],
+      "risks": [
+        "do not add diagonal chaos or gradients",
+        "keep character identity clear if used for character attribute cards"
+      ],
+      "prompt": "modernist graphic poster, De Stijl orthogonal black grid and asymmetric primary color rectangular planes, crisp Swiss sans-serif typography aligned to grid borders, generous white space, flat matte print finish",
+      "reference_pages": [
+        "https://www.artic.edu/artworks/109819/lozenge-composition-with-yellow-black-blue-red-and-gray",
+        "https://www.artic.edu/artworks/228746/silkscreen-portfolio"
+      ]
+    },
+    {
+      "id": "R10",
+      "name": "Guochao × Minimalism × Editorial",
+      "primary": "minimal",
+      "secondary": [
+        "guochao",
+        "editorial"
+      ],
+      "deliverables": [
+        "brand-poster",
+        "character-poster",
+        "editorial-cover"
+      ],
+      "layout": "Generous minimalist negative space framing one refined Chinese cultural motif or character; delicate editorial serif/songti hierarchy.",
+      "geometry": [
+        "clean editorial margins",
+        "restrained traditional seal or ink-stroke focal accent"
+      ],
+      "palette": [
+        "warm rice paper off-white",
+        "ink black",
+        "cinnabar red or celadon accent"
+      ],
+      "materials": [
+        "xuan paper fiber texture",
+        "matte ink wash",
+        "subtle embossed seal"
+      ],
+      "risks": [
+        "avoid stacking clichés like dragons, clouds and lattice patterns simultaneously",
+        "verify historical accuracy of cultural motifs"
+      ],
+      "prompt": "contemporary neo-Chinese editorial poster, minimalist composition with generous warm rice-paper negative space, restrained cinnabar red seal accent and subtle ink-wash motif, refined calm luxury atmosphere, preserve subject identity",
+      "reference_pages": [
+        "https://en.wikipedia.org/wiki/Guochao",
+        "https://en.wikipedia.org/wiki/Shan_shui"
+      ]
+    },
+    {
+      "id": "R11",
+      "name": "Cyberpunk × Glitch Art × Kinetic Typography",
+      "primary": "cyber",
+      "secondary": [
+        "glitch_art",
+        "kinetic"
+      ],
+      "deliverables": [
+        "game-key-art",
+        "music-visual",
+        "character-poster"
+      ],
+      "layout": "High-impact futuristic focal character or cityscape with kinetic angled display typography and localized peripheral glitch slices.",
+      "geometry": [
+        "kinetic typographic motion lanes",
+        "horizontal pixel-slice disruption at frame edges"
+      ],
+      "palette": [
+        "deep night indigo",
+        "neon cyan",
+        "electric magenta",
+        "acid accent"
+      ],
+      "materials": [
+        "wet reflective asphalt and glass",
+        "CRT scanlines",
+        "holographic HUD glow"
+      ],
+      "risks": [
+        "keep face and eyes completely free of glitch distortion",
+        "avoid high-frequency flashing in motion outputs"
+      ],
+      "prompt": "futuristic cyberpunk key visual, dramatic neon cyan and magenta rim lighting on dark night backdrop, dynamic kinetic typography rhythm, localized Glitch Art horizontal pixel slicing at edges only, crisp undistorted facial identity",
+      "reference_pages": [
+        "https://www.stedelijk.nl/en/collection/100175-rosa-menkman-a-vernacular-of-file-formats",
+        "https://www.artofthetitle.com/"
+      ]
+    },
+    {
+      "id": "R12",
+      "name": "Bauhaus × Risograph × Editorial",
+      "primary": "bauhaus",
+      "secondary": [
+        "riso",
+        "editorial"
+      ],
+      "deliverables": [
+        "brand-poster",
+        "editorial-cover",
+        "zine"
+      ],
+      "layout": "Bauhaus geometric composition anchored by an editorial column grid and warm analog print margins.",
+      "geometry": [
+        "elementary circles, triangles and squares",
+        "layered spot-color overprint overlaps"
+      ],
+      "palette": [
+        "fluorescent riso red",
+        "riso cobalt blue",
+        "sunflower yellow",
+        "warm uncoated cream paper"
+      ],
+      "materials": [
+        "uncoated cream paper grain",
+        "soy-ink halftone",
+        "subtle registration shift"
+      ],
+      "risks": [
+        "limit spot inks to 3 colors so overprints stay intentional rather than muddy"
+      ],
+      "prompt": "Bauhaus geometric exhibition poster printed in Risograph style, elementary circles triangles and squares, 3-spot fluorescent soy-ink overprint with subtle misregistration, warm uncoated cream paper texture, clean editorial typography grid",
+      "reference_pages": [
+        "https://www.artic.edu/artworks/229987/50-years-bauhaus-exhibition-poster",
+        "https://en.wikipedia.org/wiki/Risograph"
+      ]
+    },
+    {
+      "id": "R13",
+      "name": "Bento Grid × Dark Mode × Glassmorphism",
+      "primary": "bento",
+      "secondary": [
+        "darkmode",
+        "glass"
+      ],
+      "deliverables": [
+        "ui-landing",
+        "product-visual"
+      ],
+      "layout": "Modular bento card grid on a low-glare dark charcoal surface; 1–2 hero cards elevated with subtle frosted glass highlights.",
+      "geometry": [
+        "uniformly gapped rounded modular cards",
+        "one dominant hero tile with balanced supporting tiles"
+      ],
+      "palette": [
+        "deep graphite charcoal",
+        "elevated slate gray",
+        "crisp off-white text",
+        "single luminous electric accent"
+      ],
+      "materials": [
+        "matte dark UI surfaces",
+        "localized frosted glass blur",
+        "1px hairline borders"
+      ],
+      "risks": [
+        "verify WCAG 2.2 contrast >= 4.5:1 on glass panels",
+        "do not make every card translucent"
+      ],
+      "prompt": "modern dark-mode SaaS bento grid UI showcase, modular rounded cards on deep charcoal background, subtle 1px hairline borders, one hero translucent frosted glass card with soft ambient glow, crisp high-contrast hierarchy",
+      "reference_pages": [
+        "https://bentogrids.com/",
+        "https://www.nngroup.com/articles/glassmorphism/"
+      ]
+    },
+    {
+      "id": "R14",
+      "name": "Art Deco × Cinematic Photorealism × Luxury",
+      "primary": "art_deco",
+      "secondary": [
+        "cinematic",
+        "luxury"
+      ],
+      "deliverables": [
+        "collector-character-card",
+        "brand-poster",
+        "editorial-cover"
+      ],
+      "layout": "Monumental centered subject lit with cinematic chiaroscuro, framed by delicate stepped Art Deco geometric borders.",
+      "geometry": [
+        "stepped ziggurat outer frame",
+        "fine radial brass linework",
+        "axial symmetry"
+      ],
+      "palette": [
+        "obsidian black",
+        "deep emerald or midnight blue",
+        "restrained champagne brass gold"
+      ],
+      "materials": [
+        "cinematic 35mm film grain",
+        "brushed brass foil lines",
+        "velvet and lacquer depth"
+      ],
+      "risks": [
+        "keep metallic gold accents restrained (around 10% initial parameter) to avoid cheap glitter",
+        "do not let frame lines cut across the face"
+      ],
+      "prompt": "collector edition luxury poster, cinematic photorealistic chiaroscuro portrait with subtle 35mm film grain, framed by refined Art Deco stepped geometric brass linework on obsidian black and deep emerald backdrop, restrained champagne gold accents",
+      "reference_pages": [
+        "https://collections.vam.ac.uk/item/O1405126/",
+        "https://shotdeck.com/"
+      ]
+    },
+    {
+      "id": "R15",
+      "name": "Y2K × Acid Graphics × Vaporwave",
+      "primary": "y2k",
+      "secondary": [
+        "acid",
+        "vapor"
+      ],
+      "deliverables": [
+        "album-cover",
+        "social-key-visual",
+        "brand-poster"
+      ],
+      "layout": "High-energy centered Y2K focal object or character over a dreamy pastel twilight gradient, punctuated by localized liquid-chrome acid graphics.",
+      "geometry": [
+        "liquid chrome organic blobs and star sparkles",
+        "subtle retro wireframe perspective accent"
+      ],
+      "palette": [
+        "pastel pink and twilight violet gradient",
+        "icy silver chrome",
+        "acid lime accent"
+      ],
+      "materials": [
+        "polished liquid chrome",
+        "translucent iridescent plastic",
+        "subtle VHS scanlines"
+      ],
+      "risks": [
+        "limit retro symbols to 1–2 accents to avoid meme-like clutter",
+        "keep title legible against metallic reflections"
+      ],
+      "prompt": "Y2K acid-graphics album cover, dreamy vaporwave pastel pink and cyan gradient backdrop, localized liquid chrome typography accents and translucent iridescent shapes, subtle retro scanlines, bold centered silhouette",
+      "reference_pages": [
+        "https://en.wikipedia.org/wiki/Y2K_aesthetic",
+        "https://tokyotypedirectorsclub.org/"
+      ]
+    },
+    {
+      "id": "R16",
+      "name": "Japanese Minimalism × Organic × Handdrawn",
+      "primary": "japanese",
+      "secondary": [
+        "organic",
+        "handdrawn"
+      ],
+      "deliverables": [
+        "editorial-cover",
+        "brand-poster",
+        "zine"
+      ],
+      "layout": "Serene Ma negative space with quiet asymmetric balance; a single expressive hand-drawn botanical or character illustration anchors the composition.",
+      "geometry": [
+        "soft organic silhouette",
+        "generous uncluttered margins"
+      ],
+      "palette": [
+        "warm washi cream",
+        "sumi charcoal",
+        "sage green",
+        "muted terracotta"
+      ],
+      "materials": [
+        "handmade washi paper fiber",
+        "tactile gouache and ink linework"
+      ],
+      "risks": [
+        "stick to one single drawing medium so illustration feels cohesive",
+        "use tactile paper grain so minimalism feels warm rather than sterile"
+      ],
+      "prompt": "Japanese minimalist editorial cover, generous serene Ma negative space on warm handmade washi paper, single expressive hand-drawn ink and gouache botanical illustration, muted sage green and terracotta tones, soft diffused natural daylight",
+      "reference_pages": [
+        "https://en.wikipedia.org/wiki/Ma_(negative_space)",
+        "https://en.wikipedia.org/wiki/Wabi-sabi"
+      ]
     }
   ]
 }

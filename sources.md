@@ -1,13 +1,13 @@
 ---
 title: "来源与访问状态"
 description: "初始学习资料与所有风格/受众引用来源及其访问状态"
-updated: 2026-11-15
+updated: 2026-11-25
 tags: [sources, citations, design-kb]
 ---
 
 # sources 来源与访问状态
 
-核验日期：2026-11-15（Asia/Shanghai）。硬性规范：未搜索、未打开、未引用 CSDN。
+原始资料核验日期：2026-11-15；扩展风格档案核验日期：2026-11-22 / 2026-11-25（Asia/Shanghai）。硬性规范：未搜索、未打开、未引用 CSDN。
 
 ## 初始学习资料
 - Eian（@EianLu）X 长文《100 个提升审美的设计网站大赏》：https://x.com/EianLu/status/2121219503988113557（经 X 官方 API 读取全文，正文含 100 个编号网站、206 个链接实体，去重后与编号清单一致；另提及 godly.website、styles.refero.design、Cal.com、Linear 等名称）
@@ -89,5 +89,44 @@ tags: [sources, citations, design-kb]
 | W3C WCAG 2.2 | https://www.w3.org/TR/WCAG22/ | ✅ HTTP 200（2026-11-15 curl） |
 | 已尝试但不存在的页面（未引用） | en.wikipedia.org/wiki/Brutalist_web_design、/wiki/Mesh_gradient、nngroup.com/articles/neumorphism/、/articles/bento-grid/ | ❌ 404 |
 
+## 扩展风格档案来源（2026-11-22）
+
+来源等级定义见 `09-style-taxonomy-and-relations.md`。作品级 `page_url`、IIIF `image_url`、权利信息和 `supports[]` 字段见 `data/style-relations.json`；下表记录定义与主要作品来源的核验方式。
+
+| 风格 | 来源 | 等级 | 核验状态 |
+|---|---|---|---|
+| 俄罗斯构成主义 | [Tate：Constructivism](https://www.tate.org.uk/art/art-terms/constructivism) | T1 | 已读取术语正文 |
+| 俄罗斯构成主义 | [MoMA：Rodchenko《Orator. Verse》](https://www.moma.org/collection/works/16455) | T1 | 已读取藏品正文；后续自动请求可能出现 403 |
+| 俄罗斯构成主义 | [芝加哥艺术博物馆：For Voice](https://www.artic.edu/artworks/199109/for-voice-dlia-golosa) | T1 | 已读取藏品正文与 API metadata |
+| 风格派 | [Tate：De Stijl](https://www.tate.org.uk/art/art-terms/de-stijl) | T1 | 已读取术语正文 |
+| 风格派 | [芝加哥艺术博物馆：Mondrian](https://www.artic.edu/artworks/109819/lozenge-composition-with-yellow-black-blue-red-and-gray) | T1 | 已读取藏品正文、CC0 与 IIIF 信息 |
+| 风格派 | [V&A：The Red Blue Chair](https://collections.vam.ac.uk/item/O142927/) | T1 | 已读取藏品正文与 API metadata |
+| 新艺术运动 | [Tate：Art Nouveau](https://www.tate.org.uk/art/art-terms/art-nouveau) | T1 | 已读取术语正文 |
+| 新艺术运动 | [芝加哥艺术博物馆：Zodiaque](https://www.artic.edu/artworks/111986/zodiaque-la-plume) | T1 | 已读取藏品正文与 API metadata |
+| 新艺术运动 | [芝加哥艺术博物馆：The Seasons](https://www.artic.edu/artworks/97439/the-seasons) | T1 | 已读取藏品正文与 API metadata |
+| 装饰艺术 | [Tate：Art Deco](https://www.tate.org.uk/art/art-terms/art-deco) | T1 | 已读取术语正文 |
+| 装饰艺术 | [V&A：Normandie](https://collections.vam.ac.uk/item/O1405126/) | T1 | 已读取藏品正文与 API metadata |
+| 装饰艺术 | [V&A：Philips 634A](https://collections.vam.ac.uk/item/O371995/) | T1 | 已读取藏品正文与 API metadata |
+| 波普艺术 | [Tate：Pop Art](https://www.tate.org.uk/art/art-terms/pop-art) | T1 | 已读取术语正文 |
+| 波普艺术 | [芝加哥艺术博物馆：Marilyn](https://www.artic.edu/artworks/150044/marilyn-monroe-marilyn) | T1 | 已读取藏品正文、版权与 API metadata |
+| 波普艺术 | [Tate：Whaam!](https://www.tate.org.uk/art/artworks/lichtenstein-whaam-t00897) | T1 | 内置浏览器确认标题、作者与年份 |
+| Frutiger Aero | [CARI：Frutiger Aero](https://cari.institute/aesthetics/frutiger-aero) | T3 | 已读取术语、年代、案例与图库入口 |
+| Frutiger Aero | [Microsoft Learn：Icons (Design basics)](https://learn.microsoft.com/en-us/windows/win32/uxguide/vis-icons) | T2 | 内置浏览器读取 Aero 定义、图例与制作规范 |
+| 故障艺术 | [V2_：Rosa Menkman](https://v2.nl/blog/alex-adriaansens-residency-2021-rosa-menkman/) | T1 | 内置浏览器读取研究介绍正文 |
+| 故障艺术 | [Stedelijk：A Vernacular of File Formats](https://www.stedelijk.nl/en/collection/100175-rosa-menkman-a-vernacular-of-file-formats) | T1 | 部分核验：官方结果确认作品、作者与年份；页面有机器人校验 |
+| 故障艺术 | [芝加哥艺术博物馆：Jamie Fenton 访谈](https://www.artic.edu/digital-publications/36/perspectives-on-instability/16/stability-isnt-everything-its-glitched-up-to-be-an-interview-with-jamie-fenton) | T1 | HTTP 200，已核验出版物标题与访谈入口（2026-11-25） |
+| 超现实主义拼贴 | [Tate：Surrealism](https://www.tate.org.uk/art/art-terms/surrealism) | T1 | 已读取术语正文 |
+| 超现实主义拼贴 | [Tate：Photomontage](https://www.tate.org.uk/art/art-terms/photomontage) | T1 | 已读取术语正文 |
+| 超现实主义拼贴 | [V&A：Elephant Bird](https://collections.vam.ac.uk/item/O127197/) | T1 | 已读取藏品正文与 API metadata |
+| 超现实主义拼贴 | [V&A：Discussing Dress](https://collections.vam.ac.uk/item/O1069051/) | T1 | 已读取藏品正文与 API metadata |
+| 剪纸拼贴 | [Tate：Collage](https://www.tate.org.uk/art/art-terms/collage) | T1 | 已读取术语正文 |
+| 剪纸拼贴 | [Tate Modern：Henri Matisse: The Cut-Outs](https://www.tate.org.uk/whats-on/tate-modern/exhibition/henri-matisse-cut-outs) | T1 | 已读取展览正文与图版 credit |
+| 剪纸拼贴 | [Tate：The Snail](https://www.tate.org.uk/art/artworks/matisse-the-snail-t00540) | T1 | 已确认作品标题、作者与年份 |
+| 野兽派平面设计 | [AIGA Eye on Design：Signifier](https://eyeondesign.aiga.org/a-typographic-cocktail-of-brutalism-and-early-computer-graphics-plus-a-dash-of-yves-klein/) | T2 | 已读取专业报道、图版 credit 与制作背景 |
+| 野兽派平面设计 | [Klim Type Foundry：Signifier](https://klim.co.nz/retail-fonts/signifier/) | T3 | 已读取设计师一手作品说明 |
+| 野兽派平面设计 | [Fonts In Use：Wohnfühl Immobilien Architects Wanted poster](https://fontsinuse.com/uses/33869/wohnfuehl-immobilien-architects-wanted-poster) | T3 | HTTP 200，已读取案例说明、设计方与版权标注（2026-11-25） |
+| 配方 R01（瑞士/包豪斯） | [芝加哥艺术博物馆：Armin Hofmann《Silkscreen Portfolio》](https://www.artic.edu/artworks/228746/silkscreen-portfolio) | T1 | HTTP 200，已核验 AIC API metadata（2026-11-25） |
+| 配方 R01（瑞士/包豪斯） | [芝加哥艺术博物馆：Herbert Bayer《50 Years Bauhaus Exhibition Poster》](https://www.artic.edu/artworks/229987/50-years-bauhaus-exhibition-poster) | T1 | HTTP 200，已核验 AIC API metadata（2026-11-25） |
+
 ## 网站核验明细
-见 `data/verification.tsv`（全部 115 个站点的方法、HTTP 状态、最终地址、结论）与 `01-sites.md` 表一最后一列。
+见 `data/verification.tsv`（115 个初始站点及 10 个扩展风格档案的方法、HTTP 状态、最终地址、结论）与 `01-sites.md` 表一最后一列。
