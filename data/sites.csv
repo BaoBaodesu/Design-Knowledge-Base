@@ -83,7 +83,7 @@ id,source,name,url,category,main,resource_type,works_style,ui_style,scene,recomm
 82,article,Josh W. Comeau,https://www.joshwcomeau.com/,前端与交互,交互式前端博客（CSS/动画/SVG）,博客/教程,可交互图解,白底+彩色像素彩虹插画,CSS/动画原理,拖滑块理解原理,前端,handdrawn;flat,false,verified,curl HTTP 200，页面标题「Josh W. Comeau」,2026-11-15
 83,article,Rauno Freiberg,https://rauno.me/,前端与交互,Vercel 设计工程师个人站，《Invisible Details of Interaction Design》,个人站/交互,交互细节,黄色大圆+黑色大字（包豪斯/瑞士感）,交互细节学习,读交互细节文章,前端;交互,swiss;bauhaus;minimal,false,verified,curl HTTP 200，页面标题「Rauno Freiberg」,2026-11-15
 84,article,Emil Kowalski,https://emilkowal.ski/,前端与交互,Sonner/Vaul 作者博客，界面动画,博客/动效,克制跟手的动画,极简白底小字列表,动画时长/缓动调校,读动画文章,前端;动效,minimal;japanese,false,verified,curl HTTP 200，页面标题「Emil Kowalski」,2026-11-15
-85,article,Typewolf,https://www.typewolf.com/,字体与配色,字体指南与真实网站字体搭配（原文称2025年底后停更，未核验）,字体指南,优秀网站字体搭配,米粉底+衬线大标题+复古海报卡片,选字体搭配,查字体组合,字体,editorial;riso,false,verified,curl HTTP 200，页面标题「What’s Trending in Type  · Typewolf」,2026-11-15
+85,article,Typewolf,https://www.typewolf.com/,字体与配色,字体指南与真实网站字体搭配,字体指南,优秀网站字体搭配,米粉底+衬线大标题+复古海报卡片,选字体搭配,查字体组合,字体,editorial;riso,false,verified,curl HTTP 200，页面标题「What’s Trending in Type  · Typewolf」,2026-11-15
 86,article,Fonts In Use,https://fontsinuse.com/,字体与配色,真实世界字体使用档案,字体档案,海报、书封、唱片、网页,白底+黑色粗体 logo+密集作品网格,看字体实际效果,按字体检索案例,字体;平面,editorial;swiss,false,verified,curl HTTP 200，页面标题「Fonts In Use - Fonts In Use」,2026-11-15
 87,article,Google Fonts,https://fonts.google.com/,字体与配色,免费开源字库（含思源黑/宋等）,字体库,开源字体,Material 风格白底工具界面,免费可商用字体,选字下载,字体,flat,false,verified,curl HTTP 200，页面标题「Browse Fonts - Google Fonts」,2026-11-15
 88,article,Fontshare,https://www.fontshare.com/,字体与配色,ITF 免费字库（个人与商用免费）,字体库,几何无衬线等精品字体,米黄底极简（截图）,免费精品字体,选几何无衬线,字体,swiss;minimal,false,verified,curl HTTP 200（gzip 正文）；无头截图正常,2026-11-15

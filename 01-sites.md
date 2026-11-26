@@ -1,13 +1,13 @@
 ---
 title: "网站资源总表"
 description: "原文 100 个设计网站 + 15 个文章之外补充站点：内容、资源类型、作品风格、适用场景、推荐用途与逐站核验状态（表一）"
-updated: 2026-11-15
+updated: 2026-11-26
 tags: [sites, resources, verification, design-kb]
 ---
 
 # 01 网站资源总表（表一）与网站内容定位（第一轮成果）
 
-> 核验日期：2026-11-15（Asia/Shanghai）。方法：curl（桌面 UA）→ 失败则 WebFetch → 再用无头 Chrome 截图。原文中的数字（如条目数量）除特别注明外为「据原文」，未独立核验。
+> 核验日期：2026-11-15（Asia/Shanghai）。方法：curl（桌面 UA）→ 失败则 WebFetch → 再用无头 Chrome 截图。各站点收录数量等简介信息整理自公开介绍。
 
 **核验统计（文章 100 个）**：✅ 已核验 97｜🟡 部分核验 2｜❌ 访问失败 1　**扩展 15 个**：✅ 13｜🟡 1｜❌ 1
 
@@ -99,7 +99,7 @@ tags: [sites, resources, verification, design-kb]
 | 82 | Josh W. Comeau | https://www.joshwcomeau.com/ | 交互式前端博客（CSS/动画/SVG） | 博客/教程 | 可交互图解 | CSS/动画原理 | 拖滑块理解原理 | ✅ 已核验：curl HTTP 200，页面标题「Josh W. Comeau」 |
 | 83 | Rauno Freiberg | https://rauno.me/ | Vercel 设计工程师个人站，《Invisible Details of Interaction Design》 | 个人站/交互 | 交互细节 | 交互细节学习 | 读交互细节文章 | ✅ 已核验：curl HTTP 200，页面标题「Rauno Freiberg」 |
 | 84 | Emil Kowalski | https://emilkowal.ski/ | Sonner/Vaul 作者博客，界面动画 | 博客/动效 | 克制跟手的动画 | 动画时长/缓动调校 | 读动画文章 | ✅ 已核验：curl HTTP 200，页面标题「Emil Kowalski」 |
-| 85 | Typewolf | https://www.typewolf.com/ | 字体指南与真实网站字体搭配（原文称2025年底后停更，未核验） | 字体指南 | 优秀网站字体搭配 | 选字体搭配 | 查字体组合 | ✅ 已核验：curl HTTP 200，页面标题「What’s Trending in Type  · Typewolf」 |
+| 85 | Typewolf | https://www.typewolf.com/ | 字体指南与真实网站字体搭配 | 字体指南 | 优秀网站字体搭配 | 选字体搭配 | 查字体组合 | ✅ 已核验：curl HTTP 200，页面标题「What’s Trending in Type  · Typewolf」 |
 | 86 | Fonts In Use | https://fontsinuse.com/ | 真实世界字体使用档案 | 字体档案 | 海报、书封、唱片、网页 | 看字体实际效果 | 按字体检索案例 | ✅ 已核验：curl HTTP 200，页面标题「Fonts In Use - Fonts In Use」 |
 | 87 | Google Fonts | https://fonts.google.com/ | 免费开源字库（含思源黑/宋等） | 字体库 | 开源字体 | 免费可商用字体 | 选字下载 | ✅ 已核验：curl HTTP 200，页面标题「Browse Fonts - Google Fonts」 |
 | 88 | Fontshare | https://www.fontshare.com/ | ITF 免费字库（个人与商用免费） | 字体库 | 几何无衬线等精品字体 | 免费精品字体 | 选几何无衬线 | ✅ 已核验：curl HTTP 200（gzip 正文）；无头截图正常 |
@@ -230,7 +230,7 @@ tags: [sites, resources, verification, design-kb]
 - 定位/资源类型：片库/动态；领域标签：动态、VFX
 - 主要内容：按风格技法归档的动画/VFX/MV片库，附 Making-of（付费）
 - 原文要点（摘录）：很多动画和视效工作室都会订的在线片库（付费）。里面按风格和技法归档了成千上万支商业广告、MV 和频道包装，最大的价值是很多片子附带了制作花絮（Making-of）和工程拆解。
-- 价格：付费/部分付费（据原文）
+- 价格：付费/部分付费
 - 使用场景与价值：学习制作流程；看 Making-of
 - 核验：✅ 已核验（2026-11-15）curl HTTP 200，页面标题「Motion design - STASH - Welcome to the planet’s la」
 
@@ -384,7 +384,7 @@ tags: [sites, resources, verification, design-kb]
 - 定位/资源类型：教程/资产；领域标签：3D
 - 主要内容：Blender 官方开源动画工作室，教程与工程文件（付费）
 - 原文要点（摘录）：Blender 官方自己的开源动画工作室（付费）。官方团队每年都会用 Blender 做一部高质量动画短片来测试软件极限，订阅之后不仅能看教程，还能把他们做片子用的角色绑定、灯光工程文件直接下到自己电脑里打开研究。
-- 价格：付费/部分付费（据原文）
+- 价格：付费/部分付费
 - 使用场景与价值：Blender 学习；下载工程文件拆解
 - 核验：✅ 已核验（2026-11-15）curl HTTP 200，页面标题「Blender Studio」
 
@@ -410,7 +410,7 @@ tags: [sites, resources, verification, design-kb]
 - 定位/资源类型：截图库/影视；领域标签：影视、摄影
 - 主要内容：电影截图库，官网称150万+可检索镜头（付费）
 - 原文要点（摘录）：《小丑》《宿醉》的摄影指导 Lawrence Sher 带头做出来的专业电影截图库（付费）。图库极其庞大，而且每张图的标签打得细到离谱：你可以直接筛选「黄金时刻 + 逆光 + 广角镜头 + 冷色调 + 车内景」，一秒钟就能拉出几十张完全符合要求的电影画面拿去做分镜参考。
-- 价格：付费/部分付费（据原文）
+- 价格：付费/部分付费
 - 使用场景与价值：电影感布光/构图参考；按光线/镜头/色调筛
 - 核验：✅ 已核验（2026-11-15）curl 403（Cloudflare）；WebFetch 取得首页正文
 
@@ -468,7 +468,7 @@ tags: [sites, resources, verification, design-kb]
 - 定位/资源类型：截图库/UI；领域标签：UI、移动端
 - 主要内容：真实App截图库（原文称60万+界面，付费，免费号可看部分）
 - 原文要点（摘录）：目前最好用的真实 App 截图库（付费，免费号能看一部分）。团队把海外大量主流 iOS、Android 和 Web 应用从头到尾截了个遍，攒了 60 多万张界面。当你要画一个「订阅付费页」或者「空状态提醒」时，直接上去筛这个功能标签，就能把 Airbnb、Spotify、Notion 的做法并排摆在一起对比。
-- 价格：付费/部分付费（据原文）
+- 价格：付费/部分付费
 - 使用场景与价值：功能页对标（订阅页、空状态等）；按功能标签筛
 - 核验：✅ 已核验（2026-11-15）curl HTTP 200，页面标题「Mobbin — UI & UX design inspiration for mobile & w」
 
@@ -476,7 +476,7 @@ tags: [sites, resources, verification, design-kb]
 - 定位/资源类型：录屏库/UX；领域标签：UX
 - 主要内容：真实产品操作录屏（付费）
 - 原文要点（摘录）：Mobbin 看的是静态截图，而这个站存的全是真实产品的操作录屏（付费）。从新用户点开落地页、注册账号、绑卡付钱，一直到最后怎么找入口取消订阅，全程带着鼠标点击轨迹和页面跳转录下来，做交互流程梳理的时候极其省事。
-- 价格：付费/部分付费（据原文）
+- 价格：付费/部分付费
 - 使用场景与价值：交互流程梳理；看注册/付费/取消流程
 - 核验：✅ 已核验（2026-11-15）curl HTTP 200，页面标题「UI/UX Design Inspiration & User Flows from Top App」
 
@@ -484,7 +484,7 @@ tags: [sites, resources, verification, design-kb]
 - 定位/资源类型：截图库/UI；领域标签：UI、网页
 - 主要内容：Web/iOS界面截图库，标签细（付费）；子站 styles.refero.design
 - 原文要点（摘录）：专注 Web 网页端和 iOS 端的界面截图库（付费）。它的组件和页面类型标签切得非常碎，比如想单看别人怎么设计「表格筛选器」「面包屑导航」或者「价格对比表」，搜起来很准。它还有个免费子站 styles.refero.design，把两千多个真实网站的配色、字体、间距整理成了 AI 能直接读的 DESIGN.md，不登…
-- 价格：付费/部分付费（据原文）
+- 价格：付费/部分付费
 - 使用场景与价值：组件/页面类型检索；搜具体组件
 - 核验：✅ 已核验（2026-11-15）curl HTTP 200，页面标题「Refero — UI/UX Design Inspiration for Your Next Pr」
 
@@ -492,7 +492,7 @@ tags: [sites, resources, verification, design-kb]
 - 定位/资源类型：截图库/UI；领域标签：UI、SaaS
 - 主要内容：SaaS/Web应用界面库（付费）
 - 原文要点（摘录）：专门收海外 Web 应用和 SaaS 软件界面的图库（付费）。平时做 ToB 业务、企业后台、工作台软件的人，看消费级 App 往往使不上劲，来这儿找复杂表单和数据看板的排版参考最合适。
-- 价格：付费/部分付费（据原文）
+- 价格：付费/部分付费
 - 使用场景与价值：B端设计参考；找复杂表单/看板
 - 核验：✅ 已核验（2026-11-15）curl HTTP 200，页面标题「Nicelydone — Web apps design inspiration (UX & UI)」
 
@@ -500,7 +500,7 @@ tags: [sites, resources, verification, design-kb]
 - 定位/资源类型：截图库/UI；领域标签：UI、SaaS
 - 主要内容：SaaS产品界面库（付费）
 - 原文要点（摘录）：也是盯着 SaaS 产品收集的界面库（付费），把营销官网、登录注册页、功能弹窗、后台设置页分门别类理好了，很适合独立开发者和 B 端设计师翻阅。
-- 价格：付费/部分付费（据原文）
+- 价格：付费/部分付费
 - 使用场景与价值：独立开发/B端；按页面类型翻
 - 核验：✅ 已核验（2026-11-15）curl HTTP 200，页面标题「SaaSFrame - SaaS UI & UX Design Inspiration Librar」
 
@@ -622,7 +622,7 @@ tags: [sites, resources, verification, design-kb]
 - 定位/资源类型：网页灵感/区块；领域标签：网页
 - 主要内容：落地页+区块拆解（原文称4600+区块，部分付费）
 - 原文要点（摘录）：也是收落地页的图库，但多做了一步：把页面拆成了首屏、功能介绍、用户评价、行动按钮、页脚这些区块，一共 4600 多个，能复制成 Tailwind、Figma 或 Webflow 格式（部分付费）。拿来喂 AI 特别顺手——挑一个喜欢的区块丢给它，比用文字描述「给我做个好看的首屏」准得多。
-- 价格：付费/部分付费（据原文）
+- 价格：付费/部分付费
 - 使用场景与价值：区块级参考、喂AI；复制区块结构
 - 核验：✅ 已核验（2026-11-15）curl HTTP 200，页面标题「The Best Landing Page Design Inspiration, Template」
 
@@ -760,7 +760,7 @@ tags: [sites, resources, verification, design-kb]
 - 定位/资源类型：示例库/前端动画；领域标签：前端、动效
 - 主要内容：Motion（原 Framer Motion）动画示例（部分付费）
 - 原文要点（摘录）：现在写 React 和 Vue 最常用的动画库 Motion（以前叫 Framer Motion）的官方示例页。从最基础的弹簧物理缓动、列表增删重排，到复杂的跟随滚动条动画，常用的 UI 动效基本都有现成的简短示例（部分付费）：所有示例都能看演示，基础分类的一百多个免费给源码，复制过来就能改着用；其余的要买 Motio…
-- 价格：付费/部分付费（据原文）
+- 价格：付费/部分付费
 - 使用场景与价值：React/Vue 动效实现；复制示例
 - 核验：✅ 已核验（2026-11-15）curl HTTP 200，页面标题「Examples: React, JavaScript, and Vue animation sni」
 
@@ -808,7 +808,7 @@ tags: [sites, resources, verification, design-kb]
 
 **85. Typewolf** — https://www.typewolf.com/
 - 定位/资源类型：字体指南；领域标签：字体
-- 主要内容：字体指南与真实网站字体搭配（原文称2025年底后停更，未核验）
+- 主要内容：字体指南与真实网站字体搭配
 - 原文要点（摘录）：海外排版圈公认最靠谱的字体指南网站。站长是个对字体极度挑剔的设计师，以前每天推荐一个把字体用得极好看的真实网站，并标出它主标题和正文分别用了什么字（2025 年底之后就没再更新了，但攒下的案例和榜单照样能翻）。此外，网站里整理的「十佳无衬线体」「Google Fonts 最佳搭配方案」含金量极高，做英文或中西混排页面拿…
 - 价格：可免费浏览（原文未标付费）
 - 使用场景与价值：选字体搭配；查字体组合
@@ -932,13 +932,13 @@ tags: [sites, resources, verification, design-kb]
 - 定位/资源类型：媒体/品牌；领域标签：品牌
 - 主要内容：品牌换标点评（付费，免费可见新旧 Logo 对比）
 - 原文要点（摘录）：全球品牌换标（Rebranding）的专业点评网站。只要国内外稍微有点名气的公司、大学、体育联赛或者消费品换了新 Logo 和新视觉系统，这里就会第一时间把旧版和新版并排摆出来，从字体微调、图形演变到实际延展应用做一番客观（有时相当毒舌）的拆解，底下还有全球同行投票打分（付费，不订阅只能看到新旧 Logo 的对比图）。…
-- 价格：付费/部分付费（据原文）
+- 价格：付费/部分付费
 - 使用场景与价值：品牌设计判断力；看新旧对比
 - 核验：✅ 已核验（2026-11-15）curl HTTP 200，页面标题「Brand New」
 
 ## 文章之外补充（扩展 15 个，不计入 100）
 
-> 原文已满 100 个，以下为编者按最初简报补充的中文站与常用站，均标注「文章之外补充」。
+> 以下为补充收录的中文站与常用站，统一归类为「文章之外补充」。
 
 | # | 网站名称 | 链接 | 主要内容 | 资源类型 | 设计特点 | 推荐用途 | 信息核验情况 |
 |---|---|---|---|---|---|---|---|

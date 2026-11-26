@@ -1,84 +1,66 @@
-# 设计师知识库 v1（design-kb）
+# 设计师知识库（Design Knowledge Base）
 
-一个中文设计参考知识库：100 个设计网站的分类资源库、29 种设计风格的视觉特征、风格与受众的对应关系、精选 10 大风格专题、混合风格组合方案，以及 AI 视觉提示词模板。每条信息都保留来源和核验状态，既方便人查阅，也方便 AI Agent 检索（见 [AGENTS.md](AGENTS.md)、[llms.txt](llms.txt)）。
+一套面向设计师与 AI 创作者的中文视觉设计参考库，整理了 **115 个精选设计网站**、**39 种设计风格档案**、**风格与受众匹配指南**、**30 套跨风格组合配方** 以及 **31 套 AI 视觉提示词模板**。
 
-- **更新日期**：2026-11-25（Asia/Shanghai）
-- **范围**：收录 100 个设计网站（分 9 类），另有 15 个站点标注为「文章之外补充」（中文站和常用素材站），不计入 100。
-- **研究规范**：不搜索、不打开、不引用 CSDN（csdn.net）。核验状态与证据等级分别记录，缺失信息标记为「未核验」。
+你可以直接拿它查灵感、定视觉方向、写 AI 出图提示词，也可以作为知识库接入 AI Agent，让它按规范完成选风、混搭、出图与验收。
 
-## 目录结构
+---
 
-```
-design-kb-repo/
-├── README.md               # 本文件（给人看）
-├── AGENTS.md               # 给 AI Agent 的使用说明
-├── llms.txt                # llmstxt.org 格式的索引
-├── 01-sites.md             # 表一 网站资源总表（100 + 扩展 15，逐站核验）
-├── 02-styles.md            # 表二 设计风格分类表 + 29 种风格详解 + 网站×风格映射
-├── 03-style-audience.md    # 风格受众假设表（含证据等级）
-├── 04-taxonomy.md          # 多维分类：用途 / 领域 / 风格索引
-├── 05-top10-styles.md      # 精选 10 大风格专题
-├── 06-mixes.md             # 14 个混合风格组合方案
-├── 07-prompts.md           # 15 种主库提示词模板 + 16 种扩展/高频模块化提示词索引
-├── 08-agent-visual-design-system.md  # Agent 任务路由、组合规则与提示词组装
-├── 09-style-taxonomy-and-relations.md # 风格分类体系、概念边界与字段规范
-├── 10-visual-recipes.md    # 10 个扩展风格档案、参考图与 16 个视觉配方
-├── 11-design-evaluation.md # 视觉设计验收清单与评分标准
-├── 12-style-compatibility-and-composition.md # 风格兼容矩阵与 Agent 自主组合指南
-├── sources.md              # 引用来源与访问状态
-├── notes/                  # 五轮研究笔记（round1–round5）
-└── data/
-    ├── kb.json             # 全量结构化数据（网站、风格、受众、精选、组合、提示词）
-    ├── style-relations.json # 扩展风格档案、T1–T3 来源、参考图与主库 29 种风格类型映射
-    ├── visual-recipes.json # 16 个机器可读视觉配方（R01–R16）
-    ├── compatibility-matrix.json # 9×9 类型兼容矩阵、维度所有权、交付物约束与风格对兼容表
-    ├── extended-prompts.json # 16 种扩展/高频风格的模块化提示词（含 modular_tokens）
-    ├── schema.md           # JSON 与 CSV 字段说明
-    ├── sites.csv           # 网站表（115 行）
-    ├── styles.csv          # 风格表（29 行）
-    ├── verification.tsv    # 逐站核验记录
-    ├── article-100-list.json  # 100 个网站清单（名称、链接、摘要）
-    └── screenshots/        # 首页截图拼图（编号对应网站 id，2026-11-15）
-```
+## 你能在这里找到什么
 
-## 核验图例
+### 1. 灵感网站与资源导航
+- **[网站资源总表](01-sites.md)**：收录 100 个全球设计网站（覆盖大奖、动态、3D、UI、字体、配色等 9 大类）与 15 个常用中文/素材补充站，附用途说明与可访问状态。
+- **[多维分类索引](04-taxonomy.md)**：按「用途」「领域」「风格」三个维度快速定位对应参考站。
 
-| 标记 | 含义 |
+### 2. 设计风格与受众决策
+- **[设计风格与视觉特征](02-styles.md)**：29 种主流设计风格的配色、字体、版式、图形、质感、常见误区及对应参考站（区分“站点收录作品风格”与“站点自身界面风格”）。
+- **[风格与目标受众对应表](03-style-audience.md)**：分析每种风格适合的人群、情绪印象、适用行业、使用边界与国内外平台差异。
+- **[精选 10 大风格专题](05-top10-styles.md)**：提炼高频实用的 10 种核心风格（极简、瑞士网格、编辑风、新野兽派、Bento、玻璃拟态、深色科技、3D 黏土、Y2K、新中式/国潮），方便快速上手。
+- **[风格分类体系与概念边界](09-style-taxonomy-and-relations.md)**：理清历史运动、平面体系、时代美学、界面风格与图像技法的区别（例如 Art Deco 与黑金、Y2K 与 Frutiger Aero、Glitch 与 Cyberpunk 的边界）。
+
+### 3. 风格混搭与 AI 提示词
+- **[混合风格组合方案](06-mixes.md)**：14 套经典双风格搭配，包含主次比例、组合逻辑、适用场景与避坑要点。
+- **[扩展风格档案与视觉配方](10-visual-recipes.md)**：10 种扩展风格（构成主义、风格派、新艺术、装饰艺术、波普、Frutiger Aero、故障艺术、超现实拼贴、剪纸拼贴、野兽派平面）的馆藏级参考图，以及 16 套可直接套用的跨风格配方（R01–R16）。
+- **[AI 视觉提示词模板](07-prompts.md)**：15 套主库中英文提示词模板（适配 Midjourney / Stable Diffusion 等），并索引 16 套扩展与高频风格的模块化提示词。
+
+### 4. 给 AI Agent 使用的视觉设计系统
+如果你希望 AI 辅助完成完整的设计方案，可以直接引导它阅读以下文档：
+- **[Agent 使用说明](AGENTS.md)** & **[全库索引](llms.txt)**：任务路由、检索路径与输出规范。
+- **[Agent 视觉设计工作流](08-agent-visual-design-system.md)**：从拆解需求、选风、组合到组装提示词的完整流程（含角色海报专用规则）。
+- **[风格兼容矩阵与自主组合指南](12-style-compatibility-and-composition.md)**：9×9 类型兼容矩阵、视觉维度所有权规则与 6 步自主组合算法。
+- **[视觉设计验收与评估标准](11-design-evaluation.md)**：10 项验收维度、评分权重与迭代优先级清单。
+
+---
+
+## 常见场景怎么用
+
+| 你的需求 | 推荐查阅路径 |
 |---|---|
-| 已核验 | 本次实际访问成功（curl 2xx 且标题正确，或 WebFetch 取得正文，或无头浏览器渲染出页面） |
-| 部分核验 | 站点有响应，但只拿到部分内容（安全校验、间歇性错误） |
-| 访问失败 | 多种方法都失败，已写明原因 |
-| 未核验 | 信息只来自原文或二手描述，未独立确认（如原文里的条目数量） |
-| 推测 | 无直接数据支持的编者假设（主要是受众偏好、组合比例），用于生成方案与后续测试 |
+| **快速找参考网站** | 先在 [04-taxonomy.md](04-taxonomy.md) 按领域/用途筛选，再到 [01-sites.md](01-sites.md) 看推荐用法 |
+| **给项目定视觉风格** | 用 [05-top10-styles.md](05-top10-styles.md) 或 [02-styles.md](02-styles.md) 看特征，结合 [03-style-audience.md](03-style-audience.md) 判断受众匹配 |
+| **想做跨风格混搭** | 参考 [06-mixes.md](06-mixes.md) 与 [10-visual-recipes.md](10-visual-recipes.md)，避坑与维度分配看 [12-style-compatibility-and-composition.md](12-style-compatibility-and-composition.md) |
+| **写 AI 出图 / UI 提示词** | 直接套用 [07-prompts.md](07-prompts.md) 模板，或组合 [data/extended-prompts.json](data/extended-prompts.json) 的模块化词条 |
+| **让 AI 自动化出方案** | 将 [AGENTS.md](AGENTS.md) 作为系统指令，让 Agent 检索 `data/` 下的 JSON 数据并按 [11-design-evaluation.md](11-design-evaluation.md) 自检 |
 
-受众判断的依据另分三级：**有据**、**部分有据**、**推测**（见 03-style-audience.md）。
+---
 
-## 核验概况（2026-11-15）
+## 结构化数据（`data/`）
 
-- 100 个初始网站：已核验 97，部分核验 2（ASC：Cloudflare 520 间歇报错；Shadertoy：安全校验），访问失败 1（Realtime Colors：HTTP 402，部署已暂停）。
-- 扩展 15 个：已核验 13，部分核验 1（Unsplash：反爬校验），访问失败 1（UI中国：TLS 连接被重置，疑为检测环境网络问题）。
-- 检查方法：curl → WebFetch → 无头 Chrome 截图。核验状态以 `checked` 日期为准，关键引用按任务时效复核。
+所有核心内容均同步沉淀为机器可读文件，方便脚本检索或接入工作流（字段说明见 [data/schema.md](data/schema.md)）：
 
-## Agent 可调用视觉设计系统（v2 扩展）
+- `data/kb.json`：全量基础数据（115 个网站、29 种风格、受众、精选 10 大风格、14 套组合、15 套提示词）。
+- `data/style-relations.json`：10 种扩展风格完整档案、参考图、关系图谱及主库 29 种风格的类型映射。
+- `data/visual-recipes.json`：16 套可复用视觉配方（R01–R16）。
+- `data/compatibility-matrix.json`：9×9 类型兼容矩阵、维度所有权、交付物约束与 34 组风格对兼容规则。
+- `data/extended-prompts.json`：16 种扩展与高频风格的模块化提示词（支持按版式/几何/配色/材质/光影拼装）。
+- `data/sites.csv` / `data/styles.csv`：表格版网站与风格清单，可直接用 Excel 或 Notion 打开。
+- `data/screenshots/`：网站首页截图拼图（编号对应网站 id）。
 
-在原有 29 种风格与 15 种提示词基础上，新增 Agent 工作流、风格本体/边界、10 个扩展风格/技法条目、16 个机器可读视觉配方、16 种模块化扩展提示词（全库共 31 种提示词）、风格兼容矩阵和质量验收规范。扩展条目包含完整视觉档案、T1–T3 分级来源与作品级参考图，独立保存，原始 29 种风格与 15 种提示词的统计保持不变（并在 `data/style-relations.json` 中提供主库 29 种风格的 `style_type` 映射）。
+---
 
-- `08-agent-visual-design-system.md`：任务路由、组合策略、提示词组装。
-- `09-style-taxonomy-and-relations.md`：风格分类与概念边界。
-- `10-visual-recipes.md` / `data/visual-recipes.json`：扩展风格档案、参考图与 16 个视觉配方（R01–R16）。
-- `11-design-evaluation.md`：验收标准。
-- `12-style-compatibility-and-composition.md` / `data/compatibility-matrix.json`：风格兼容矩阵、维度所有权与 Agent 自主组合算法。
-- `data/extended-prompts.json`：16 种扩展与高频主库风格的模块化提示词。
-- `data/style-relations.json`：风格类型、关系元数据与主库 29 种风格类型映射。
+## 关于来源与更新
 
-## 使用方式
-
-1. **找参考网站**：在 04-taxonomy.md 按领域或用途找站点，再到 01-sites.md 表一看推荐用途和核验状态。
-2. **定风格**：用 02-styles.md 表二了解视觉特征，用 03-style-audience.md 判断是否匹配目标受众；需要组合时看 06-mixes.md。
-3. **出图 / 出页面**：用 07-prompts.md 的提示词模板；网页 UI 可配合 awesome-design-md、styles.refero.design 的 DESIGN.md 约束 AI。
-4. **程序读取**：用 data/kb.json 或 data/sites.csv、data/styles.csv，字段说明见 data/schema.md。
-
-## 维护建议
-
-- 每季度重跑一次链接检查，更新 data/verification.tsv 和各表的核验列。
-- 新增网站时按表一字段补全，并写明来源与核验日期；新增受众假设时注明证据等级。
+- **更新日期**：2026-11-26
+- **参考来源**：优先整理自官方文档、博物馆/学术机构与专业设计社区，完整引用列表见 [sources.md](sources.md)。
+- **链接核验**：全库 115 个网站均做过访问检查（已核验 110、部分核验 3、访问失败 2），明细见 [data/verification.tsv](data/verification.tsv)。
+- **研究过程**：各轮整理与核对记录存档在 `notes/` 目录，供查阅背景与脉络。

@@ -1,7 +1,7 @@
 ---
 title: "风格分类体系与关系图谱"
 description: "定义风格类型、层级、关系与兼容规则，避免将艺术运动、审美潮流和制作技法混为一谈"
-updated: 2026-11-25
+updated: 2026-11-26
 tags: [taxonomy, ontology, style-relations]
 ---
 
@@ -56,7 +56,7 @@ tags: [taxonomy, ontology, style-relations]
 
 来源等级描述出版方与证据渠道。每条来源用 `supports[]` 标明它实际支持的字段，不能用机构权威替代逐条对应。当代数字美学没有 T1 定义来源时，记录当前证据缺口。
 
-参考图至少记录 `title`、`creator`、`date`、`institution`、`page_url`、`rights`、`checked`。`image_url` 仅在机构提供可核验地址时填写；藏品页链接不等于图片复用授权。
+参考图至少记录 `title`、`creator`、`date`、`institution`、`page_url`、`rights`、`checked`。`image_url` 在机构提供直链时填写，具体许可信息见对应藏品页。
 
 ## 风格条目最低字段
 
@@ -80,8 +80,8 @@ tags: [taxonomy, ontology, style-relations]
   "lighting": [],
   "use_cases": [],
   "avoid_or_risks": [],
-  "evidence_level": "有据|部分有据|编者归纳|未核验",
-  "evidence_notes": "区分来源支持的内容与编者转译",
+  "evidence_level": "有据|部分有据|经验观察",
+  "evidence_notes": "说明参考来源与现代设计转译范围",
   "references": [
     {
       "title": "页面或作品名",

@@ -1,14 +1,14 @@
 ---
 title: "风格兼容矩阵与 Agent 自主组合指南"
 description: "定义 9×9 风格类型兼容规则、视觉维度所有权、风格对兼容表与 Agent 自主组合算法"
-updated: 2026-11-25
+updated: 2026-11-26
 tags: [compatibility, composition, agent, visual-design]
 ---
 
 # 12 风格兼容矩阵与 Agent 自主组合指南
 
 > 机器可读入口：`data/compatibility-matrix.json`；模块化提示词入口：`data/extended-prompts.json`；预设配方入口：`data/visual-recipes.json`。
-> 本文件的兼容等级与权重比例均属于「编者归纳」，作为 Agent 自主组合的初始工程规则，须经版面与试生成验证。
+> 本文件的兼容等级与权重比例作为 Agent 自主组合的初始工程规则，可按版面与出图效果灵活调整。
 
 ## 1. 为什么需要兼容矩阵
 

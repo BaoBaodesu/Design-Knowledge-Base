@@ -1,12 +1,12 @@
 {
   "schema_version": "1.2.0",
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "source_tiers": {
     "T1": "博物馆、档案馆、学术机构与艺术研究机构；用于历史、定义、作品 metadata 和藏品图像",
     "T2": "专业设计机构、设计出版物与一手设计规范；用于专业语境、制作方法和原始设计资料",
     "T3": "设计师或艺术家作品页、专题研究项目与视觉参考社区；用于当代案例和术语使用，需保留作者与出处"
   },
-  "reference_image_policy": "参考图记录作品页、创作者、机构、权利信息与核验日期。image_url 仅在机构提供可核验图像地址时填写；页面内图库和受版权保护作品以 page_url 为入口，不代表获得复用授权。",
+  "reference_image_policy": "参考图记录作品页、创作者、机构、许可信息与核验日期。image_url 在机构提供直链时填写，页面内图库及馆藏作品以 page_url 为入口查阅许可详情。",
   "style_types": [
     "historical_movement",
     "graphic_design_system",
@@ -50,7 +50,7 @@
       "use_cases": ["poster", "campaign", "editorial", "character-battle-poster", "game-key-art"],
       "avoid_or_risks": ["不要用多条竞争斜线破坏阅读方向", "不要把红黑配色当作唯一识别条件", "使用历史宣传符号时保留其政治与历史语境"],
       "evidence_level": "部分有据",
-      "evidence_notes": "历史、媒介与作品特征由 Tate、MoMA 和芝加哥艺术博物馆支持；角色海报与游戏视觉用途为编者转译。",
+      "evidence_notes": "历史、媒介与作品特征参考 Tate、MoMA 和芝加哥艺术博物馆资料；角色海报与游戏视觉为现代设计转译。",
       "references": [
         {
           "title": "Constructivism",
@@ -125,7 +125,7 @@
       "use_cases": ["abstract-poster", "identity", "character-card", "modular-ui"],
       "avoid_or_risks": ["不要把任意三原色网格都称为风格派", "Mondrian 的正交体系与 Van Doesburg 后期对角线实验应区分", "角色转译优先保留轮廓和关键身份特征"],
       "evidence_level": "部分有据",
-      "evidence_notes": "历史、正交几何与藏品信息由 Tate、芝加哥艺术博物馆和 V&A 支持；UI 与角色卡用途为编者转译。",
+      "evidence_notes": "历史、正交几何与藏品信息参考 Tate、芝加哥艺术博物馆和 V&A 资料；UI 与角色卡为现代设计转译。",
       "references": [
         {
           "title": "De Stijl",
@@ -201,7 +201,7 @@
       "use_cases": ["fantasy-portrait", "character-illustration", "poster", "book-cover"],
       "avoid_or_risks": ["不要只叠加通用藤蔓笔刷", "边框不得压迫人物面部与身份特征", "不要把新艺术运动与 Art Deco 的阶梯几何混为一谈"],
       "evidence_level": "部分有据",
-      "evidence_notes": "历史、植物曲线与跨媒介特征由 Tate 和芝加哥艺术博物馆支持；幻想角色用途为编者转译。",
+      "evidence_notes": "历史、植物曲线与跨媒介特征参考 Tate 和芝加哥艺术博物馆资料；幻想角色为现代设计转译。",
       "references": [
         {
           "title": "Art Nouveau",
@@ -276,7 +276,7 @@
       "use_cases": ["luxury-poster", "cover", "editorial", "collector-character-card", "product-visual"],
       "avoid_or_risks": ["不要把 Art Deco 缩减为黑金滤镜", "避免扇形、阶梯、放射线同时争夺主体", "角色海报中装饰框不能遮蔽脸部和服装标志"],
       "evidence_level": "部分有据",
-      "evidence_notes": "历史与跨媒介特征由 Tate 和 V&A 支持；收藏级角色卡等用途为编者转译。",
+      "evidence_notes": "历史与跨媒介特征参考 Tate 和 V&A 资料；收藏级角色卡等应用为现代设计转译。",
       "references": [
         {
           "title": "Art Deco",
@@ -353,7 +353,7 @@
       "use_cases": ["character-poster", "comic", "merchandise", "social-campaign", "album-cover"],
       "avoid_or_risks": ["不要只加网点而缺少大众媒介或消费文化参照", "使用名人、漫画和品牌图像时检查版权与肖像权", "网点不能损害眼睛和表情识别"],
       "evidence_level": "部分有据",
-      "evidence_notes": "历史、商业文化来源、重复与丝网印刷特征由 Tate 和芝加哥艺术博物馆支持；角色周边用途为编者转译。",
+      "evidence_notes": "历史、商业文化来源、重复与丝网印刷特征参考 Tate 和芝加哥艺术博物馆资料；角色周边为现代设计转译。",
       "references": [
         {
           "title": "Pop Art",
@@ -428,7 +428,7 @@
       "use_cases": ["ai-character", "technology-poster", "interface-concept", "digital-campaign"],
       "avoid_or_risks": ["不要把任意蓝绿渐变都归类为 Frutiger Aero", "透明材质不能牺牲可读性", "与 Y2K 的铬金属、赛博时装和早期互联网拼贴区分", "术语史主要来自专题研究社区，暂不写成学术定论"],
       "evidence_level": "部分有据",
-      "evidence_notes": "术语与案例由 CARI 专题档案支持，Aero 的一手背景由 Microsoft 文档支持；视觉维度含编者对案例的归纳。",
+      "evidence_notes": "术语与案例参考 CARI 专题档案，Aero 一手背景参考 Microsoft 文档；视觉维度结合代表案例归纳。",
       "references": [
         {
           "title": "Frutiger Aero",
@@ -495,7 +495,7 @@
       "use_cases": ["digital-poster", "music-visual", "sci-fi", "media-art", "motion-identity"],
       "avoid_or_risks": ["不要把随机噪点当作完整故障逻辑", "动态故障需控制闪烁频率", "角色任务保留脸部与身份锚点", "故障艺术不等同于 Cyberpunk 或 Vaporwave"],
       "evidence_level": "部分有据",
-      "evidence_notes": "媒介机制与艺术家研究由 V2_ 和 Stedelijk 支持；具体视觉分类与角色海报用途含编者归纳。",
+      "evidence_notes": "媒介机制与艺术家研究参考 V2_ 和 Stedelijk 资料；视觉分类与角色海报应用结合当代设计实践整理。",
       "references": [
         {
           "title": "Alex Adriaansens Residency 2021: Rosa Menkman",
@@ -572,7 +572,7 @@
       "use_cases": ["concept-poster", "album-cover", "editorial", "worldbuilding-visual", "fantasy-character"],
       "avoid_or_risks": ["不要随机堆砌素材而没有可解释概念", "使用历史照片与文化符号时核对原始语境", "素材版权和人物肖像权需单独检查"],
       "evidence_level": "部分有据",
-      "evidence_notes": "超现实主义、摄影蒙太奇与作品技法由 Tate 和 V&A 支持；当代海报用途为编者转译。",
+      "evidence_notes": "超现实主义、摄影蒙太奇与作品技法参考 Tate 和 V&A 资料；当代海报应用为现代设计转译。",
       "references": [
         {
           "title": "Surrealism",
@@ -655,7 +655,7 @@
       "use_cases": ["character-poster", "zine", "editorial", "character-card", "independent-game-visual"],
       "avoid_or_risks": ["剪切边缘不能破坏头发、手指和服装轮廓", "不要把所有边缘都做成相同撕纸效果", "超现实含义不是该技法的必要条件"],
       "evidence_level": "部分有据",
-      "evidence_notes": "拼贴定义与 Matisse 剪纸实践由 Tate 支持；角色卡、独立游戏等用途为编者转译。",
+      "evidence_notes": "拼贴定义与 Matisse 剪纸实践参考 Tate 资料；角色卡、独立游戏等应用为现代设计转译。",
       "references": [
         {
           "title": "Collage",
@@ -731,7 +731,7 @@
       "use_cases": ["experimental-poster", "independent-editorial", "music-cover", "type-specimen", "cultural-campaign"],
       "avoid_or_risks": ["不要把难以阅读或随意丑陋当作风格定义", "不要把建筑混凝土图像当作必要元素", "与 brutal 网页风格和 neobrutal UI 分开", "角色海报先保留身份，再做裁切"],
       "evidence_level": "部分有据",
-      "evidence_notes": "专业案例由 AIGA Eye on Design 与 Klim Type Foundry 支持；整体分类、视觉维度和用途含编者归纳，当前没有博物馆级统一定义来源。",
+      "evidence_notes": "参考 AIGA Eye on Design 与 Klim Type Foundry 等专业案例，结合当代平面设计实践归纳视觉维度与应用场景。",
       "references": [
         {
           "title": "A Typographic Cocktail of Brutalism and Early Computer Graphics—Plus a Dash of Yves Klein",

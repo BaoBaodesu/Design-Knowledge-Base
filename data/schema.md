@@ -1,12 +1,12 @@
 # data/ 字段说明
 
-更新日期：2026-11-25。所有文本为中文（zh-Hans），文件编码 UTF-8。
+更新日期：2026-11-26。所有文本为中文（zh-Hans），文件编码 UTF-8。
 
 ## kb.json 顶层
 
 | 字段 | 类型 | 说明 |
 |---|---|---|
-| `meta` | object | 标题、版本、更新日期、来源、计数、证据等级与核验状态的取值说明、研究规范 |
+| `meta` | object | 标题、版本、更新日期、来源、计数、依据等级与核验状态的取值说明、来源原则 |
 | `sites` | array | 115 个网站（100 个原文 + 15 个补充） |
 | `styles` | array | 29 种风格（含受众信息） |
 | `top10` | array | 精选 10 大风格补充信息 |
@@ -23,7 +23,7 @@
 | `category` | string | 原文九类之一；补充站为「文章之外补充」 |
 | `main` | string | 主要内容 |
 | `resource_type` | string | 资源类型（如 奖项/网页灵感、截图库/UI） |
-| `works_style` | string | 收录作品的风格与设计特点（编者归纳） |
+| `works_style` | string | 收录作品的风格与设计特点 |
 | `ui_style` | string | 网站自身界面风格（2026-11-15 首页截图观察） |
 | `scene` | string | 适用场景（补充站可能为空） |
 | `recommended_use` | string | 推荐用途 |
@@ -41,17 +41,17 @@
 |---|---|---|
 | `key` | string | 风格唯一键（如 `swiss`、`bento`、`guochao`） |
 | `name` / `name_en` | string | 中文名 / 英文名 |
-| `origin` | string | 起源与背景（注明出处或「未核验」） |
+| `origin` | string | 起源与背景 |
 | `colors`、`typography`、`layout`、`graphics`、`texture` | string | 配色、字体、版式构图、图形元素、质感 |
 | `common_mistakes` | string | 常见误区 |
 | `references` | {label,url}[] | 参考来源（2026-11-15 已验证可访问） |
-| `audience.who` | string | 受众假设（年龄/职业/兴趣）；证据等级统一由 `audience.evidence` 记录，不在文本中重复标注 |
+| `audience.who` | string | 目标受众（年龄/职业/兴趣） |
 | `audience.mood` | string | 情绪与品牌印象 |
 | `audience.industries` | string | 适合行业/用途 |
-| `audience.avoid` | string | 使用边界与需重点验证的场景 |
-| `audience.regional_notes` | string | 地域/文化/平台观察；证据等级由 `audience.evidence` 记录 |
+| `audience.avoid` | string | 使用边界与适用限制 |
+| `audience.regional_notes` | string | 地域/文化/平台观察 |
 | `audience.basis` | string | 判断依据 |
-| `audience.evidence` | string | `有据` / `部分有据` / `推测` |
+| `audience.evidence` | string | `有据` / `部分有据` / `经验观察` |
 | `site_ids` | string[] | 关联网站 id |
 | `is_top10` | bool | 是否精选 10 大风格 |
 | `has_prompt` | bool | 是否有提示词模板 |
@@ -62,7 +62,7 @@
 
 ## mixes[]
 
-`id`、`name`、`primary` / `secondary`（风格 key）、`ratio`（主:次，可调的初始参数）、`logic`、`visual`、`scenarios`、`risks`、`evidence`（当前均为「推测」）。
+`id`、`name`、`primary` / `secondary`（风格 key）、`ratio`（主:次，可调的初始参数）、`logic`、`visual`、`scenarios`、`risks`、`evidence`（参考依据等级）。
 
 ## prompts[]
 

@@ -42,7 +42,7 @@
 | 海报 | swiss、acid、riso、kinetic、bauhaus、memphis、guochao | Tokyo TDC(10)、D&AD(7)、One Show & ADC(8)、Fonts In Use(86)、Typewolf(85)、Savee(98)、It's Nice That(99)、Pinterest(95) | 03 受众 → 06 组合 → 07 提示词 |
 | 品牌 / VI | minimal、swiss、editorial、luxury、organic、guochao | Brand New(100)、D&AD(7)、Savee(98)、Fonts In Use(86)、Logo Design Love(S14)、Behance(S1) | 03 受众 → 05 精选 |
 | 网页 / UI | minimal、bento、glass、darkmode、neobrutal、webgl、flat | Awwwards(2)、Recent(59)、Siteinspire(60)、Land-book(61)、Landingfolio(62)、Mobbin(43)、Refero(45)、awesome-design-md(63)、Apple HIG(49)、Material 3(50)、Vercel Guidelines(51)、Impeccable(52) | 03 中 NN/g 的可用性结论；用 Vercel Guidelines / WCAG 自查 |
-| 社媒内容 / 短视频 | kinetic、clay、y2k、gradient、neobrutal、acid | Motionographer(13)、Promonews(21)、Golden Wolf(25)、EyeCannndy(40)、Cosmos(97)、Pinterest(95) | 07 提示词；平台审美差异在 03 中标为推测 |
+| 社媒内容 / 短视频 | kinetic、clay、y2k、gradient、neobrutal、acid | Motionographer(13)、Promonews(21)、Golden Wolf(25)、EyeCannndy(40)、Cosmos(97)、Pinterest(95) | 07 提示词；平台审美差异见 03 地域/平台观察 |
 | 电商 | clay、guochao、organic、minimal、flat（Flat 2.0） | 花瓣(S4)、站酷(S3)、Landingfolio(62)、Mobbin(43)、Page Flows(44，结账/订阅流程)、Pinterest(95) | 原文 100 个里没有专门的电商站，需要说明这一点 |
 | AI 出图 / AI 视频 | 任意风格，先在 07 找模板 | ShotDeck(36)、StillsLab(38)、Flim(39)、EyeCannndy(40)、StudioBinder(41)、Runway AIF(9)、styles.refero.design(S15) | 07 的「通用应用建议」 |
 
@@ -64,22 +64,22 @@
 - 推荐 `failed` 的站点时标注访问失败记录与核验日期，并给替代（如 Realtime Colors(92) → Coolors(91) + Radix Colors(93)）。`partial` 的站点注明已核验范围；任务依赖缺失内容时重新核验。
 - 根据 `verify.checked` 判断网站信息的时效性；关键推荐或长期未复核的站点，先重新核验再引用。
 
-`styles[].audience.evidence` 与 `mixes[].evidence`：`有据` / `部分有据` / `推测`。`sites[].source`: `article`（原文 100 个）或 `supplement`（文章之外补充）。
+`styles[].audience.evidence` 与 `mixes[].evidence`：`有据` / `部分有据` / `经验观察`。`sites[].source`: `article`（基础 100 站）或 `supplement`（文章之外补充）。
 
 ## 6. 推荐规则
 
 - **必须解释理由**：每个推荐（风格、网站、组合）都要说明为什么适合这个任务和受众，引用具体字段（如视觉特征、适用场景、受众依据）。不要只列名字。
 - **灵活组合**：根据用户的品牌、受众、平台和预算组合视觉元素，主次比例作为可调参数。库外组合标注为「Agent 提案」，并说明所借用的视觉维度。
 - **给 2–3 个方向**：一般给出主推方案和备选方案，并说明各自的取舍和风险（`common_mistakes`、`avoid`、`risks`）。
-- **证据表达**：根据 `evidence`、`verify` 和来源字段标注结论。`推测` 内容作为待验证假设；`部分有据` 内容区分来源支持与编者推断；「据原文」「未核验」保留来源属性。证据等级集中标注，不在每个句子重复限定。
+- **依据说明**：结合 `evidence`、`verify` 和来源字段说明推荐依据，区分研究来源与实践经验，结论表达直接清晰，不在每个句子重复限定。
 - **引用来源**：引用研究结论时附上 `references` / `sources.md` 中的链接（NN/g、维基百科、W3C 等）。
 - **提示词**：用 07 的模板时替换 `[subject]` / `[主体]`，提醒用户 AI 生成的文字（尤其中文）需要后期替换，并检查对比度（WCAG 2.2 正文 ≥ 4.5:1）。
 
-## 7. 禁止事项
+## 7. 信息规范
 
-- 禁止搜索、打开或引用 CSDN（csdn.net、blog.csdn.net）的任何内容。
-- 不编造网站、数据、引用或核验结果；库里没有的信息，要么说明不知道，要么另行核验并注明来源与日期。
-- 不要把「文章之外补充」的站点说成原文推荐。
+- 优先引用官方文档、权威机构与专业设计站点，避免低质量二手搬运内容。
+- 保持引用与数据准确，不虚构网站、链接或核验结果；补充库外信息时注明来源与日期。
+- 区分基础 100 站与「文章之外补充」站点，不混淆收录分类。
 
 ## 8. 更新本库时
 

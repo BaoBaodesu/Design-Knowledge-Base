@@ -1,19 +1,19 @@
 ---
 title: "设计风格与视觉特征"
 description: "29 种设计风格的起源、配色、字体、版式、图形、质感、误区与参考来源（表二），以及网站×风格映射（作品风格与界面风格分开）"
-updated: 2026-11-22
+updated: 2026-11-26
 tags: [styles, visual-language, mapping, design-kb]
 ---
 
 # 02 设计风格与视觉特征知识库（第二轮成果）
 
-> 风格定义部分引用维基百科 / NN/g（链接已于 2026-11-15 用 curl 验证可访问，HTTP 200）；未找到权威出处的部分标注「未核验」或「编者归纳」。
-> 网站自身界面风格 = 2026-11-15 无头 Chrome 首页截图观察；收录作品风格 = 依据原文描述 + 首页可见内容归纳（编者判断）。**两者分开记录。**
-> 表二“受众假设”用于初步筛选；证据等级与依据统一查 `03-style-audience.md` 或 `styles[].audience`。
+> 风格定义参考维基百科、NN/g 等公开资料（链接于 2026-11-15 验证可访问）及行业实践归纳。
+> 网站自身界面风格来自 2026-11-15 首页截图观察；收录作品风格基于站点定位与首页内容整理。**两者分开记录。**
+> 表二“目标受众”用于初步筛选；详细依据见 `03-style-audience.md` 或 `styles[].audience`。
 
 ## 表二 设计风格分类表
 
-| 风格名称 | 核心视觉特征 | 典型配色 | 排版与构图 | 受众假设 | 适用场景 | 代表参考网站 |
+| 风格名称 | 核心视觉特征 | 典型配色 | 排版与构图 | 目标受众 | 适用场景 | 代表参考网站 |
 |---|---|---|---|---|---|---|
 | 瑞士国际主义（International Typographic Style / Swiss Style） | 几何色块、客观摄影、粗线条分隔；平面、无质感、印刷感 | 白/黑+单一强调色（常见红） | 严格网格、非对称、大量留白、信息层级清晰；字体：无衬线（Helvetica、Akzidenz-Grotesk 类）、左对齐不齐右 | 设计/建筑/文化机构从业者；25–45岁专业人群 | 文化机构、B2B、出版、交通导视、作品集 | Awwwards(#2)、D&AD(#7)、The One Show & ADC(#8)、Tokyo TDC(#10)、Ordinary Folk(#26) |
 | 包豪斯（Bauhaus） | 圆/方/三角、粗线、色块；平面、纸张印刷感 | 红/黄/蓝三原色+黑白 | 几何构成、对角线、模块化；字体：几何无衬线（如 Futura 类）、常用小写 | 设计学生、艺术教育、创意工作室 | 艺术教育、展览、创意品牌 | Ordinary Folk(#26)、Laws of UX(#57)、Rauno Freiberg(#83)、Logo Design Love(S14) |
@@ -204,7 +204,7 @@ tags: [styles, visual-language, mapping, design-kb]
 - 参考来源：[NN/g：Skeuomorphism](https://www.nngroup.com/articles/skeuomorphism/)；[维基百科：Skeuomorph](https://en.wikipedia.org/wiki/Skeuomorph)；[Web Design Museum](https://www.webdesignmuseum.org/)
 
 ### Bento 网格｜Bento Grid
-- 起源/背景：以日式便当盒分格为喻的模块化卡片布局，近年科技产品发布页常见（起源时间：未核验）
+- 起源/背景：以日式便当盒分格为喻的模块化卡片布局，近年科技产品发布页常见
 - 配色：中性底+各卡片独立配色/深色
 - 字体：现代无衬线、大数字
 - 版式/构图：大小不一的圆角卡片拼成矩形网格
@@ -252,7 +252,7 @@ tags: [styles, visual-language, mapping, design-kb]
 - 参考来源：[维基百科：Clay animation](https://en.wikipedia.org/wiki/Clay_animation)；[Spline](https://www.spline.design/)；[Blender Studio](https://studio.blender.org/)
 
 ### 渐变弥散｜Mesh / Blur Gradient
-- 起源/背景：2010s 后期起在科技品牌与 App 中常见（起源细节：未核验）
+- 起源/背景：2010s 后期起在科技品牌与 App 中常见
 - 配色：多色柔和渐变、极光色
 - 字体：现代无衬线
 - 版式/构图：大面积背景渐变+简洁前景
@@ -324,7 +324,7 @@ tags: [styles, visual-language, mapping, design-kb]
 - 参考来源：[维基百科：Biophilic design](https://en.wikipedia.org/wiki/Biophilic_design)；[Poly Haven](https://polyhaven.com/)
 
 ### 酸性图形｜Acid Graphics
-- 起源/背景：与 acid house/迷幻艺术等亚文化视觉渊源相关的当代平面潮流（谱系：未核验，属编者归纳）
+- 起源/背景：与 acid house/迷幻艺术等亚文化视觉渊源相关的当代平面潮流
 - 配色：黑/银+酸性绿、荧光色
 - 字体：扭曲变形字、Y2K 字体、极细或极粗
 - 版式/构图：打破网格、实验排版

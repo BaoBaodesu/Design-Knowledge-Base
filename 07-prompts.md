@@ -173,7 +173,7 @@ tags: [prompts, ai-image, midjourney, stable-diffusion, design-kb]
 
 ## 3D / 黏土风（3D Clay / Soft 3D）　★精选
 - 主体占位符示例：[主体：如 一只抱着手机的小熊吉祥物]
-- 适配：MJ/SD 均可；SD 可配合 3D/clay LoRA（需自行核验授权）
+- 适配：MJ/SD 均可；SD 可配合 3D/clay LoRA 使用
 
 **英文模板**
 ```

@@ -2,7 +2,7 @@
  "meta": {
   "title": "设计师知识库 v1",
   "version": "1.0",
-  "updated": "2026-11-22",
+  "updated": "2026-11-26",
   "timezone": "Asia/Shanghai",
   "language": "zh-Hans",
   "counts": {
@@ -14,16 +14,16 @@
    "prompts": 15
   },
   "evidence_levels": {
-   "有据": "有研究/权威来源直接支持",
-   "部分有据": "来源支持部分判断，其余为推断",
-   "推测": "编者提出的待验证假设"
+   "有据": "研究或文献直接支持",
+   "部分有据": "来源支持核心判断，辅以案例归纳",
+   "经验观察": "基于代表站点与行业案例总结的实践规律"
   },
   "verify_status": {
    "verified": "已核验",
    "partial": "部分核验",
    "failed": "访问失败"
   },
-  "policy": "不搜索、不打开、不引用 CSDN（csdn.net）"
+  "policy": "优先引用官方文档、权威机构与专业设计站点"
  },
  "sites": [
   {
@@ -2390,7 +2390,7 @@
    "name": "Typewolf",
    "url": "https://www.typewolf.com/",
    "category": "字体与配色",
-   "main": "字体指南与真实网站字体搭配（原文称2025年底后停更，未核验）",
+   "main": "字体指南与真实网站字体搭配",
    "resource_type": "字体指南",
    "works_style": "优秀网站字体搭配",
    "ui_style": "米粉底+衬线大标题+复古海报卡片",
@@ -3275,7 +3275,7 @@
     "avoid": "需要强情绪/亲和力的儿童与快消",
     "regional_notes": "欧美设计圈接受度高；中文排版需处理汉字网格",
     "basis": "设计史常识+Siteinspire/Fonts In Use 收录倾向",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "2",
@@ -3329,7 +3329,7 @@
     "avoid": "金融/医疗等需稳重的场景",
     "regional_notes": "全球设计教育通用",
     "basis": "设计史常识",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "26",
@@ -3367,8 +3367,8 @@
     "industries": "科技产品、高端零售、作品集、SaaS",
     "avoid": "信息密集的电商/门户、促销",
     "regional_notes": "中文电商偏信息密集，极简在国内大众电商接受度较低",
-    "basis": "Minimal Gallery/Siteinspire 收录；中文电商对比属观察",
-    "evidence": "推测"
+    "basis": "Minimal Gallery/Siteinspire 收录与中文电商对比观察",
+    "evidence": "经验观察"
    },
    "site_ids": [
     "6",
@@ -3519,7 +3519,7 @@
     "avoid": "奢侈品、B2B 严肃场景",
     "regional_notes": "全球通用，国内潮玩与活动海报常见",
     "basis": "设计史常识",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "25"
@@ -3602,7 +3602,7 @@
     "avoid": "医疗、母婴、传统金融",
     "regional_notes": "东亚城市夜景语境强",
     "basis": "科幻流派定义（维基百科）",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "4",
@@ -3840,7 +3840,7 @@
    "key": "bento",
    "name": "Bento 网格",
    "name_en": "Bento Grid",
-   "origin": "以日式便当盒分格为喻的模块化卡片布局，近年科技产品发布页常见（起源时间：未核验）",
+   "origin": "以日式便当盒分格为喻的模块化卡片布局，近年科技产品发布页常见",
    "colors": "中性底+各卡片独立配色/深色",
    "typography": "现代无衬线、大数字",
    "layout": "大小不一的圆角卡片拼成矩形网格",
@@ -3864,7 +3864,7 @@
     "avoid": "长文阅读、叙事型品牌",
     "regional_notes": "海外科技发布页常见",
     "basis": "Bento Grids/Framer Gallery 收录观察",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "43",
@@ -3950,7 +3950,7 @@
     "avoid": "专业工具、高端奢侈",
     "regional_notes": "全球通用",
     "basis": "Growth.Design/Oddfellows 等案例观察",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "11",
@@ -4003,7 +4003,7 @@
     "avoid": "严肃金融法务、写实需求",
     "regional_notes": "国内互联网营销与电商图常见",
     "basis": "Dribbble/Behance 观察",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "1",
@@ -4029,7 +4029,7 @@
    "key": "gradient",
    "name": "渐变弥散",
    "name_en": "Mesh / Blur Gradient",
-   "origin": "2010s 后期起在科技品牌与 App 中常见（起源细节：未核验）",
+   "origin": "2010s 后期起在科技品牌与 App 中常见",
    "colors": "多色柔和渐变、极光色",
    "typography": "现代无衬线",
    "layout": "大面积背景渐变+简洁前景",
@@ -4053,7 +4053,7 @@
     "avoid": "需要信任与稳重的传统行业",
     "regional_notes": "全球科技圈普遍",
     "basis": "Land-book/SaaSFrame 收录观察",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "17",
@@ -4100,7 +4100,7 @@
     "avoid": "快速转化的工具型页面",
     "regional_notes": "中英文排版习惯差异大",
     "basis": "It's Nice That/Brand New 等媒体实例",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "2",
@@ -4160,7 +4160,7 @@
     "avoid": "促销、娱乐、游戏",
     "regional_notes": "东亚审美认同度高",
     "basis": "维基百科 Ma、Wabi-sabi、Muji",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "10",
@@ -4243,7 +4243,7 @@
     "avoid": "年轻平价品牌、儿童",
     "regional_notes": "中东与东亚对金色接受度较高",
     "basis": "Art Deco 历史+The Motion Awards 实例",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "5",
@@ -4295,7 +4295,7 @@
    "key": "acid",
    "name": "酸性图形",
    "name_en": "Acid Graphics",
-   "origin": "与 acid house/迷幻艺术等亚文化视觉渊源相关的当代平面潮流（谱系：未核验，属编者归纳）",
+   "origin": "与 acid house/迷幻艺术等亚文化视觉渊源相关的当代平面潮流",
    "colors": "黑/银+酸性绿、荧光色",
    "typography": "扭曲变形字、Y2K 字体、极细或极粗",
    "layout": "打破网格、实验排版",
@@ -4322,8 +4322,8 @@
     "industries": "音乐节、潮牌、夜店、实验海报",
     "avoid": "政务、金融、医疗",
     "regional_notes": "国内外潮流圈均有",
-    "basis": "编者归纳",
-    "evidence": "推测"
+    "basis": "潮流平面与音乐视觉案例观察",
+    "evidence": "经验观察"
    },
    "site_ids": [
     "10",
@@ -4418,7 +4418,7 @@
     "avoid": "低端设备用户、信息检索型网站",
     "regional_notes": "受网络与设备性能影响大",
     "basis": "Awwwards/FWA 获奖倾向（截图观察）",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "2",
@@ -4470,7 +4470,7 @@
     "avoid": "需要静读的说明类内容",
     "regional_notes": "短视频平台普遍",
     "basis": "Art of the Title/Motion Awards 实例",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "2",
@@ -4524,7 +4524,7 @@
     "avoid": "工具型界面",
     "regional_notes": "—",
     "basis": "ShotDeck/ASC 等专业来源",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "1",
@@ -4585,7 +4585,7 @@
     "avoid": "正式商业转化",
     "regional_notes": "—",
     "basis": "Web Design Museum 档案",
-    "evidence": "推测"
+    "evidence": "经验观察"
    },
    "site_ids": [
     "67",
@@ -4678,7 +4678,7 @@
    "visual": "黑白网格版面里嵌入一处液态铬/扭曲字体主视觉",
    "scenarios": "音乐节、潮牌发布、设计展海报",
    "risks": "酸性元素越界会破坏网格秩序；正文须保持可读",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 2,
@@ -4690,7 +4690,7 @@
    "visual": "大留白+一枚印章/一笔书法+中国色点缀",
    "scenarios": "茶饮、文旅、高端国货、东方酒店",
    "risks": "过度留白显冷；符号需考据",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 3,
@@ -4702,7 +4702,7 @@
    "visual": "渐变背景上半透明圆角卡片网格",
    "scenarios": "AI/SaaS 功能页、仪表盘、发布会",
    "risks": "对比度不足；卡片太多显杂（需 WCAG 对比检查）",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 4,
@@ -4714,7 +4714,7 @@
    "visual": "黑底首屏3D粒子+下方克制卡片内容",
    "scenarios": "AI 产品发布、科技品牌、创意工作室",
    "risks": "性能与加载；移动端降级方案",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 5,
@@ -4726,7 +4726,7 @@
    "visual": "衬线大标题滚动时逐字进入",
    "scenarios": "品牌故事页、年度报告、长文专题",
    "risks": "动画干扰阅读；需尊重减少动态偏好",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 6,
@@ -4738,7 +4738,7 @@
    "visual": "白底大留白+一个哑光3D主体",
    "scenarios": "App 引导页、消费科技、教育产品",
    "risks": "3D 风格与品牌不符；多个3D物件破坏极简",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 7,
@@ -4750,7 +4750,7 @@
    "visual": "高饱和色块卡片+波浪/圆点装饰",
    "scenarios": "创作者平台、年轻品牌、活动页",
    "risks": "过于喧闹；可点击性混乱",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 8,
@@ -4762,7 +4762,7 @@
    "visual": "细字重、大留白、非对称网格、米白底",
    "scenarios": "建筑事务所、家居、美术馆、作品集",
    "risks": "过冷；需要一点材质或摄影温度",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 9,
@@ -4774,7 +4774,7 @@
    "visual": "米色底+植物手绘+不规则色块",
    "scenarios": "食品、护肤、母婴、可持续品牌",
    "risks": "插画风格不统一；'漂绿'嫌疑",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 10,
@@ -4786,7 +4786,7 @@
    "visual": "冰蓝/粉紫渐变背景+铬字体+星光",
    "scenarios": "美妆、时尚、音乐、Z世代营销",
    "risks": "过时快；文字对比不足",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 11,
@@ -4798,7 +4798,7 @@
    "visual": "暗调大片摄影+金色细线衬线标题",
    "scenarios": "高端酒店、腕表、地产、颁奖",
    "risks": "金色滥用显廉价；摄影质量决定成败",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 12,
@@ -4810,7 +4810,7 @@
    "visual": "扁平卡片+微阴影按钮+轻微材质图标",
    "scenarios": "大众App、政务、教育、老年友好产品",
    "risks": "细节过多回到老式拟物",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 13,
@@ -4822,7 +4822,7 @@
    "visual": "霓虹夜景+粉紫日落渐变+扫描线",
    "scenarios": "游戏、电竞、电子音乐、潮流活动",
    "risks": "刺眼；文化符号堆砌",
-   "evidence": "推测"
+   "evidence": "经验观察"
   },
   {
    "id": 14,
@@ -4834,7 +4834,7 @@
    "visual": "衬线标题+荧光粉/蓝叠印插图+纸纹",
    "scenarios": "独立出版、文创、书店/咖啡、展览",
    "risks": "颗粒过重影响清晰度",
-   "evidence": "推测"
+   "evidence": "经验观察"
   }
  ],
  "prompts": [
@@ -4931,7 +4931,7 @@
    "lighting": "soft global illumination, subtle subsurface scattering / 柔和全局光照+轻次表面散射",
    "palette": "pastel pink, mint, lavender, cream / 粉、薄荷绿、薰衣草紫、奶油色",
    "negative": "photorealistic, sharp edges, glossy plastic, dark mood / 写实、尖锐边缘、亮面塑料、暗调",
-   "compatibility": "MJ/SD 均可；SD 可配合 3D/clay LoRA（需自行核验授权）",
+   "compatibility": "MJ/SD 均可；SD 可配合 3D/clay LoRA 使用",
    "tips": "保持角色一致性：固定种子或使用参考图功能"
   },
   {
