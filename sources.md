@@ -9,9 +9,6 @@ tags: [sources, citations, design-kb]
 
 原始资料核验日期：2026-11-15；扩展风格档案核验日期：2026-11-22 / 2026-11-25（Asia/Shanghai）。硬性规范：未搜索、未打开、未引用 CSDN。
 
-## 初始学习资料
-- Eian（@EianLu）X 长文《100 个提升审美的设计网站大赏》：https://x.com/EianLu/status/2121219503988113557（经 X 官方 API 读取全文，正文含 100 个编号网站、206 个链接实体，去重后与编号清单一致；另提及 godly.website、styles.refero.design、Cal.com、Linear 等名称）
-
 ## 风格与受众参考来源
 | 来源 | 链接 | 访问状态 |
 |---|---|---|
